@@ -1,0 +1,112 @@
+[
+    {
+        "Bottle Position":100,
+        "Bottle Orientation":0,
+        "Grasp":0,
+        "Bottle Finger Position 1":0,
+        "Bottle Finger Position 2":0,
+        "Bottle Finger Position 3":0,
+        "Bottle Finger Position 4":0,
+        "Bottle Finger Position 5":0,
+        "Bottle Grasp Strength":0
+    },
+    {
+        "Bottle Position":96,
+        "Bottle Orientation":2,
+        "Grasp":0,
+        "Bottle Finger Position 1":0,
+        "Bottle Finger Position 2":0,
+        "Bottle Finger Position 3":0,
+        "Bottle Finger Position 4":0,
+        "Bottle Finger Position 5":0,
+        "Bottle Grasp Strength":2
+    },
+    {
+        "Bottle Position":95,
+        "Bottle Orientation":15,
+        "Grasp":9,
+        "Bottle Finger Position 1":5,
+        "Bottle Finger Position 2":5,
+        "Bottle Finger Position 3":5,
+        "Bottle Finger Position 4":5,
+        "Bottle Finger Position 5":5,
+        "Bottle Grasp Strength":0
+    },
+    {
+        "Bottle Position":92,
+        "Bottle Orientation":27,
+        "Grasp":13,
+        "Bottle Finger Position 1":18,
+        "Bottle Finger Position 2":18,
+        "Bottle Finger Position 3":18,
+        "Bottle Finger Position 4":18,
+        "Bottle Finger Position 5":18,
+        "Bottle Grasp Strength":0
+    },
+    {
+        "Bottle Position":96,
+        "Bottle Orientation":37,
+        "Grasp":14,
+        "Bottle Finger Position 1":16,
+        "Bottle Finger Position 2":16,
+        "Bottle Finger Position 3":16,
+        "Bottle Finger Position 4":16,
+        "Bottle Finger Position 5":16,
+        "Bottle Grasp Strength":7
+    },
+    {
+        "Bottle Position":98,
+        "Bottle Orientation":33,
+        "Grasp":25,
+        "Bottle Finger Position 1":15,
+        "Bottle Finger Position 2":15,
+        "Bottle Finger Position 3":15,
+        "Bottle Finger Position 4":15,
+        "Bottle Finger Position 5":15,
+        "Bottle Grasp Strength":8
+    },
+    {
+        "Bottle Position":95,
+        "Bottle Orientation":51,
+        "Grasp":28,
+        "Bottle Finger Position 1":28,
+        "Bottle Finger Position 2":28,
+        "Bottle Finger Position 3":28,
+        "Bottle Finger Position 4":28,
+        "Bottle Finger Position 5":28,
+        "Bottle Grasp Strength":13
+    },
+    {
+        "Bottle Position":99,
+        "Bottle Orientation":42,
+        "Grasp":42,
+        "Bottle Finger Position 1":41,
+        "Bottle Finger Position 2":41,
+        "Bottle Finger Position 3":41,
+        "Bottle Finger Position 4":41,
+        "Bottle Finger Position 5":41,
+        "Bottle Grasp Strength":23
+    },
+    {
+        "Bottle Position":103,
+        "Bottle Orientation":33,
+        "Grasp":55,
+        "Bottle Finger Position 1":41,
+        "Bottle Finger Position 2":41,
+        "Bottle Finger Position 3":41,
+        "Bottle Finger Position 4":41,
+        "Bottle Finger Position 5":41,
+        "Bottle Grasp Strength":25
+    },
+    {
+        "Bottle Position":107,
+        "Bottle Orientation":32,
+        "Grasp":56,
+        "Bottle Finger Position 1":46,
+        "Bottle Finger Position 2":46,
+        "Bottle Finger Position 3":46,
+        "Bottle Finger Position 4":46,
+        "Bottle Finger Position 5":46,
+        "Bottle Grasp Strength":24
+    }
+]

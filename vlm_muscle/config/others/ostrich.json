@@ -1,0 +1,26 @@
+{   
+    "video_script": "utils/video_helper.sh", 
+    "model_path": "/home/cxy/Desktop/mpc2/mjpc/tasks/musculoskeletal/Models/ostrich/ostrich.xml",
+    "task_path": "mjpc/tasks/musculoskeletal/walk_ostrich/task.xml",
+    "main_path": "mjpc/main.cc",    
+    "residual_path": "mjpc/tasks/musculoskeletal/walk_ostrich/walk.cc",
+    "build_dir": "/home/cxy/Desktop/mpc2/build/bin/mjpc",
+    "policyh_path": "mjpc/planners/hierarchical_pd/policy.h",
+    "policycc_path": "mjpc/planners/hierarchical_pd/policy.cc",
+
+    "conda_env": "dynsyn", 
+    "remote_host": "lnsgroup", 
+    "vlm_folder": "~/Desktop/grad/llm_helpers/",
+    "vlm_script": "run_llm.py",
+    
+    "run_time": 10, 
+    "nattempts": 5,
+    "stages": 25,
+    "camera": "side",
+
+    "body": "ostrich musculoskeletal model", 
+    "task":  "MS WalkOstrich", 
+    "task_name": "walk_ostrich",
+    "task_type": "locomotion",
+    "task_description": "make an ostrich walk forward in a straight line on a flat terrain with decent velocity and proper gait and posture (flat body, relatively straight legs, stable head)"
+}

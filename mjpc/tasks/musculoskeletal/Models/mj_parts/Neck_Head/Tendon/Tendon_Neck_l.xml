@@ -1,0 +1,156 @@
+<mujoco>
+  <tendon>
+    <spatial name="digastric_post_l_tendon">
+      <site site="digastric_post_l-P1" />
+      <site site="digastric_post_l-P2" />
+    </spatial>
+    <spatial name="digastric_ant_l_tendon">
+      <site site="digastric_ant_l-P1" />
+      <site site="digastric_ant_l-P2" />
+    </spatial>
+    <spatial name="geniohyoid_l_tendon">
+      <site site="geniohyoid_l-P1" />
+      <site site="geniohyoid_l-P2" />
+    </spatial>
+    <spatial name="mylohyoid_post_l_tendon">
+      <site site="mylohyoid_post_l-P1" />
+      <site site="mylohyoid_post_l-P2" />
+    </spatial>
+    <spatial name="mylohyoid_ant_l_tendon">
+      <site site="mylohyoid_ant_l-P1" />
+      <site site="mylohyoid_ant_l-P2" />
+    </spatial>
+    <spatial name="stylohyoid_lat_l_tendon">
+      <site site="stylohyoid_lat_l-P1" />
+      <site site="stylohyoid_lat_l-P2" />
+    </spatial>
+    <spatial name="stylohyoid_med_l_tendon">
+      <site site="stylohyoid_med_l-P1" />
+      <site site="stylohyoid_med_l-P2" />
+    </spatial>
+    <spatial name="sternohyoid_med_l_tendon">
+      <site site="sternohyoid_med_l-P1" />
+      <site site="sternohyoid_med_l-P2" />
+    </spatial>
+    <spatial name="sternohyoid_lat_l_tendon">
+      <site site="sternohyoid_lat_l-P1" />
+      <site site="sternohyoid_lat_l-P2" />
+    </spatial>
+    <spatial name="sternothyroid_l_tendon">
+      <site site="sternothyroid_l-P1" />
+      <site site="sternothyroid_l-P2" />
+      <site site="sternothyroid_l-P3" />
+    </spatial>
+    <spatial name="omohyoid_sup_l_tendon">
+      <site site="omohyoid_sup_l-P1" />
+      <site site="omohyoid_sup_l-P2" />
+    </spatial>
+    <spatial name="omohyoid_inf_l_tendon">
+      <site site="omohyoid_inf_l-P1" />
+      <site site="omohyoid_inf_l-P2" />
+      <site site="omohyoid_inf_l-P3" />
+    </spatial>
+    <spatial name="thyrohyoid_l_tendon">
+      <site site="thyrohyoid_l-P1" />
+      <site site="thyrohyoid_l-P2" />
+    </spatial>
+    <spatial name="stern_mast_l_tendon">
+      <site site="stern_mast_l-P1" />
+      <site site="stern_mast_l-P2" />
+    </spatial>
+    <spatial name="cleid_mast_l_tendon">
+      <site site="cleid_mast_l-P1" />
+      <site site="cleid_mast_l-P2" />
+    </spatial>
+    <spatial name="cleid_occ_l_tendon">
+      <site site="cleid_occ_l-P1" />
+      <site site="cleid_occ_l-P2" />
+    </spatial>
+    <spatial name="scalenus_ant_l_tendon">
+      <site site="scalenus_ant_l-P1" />
+      <site site="scalenus_ant_l-P2" />
+    </spatial>
+    <spatial name="scalenus_med_l_tendon">
+      <site site="scalenus_med_l-P1" />
+      <site site="scalenus_med_l-P2" />
+    </spatial>
+    <spatial name="scalenus_post_l_tendon">
+      <site site="scalenus_post_l-P1" />
+      <site site="scalenus_post_l-P2" />
+    </spatial>
+    <spatial name="long_cap_sklc4_l_tendon">
+      <site site="long_cap_sklc4_l-P1" />
+      <site site="long_cap_sklc4_l-P2" />
+      <site site="long_cap_sklc4_l-P3" />
+      <site site="long_cap_sklc4_l-P4" />
+      <site site="long_cap_sklc4_l-P5" />
+    </spatial>
+    <spatial name="long_col_c1thx_l_tendon">
+      <site site="long_col_c1thx_l-P1" />
+      <site site="long_col_c1thx_l-P2" />
+      <site site="long_col_c1thx_l-P3" />
+      <site site="long_col_c1thx_l-P4" />
+      <site site="long_col_c1thx_l-P5" />
+      <site site="long_col_c1thx_l-P6" />
+      <site site="long_col_c1thx_l-P7" />
+      <site site="long_col_c1thx_l-P8" />
+    </spatial>
+    <spatial name="long_col_c1c5_l_tendon">
+      <site site="long_col_c1c5_l-P1" />
+      <site site="long_col_c1c5_l-P2" />
+      <site site="long_col_c1c5_l-P3" />
+      <site site="long_col_c1c5_l-P4" />
+    </spatial>
+    <spatial name="long_col_c5thx_l_tendon">
+      <site site="long_col_c5thx_l-P1" />
+      <site site="long_col_c5thx_l-P2" />
+      <site site="long_col_c5thx_l-P3" />
+      <site site="long_col_c5thx_l-P4" />
+      <site site="long_col_c5thx_l-P5" />
+      <site site="long_col_c5thx_l-P6" />
+      <site site="long_col_c5thx_l-P7" />
+      <site site="long_col_c5thx_l-P8" />
+    </spatial>
+    <spatial name="splen_cap_sklc6_l_tendon">
+      <site site="splen_cap_sklc6_l-P1" />
+      <site site="splen_cap_sklc6_l-P2" />
+    </spatial>
+    <spatial name="splen_cap_sklthx_l_tendon">
+      <site site="splen_cap_sklthx_l-P1" />
+      <site site="splen_cap_sklthx_l-P2" />
+    </spatial>
+    <spatial name="splen_cerv_c3thx_l_tendon">
+      <site site="splen_cerv_c3thx_l-P1" />
+      <site site="splen_cerv_c3thx_l-P2" />
+    </spatial>
+    <spatial name="levator_scap_l_tendon">
+      <site site="levator_scap_l-P1" />
+      <site site="levator_scap_l-P2" />
+    </spatial>
+    <spatial name="rectcap_post_maj_l_tendon">
+      <site site="rectcap_post_maj_l-P1" />
+      <site site="rectcap_post_maj_l-P2" />
+    </spatial>
+    <spatial name="rectcap_post_min_l_tendon">
+      <site site="rectcap_post_min_l-P1" />
+      <site site="rectcap_post_min_l-P2" />
+    </spatial>
+    <spatial name="obl_cap_sup_l_tendon">
+      <site site="obl_cap_sup_l-P1" />
+      <site site="obl_cap_sup_l-P2" />
+    </spatial>
+    <spatial name="obl_cap_inf_l_tendon">
+      <site site="obl_cap_inf_l-P1" />
+      <site site="obl_cap_inf_l-P2" />
+    </spatial>
+    <spatial name="rectcap_ant_l_tendon">
+      <site site="rectcap_ant_l-P1" />
+      <site site="rectcap_ant_l-P2" />
+    </spatial>
+    <spatial name="rectcap_lat_l_tendon">
+      <site site="rectcap_lat_l-P1" />
+      <site site="rectcap_lat_l-P2" />
+    </spatial>
+
+  </tendon>
+</mujoco>

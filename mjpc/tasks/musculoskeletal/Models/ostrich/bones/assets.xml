@@ -1,0 +1,49 @@
+<mujoco>
+    <asset>
+        <material name="bone" reflectance="1" shininess="0" specular="0" rgba="0.68 0.64 0.57 1"/>
+        <mesh name="pelvis" file="../meshes/pelvis.stl"/>
+        <mesh name="r_femur" file="../meshes/r_femur.stl"/>
+        <mesh name="r_tibiotarsus" file="../meshes/r_tibiotarsus.stl"/>
+        <mesh name="r_tarsometatarsus" file="../meshes/r_tarsometatarsus.stl"/>
+        <mesh name="r_phalanx1" file="../meshes/r_phalanx1.stl"/>
+        <mesh name="r_phalanx2" file="../meshes/r_phalanx2.stl"/>
+        <mesh name="r_phalanx3" file="../meshes/r_phalanx3.stl"/>
+        <mesh name="r_phalanx4" file="../meshes/r_phalanx4.stl"/>
+        <mesh name="r_thumb" file="../meshes/r_thumb.stl"/>
+        <mesh name="l_femur" file="../meshes/l_femur.stl"/>
+        <mesh name="l_tibiotarsus" file="../meshes/l_tibiotarsus.stl"/>
+        <mesh name="l_tarsometatarsus" file="../meshes/l_tarsometatarsus.stl"/>
+        <mesh name="l_phalanx1" file="../meshes/l_phalanx1.stl"/>
+        <mesh name="l_phalanx2" file="../meshes/l_phalanx2.stl"/>
+        <mesh name="l_phalanx3" file="../meshes/l_phalanx3.stl"/>
+        <mesh name="l_phalanx4" file="../meshes/l_phalanx4.stl"/>
+        <mesh name="l_thumb" file="../meshes/l_thumb.stl"/>
+        <mesh name="ribcage" file="../meshes/ribcage.stl"/>
+        <mesh name="vertebra1" file="../meshes/vertebra1.stl"/>
+        <mesh name="vertebra2" file="../meshes/vertebra2.stl"/>
+        <mesh name="vertebra3" file="../meshes/vertebra3.stl"/>
+        <mesh name="vertebra4" file="../meshes/vertebra4.stl"/>
+        <mesh name="vertebra5" file="../meshes/vertebra5.stl"/>
+        <mesh name="vertebra6" file="../meshes/vertebra6.stl"/>
+        <mesh name="vertebra7" file="../meshes/vertebra7.stl"/>
+        <mesh name="vertebra8" file="../meshes/vertebra8.stl"/>
+        <mesh name="vertebra9" file="../meshes/vertebra9.stl"/>
+        <mesh name="vertebra10" file="../meshes/vertebra10.stl"/>
+        <mesh name="vertebra11" file="../meshes/vertebra11.stl"/>
+        <mesh name="vertebra12" file="../meshes/vertebra12.stl"/>
+        <mesh name="vertebra13" file="../meshes/vertebra13.stl"/>
+        <mesh name="vertebra14" file="../meshes/vertebra14.stl"/>
+        <mesh name="vertebra15" file="../meshes/vertebra15.stl"/>
+        <mesh name="vertebra16" file="../meshes/vertebra16.stl"/>
+        <mesh name="vertebra17" file="../meshes/vertebra17.stl"/>
+        <mesh name="head" file="../meshes/head.stl"/>
+        <mesh name="r_humerus" file="../meshes/r_humerus.stl"/>
+        <mesh name="r_ulna" file="../meshes/r_ulna.stl"/>
+        <mesh name="r_radius" file="../meshes/r_radius.stl"/>
+        <mesh name="r_hand" file="../meshes/r_hand.stl"/>
+        <mesh name="l_humerus" file="../meshes/l_humerus.stl"/>
+        <mesh name="l_ulna" file="../meshes/l_ulna.stl"/>
+        <mesh name="l_radius" file="../meshes/l_radius.stl"/>
+        <mesh name="l_hand" file="../meshes/l_hand.stl"/>
+    </asset>
+</mujoco> 

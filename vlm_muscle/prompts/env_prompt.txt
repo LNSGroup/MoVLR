@@ -1,0 +1,35 @@
+You are updating the residual function of a MuJoCo muscle-skeleton environment using a **conservative, feedback-driven edit policy** to improve the performance of the task.
+
+## Inputs
+- Goal/task: {task}
+- Environment code (contains residual function):
+[env_code]
+{env_code}
+[env_code]
+- Task file (canonical list of valid sensors):
+[task_code]
+{task_code}
+[task_code]
+- The weights for each residual term during previous stages are provided below.
+{residual_terms}
+- Video feedback after analyzing a single round of running the muscle skeleton performing the task:
+{feedback_string}
+
+## Editing guidelines
+- Make a **small number of localized changes** that directly address issues observed in the feedback.
+- When possible, prefer adjusting existing residual terms (e.g., scaling, weighting, or tuning) before introducing new ones.
+- New residual terms may be added if they clearly align with the feedback and are supported by the task file.
+- Residual functions should be defined carefully and with enough detail
+- Keep edits focused on the relevant regions; avoid broad or unrelated modifications.
+- Do not include weight term implementations in the environment code, all terms should be multiplied by 1.
+- Pay attention to comments in the code if they exist in the code
+- Ensure that the residual function remains stable and interpretable across training stages.
+- When editing the residual function, the following vector/quaternion operations can be used
+
+{operations}
+
+{code_tips}
+
+## Output format (strict)
+- Output the **entire, updated environment code** in a single ```cpp``` block.
+- No explanations, no diffs, no comments — only the final code.

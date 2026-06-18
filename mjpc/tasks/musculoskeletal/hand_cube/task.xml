@@ -1,0 +1,74 @@
+<mujoco model="MS Hand Cube Rotation">
+  <include file="../../common.xml"/>
+  
+  <!-- <size memory="1M"/> -->
+  
+  <!-- <option integrator="implicitfast" iterations="100" ls_iterations="50"/> -->
+
+  <custom>
+    <!-- agent -->
+    <numeric name="agent_planner" data="0" />
+    <numeric name="agent_horizon" data="0.5" />
+    <numeric name="agent_timestep" data="0.008" />
+    <!-- <numeric name="agent_policy_width" data="0.0035" /> -->
+    <numeric name="sampling_spline_points" data="1" />
+
+
+    <!-- cem -->
+    <!-- <numeric name="n_elite" data="10" /> -->
+    <!-- <numeric name="std_min" data="0.2" /> -->
+  </custom>
+  <!-- <option timestep="0.004"/> -->
+  <!-- Set the camera viewpoint -->
+  <!-- <statistic extent="0.4" center="0.3 0.1 0"/> -->
+  <visual>
+    <quality shadowsize="8192"/>
+    <global azimuth="180" elevation="-30"/>
+  </visual>
+
+  <!-- Set default friction coefficient -->
+  <default>
+    <geom friction=".3"/>
+  </default>
+
+  <!-- Create the scene, including floor and the interactive target cube. -->
+  <worldbody>
+    <light pos="0 -0.1 0.5" dir="0 0.2 -1" diffuse="0.7 0.7 0.7" specular="0.3 0.3 0.3"
+        directional="true" castshadow="true"/>
+    <!-- <geom name="floor" pos="0 0 -0.2" size="0 0 0.05" type="plane" material="blue_grid"/> -->
+    <!-- <body name="goal" pos="0.325 0.17 0.475">
+      <joint type="ball" damping="0.001" limited="false"/>
+      <geom type="box" size=".03 .03 .03" mass=".124" material="cube" contype="0" conaffinity="0"/>
+    </body> -->
+  </worldbody>
+
+  <sensor>
+    <!-- cost -->
+    <user name="Cube Position" dim="3" user="0 100 0 1000 0.02 2"/>
+
+    <!-- Measurements we want to use -->
+    <!-- <framepos name="cube_goal_position" objtype="body" objname="thrdmc"/> -->
+    <framequat name="cube_goal_orientation" objtype="body" objname="goal"/>
+    <framepos name="trace0" objtype="body" objname="cube"/>
+  </sensor>
+
+  <!-- <include file="../../common_assets/reorientation_cube.xml"/> -->
+  <!-- modified from: https://github.com/google-deepmind/mujoco_menagerie/tree/main/wonik_allegro -->
+  <!-- <include file="right_hand_modified.xml"/> -->
+  
+  <!-- <include file="../Models/mj_parts/Arm_Hand/mj_arm_hand_unimanual_cube.xml"/> -->
+  <!-- <include file="./hand_keyqpos.xml"/> -->
+  <include file="../Models/MS_Human_700_final/MS-Human-700-Manipulation-Cube.xml"/>
+  <sensor>
+    <framepos name="hand_position" objtype="body" objname="thirdmc"/>
+    <framepos name="finger1_position" objtype="body" objname="distal_thumb"/>
+    <framepos name="finger2_position" objtype="body" objname="2distph"/>
+    <framepos name="finger3_position" objtype="body" objname="3distph"/>
+    <framepos name="finger4_position" objtype="body" objname="4distph"/>
+    <framepos name="finger5_position" objtype="body" objname="5distph"/>
+  </sensor>
+  <keyframe>
+      <key qpos='0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.5 -1.5 0 0 0 0 0 0 0.60726 0 0 0.66394 0.933575 0 0 0.65216 0.8376 0.25128 0.0909 0.03668 0.8642 0.40135 0.36994 0 0 0.87598 1.34365 0 1 0 0 0 0.25 -0.2 1.1 1 0 0 0'/>  
+      
+  </keyframe>
+</mujoco>

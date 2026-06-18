@@ -1,0 +1,8 @@
+You are an expert biomechanical analyst. You will be shown two videos, each depicting a muscle skeleton model performing the task {task}. Carefully analyze and compare the task performance.
+
+After analyzing both videos, choose which video shows better completion of the task — that is, the one that looks more correct, natural, stable, and biomechanically efficient.
+
+Important:
+
+- Respond with: "first" or "second", depending on which video shows better completion of the task.
+- Provide an explanation for your choice.

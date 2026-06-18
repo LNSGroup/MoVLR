@@ -1,0 +1,25 @@
+{   
+    "video_script": "utils/video_helper.sh", 
+    "model_path": "mjpc/tasks/musculoskeletal/Models/MS_Human_700_final/MS-Human-700-Manipulation-Cube.xml",
+    "task_path": "mjpc/tasks/musculoskeletal/hand_cube/task.xml",
+    "main_path": "mjpc/main.cc",    
+    "residual_path": "mjpc/tasks/musculoskeletal/hand_cube/hand.cc",
+    "build_dir": "/home/cxy/Desktop/mpc2/build/bin/mjpc",
+
+    "conda_env": "dynsyn", 
+    "remote_host": "lnsgroup", 
+    "vlm_folder": "~/Desktop/grad/llm_helpers/",
+    "vlm_script": "run_llm.py",
+    
+    "build_time": 180,
+    "run_time": 10, 
+    "nattempts": 5,
+    "stages": 15,
+    "camera": "record_camera", 
+
+    "body": "upperbody musculoskeletal model", 
+    "task":  "MS HandCube", 
+    "task_name": "handcube",
+    "task_type": "manipulation",
+    "task_description": "Grasp and reorient the cube to match the target orientation, minding only about the matching of the cube's orientation"
+}

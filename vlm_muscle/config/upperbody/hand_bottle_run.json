@@ -1,0 +1,27 @@
+{   
+    "video_script": "utils/video_helper.sh", 
+    "model_path": "mjpc/tasks/musculoskeletal/Models/mj_Arm/mj_fullbody_unimanual_pour.xml",
+    "main_path": "mjpc/main.cc",    
+    "build_dir": "/home/cxy/Desktop/mpc2/build/bin/mjpc",
+    "task_path": "/home/cxy/Desktop/mpc2/mjpc/tasks/musculoskeletal/hand_bottle/task.xml",
+    "residual_path": "/home/cxy/Desktop/mpc2/mjpc/tasks/musculoskeletal/hand_bottle/hand.cc",
+    "build_task_path": "/home/cxy/Desktop/mpc2/vlm_muscle/logs/upperbody/handbottle/20250919_171829/stage_0/task.xml",
+    "build_env_path": "/home/cxy/Desktop/mpc2/vlm_muscle/logs/upperbody/handbottle/20250919_171829/stage_0/hand.cc", 
+
+    "conda_env": "dynsyn", 
+    "remote_host": "lnsgroup", 
+    "vlm_folder": "~/Desktop/grad/llm_helpers/",
+    "vlm_script": "run_llm.py",
+    
+    "build_time": 180,
+    "run_time": 10, 
+    "nattempts": 5,
+    "stages": 1,
+    "camera": "record_camera",
+
+    "body": "upperbody", 
+    "task":  "MS HandBottle", 
+    "task_name": "handbottle",
+    "task_type": "manipulation",
+    "task_description": "Reorient the dark-colored bottle to match the target orientation and position, indicated by a lighter shade bottle"
+}

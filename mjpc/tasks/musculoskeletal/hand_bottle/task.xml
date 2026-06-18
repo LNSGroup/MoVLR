@@ -1,0 +1,50 @@
+<mujoco model="MS Hand Bottle Rotation">
+  <include file="../../common.xml"/>
+
+  <custom>
+    <!-- agent -->
+    <numeric name="agent_planner" data="0" />
+    <numeric name="agent_horizon" data="0.5" />
+    <numeric name="agent_timestep" data="0.008" />
+    <numeric name="sampling_spline_points" data="1" />
+  </custom>
+  <visual>
+    <quality shadowsize="8192"/>
+    <global azimuth="180" elevation="-30"/>
+  </visual>
+
+  <!-- Set default friction coefficient -->
+  <default>
+    <geom friction="1"/>
+  </default>
+
+  <!-- Create the scene, including floor and the interactive target cube. -->
+  <worldbody>
+    <light pos="0 -0.1 0.5" dir="0 0.2 -1" diffuse="0.7 0.7 0.7" specular="0.3 0.3 0.3"
+        directional="true" castshadow="true"/>
+  </worldbody>
+
+  <sensor>
+    <!-- cost -->
+    <user name="Bottle Position" dim="3" user="6 100 0 1000 0.1"/>
+    <user name="Bottle Orientation" dim="3" user="0 10 0 100" />
+    <user name="Bottle Grasp Position" dim="3" user="0 1000 0 100 0.02 2"/>
+    <user name="Bottle Finger Position" dim="15" user="0 20 0 100 0.02 2"/>
+
+    <!-- Measurements we want to use -->
+    <framepos name="bottle_goal_position" objtype="body" objname="target"/>
+    <framequat name="bottle_goal_orientation" objtype="body" objname="target"/>
+    <framepos name="bottle_position" objtype="body" objname="waterbottle"/>
+    <framequat name="bottle_orientation" objtype="body" objname="waterbottle"/>
+  </sensor>
+
+  <include file="../Models/mj_Arm/mj_fullbody_unimanual_pour.xml"/>
+  <sensor>
+    <framepos name="hand_position" objtype="body" objname="thirdmc"/>
+    <framepos name="finger1_position" objtype="body" objname="distal_thumb"/>
+    <framepos name="finger2_position" objtype="body" objname="2distph"/>
+    <framepos name="finger3_position" objtype="body" objname="3distph"/>
+    <framepos name="finger4_position" objtype="body" objname="4distph"/>
+    <framepos name="finger5_position" objtype="body" objname="5distph"/>
+  </sensor>
+</mujoco>

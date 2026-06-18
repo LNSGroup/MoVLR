@@ -1,0 +1,172 @@
+<mujoco model="Musculoskeletal">
+  <include file="../../common.xml" />
+  <!-- modified from: https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/swimmer.xml -->
+  <!-- <include file="swimmer_modified.xml" /> -->
+  <include file="../Models/mj_FullBody/mj_fullbody_simple_track.xml"/>
+  <!-- <include file="Models/mj_Leg/mj_fullbody_leg.xml"/> -->
+
+  <!-- joint actuator -->
+  <!-- <include file="Models/mj_Leg/mj_fullbody_leg_motor.xml"/> -->
+  <!-- <include file="Models/mj_Leg/80mus_noarm_wrap_motor.xml"/> -->
+  <!-- <include file="Models/mj_FullBody/mj_fullbody_simple_motor.xml"/> -->
+    <!-- <include file="Models/env_test_models/80mus_noarm_wrap_stand.xml"/> -->
+    <!-- <include file="Models/mj_FullBody/mj_fullbody_simple.xml"/> -->
+
+  
+
+
+
+  <!-- <size njmax="8000" nconmax="4000"/> -->
+  <size memory="4000K"/>
+
+  <custom>
+    <text name="task_transition" data="MyoWalk" />
+    <numeric name="sampling_representation" data="2" />
+    <numeric name="agent_planner" data="0" />
+    <numeric name="agent_horizon" data="0.1" />
+    <numeric name="agent_timestep" data="0.008" />
+    <numeric name="sampling_spline_points" data="3" />
+    <numeric name="sampling_exploration" data="0.15" />
+    <numeric name="sampling_trajectories" data="32" />
+    <numeric name="gradient_spline_points" data="5" />
+    <numeric name="ilqg_num_rollouts" data="16" />
+    <numeric name="ilqg_regularization_type" data="1" />
+    <numeric name="ilqg_representation" data="2" />
+  </custom>
+
+  <default>
+    <default class="mocap_site">
+      <site type="sphere" size="0.027" rgba="0 0 1 1" group="3" material="target"/>
+    </default>
+  </default>
+
+  <option timestep="0.005"/>
+<!-- 
+  <worldbody>
+    <body name="mocap[pelvis]" mocap="true">
+      <site name="mocap[pelvis]" class="mocap_site"/>
+    </body>
+    <body name="mocap[head]" mocap="true">
+      <site name="mocap[head]" class="mocap_site" />
+    </body>
+    <body name="mocap[ltoe]" mocap="true">
+      <site name="mocap[ltoe]" class="mocap_site" />
+    </body>
+    <body name="mocap[rtoe]" mocap="true">
+      <site name="mocap[rtoe]" class="mocap_site" />
+    </body>
+    <body name="mocap[lheel]" mocap="true">
+      <site name="mocap[lheel]" class="mocap_site" />
+    </body>
+    <body name="mocap[rheel]" mocap="true">
+      <site name="mocap[rheel]" class="mocap_site" />
+    </body>
+    <body name="mocap[lknee]" mocap="true">
+      <site name="mocap[lknee]" class="mocap_site" />
+    </body>
+    <body name="mocap[rknee]" mocap="true">
+      <site name="mocap[rknee]" class="mocap_site" />
+    </body>
+    <body name="mocap[lhand]" mocap="true">
+      <site name="mocap[lhand]" class="mocap_site" />
+    </body>
+    <body name="mocap[rhand]" mocap="true">
+      <site name="mocap[rhand]" class="mocap_site" />
+    </body>
+    <body name="mocap[lelbow]" mocap="true">
+      <site name="mocap[lelbow]" class="mocap_site" />
+    </body>
+    <body name="mocap[relbow]" mocap="true">
+      <site name="mocap[relbow]" class="mocap_site" />
+    </body>
+    <body name="mocap[lshoulder]" mocap="true">
+      <site name="mocap[lshoulder]" class="mocap_site" />
+    </body>
+    <body name="mocap[rshoulder]" mocap="true">
+      <site name="mocap[rshoulder]" class="mocap_site" />
+    </body>
+    <body name="mocap[lhip]" mocap="true">
+      <site name="mocap[lhip]" class="mocap_site" />
+    </body>
+    <body name="mocap[rhip]" mocap="true">
+      <site name="mocap[rhip]" class="mocap_site" />
+    </body> -->
+  <!-- </worldbody> -->
+
+  <sensor>
+    <!-- <user name="Joint Vel." dim="79" user="0 0.001 0.0 0.01" />
+    <user name="Control" dim="700" user="3 0.1 0 1.0 0.3" /> -->
+
+    <!-- <user name="Pos[avg]" dim="3" user="6 100.0 0.0 100.0 0.1" /> -->
+    <!-- <user name="Pos[pelvis]" dim="6" user="6 100.0 0.0 100.0 0.1" />
+    <user name="Pos[leg_r]" dim="6" user="6 30.0 0.0 100.0 0.1" />
+    <user name="Pos[leg_l]" dim="6" user="6 30.0 0.0 100.0 0.1" />
+    <user name="Pos[arm_r]" dim="5" user="6 10.0 0.0 100.0 0.1 " />
+    <user name="Pos[arm_l]" dim="5" user="6 10.0 0.0 100.0 0.1" />
+    <user name="Pos[torso]" dim="9" user="6 100.0 0.0 100.0 0.1" /> -->
+    <user name="Pos[pelvis]" dim="6" user="0 50.0 0.0 100.0 " />
+    <user name="Pos[leg_r]" dim="6" user="0 10.0 0.0 100.0 " />
+    <user name="Pos[leg_l]" dim="6" user="0 10.0 0.0 100.0 " />
+    <user name="Pos[arm_r]" dim="5" user="0 1.0 0.0 100.0  " />
+    <user name="Pos[arm_l]" dim="5" user="0 1.0 0.0 100.0 " />
+    <user name="Pos[torso]" dim="9" user="0 50.0 0.0 100.0 " />
+
+    <user name="Vel[pelvis]" dim="6" user="0 50.0 0.0 100.0 " />
+    <user name="Vel[leg_r]" dim="6" user="0 10.0 0.0 100.0 " />
+    <user name="Vel[leg_l]" dim="6" user="0 10.0 0.0 100.0 " />
+    <user name="Vel[arm_r]" dim="5" user="0 1.0 0.0 100.0  " />
+    <user name="Vel[arm_l]" dim="5" user="0 1.0 0.0 100.0 " />
+    <user name="Vel[torso]" dim="9" user="0 50.0 0.0 100.0 " />
+
+    <framelinvel name="pelvis_subtreelinvel" objtype="body" objname="pelvis" />
+    <!-- <user name="Vel[root]" dim="3" user="6 0.1 0 1.0 0.3" />
+    <user name="Vel[head]" dim="3" user="6 0.0 0 1.0 0.3" />
+    <user name="Vel[toe]" dim="6" user="6 0.1 0 1.0 0.3" />
+    <user name="Vel[heel]" dim="6" user="6 0.1 0 1.0 0.3" />
+    <user name="Vel[knee]" dim="6" user="6 0.1 0 1.0 0.3" />
+    <user name="Vel[hand]" dim="6" user="6 0.1 0 1.0 0.3" />
+    <user name="Vel[elbow]" dim="6" user="6 0.1 0 1.0 0.3" />
+    <user name="Vel[shoulder]" dim="6" user="6 0.1 0 1.0 0.3" />
+    <user name="Vel[hip]" dim="6" user="6 0.1 0 1.0 0.3" /> -->
+
+    <!-- <framepos name="trace0" objtype="site" objname="hip_r"/>
+
+    <framepos name="tracking_pos[pelvis]" objtype="body" objname="pelvis" />
+    <framepos name="tracking_pos[head]" objtype="body" objname="head_neck" />
+    <framepos name="tracking_pos[ltoe]" objtype="site" objname="toes_site_l" />
+    <framepos name="tracking_pos[rtoe]" objtype="site" objname="toes_site_r" />
+    <framepos name="tracking_pos[lheel]" objtype="site" objname="calcn_site_l" />
+    <framepos name="tracking_pos[rheel]" objtype="site" objname="calcn_site_r" />
+    <framepos name="tracking_pos[lknee]" objtype="site" objname="vaslat140_l_KnExtVL_at_fem_l_sidesite" />
+    <framepos name="tracking_pos[rknee]" objtype="site" objname="vaslat140_r_KnExtVL_at_fem_r_sidesite" />
+    <framepos name="tracking_pos[lhand]" objtype="body" objname="proximal_row_l" />
+    <framepos name="tracking_pos[rhand]" objtype="body" objname="proximal_row_r" />
+    <framepos name="tracking_pos[lelbow]" objtype="site" objname="FDSL_l_Elbow_Ulna_l_sidesite" />
+    <framepos name="tracking_pos[relbow]" objtype="site" objname="FDSL_r_Elbow_Ulna_r_sidesite" />
+    <framepos name="tracking_pos[lshoulder]" objtype="body" objname="humphant_l" />
+    <framepos name="tracking_pos[rshoulder]" objtype="body" objname="humphant_r" />
+    <framepos name="tracking_pos[lhip]" objtype="site" objname="hip_l" />
+    <framepos name="tracking_pos[rhip]" objtype="site" objname="hip_r" />
+
+    <framelinvel name="tracking_linvel[pelvis]" objtype="body" objname="pelvis" />
+    <framelinvel name="tracking_linvel[head]" objtype="body" objname="head_neck" />
+    <framelinvel name="tracking_linvel[ltoe]" objtype="site" objname="toes_site_l" />
+    <framelinvel name="tracking_linvel[rtoe]" objtype="site" objname="toes_site_r" />
+    <framelinvel name="tracking_linvel[lheel]" objtype="site" objname="calcn_site_l" />
+    <framelinvel name="tracking_linvel[rheel]" objtype="site" objname="calcn_site_r" />
+    <framelinvel name="tracking_linvel[lknee]" objtype="site" objname="vaslat140_l_KnExtVL_at_fem_l_sidesite" />
+    <framelinvel name="tracking_linvel[rknee]" objtype="site" objname="vaslat140_r_KnExtVL_at_fem_r_sidesite" />
+    <framelinvel name="tracking_linvel[lhand]" objtype="body" objname="proximal_row_l" />
+    <framelinvel name="tracking_linvel[rhand]" objtype="body" objname="proximal_row_r" />
+    <framelinvel name="tracking_linvel[lelbow]" objtype="site" objname="FDSL_l_Elbow_Ulna_l_sidesite" />
+    <framelinvel name="tracking_linvel[relbow]" objtype="site" objname="FDSL_r_Elbow_Ulna_r_sidesite" />
+    <framelinvel name="tracking_linvel[lshoulder]" objtype="body" objname="humphant_l" />
+    <framelinvel name="tracking_linvel[rshoulder]" objtype="body" objname="humphant_r" />
+    <framelinvel name="tracking_linvel[lhip]" objtype="site" objname="hip_l" />
+    <framelinvel name="tracking_linvel[rhip]" objtype="site" objname="hip_r" /> -->
+  </sensor>
+
+  <!-- <include file="./keyframes/whole_joint_trajectory.xml" />  <!-\- myowalk -\-> -->
+  <include file="./keyframes/whole_joint_trajectory_velocity.xml" />  <!-\- myowalk -\->
+  
+</mujoco>

@@ -1,0 +1,37 @@
+<mujoco>
+  <tendon>
+ 
+    <spatial name="eye_rect_sup_l_tendon">
+      <site site="eye_rect_sup_l-P1" />
+      <geom geom="eyeball_l" sidesite="eye_rect_sup_l_eyeball_l_sidesite"/>
+      <site site="eye_rect_sup_l-P2" />
+    </spatial>
+    <spatial name="eye_rect_inf_l_tendon">
+      <site site="eye_rect_inf_l-P1" />
+      <geom geom="eyeball_l" sidesite="eye_rect_inf_l_eyeball_l_sidesite"/>
+      <site site="eye_rect_inf_l-P2" />
+    </spatial>
+    <spatial name="eye_rect_med_l_tendon">
+      <site site="eye_rect_med_l-P1" />
+      <geom geom="eyeball_l" sidesite="eye_rect_med_l_eyeball_l_sidesite"/>
+      <site site="eye_rect_med_l-P2" />
+    </spatial>
+    <spatial name="eye_rect_lat_l_tendon">
+      <site site="eye_rect_lat_l-P1" />
+      <geom geom="eyeball_l" sidesite="eye_rect_lat_l_eyeball_l_sidesite"/>
+      <site site="eye_rect_lat_l-P2" />
+    </spatial>
+    <spatial name="eye_obli_sup_l_tendon">
+      <site site="eye_obli_sup_l-P1" />
+      <site site="eye_obli_sup_l-P2" />
+      <geom geom="eyeball_l" />
+      <site site="eye_obli_sup_l-P3" />
+    </spatial>
+    <spatial name="eye_obli_inf_l_tendon">
+      <site site="eye_obli_inf_l-P1" />
+      <geom geom="eyeball_l" />
+      <site site="eye_obli_inf_l-P2" />
+    </spatial>
+
+  </tendon>
+</mujoco>

@@ -1,0 +1,150 @@
+<mujoco model="Musculoskeletal">
+  <include file="../../common.xml" />
+  <!-- modified from: https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/swimmer.xml -->
+  <!-- <include file="swimmer_modified.xml" /> -->
+  <!-- <include file="../Models/mj_FullBody/mj_fullbody_simple_dual.xml"/> -->
+  <!-- <include file="../Models/mj_FullBody/mj_fullbody_simple.xml"/> -->
+  <!-- <include file="Models/mj_Leg/mj_fullbody_leg.xml"/> -->
+
+  <!-- joint actuator -->
+  <!-- <include file="Models/mj_Leg/mj_fullbody_leg_motor.xml"/> -->
+  <!-- <include file="Models/mj_Leg/80mus_noarm_wrap_motor.xml"/> -->
+  <!-- <include file="Models/mj_FullBody/mj_fullbody_simple_motor.xml"/> -->
+    <!-- <include file="Models/env_test_models/80mus_noarm_wrap_stand.xml"/> -->
+    <!-- <include file="Models/mj_FullBody/mj_fullbody_simple.xml"/> -->
+  <!-- <include file="../Models/T13/T13.xml"/> -->
+  <!-- <include file="../Models/MiceModel/T13_Hanging.xml"/> -->
+  <include file="/home/yunyue/Desktop/Git_Repo/mpc2/mjpc/tasks/musculoskeletal/Models/Mice/CyberMice_FullDof.xml"/>
+
+
+
+
+  <!-- <size njmax="8000" nconmax="4000"/> -->
+  <size memory="40000K"/>
+  <custom>
+    <!-- agent -->
+    <numeric name="agent_planner" data="0" />
+    <numeric name="agent_horizon" data="0.3" />
+    <numeric name="agent_timestep" data="0.002" />
+    <numeric name="sampling_spline_points" data="1 1 10" />
+    <!-- <numeric name="sampling_exploration" data="0.1" /> -->
+    <numeric name="gradient_spline_points" data="5" />
+    <numeric name="residual_Height Goal" data="0.025 0.0 1.6" />
+    <numeric name="residual_Velocity Goal" data="0.5 -3 3" />
+    <!-- <numeric name="residual_Height Goal" data="1.587 0.0 1.6" /> -->
+  </custom>
+  <option timestep="0.002" gravity="0 0 -9.81"/>
+  <!-- <default>
+    <default class="mocap_site">
+      <site type="sphere" size="0.027" rgba="0 0 1 1" group="2" material="target"/>
+    </default>
+  </default> -->
+
+  <!-- <worldbody>
+    <body name="target[right_foot]" mocap="true" pos="0 -0.5 0">
+      <site name="target_site[right_foot]" size="0.027" rgba="0 0 1 1" group="2" material="target"/>
+    </body>
+    <body name="target[left_foot]" mocap="true" pos="0 0 0">
+      <site name="target_site[left_foot]" size="0.027" rgba="1 0 0 1" group="2" material="target"/>
+    </body>
+    <body name="target[pelvis]" mocap="true" pos="0 0 0">
+      <site name="target_site[pelvis]" size="0.027" rgba="1 0 0 1" group="2" material="target"/>
+    </body>
+  </worldbody> -->
+
+  <sensor>
+    <!-- cost -->
+    <user name="Height" dim="1" user="0 100000000.0 0.0 200.0 0.1" />
+    <user name="Head" dim="1" user="6 0.0 0.0 200.0 0.1" />
+    <user name="Upright" dim="1" user="6 5000.0 0.0 200.0 0.1" />
+    <user name="Balance" dim="1" user="0 10000.0 0.0 1000.0 0.1" />
+    <user name="Feet_cross" dim="1" user="0 50000000.0 0.0 1000.0 0.1" />
+    <user name="Velocity" dim="1" user="0 10000.0 0.0 100.0 0.1" />
+    <user name="Velocity_angle" dim="1" user="0 100000.0 0.0 1000.0 0.1" />
+    <user name="Forward" dim="1" user="0 1000.0 0.0 1000.0 0.1" />
+    <!-- <user name="Joint_pos" dim="1" user="0 1 0 100.0 0.1" /> -->
+   
+    <framepos name="trace0" objtype="body" objname="T13"/>
+   
+
+
+
+    <framepos name="pelvis_position" objtype="body" objname="T13"/>
+    <framepos name="head_position" objtype="body" objname="Head"/>
+    <framepos name="tail_position" objtype="body" objname="CA1"/>
+    <!-- <framepos name="left_feet_position" objtype="body" objname="left_feet"/> -->
+
+    <subtreelinvel name="torso_subtreelinvel" body="T13"/>
+    <subtreecom name="body_com" body="T13"/>
+
+   
+
+
+    <!-- <subtreelinvel name="head_subtreelinvel" body="head_neck"/>
+    <subtreecom name="head_subtreecom" body="head_neck"/> -->
+    <subtreecom name="pelvis_subtreecom" body="T13"/>
+    <subtreelinvel name="pelvis_subtreelinvel" body="T13"/>
+    <!-- <subtreecom name="head_subtreecom" body="head_neck"/> -->
+    <!-- <subtreelinvel name="head_subtreelinvel" body="head_neck"/> -->
+
+    
+    <!-- <framepos > -->
+    <!-- <framexaxis name="torso_forward" objtype="site" objname="torso_site"/> -->
+
+
+    <framepos name="sp0" objtype="site" objname="Marker_LPedal_Wrist"/>
+    <framepos name="sp00" objtype="site" objname="Marker_LPedal"/>
+    <framepos name="sp1" objtype="site" objname="Marker_LWrist"/>
+    <framepos name="sp2" objtype="site" objname="Marker_RPedal_Wrist"/>
+      <framepos name="sp22" objtype="site" objname="Marker_RPedal"/>
+
+    <framepos name="sp3" objtype="site" objname="Marker_RWrist"/>
+
+    
+
+    <framepos name="hip_l" objtype="site" objname="LHip_Flexors_at_Quads_ellipsoid_ILI_1_sidesite" />
+    <framepos name="hip_r" objtype="site" objname="RHip_Flexors_at_Quads_ellipsoid_ILI_1_sidesite" />
+
+    <!-- <framepos name="knee_l" objtype="site" objname="vaslat140_l_KnExtVL_at_fem_l_sidesite" /> -->
+    <!-- <framepos name="knee_r" objtype="site" objname="vaslat140_r_KnExtVL_at_fem_r_sidesite" /> -->
+
+
+    <!-- <framepos name="shoulder_l" objtype="body" objname="humphant_l" /> -->
+    <!-- <framepos name="shoulder_r" objtype="body" objname="humphant_r" /> -->
+
+    <framezaxis name="torso_up" objtype="site" objname="Marker_SpineF"/>
+    <framezaxis name="pelvis_up" objtype="site" objname="Marker_SpineM"/>
+    <!-- <framezaxis name="head_up" objtype="xbody" objname="head"/> -->
+    <framezaxis name="foot_right_up" objtype="xbody" objname="RPedal"/>
+    <framezaxis name="foot_left_up" objtype="xbody" objname="LPedal"/>
+    <frameyaxis name="toe_right_up" objtype="xbody" objname="RCarpi"/>
+    <frameyaxis name="toe_left_up" objtype="xbody" objname="LCarpi"/>
+
+    <!-- <framexaxis name="torso_forward" objtype="xbody" objname="sternum"/> -->
+    <framexaxis name="pelvis_forward" objtype="xbody" objname="T13"/>
+    <framexaxis name="foot_right_forward" objtype="xbody" objname="RPedal"/>
+    <framexaxis name="foot_left_forward" objtype="xbody" objname="LPedal"/>
+    <framezaxis name="toe_right_forward" objtype="xbody" objname="RCarpi"/>
+    <framezaxis name="toe_left_forward" objtype="xbody" objname="LCarpi"/>
+    <!-- <framexaxis name="knee_right_forward" objtype="xbody" objname="patella_r"/> -->
+    <!-- <framexaxis name="knee_left_forward" objtype="xbody" objname="patella_l"/> -->
+
+
+    
+    
+
+    <!-- <framepos name="sp1" objtype="body" objname="calcn_r"/> -->
+    <!-- <framepos name="sp2" objtype="site" objname="sp2"/>
+    <framepos name="sp3" objtype="site" objname="sp3"/> -->
+    <!-- <subtreelinvel name="foot_right_vel" body="calcn_r"/> -->
+    <!-- <subtreelinvel name="foot_left_vel" body="calcn_l"/> -->
+    <!-- residual -->
+    <!-- <framepos name="nose" objtype="geom" objname="r_pelvis"/>
+    <framepos name="target" objtype="body" objname="target"/> -->
+  </sensor>
+  <!-- <include file="./keyframes/whole_joint_trajectory.xml" />  <!-\- myowalk -\-> -->
+  <!-- <include file="./keyframes/walk_simple.xml" /> -->
+  <!-- <include file="./keyframes/walk_simple_dual.xml" /> -->
+  <include file="/home/yunyue/Desktop/Git_Repo/mpc2/build/bin/mpc2_mice_keyqpos.xml"/>
+
+</mujoco>

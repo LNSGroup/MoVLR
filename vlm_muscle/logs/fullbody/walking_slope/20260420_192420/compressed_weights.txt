@@ -1,0 +1,1 @@
+{"Balance":[120,120],"Com Vel":[null,1.0],"Control":[null,0.0],"Forward Velocity":[null,10.0],"Height":[100,100],"Joint vel":[null,0.0],"Joint_pos":[1,0],"Trunk Stability":[null,20.0]}

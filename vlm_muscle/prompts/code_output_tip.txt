@@ -1,0 +1,9 @@
+## Code output instructions and self-checks BEFORE output (do not print the checks)
+
+- All variables introduced in the code are used and defined; no unused variables remain.
+- When defining residual terms, use only sensors listed in the task file (and do not have the "user" field). Access via `SensorByName(model, data, 'xxx')` exactly, where 'xxx' is the name of the desired sensor. Use exact desired sensor names.
+- No new globals, no new buffers, no new utility functions. New variables must be local and derived solely from existing sensors/utilities already present.
+- Every sensor accessed by `SensorByName` name exists in the task file.
+- Counter indexing stays correct (no skipped or duplicated `residual[counter++]`).
+- Code compiles as C++/C compatible with MuJoCo headers.
+- Balance residual(s) unchanged; `mju_error_i` sections unchanged; no edits outside residual function.

@@ -1,0 +1,224 @@
+2026-04-20 19:26:33,267 - INFO - Stage: 1/15, Attempt: 1/5
+2026-04-20 19:27:02,276 - INFO - Video Feedback: a) **NO**
+
+b) The task of walking forward in a straight line on flat terrain at a velocity of about 1 m/s, maintaining forward directional stability and good posture, was not completed successfully. Here are the main issues observed:
+
+- **Directional Stability**: The model does not maintain a consistent forward direction. Instead, it exhibits a noticeable side-to-side motion, deviating from a straight path. This suggests that the balance and coordination between the left and right sides of the body are not well synchronized. Specifically, the leg movements appear to be asymmetrical, with one leg often lagging or moving out of phase compared to the other.
+
+- **Posture and Alignment**: The upper body shows significant instability. The torso tilts excessively during each step, indicating poor core engagement and lack of spinal alignment. The head also moves erratically, further contributing to an overall lack of balance. This could be due to insufficient control over the trunk muscles or inadequate reward for maintaining an upright posture.
+
+- **Velocity and Smoothness**: While the model attempts to move forward, the velocity is inconsistent and lacks smoothness. There are abrupt changes in speed and acceleration, which disrupt the natural flow of the gait. The transitions between steps are jerky, suggesting that the timing and sequencing of muscle activations are not optimized.
+
+c) To improve the performance of the reinforcement learning model, consider the following suggestions for reward terms:
+
+- **Forward Velocity Reward (Weight: 10)**: Introduce a reward term specifically for achieving and maintaining a target forward velocity of approximately 1 m/s. This term should encourage the model to move at a consistent speed without excessive fluctuations. The function can be defined as the difference between the current forward velocity and the target velocity, with a higher reward given for smaller differences.
+
+- **Trunk Stability Reward (Weight: 20)**: Add a reward term to promote trunk stability and reduce excessive torso tilt. This term should penalize deviations from an upright posture by measuring the angle between the spine and the vertical axis. A lower penalty should be applied for smaller deviations, while larger penalties should be given for more pronounced tilts. This will help the model learn to engage its core muscles effectively and maintain better balance.
+
+These suggested reward terms aim to address the primary issues observed in the video, focusing on improving directional stability, posture, and velocity consistency. By making small iterative changes and carefully tuning these terms, the model can gradually learn to walk more naturally and efficiently.
+2026-04-20 19:27:31,459 - INFO - New Code: ```cpp
+#include "mjpc/tasks/musculoskeletal/slope/walk.h"
+
+#include <string>
+
+#include <absl/random/random.h>
+#include <mujoco/mujoco.h>
+#include "mjpc/utilities.h"
+
+namespace mjpc::musculoskeletal {
+
+std::string Slope::XmlPath() const {
+  return GetModelPath("musculoskeletal/slope/task.xml");
+}
+std::string Slope::Name() const { return "MS Slope"; }
+// ------------------ Residuals for MS humanoid stand task ------------
+//   Number of residuals: 6
+//     Residual (0): Desired height
+//     Residual (1): Balance: COM_xy - average(feet position)_xy
+//     Residual (2): Com Vel: should be 0 and equal feet average vel
+//     Residual (3): Control: minimise control
+//     Residual (4): Joint vel: minimise joint velocity
+//     Residual (5): Trunk Stability: minimize deviation from upright posture
+//     Residual (6): Forward Velocity: achieve and maintain target velocity
+//   Number of parameters: 1
+//     Parameter (0): height_goal
+// -------------------------------------------------------------
+void Slope::ResidualFn::Residual(const mjModel* model, const mjData* data,
+                       double* residual) const {
+
+  int counter = 0;
+  // ----- Height: head feet vertical error ----- //
+  // feet sensor positions
+  double* f1_position = SensorByName(model, data, "sp0");
+  double* f2_position = SensorByName(model, data, "sp1");
+  double* f3_position = SensorByName(model, data, "sp2");
+  double* f4_position = SensorByName(model, data, "sp3");
+  double* head_position = SensorByName(model, data, "head_position");
+  double feet_height = 0;
+  double fxy_avg[2] = {0, 0};
+  int on_groud_cnt = 0;
+
+  if (on_groud_cnt == 0) {
+    fxy_avg[0] = 0.25 * (f1_position[0] + f2_position[0] + f3_position[0] + f4_position[0]);
+    fxy_avg[1] = 0.25 * (f1_position[1] + f2_position[1] + f3_position[1] + f4_position[1]);
+  }
+  else {
+    fxy_avg[0] /= on_groud_cnt;
+    fxy_avg[1] /= on_groud_cnt;
+  }
+  
+  feet_height = 0.25 * (f1_position[2] + f2_position[2] + f3_position[2] + f4_position[2]);
+  double head_feet_error = head_position[2] - feet_height;
+  residual[counter++] = mju_min(head_feet_error - parameters_[0], 0);
+  
+  // ----- Balance: COM_xy - average(feet position)_xy ----- //
+  double* com_position = SensorByName(model, data, "pelvis_subtreecom");
+  double* com_velocity = SensorByName(model, data, "pelvis_subtreelinvel");
+  double capture_point[3] = {com_position[0], com_position[1], com_position[2]};
+
+  //upper body com
+  double com_position_upper[3] = {0, 0, 0};
+  double com_velocity_upper[3] = {0, 0, 0};
+  double mass_upper = mju_sum(model->body_mass, model->nbody);  
+  for (int i = 0; i < model->nbody; i++) {
+    mju_addToScl3(com_position_upper, data->xipos+3*i, model->body_mass[i]/mass_upper);
+    mju_addToScl3(com_velocity_upper, data->cvel+6*i+3, model->body_mass[i]/mass_upper);
+  }
+ 
+  mju_copy(capture_point, com_position_upper, 3);
+
+  mju_subFrom(fxy_avg, capture_point, 2);
+  double com_feet_distance = mju_norm(fxy_avg, 2);
+  residual[counter++] = com_feet_distance;
+
+  // ----- Com Vel: should be 0 and equal feet average vel ----- //
+  double* foot_right_vel = SensorByName(model, data, "foot_right_vel");
+  double* foot_left_vel = SensorByName(model, data, "foot_left_vel");
+  double avg_foot_vel[3] = {0, 0, 0};
+  mju_add(avg_foot_vel, foot_right_vel, foot_left_vel, 3);
+  mju_scl(avg_foot_vel, avg_foot_vel, 0.5, 3);
+  double com_vel_error[3] = {0, 0, 0};
+  mju_sub(com_vel_error, com_velocity, avg_foot_vel, 3);
+  residual[counter++] = mju_norm(com_vel_error, 3);
+
+  // ----- Control: minimise control ----- //
+  residual[counter++] = mju_norm(data->ctrl, model->nu);
+
+  // ----- Joint vel: minimise joint velocity ----- //
+  residual[counter++] = mju_norm(data->qvel+6, 85-6);
+
+  // ----- Trunk Stability: minimize deviation from upright posture ----- //
+  double* torso_up = SensorByName(model, data, "torso_up");
+  double upright[3] = {0, 1, 0};
+  double deviation = 1 - mju_dot3(torso_up, upright);
+  residual[counter++] = deviation;
+
+  // ----- Forward Velocity: achieve and maintain target velocity ----- //
+  double target_velocity = 1.0;
+  double forward_velocity_error = com_velocity[0] - target_velocity;
+  residual[counter++] = forward_velocity_error;
+
+  int user_sensor_dim = 0;
+  for (int i = 0; i < model->nsensor; i++) {
+    if (model->sensor_type[i] == mjSENS_USER) {
+      user_sensor_dim += model->sensor_dim[i];
+    }
+  }
+
+  if (user_sensor_dim != counter) {
+    std::cout<<"sensor dim"<<user_sensor_dim<<" "<<counter<<std::endl;
+    mju_error_i(
+        "mismatch between total user-sensor dimension "
+        "and actual length of residual %d %d", counter);
+  }
+}
+
+void Slope::TransitionLocked(mjModel* model, mjData* data) {
+  if (data->time == 0) {
+    mju_copy(data->qpos, model->key_qpos, model->nq);
+    mju_zero(data->qvel, model->nv);
+    mju_zero(data->act, model->na);
+  }
+}
+}
+```
+2026-04-20 19:27:59,250 - INFO - New Task: ```xml
+<mujoco model="Musculoskeletal">
+  <include file="../../common.xml" />
+  <include file="../Models/MS_Human_700_final/MS-Human-700-Locomotion_slope.xml"/>
+
+  <size memory="40000K"/>
+  <custom>
+    <!-- agent -->
+    <numeric name="agent_planner" data="0" />
+    <numeric name="agent_horizon" data="0.35" />
+    <numeric name="agent_timestep" data="0.008" />
+    <numeric name="sampling_spline_points" data="1 1 10" />
+    <numeric name="gradient_spline_points" data="5" />
+    <numeric name="perturb_std" data="0" />
+    <numeric name="residual_Height Goal" data="1.59 0.0 1.6" />
+    <numeric name="residual_Velocity Goal" data="0.8 0 10" />
+  </custom>
+  <option timestep="0.002"/>
+
+  <sensor>
+    <!-- cost -->
+    <user name="Height" dim="1" user="6 100.0 0.0 100.0 0.1" />
+    <user name="Balance" dim="1" user="6 120.0 0.0 125.0 0.1" />
+    <user name="Com Vel" dim="1" user="6 1.0 0.0 10.0 0.1" />
+    <user name="Control" dim="1" user="6 0.1 0.0 10.0 0.1" />
+    <user name="Joint vel" dim="1" user="6 0.1 0.0 10.0 0.1" />
+    <user name="Trunk Stability" dim="1" user="6 20.0 0.0 100.0 0.1" />
+    <user name="Forward Velocity" dim="1" user="6 10.0 0.0 10.0 0.1" />
+   
+    <framepos name="trace0" objtype="body" objname="patella_l"/>
+
+    <!-- Sensors -->
+    <framepos name="pelvis_position" objtype="body" objname="pelvis"/>
+    <framepos name="head_position" objtype="body" objname="head_neck"/>
+
+    <subtreecom name="pelvis_subtreecom" body="pelvis"/>
+    <subtreelinvel name="pelvis_subtreelinvel" body="pelvis"/>
+    <subtreecom name="head_subtreecom" body="head_neck"/>
+    <subtreelinvel name="head_subtreelinvel" body="head_neck"/>
+
+    <framepos name="sp0" objtype="site" objname="calcn_site_l"/>
+    <framepos name="sp1" objtype="site" objname="toes_site_l"/>
+    <framepos name="sp2" objtype="site" objname="calcn_site_r"/>
+    <framepos name="sp3" objtype="site" objname="toes_site_r"/>
+
+    <!-- for old ms 700 -->
+    <framepos name="hip_l" objtype="site" objname="hip_l" />
+    <framepos name="hip_r" objtype="site" objname="hip_r" />
+
+    <!-- for new MS700 -->
+    <framepos name="knee_l" objtype="site" objname="vaslat_l_KnExtVL_at_fem_l_sidesite" />
+    <framepos name="knee_r" objtype="site" objname="vaslat_r_KnExtVL_at_fem_r_sidesite" />
+
+
+    <framepos name="shoulder_l" objtype="body" objname="humphant_l" />
+    <framepos name="shoulder_r" objtype="body" objname="humphant_r" />
+
+    <frameyaxis name="torso_up" objtype="xbody" objname="sternum"/>
+    <frameyaxis name="pelvis_up" objtype="xbody" objname="pelvis"/>
+    <frameyaxis name="head_up" objtype="xbody" objname="head_neck"/>
+    <frameyaxis name="foot_right_up" objtype="xbody" objname="calcn_r"/>
+    <frameyaxis name="foot_left_up" objtype="xbody" objname="calcn_l"/>
+    <frameyaxis name="toe_right_up" objtype="xbody" objname="toes_r"/>
+    <frameyaxis name="toe_left_up" objtype="xbody" objname="toes_l"/>
+
+    <framexaxis name="torso_forward" objtype="xbody" objname="sternum"/>
+    <framexaxis name="pelvis_forward" objtype="xbody" objname="pelvis"/>
+    <framexaxis name="foot_right_forward" objtype="xbody" objname="calcn_r"/>
+    <framexaxis name="foot_left_forward" objtype="xbody" objname="calcn_l"/>
+    <framexaxis name="toe_right_forward" objtype="xbody" objname="toes_r"/>
+    <framexaxis name="toe_left_forward" objtype="xbody" objname="toes_l"/>
+    <framexaxis name="knee_right_forward" objtype="xbody" objname="patella_r"/>
+    <framexaxis name="knee_left_forward" objtype="xbody" objname="patella_l"/>
+
+    <subtreelinvel name="foot_right_vel" body="calcn_r"/>
+    <subtreelinvel name="foot_left_vel" body="calcn_l"/>
+  </sensor>
+</mujoco>
+```
+2026-04-20 19:30:05,236 - INFO - Recording for stage 1 with data file: /home/cxy/Desktop/mpc2/vlm_muscle/logs/fullbody/walking_slope/20260420_192420/stage_1/2026_04_20_19_30_04_qpos.txt

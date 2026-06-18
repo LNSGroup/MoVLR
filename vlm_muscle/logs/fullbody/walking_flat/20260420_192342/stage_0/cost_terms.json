@@ -1,0 +1,10 @@
+{
+    "Height": 100,
+    "Balance": 100,
+    "Com_Vel": 100,
+    "Control": 5,
+    "Joint_Vel": 5,
+    "Lateral_Balance": 20,
+    "Velocity": 15,
+    "Forward": 100
+}

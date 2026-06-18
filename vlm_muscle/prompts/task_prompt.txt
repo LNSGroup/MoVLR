@@ -1,0 +1,40 @@
+The task is to train a {body} muscle-skeleton robot model to {task}. The following is the environment code used to train the model. It contains a residual function that computes a series of residual[counter++] entries. Each of these residuals must have a corresponding <user> entry in the task XML file. The environment code is shown below:
+[env_code]
+{env_code}
+[env_code]
+
+There is also a corresponding task.xml file shown below, which defines the valid sensors and residuals:
+[task_code]
+{task_code}
+[task_code]
+
+The weights for each residual term during previous stages is given below.
+{residual_terms}
+
+After one round of training, a video of the robot’s motion was reviewed, and the following feedback was obtained based on the observed performance and behavior:
+
+{feedback_string} 
+
+Currently, the residual definitions in the task.xml file do not match the residuals defined in the environment code. First, count the number of times residual[counter++] is defined in the environment code. Your job is to update ONLY the task.xml file so that:
+
+1. For every residual[counter++] in the environment code, there is exactly one <user> entry in the <!-- cost --> section of the task XML file. Edit only within the cost section.
+2. The final total value of the counter variable in the environment file must match the total (added up) dimension of each <user> entry in the <!-- cost --> section of the task XML file.
+3. The <user> entries must appear in the exact same order as the residual[counter++] definitions in the environment code.
+4. The format of each residual entry must strictly be:
+    <user name="[term_name]" dim="[dim]" user="6 [weight] 0 [weight_upper_bound] 0.1" />
+   where dimensions are determined by the dimension of the residual term in the environment code, and are typically set to 1 unles otherwise defined in the residual function.
+5. If the residual term is a new term, i.e. non-existant in the previous stages, do not give it an initial weight that is too low. The specific value should be assigned based on the observation feedback provided above. Provide greater weights for residuals that may have greater importance, and lower weight values for terms of less importance. Also make sure that the relative weight values between terms makes sense. If the residual term is not new, you may adjust the value by either increasing or decreasing the weight values compared to the previous round based on feedback.  
+6. When updating the weights, make small incremental updates compared to the previous weight values, rather than having the weight value jump by large amounts. Smaller increments would also be preferred.
+7. Do not add, remove, or modify any other parts of the task.xml file except the <user> residual definitions.
+8. Do not rename existing residual terms from the previous stage if the definition/meaning is approximately the same, and if the only thing changing is the term's weight, i.e. keep the naming consistant between stages.
+9. Do not edit or rewrite the environment code. Only the task XML file must be changed.
+
+Verification Requirement:
+- Before producing the output, count the number of residual[counter++] entries in the environment code and verify that the number of <user> entries you generate in the task.xml file is exactly the same. If the counts do not match, fix your output before returning it.
+
+Output Requirements:
+- Output the entire updated task.xml file inside a single code block.
+- Do not summarize or skip unchanged sections.
+- The output must be the full file, not a diff.
+
+Output only the final code, wrapped in ```xml``` code block.

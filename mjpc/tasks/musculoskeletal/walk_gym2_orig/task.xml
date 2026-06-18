@@ -1,0 +1,76 @@
+<mujoco model="Musculoskeletal">
+  <include file="../../common.xml" />
+  <!-- modified from: https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/swimmer.xml -->
+  <include file="../Models/mj_FullBody/mj_fullbody_simple.xml"/>
+  <size memory="40000K"/>
+  <custom>
+    <!-- agent -->
+    <numeric name="agent_planner" data="0" />
+    <numeric name="agent_horizon" data="0.3" />
+    <numeric name="agent_timestep" data="0.008" />
+    <numeric name="sampling_spline_points" data="1 1 10" />
+    <numeric name="gradient_spline_points" data="5" />
+    <numeric name="perturb_std" data="0" />
+    <numeric name="residual_Height Goal" data="1.55 0.0 1.6" />
+    <numeric name="residual_Velocity Goal" data="1 0 10" />
+  </custom>
+  <option timestep="0.002"/>
+
+  <sensor>
+    <!-- cost -->
+    <user name="Height" dim="1" user="6 100.0 0.0 100.0 0.1" />
+    <user name="Upright" dim="1" user="6 100.0 0.0 100.0 0.1" />
+    <user name="Balance" dim="1" user="6 100.0 0.0 100.0 0.1" />
+    <user name="Feet_cross" dim="1" user="6 50.0 0.0 100.0 0.1" />
+    <user name="Velocity" dim="1" user="6 10.0 0.0 100.0 0.1" />
+    <user name="Velocity_angle" dim="1" user="6 10.0 0.0 100.0 0.1" />
+    <user name="Forward" dim="1" user="6 100.0 0.0 100.0 0.1" />
+    <user name="Joint_pos" dim="1" user="0 1 0 10.0 0.1" />
+   
+    <framepos name="trace0" objtype="body" objname="patella_l"/>
+
+    <framepos name="pelvis_position" objtype="body" objname="pelvis"/>
+    <framepos name="head_position" objtype="body" objname="head_neck"/>
+
+    <!-- <subtreelinvel name="head_subtreelinvel" body="head_neck"/>
+    <subtreecom name="head_subtreecom" body="head_neck"/> -->
+    <subtreecom name="pelvis_subtreecom" body="pelvis"/>
+    <subtreelinvel name="pelvis_subtreelinvel" body="pelvis"/>
+    <subtreecom name="head_subtreecom" body="head_neck"/>
+    <subtreelinvel name="head_subtreelinvel" body="head_neck"/>
+
+    <framepos name="sp0" objtype="site" objname="calcn_site_l"/>
+    <framepos name="sp1" objtype="site" objname="toes_site_l"/>
+    <framepos name="sp2" objtype="site" objname="calcn_site_r"/>
+    <framepos name="sp3" objtype="site" objname="toes_site_r"/>
+
+    <framepos name="hip_l" objtype="site" objname="hip_l" />
+    <framepos name="hip_r" objtype="site" objname="hip_r" />
+
+    <framepos name="knee_l" objtype="site" objname="vaslat140_l_KnExtVL_at_fem_l_sidesite" />
+    <framepos name="knee_r" objtype="site" objname="vaslat140_r_KnExtVL_at_fem_r_sidesite" />
+
+    <framepos name="shoulder_l" objtype="body" objname="humphant_l" />
+    <framepos name="shoulder_r" objtype="body" objname="humphant_r" />
+
+    <frameyaxis name="torso_up" objtype="xbody" objname="sternum"/>
+    <frameyaxis name="pelvis_up" objtype="xbody" objname="pelvis"/>
+    <frameyaxis name="head_up" objtype="xbody" objname="head_neck"/>
+    <frameyaxis name="foot_right_up" objtype="xbody" objname="calcn_r"/>
+    <frameyaxis name="foot_left_up" objtype="xbody" objname="calcn_l"/>
+    <frameyaxis name="toe_right_up" objtype="xbody" objname="toes_r"/>
+    <frameyaxis name="toe_left_up" objtype="xbody" objname="toes_l"/>
+
+    <framexaxis name="torso_forward" objtype="xbody" objname="sternum"/>
+    <framexaxis name="pelvis_forward" objtype="xbody" objname="pelvis"/>
+    <framexaxis name="foot_right_forward" objtype="xbody" objname="calcn_r"/>
+    <framexaxis name="foot_left_forward" objtype="xbody" objname="calcn_l"/>
+    <framexaxis name="toe_right_forward" objtype="xbody" objname="toes_r"/>
+    <framexaxis name="toe_left_forward" objtype="xbody" objname="toes_l"/>
+    <framexaxis name="knee_right_forward" objtype="xbody" objname="patella_r"/>
+    <framexaxis name="knee_left_forward" objtype="xbody" objname="patella_l"/>
+
+    <subtreelinvel name="foot_right_vel" body="calcn_r"/>
+    <subtreelinvel name="foot_left_vel" body="calcn_l"/>
+  </sensor>
+</mujoco>

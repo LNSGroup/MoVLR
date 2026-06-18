@@ -1,0 +1,22 @@
+[
+    {
+        "Height":100,
+        "Balance":120,
+        "Joint_pos":1,
+        "Com Vel":null,
+        "Control":null,
+        "Joint vel":null,
+        "Trunk Stability":null,
+        "Forward Velocity":null
+    },
+    {
+        "Height":100,
+        "Balance":120,
+        "Joint_pos":0,
+        "Com Vel":1.0,
+        "Control":0.0,
+        "Joint vel":0.0,
+        "Trunk Stability":20.0,
+        "Forward Velocity":10.0
+    }
+]

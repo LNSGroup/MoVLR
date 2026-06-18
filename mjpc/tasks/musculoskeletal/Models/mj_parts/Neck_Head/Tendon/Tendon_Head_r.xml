@@ -1,0 +1,37 @@
+<mujoco>
+  <tendon>
+
+    <spatial name="eye_rect_sup_r_tendon" group="1">
+      <site site="eye_rect_sup_r-P1" />
+      <geom geom="eyeball_r" sidesite="eye_rect_sup_r_eyeball_r_sidesite"/>
+      <site site="eye_rect_sup_r-P2" />
+    </spatial>
+    <spatial name="eye_rect_inf_r_tendon" group="1">
+      <site site="eye_rect_inf_r-P1" />
+      <geom geom="eyeball_r" sidesite="eye_rect_inf_r_eyeball_r_sidesite"/>
+      <site site="eye_rect_inf_r-P2" />
+    </spatial>
+    <spatial name="eye_rect_med_r_tendon" group="1">
+      <site site="eye_rect_med_r-P1" />
+      <geom geom="eyeball_r" sidesite="eye_rect_med_r_eyeball_r_sidesite"/>
+      <site site="eye_rect_med_r-P2" />
+    </spatial>
+    <spatial name="eye_rect_lat_r_tendon" group="1">
+      <site site="eye_rect_lat_r-P1" />
+      <geom geom="eyeball_r" sidesite="eye_rect_lat_r_eyeball_r_sidesite"/>
+      <site site="eye_rect_lat_r-P2" />
+    </spatial>
+    <spatial name="eye_obli_sup_r_tendon" group="1">
+      <site site="eye_obli_sup_r-P1" />
+      <site site="eye_obli_sup_r-P2" />
+      <geom geom="eyeball_r" />
+      <site site="eye_obli_sup_r-P3" />
+    </spatial>
+    <spatial name="eye_obli_inf_r_tendon" group="1">
+      <site site="eye_obli_inf_r-P1" />
+      <geom geom="eyeball_r" />
+      <site site="eye_obli_inf_r-P2" />
+    </spatial>
+
+  </tendon>
+</mujoco>

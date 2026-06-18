@@ -1,0 +1,52 @@
+// Vector math
+
+- MJAPI void mju_zero3(mjtNum res[3]);
+- MJAPI void mju_copy3(mjtNum res[3], const mjtNum data[3]);
+- MJAPI void mju_scl3(mjtNum res[3], const mjtNum vec[3], mjtNum scl);
+- MJAPI void mju_add3(mjtNum res[3], const mjtNum vec1[3], const mjtNum vec2[3]);
+- MJAPI void mju_sub3(mjtNum res[3], const mjtNum vec1[3], const mjtNum vec2[3]);
+- MJAPI void mju_addTo3(mjtNum res[3], const mjtNum vec[3]);
+- MJAPI void mju_subFrom3(mjtNum res[3], const mjtNum vec[3]);
+- MJAPI void mju_addToScl3(mjtNum res[3], const mjtNum vec[3], mjtNum scl);
+- MJAPI void mju_addScl3(mjtNum res[3], const mjtNum vec1[3], const mjtNum vec2[3], mjtNum scl);
+- MJAPI mjtNum mju_normalize3(mjtNum vec[3]);
+- MJAPI mjtNum mju_norm3(const mjtNum vec[3]);
+- MJAPI mjtNum mju_dot3(const mjtNum vec1[3], const mjtNum vec2[3]);
+- MJAPI mjtNum mju_dist3(const mjtNum pos1[3], const mjtNum pos2[3]);
+- MJAPI void mju_rotVecMat(mjtNum res[3], const mjtNum vec[3], const mjtNum mat[9]);
+- MJAPI void mju_rotVecMatT(mjtNum res[3], const mjtNum vec[3], const mjtNum mat[9]);
+- MJAPI void mju_cross(mjtNum res[3], const mjtNum a[3], const mjtNum b[3]);
+- MJAPI void mju_zero4(mjtNum res[4]);
+- MJAPI void mju_unit4(mjtNum res[4]);
+- MJAPI void mju_copy4(mjtNum res[4], const mjtNum data[4]);
+- MJAPI mjtNum mju_normalize4(mjtNum vec[4]);
+- MJAPI void mju_zero(mjtNum* res, int n);
+- MJAPI void mju_fill(mjtNum* res, mjtNum val, int n);
+- MJAPI void mju_copy(mjtNum* res, const mjtNum* vec, int n);
+- MJAPI mjtNum mju_sum(const mjtNum* vec, int n);
+- MJAPI mjtNum mju_L1(const mjtNum* vec, int n);
+- MJAPI void mju_scl(mjtNum* res, const mjtNum* vec, mjtNum scl, int n);
+- MJAPI void mju_add(mjtNum* res, const mjtNum* vec1, const mjtNum* vec2, int n);
+- MJAPI void mju_sub(mjtNum* res, const mjtNum* vec1, const mjtNum* vec2, int n);
+- MJAPI void mju_addTo(mjtNum* res, const mjtNum* vec, int n);
+- MJAPI void mju_subFrom(mjtNum* res, const mjtNum* vec, int n);
+- MJAPI void mju_addToScl(mjtNum* res, const mjtNum* vec, mjtNum scl, int n);
+- MJAPI void mju_addScl(mjtNum* res, const mjtNum* vec1, const mjtNum* vec2, mjtNum scl, int n);
+- MJAPI mjtNum mju_normalize(mjtNum* res, int n);
+- MJAPI mjtNum mju_norm(const mjtNum* res, int n);
+- MJAPI mjtNum mju_dot(const mjtNum* vec1, const mjtNum* vec2, int n);
+
+// Quaternions
+- MJAPI void mju_rotVecQuat(mjtNum res[3], const mjtNum vec[3], const mjtNum quat[4]);
+- MJAPI void mju_negQuat(mjtNum res[4], const mjtNum quat[4]);
+- MJAPI void mju_mulQuat(mjtNum res[4], const mjtNum quat1[4], const mjtNum quat2[4]);
+- MJAPI void mju_mulQuatAxis(mjtNum res[4], const mjtNum quat[4], const mjtNum axis[3]);
+- MJAPI void mju_axisAngle2Quat(mjtNum res[4], const mjtNum axis[3], mjtNum angle);
+- MJAPI void mju_quat2Vel(mjtNum res[3], const mjtNum quat[4], mjtNum dt);
+- MJAPI void mju_subQuat(mjtNum res[3], const mjtNum qa[4], const mjtNum qb[4]);
+- MJAPI void mju_quat2Mat(mjtNum res[9], const mjtNum quat[4]);
+- MJAPI void mju_mat2Quat(mjtNum quat[4], const mjtNum mat[9]);
+- MJAPI void mju_derivQuat(mjtNum res[4], const mjtNum quat[4], const mjtNum vel[3]);
+- MJAPI void mju_quatIntegrate(mjtNum quat[4], const mjtNum vel[3], mjtNum scale);
+- MJAPI void mju_quatZ2Vec(mjtNum quat[4], const mjtNum vec[3]);
+- MJAPI void mju_euler2Quat(mjtNum quat[4], const mjtNum euler[3], const char* seq);

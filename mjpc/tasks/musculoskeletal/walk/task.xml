@@ -1,0 +1,129 @@
+<mujoco model="Musculoskeletal">
+  <include file="../../common.xml" />
+  <!-- modified from: https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/swimmer.xml -->
+  <!-- <include file="swimmer_modified.xml" /> -->
+  <include file="../Models/mj_FullBody/mj_fullbody_simple_dual.xml"/>
+  <!-- <include file="Models/mj_Leg/mj_fullbody_leg.xml"/> -->
+
+  <!-- joint actuator -->
+  <!-- <include file="Models/mj_Leg/mj_fullbody_leg_motor.xml"/> -->
+  <!-- <include file="Models/mj_Leg/80mus_noarm_wrap_motor.xml"/> -->
+  <!-- <include file="Models/mj_FullBody/mj_fullbody_simple_motor.xml"/> -->
+    <!-- <include file="Models/env_test_models/80mus_noarm_wrap_stand.xml"/> -->
+    <!-- <include file="Models/mj_FullBody/mj_fullbody_simple.xml"/> -->
+
+  
+
+
+
+  <!-- <size njmax="8000" nconmax="4000"/> -->
+  <size memory="4000K"/>
+  <custom>
+    <!-- agent -->
+    <numeric name="agent_planner" data="0" />
+    <numeric name="agent_horizon" data="0.25" />
+    <numeric name="agent_timestep" data="0.005" />
+    <numeric name="sampling_spline_points" data="3 1 10" />
+    <!-- <numeric name="sampling_exploration" data="0.1" /> -->
+    <numeric name="gradient_spline_points" data="5" />
+    <!-- <numeric name="residual_Height Goal" data="1.5 0.0 1.6" /> -->
+    <numeric name="residual_Torso" data="1.25 1.0 1.7" />
+    <numeric name="residual_Speed" data="0.5 -3.0 3.0" />
+    <!-- <numeric name="residual_Height Goal" data="1.587 0.0 1.6" /> -->
+
+    <!-- Not sure we need estimator -->
+    <!-- estimator -->
+    <!-- <numeric name="estimator" data="0" />
+    <numeric name="estimator_sensor_start" data="8" />
+    <numeric name="estimator_number_sensor" data="26" />
+    <numeric name="estimator_timestep" data="0.0075" />
+    <numeric name="batch_configuration_length" data="3" />
+    <numeric name="batch_scale_prior" data="1.0e-3" /> -->
+
+  </custom>
+
+  
+
+  <sensor>
+    <!-- cost -->
+    <!-- <user name="Height" dim="1" user="6 100.0 0.0 100.0 0.1" /> -->
+    <!-- <user name="Balance" dim="1" user="6 50.0 0.0 100.0 0.1" /> -->
+    <!-- <user name="Balance_head" dim="1" user="6 50.0 0.0 100.0 0.1" /> -->
+    <!-- <user name="Balance_head_pelvis" dim="1" user="6 0.0 0.0 100.0 0.1" /> -->
+    <!-- <user name="CoM Vel." dim="2" user="0 10.0 0.0 100.0" /> -->
+    
+    <!-- <user name="Joint Vel." dim="85" user="0 0.01 0.0 0.1" /> -->
+    <!-- <user name="Control" dim="28" user="0 0.1 0 1" /> -->
+    <!-- <user name="Control" dim="700" user="0 0.1 0 1" /> -->
+
+
+
+    <!-- cost -->
+    <user name="Height" dim="1" user="7 5.0 0 25.0 0.1 4.0" />
+    <user name="Pelvis/Feet" dim="1" user="8 1.0 0.0 10.0 0.05" />
+    <user name="Balance" dim="2" user="1 5.0 0.0 25.0 0.02 4.0" />
+    <user name="Upright" dim="8" user="2 5.0 0.0 25.0 0.01" />
+    <user name="Posture" dim="79" user="0 0.025 0 1.0" />
+    <user name="Velocity" dim="1" user="7 0.625 0 25.0 0.2 4.0" />
+    <user name="Walk" dim="2" user="7 1 0.0 25.0 0.5 3.0" />
+    <user name="Verti_Velocity" dim="1" user="7 0 0.0 25.0 0.5 3.0" />
+    <user name="Hip" dim="1" user="7 5 0.0 25.0 0.5 3.0" />
+    <user name="Control" dim="700" user="3 0.1 0 1.0 0.3" />
+
+
+    <!-- estimator measurements -->
+    <!-- <framepos name="pelvis" objtype="body" objname="pelvis" />
+    <framepos name="right_foot" objtype="body" objname="calcn_r" />
+    <framepos name="left_foot" objtype="body" objname="calcn_r" />
+    <framepos name="right_hand" objtype="body" objname="ulna_r" />
+    <framepos name="left_hand" objtype="site" objname="ulna_l" /> -->
+
+
+    <!-- residual -->
+    <framepos name="torso_position" objtype="body" objname="thoracic8"/>
+    <subtreecom name="torso_subcom" body="thoracic8"/>
+    <subtreelinvel name="torso_subcomvel" body="thoracic8"/>
+
+    <framepos name="foot_right" objtype="body" objname="calcn_r"/>
+    <framepos name="foot_left" objtype="body" objname="calcn_l"/>
+
+    <framepos name="pelvis_position" objtype="body" objname="pelvis"/>
+    <frameyaxis name="torso_up" objtype="xbody" objname="thoracic8"/>
+    <frameyaxis name="pelvis_up" objtype="xbody" objname="pelvis"/>
+    <frameyaxis name="foot_right_up" objtype="xbody" objname="calcn_r"/>
+    <frameyaxis name="foot_left_up" objtype="xbody" objname="calcn_l"/>
+    <framexaxis name="torso_forward" objtype="xbody" objname="thoracic8"/>
+    <framexaxis name="pelvis_forward" objtype="xbody" objname="pelvis"/>
+    <framexaxis name="foot_right_forward" objtype="xbody" objname="calcn_r"/>
+    <framexaxis name="foot_left_forward" objtype="xbody" objname="calcn_l"/>
+    <subtreelinvel name="waist_lower_subcomvel" body="lumbar3"/>
+    <framelinvel name="torso_velocity" objtype="body" objname="thoracic8"/>
+    <framelinvel name="foot_right_velocity" objtype="body" objname="calcn_r"/>
+    <framelinvel name="foot_left_velocity" objtype="body" objname="calcn_l"/>
+
+    <framepos name="sp0" objtype="site" objname="calcn_site_l"/>
+    <framepos name="sp1" objtype="site" objname="toes_site_l"/>
+    <framepos name="sp2" objtype="site" objname="calcn_site_r"/>
+    <framepos name="sp3" objtype="site" objname="toes_site_r"/>
+
+
+    
+
+
+
+    
+
+  
+
+    <!-- trace -->
+    <!-- <framepos name="trace0" objtype="body" objname="pelvis"/>
+    <framepos name="trace3" objtype="body" objname="head_neck"/>
+
+    <framepos name="trace1" objtype="site" objname="toes_site_r"/>
+    <framepos name="trace2" objtype="site" objname="toes_site_l"/>  -->
+    <framepos name="trace0" objtype="body" objname="calcn_r"/> 
+    <!-- <framepos name="trace3" objtype="joint" objname="ankle_angle_l"/> -->
+
+    
+  </sensor>
+</mujoco>

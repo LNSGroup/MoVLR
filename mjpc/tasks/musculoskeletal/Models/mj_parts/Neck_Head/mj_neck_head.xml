@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="MuJoCo Full Body Model">
+  <compiler inertiafromgeom="auto" angle="radian" boundmass="0.0001" >
+    <lengthrange inttotal="50" useexisting="true"></lengthrange>
+  </compiler>
+  <option>
+      <flag contact="enable" gravity="enable"/>
+  </option>
+  <option actuatorgroupdisable="1" />
+  <default>
+    <joint limited="true" damping="0.1" armature="1e-2" stiffness="0" solimplimit="0.9999 0.9999 0.001 0.5 2" />
+    <geom rgba="1 1 1 1" margin="0.001" />
+    <site size="0.001" group="3" />
+    <tendon width="0.003" rgba="0.95 0.3 0.3 1" limited="false" />
+    <default class="muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" range="0.75 1.05"/>
+    </default>
+    <default class="torso_muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" range="0.75 1.05" lmax="1.9" lmin="0.25" fpmax="0.9474" vmax="10" fvmax="1.4" />
+    </default>
+    <default class="upper_muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" range="0.75 1.05" lmax="1.9" lmin="0.25" fpmax="0.9474" vmax="10" fvmax="1.4" />
+    </default>
+    <default class="lower_muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" range="0.75 1.05" lmax="1.9" lmin="0.25" fpmax="0.9474" vmax="10" fvmax="1.4" />
+    </default>
+    <default class="wrap">
+      <geom rgba="0.19 0.83 0.78 0.2" group="3" contype="0" conaffinity="0" mass="0"/>
+    </default>
+    <default class="bone">
+      <geom contype="1" conaffinity="0" mass="0" />
+    </default>
+    <default class="touch">
+      <site type="capsule" rgba="0.25 0.23 0.2 0.1" group="3" />
+    </default>
+    <default class="skin">
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" condim="3" margin="0.001" group="1" />
+    </default>
+    <default class="hip">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0" />
+    </default>
+    <default class="knee">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0" />
+    </default>
+    <default class="ankle">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0" />
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" condim="1" margin="0.001" group="1" density="1438" />
+    </default>
+    <default class="toe">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0" />
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" condim="1" margin="0.001" group="1" density="1438" />
+    </default>
+    <default class="shoulder">
+      <joint limited="true" damping="1.0" armature="1e-4" stiffness="0" />
+      <default class="shoulder_inertial">
+        <geom type="box" rgba="0.8 0.7 .5 0.4" contype="0" conaffinity="0" group="4" density="911" />
+      </default>
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" margin="0.001" group="1" density="1206" />
+    </default>
+    <default class="elbow">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0" />
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" margin="0.001" group="1" density="1158" />
+    </default>
+    <default class="hand">
+      <joint limited="true" damping="0.05" armature="1e-4" stiffness="0" />
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" margin="0.001" group="1" density="1868" />
+      <default class="wrist_bone">
+        <geom contype="1" conaffinity="0" density="1158" rgba="1 1 1 1"/>
+      </default>
+      <default class="hand_inertial">
+        <geom type="ellipsoid" contype="0" conaffinity="0" density="1868" group="3" rgba="0.8 0.7 .5 0.2"/>
+      </default>
+    </default>
+    <default class="lumbar">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0" />
+    </default>
+    <default class="lumbar_inertial">
+      <geom type="ellipsoid" rgba="0.8 0.7 .5 0.2" contype="0" conaffinity="0" group="3" density="842" />
+    </default>
+    <default class="thoracic">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0" />
+      <default class="thoracic_bone">
+        <geom contype="1" conaffinity="0" density="911" />
+      </default>
+    </default>
+    <default class="thoracic_inertial">
+      <geom type="ellipsoid" rgba="0.8 0.7 .5 0.4" contype="0" conaffinity="0" group="3" density="911" />
+    </default>
+    <default class="cervical">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0" />
+    </default>
+    <default class="cervical_inertial">
+      <geom type="cylinder" rgba="0.8 0.7 .5 0.2" contype="0" conaffinity="0" group="3" density="1138" />
+    </default>
+  </default>
+  <size njmax="1000" nconmax="400" nuser_jnt="1"></size>
+  <visual>
+    <global offwidth="3840" offheight="2160"/>
+    <quality shadowsize="8192" offsamples="24"/>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    <map znear="0.002"/>
+  </visual>
+  
+  <worldbody>
+    <geom name="floor" pos="0 0 0" size="1 1 0.125" type="plane" condim="3" material="gray_plane" />
+    
+    <body name="pelvis" pos="0 0 0.84" euler="1.5708 0 0">
+      <inertial mass="9.07" pos="-0.080000 -0.012900 0" diaginertia="0.079259 0.067154 0.044641" />
+      <include file="Body/Body_Torso_Neck_Head.xml"/>
+    </body>
+
+    <body name="target" pos="0.5 0 1.45" quat="1 0.0 0.0 0.0">
+      <geom name="target_0" type="mesh" mesh="waterbottle_contact0" rgba="0.25 0.23 0.2 0.3" contype="0" conaffinity="0"/>
+      <geom name="target_1" type="mesh" mesh="waterbottle_contact1" rgba="0.31 0.29 0.75 0.3" contype="0" conaffinity="0"/>
+      <site name="target_indicator" pos="0 0 0" type="sphere" size="0.001" rgba="1 1 0.2 0.1" group="1"/>
+    </body>
+    
+    <body name="table" pos="0.45 0 0.87">
+      <!-- <geom contype="1" conaffinity="1" type="box" material="tablecube" pos="0 0 0" size=".4 .5 .02" friction="1.2 0.005 0.0001"/> -->
+      <geom contype="0" conaffinity="0" type="cylinder" fromto=".3 .3 -0.87 .3 .3 -0.001" size="0.04"/>
+      <geom contype="0" conaffinity="0" type="cylinder" fromto="-.3 .3 -0.87 -.3 .3 -0.001" size="0.04"/>
+      <geom contype="0" conaffinity="0" type="cylinder" fromto=".3 -.3 -0.87 .3 -.3 -0.001" size="0.04"/>
+      <geom contype="0" conaffinity="0" type="cylinder" fromto="-.3 -.3 -0.87 -.3 -.3 -0.001" size="0.04"/>
+    </body>
+
+    <camera name="record_camera" pos="1.624 0.830 1.433" xyaxes="-0.536 0.844 -0.000 -0.184 -0.117 0.976"/>
+
+  </worldbody>
+
+  <include file="Tendon/Tendon_Neck_r.xml"/>
+  <include file="Tendon/Tendon_Neck_l.xml"/>
+  <include file="Tendon/Tendon_Head_r.xml"/>
+  <include file="Tendon/Tendon_Head_l.xml"/>
+
+  <include file="Muscle/Muscle_Neck_r.xml"/>
+  <include file="Muscle/Muscle_Head_r.xml"/>
+  <include file="Muscle/Muscle_Neck_l.xml"/>
+  <include file="Muscle/Muscle_Head_l.xml"/>
+
+  <include file="Equality/Equality_Torso.xml"/>
+
+  <include file="Asset/Asset_Upperbody.xml"/>
+  <include file="Asset/Asset_Torso.xml"/>
+  <include file="Asset/Asset_Others.xml"/>
+
+  <keyframe>
+    
+  </keyframe>
+
+</mujoco>

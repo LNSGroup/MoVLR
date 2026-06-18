@@ -1,0 +1,13 @@
+You are given a video of a {body} muscle skeleton model whose task is to {task}. The video shows the model's actions after training a reinforcement learning model. The goal is to perform the task well and correctly. Provide a detailed critical analysis of the model's performance. You should be critial and point out specifically areas that need to be improved. Provide your analysis in a clear and concise manner, using appropriate technical language and terminology where necessary.
+
+The reward terms used to train the reinforcement learning model, including their weights, are listed below. The maximum weight for each term is 50, and it is encouraged to do weight exploration instead of only adding new terms.
+
+{reward_terms}
+
+Please perform the following analysis:
+
+a) First determine whether the task {task} was completed successfully, answer YES or NO.
+b) Identify the main issues with the motion produced compared to the desired motion from the task description. First focus on successfully completing the general task, then fine-tuning details. If the task is not successfully completed yet do not worry about fine-tuning details. Be detailed with descriptions. Also analyze what specific motions in the video could cause the issues or failures. Focus only on {focus} motion/issues related directly to the body. Describe directions from the point of the view of the muscle skeleton rather than a third person view.
+c) Someone is trying to train a new reinforcement learning model to perform better than what was shown in the video, and needs some suggestions about some reward terms that could be used, added, or given greater/less weight. It is better to add only a few (1-2) terms at a time to allow for more careful/minute changes per run. For new terms, assign a reasonable weight value between 0 and the maximum weight, and increase gradually if/when necessary. If the muscle skeleton is already kind of completing the task, add maybe only a single term, or decide to tune existing terms (i.e. don't make too big of a change, make small iterative changes). Keep the weight of the forward/velocity term no larger than 15, do not change the existing weight of the jointpos term due to simulator reasons, and do not suggest terms such as jointvel, etc. Do not suggest too many or redundant terms. If suggesting a new term, also suggest how the function should be defined (using words is enough, don't need to use specific functions/coding names). Given the video, issues, and existing reward terms listed above, provide some suggestions.
+
+Be specific in your observations and suggestions. Your goal is to help improve both the correctness and the naturalness of the {body}'s motion. 
