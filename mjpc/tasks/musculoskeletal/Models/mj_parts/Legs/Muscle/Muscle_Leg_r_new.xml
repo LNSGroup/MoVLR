@@ -1,0 +1,45 @@
+<mujoco>
+  <actuator>
+    
+    <muscle name="addbrev_r" tendon="addbrev_r_tendon" class="muscle" force="621.701715592758" lengthrange="0.11277529132467601 0.14370529132467602"></muscle>
+    <muscle name="addlong_r" tendon="addlong_r_tendon" class="muscle" force="908.1130095882733" lengthrange="0.212949363342026 0.245409363342026"></muscle>
+    <muscle name="addmagDist_r" tendon="addmagDist_r_tendon" class="muscle" force="586.0090624488932" lengthrange="0.2202806954617727 0.2734406954617727"></muscle>
+    <muscle name="addmagIsch_r" tendon="addmagIsch_r_tendon" class="muscle" force="588.8814361962676" lengthrange="0.333493023454343 0.380353023454343"></muscle>
+    <muscle name="addmagMid_r" tendon="addmagMid_r_tendon" class="muscle" force="584.5061751670996" lengthrange="0.14990269990704638 0.1912126999070464"></muscle>
+    <muscle name="addmagProx_r" tendon="addmagProx_r_tendon" class="muscle" force="568.5532672214287" lengthrange="0.11952409792326749 0.1512040979232675"></muscle>
+    <muscle name="bflh_r" tendon="bflh_r_tendon" class="muscle" force="1292.9162623236925" lengthrange="0.398426647516457 0.42770664751645704"></muscle>
+    <muscle name="bfsh_r" tendon="bfsh_r_tendon" class="muscle" force="537.780459065448" lengthrange="0.188542218589115 0.221632218589115"></muscle>
+    <muscle name="edl_r" tendon="edl_r_tendon" class="muscle" force="589.1808077813403" lengthrange="0.420850245465225 0.441640245465225"></muscle>
+    <muscle name="ehl_r" tendon="ehl_r_tendon" class="muscle" force="280.32333576226375" lengthrange="0.382895279537187 0.405335279537187"></muscle>
+    <muscle name="fdl_r" tendon="fdl_r_tendon" class="muscle" force="412.52567486154294" lengthrange="0.41222285679384196 0.42560285679384197"></muscle>
+    <muscle name="fhl_r" tendon="fhl_r_tendon" class="muscle" force="877.7859555299954" lengthrange="0.393864676836818 0.409674676836818"></muscle>
+    <muscle name="gaslat_r" tendon="gaslat_r_tendon" class="muscle" force="1540.3818976044854" lengthrange="0.42017016993379397 0.437810169933794"></muscle>
+    <muscle name="gasmed_r" tendon="gasmed_r_tendon" class="muscle" force="3072.851456091537" lengthrange="0.43696633262642903 0.452266332626429"></muscle>
+    <muscle name="glmax1_r" tendon="glmax1_r_tendon" class="muscle" force="922.7787194618228" lengthrange="0.15909088894628529 0.2031908889462853"></muscle>
+    <muscle name="glmax2_r" tendon="glmax2_r_tendon" class="muscle" force="1312.2216356612548" lengthrange="0.1856371511792641 0.23273715117926408"></muscle>
+    <muscle name="glmax3_r" tendon="glmax3_r_tendon" class="muscle" force="879.2937764807021" lengthrange="0.1949666058843707 0.2450666058843707"></muscle>
+    <muscle name="glmed1_r" tendon="glmed1_r_tendon" class="muscle" force="1039.1358841333526" lengthrange="0.1105668319436554 0.13246683194365538"></muscle>
+    <muscle name="glmed2_r" tendon="glmed2_r_tendon" class="muscle" force="727.0766912215025" lengthrange="0.11999881119923479 0.1418988111992348"></muscle>
+    <muscle name="glmed3_r" tendon="glmed3_r_tendon" class="muscle" force="827.9121446500727" lengthrange="0.09998284360135828 0.12188284360135829"></muscle>
+    <muscle name="glmin1_r" tendon="glmin1_r_tendon" class="muscle" force="368.3633036050594" lengthrange="0.06713778237497031 0.08753778237497031"></muscle>
+    <muscle name="glmin2_r" tendon="glmin2_r_tendon" class="muscle" force="394.819672131148" lengthrange="0.0680990524098789 0.08489905240987891"></muscle>
+    <muscle name="glmin3_r" tendon="glmin3_r_tendon" class="muscle" force="446.7057247022094" lengthrange="0.0793725 0.0907725"></muscle>
+    <muscle name="grac_r" tendon="grac_r_tendon" class="muscle" force="277.16048948915306" lengthrange="0.342863810564373 0.41120381056437305"></muscle>
+    <muscle name="iliacus_r" tendon="iliacus_r_tendon" class="muscle" force="981.3973694461333" lengthrange="0.17607070839832578 0.2080507083983258"></muscle>
+    <muscle name="perbrev_r" tendon="perbrev_r_tendon" class="muscle" force="510.26308400870556" lengthrange="0.181577533956538 0.195197533956538"></muscle>
+    <muscle name="perlong_r" tendon="perlong_r_tendon" class="muscle" force="1081.2599696621166" lengthrange="0.370320762637978 0.385560762637978"></muscle>
+    <muscle name="piri_r" tendon="piri_r_tendon" class="muscle" force="1014.142107682015" lengthrange="0.134406238342785 0.142206238342785"></muscle>
+    <muscle name="psoas_r" tendon="psoas_r_tendon" class="muscle" force="1393.7802668316149" lengthrange="0.18721816585550832 0.2222881658555083"></muscle>
+    <muscle name="recfem_r" tendon="recfem_r_tendon" class="muscle" force="2140.3326853530853" lengthrange="0.505418537399412 0.528188537399412"></muscle>
+    <muscle name="sart_r" tendon="sart_r_tendon" class="muscle" force="249.3279375193434" lengthrange="0.426249830194402 0.547149830194402"></muscle>
+    <muscle name="semimem_r" tendon="semimem_r_tendon" class="muscle" force="2130.0574908487424" lengthrange="0.39933597953321404 0.42003597953321403"></muscle>
+    <muscle name="semiten_r" tendon="semiten_r_tendon" class="muscle" force="574.1648705612926" lengthrange="0.39194894503751 0.44984894503751005"></muscle>
+    <muscle name="soleus_r" tendon="soleus_r_tendon" class="muscle" force="5749.642123344504" lengthrange="0.309755872375976 0.322955872375976"></muscle>
+    <muscle name="tfl_r" tendon="tfl_r_tendon" class="muscle" force="410.64301302895876" lengthrange="0.520747053805428 0.5492470538054279"></muscle>
+    <muscle name="tibant_r" tendon="tibant_r_tendon" class="muscle" force="1204.1458748935224" lengthrange="0.291686026409367 0.31217602640936704"></muscle>
+    <muscle name="tibpost_r" tendon="tibpost_r_tendon" class="muscle" force="1685.9673562954808" lengthrange="0.309129613883954 0.320469613883954"></muscle>
+    <muscle name="vasint_r" tendon="vasint_r_tendon" class="muscle" force="1693.982691600223" lengthrange="0.276685670345763 0.306475670345763"></muscle>
+    <muscle name="vaslat_r" tendon="vaslat_r_tendon" class="muscle" force="4985.0315805409255" lengthrange="0.295151284834603 0.324971284834603"></muscle>
+    <muscle name="vasmed_r" tendon="vasmed_r_tendon" class="muscle" force="2506.510310000882" lengthrange="0.272504270842317 0.301544270842317"></muscle>
+  </actuator>
+</mujoco>

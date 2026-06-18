@@ -1,0 +1,12 @@
+<mujoco>
+    <actuator>
+        <motor name="exo_right_hip_aa" joint="exo_right_hip_aa" gear="1" ctrllimited='true' ctrlrange='-1000. 1000.'></motor>    
+        <motor name="exo_right_hip_fe" joint="exo_right_hip_fe" gear="1" ctrllimited='true' ctrlrange='-1000. 1000.'></motor>
+        <motor name="exo_right_knee" joint="exo_right_knee" gear="1" ctrllimited='true' ctrlrange='-1000. 1000.'></motor>
+        <motor name="exo_right_ankle" joint="exo_right_ankle" gear="1" ctrllimited='true' ctrlrange='-1000. 1000.'></motor>
+        <motor name="exo_left_hip_aa" joint="exo_left_hip_aa" gear="1" ctrllimited='true' ctrlrange='-1000. 1000.'></motor>
+        <motor name="exo_left_hip_fe" joint="exo_left_hip_fe" gear="1" ctrllimited='true' ctrlrange='-1000. 1000.'></motor>
+        <motor name="exo_left_knee" joint="exo_left_knee" gear="1" ctrllimited='true' ctrlrange='-1000. 1000.'></motor>
+        <motor name="exo_left_ankle" joint="exo_left_ankle" gear="1" ctrllimited='true' ctrlrange='-1000. 1000.'></motor>
+    </actuator>
+</mujoco>

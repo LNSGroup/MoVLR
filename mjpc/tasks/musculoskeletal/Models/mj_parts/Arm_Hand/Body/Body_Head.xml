@@ -1,0 +1,433 @@
+<mujoco>
+
+  <body name="skull" pos="0.007790 0.005000 0.000000" euler="-0 0 0">
+    <inertial mass="3.414" pos="0.006576 0.067000 0.000000" diaginertia="0.009677 0.011791 0.013543" />
+    <geom name="skull_geom" type="mesh" class="bone" mesh="skull_mesh" group="0" />
+    <site name="skull_sensor" pos="0 0 0"/>
+    <!-- <joint name="aux1jnt_r3" pos="0 0.005 0" range="-1.57 1.57" limited="true" ref="0" axis="0 0 1" type="hinge" />
+    <joint name="aux1jnt_r1" pos="0 0.005 0" range="-1.57 1.57" limited="true" ref="0" axis="1 0 0" type="hinge" />
+    <joint name="aux1jnt_r2" pos="0 0.005 0" range="-1.57 1.57" limited="true" ref="0" axis="0 1 0" type="hinge" /> -->
+    <body name="jaw" pos="0.000000 0.000000 0.000000" euler="-0 0 0">
+      <inertial mass="0.31414" pos="0.044693 -0.014025 0.000000" fullinertia="0.000323 0.000332 0.000264 0.000075 0.0 0.0" />
+      <geom name="jaw_geom" type="mesh" class="bone" mesh="jaw_mesh" group="0" />
+      <!-- <joint name="jaw_tx" pos="0.015 0.02 0" range="0.000 0.020" limited="true" ref="0" axis="1 0 0" type="slide" />
+      <joint name="jaw_tz" pos="0.015 0.02 0" range="-0.005 0.005" limited="true" ref="0" axis="0 0 1" type="slide" /> -->
+      <!-- <joint name="jawjnt" pos="0.015 0.02 0" range="-0.552 0.000" limited="true" ref="0" axis="0 0 1" type="hinge" /> -->
+      <body name="hyoid" pos="0.040000 -0.045000 0.000000" euler="-0 0 0">
+        <geom name="hyoid_geom" type="mesh" class="bone" mesh="hyoid_mesh" group="0" density="1300"/>
+        <site name="digastric_post_r-P2" pos="0.007360 -0.005205 0.011565" />
+        <site name="digastric_ant_r-P1" pos="0.007858 -0.005551 0.011397" />
+        <site name="geniohyoid_r-P1" pos="0.009361 -0.004108 0.005181" />
+        <site name="mylohyoid_post_r-P1" pos="0.007371 -0.002903 0.010968" />
+        <site name="mylohyoid_ant_r-P1" pos="0.010344 -0.006209 0.008183" />
+        <site name="stylohyoid_lat_r-P2" pos="0.006307 -0.005976 0.011732" />
+        <site name="stylohyoid_med_r-P2" pos="0.006443 -0.003630 0.012221" />
+        <site name="sternohyoid_med_r-P1" pos="0.006717 -0.007409 0.006410" />
+        <site name="sternohyoid_lat_r-P1" pos="0.005385 -0.007287 0.009374" />
+        <site name="sternothyroid_r-P1" pos="-0.007438 -0.044805 0.010208" />
+        <site name="omohyoid_sup_r-P1" pos="0.002568 -0.005431 0.012571" />
+        <site name="thyrohyoid_r-P1" pos="-0.000414 -0.004272 0.014985" />
+        <site name="thyrohyoid_r-P2" pos="-0.007530 -0.043790 0.010872" />
+        <site name="digastric_post_l-P2" pos="0.007360 -0.005205 -0.011565" />
+        <site name="digastric_ant_l-P1" pos="0.007858 -0.005551 -0.011397" />
+        <site name="geniohyoid_l-P1" pos="0.009361 -0.004108 -0.005181" />
+        <site name="mylohyoid_post_l-P1" pos="0.007371 -0.002903 -0.010968" />
+        <site name="mylohyoid_ant_l-P1" pos="0.010344 -0.006209 -0.008183" />
+        <site name="stylohyoid_lat_l-P2" pos="0.006307 -0.005976 -0.011732" />
+        <site name="stylohyoid_med_l-P2" pos="0.006443 -0.003630 -0.012221" />
+        <site name="sternohyoid_med_l-P1" pos="0.006717 -0.007409 -0.006410" />
+        <site name="sternohyoid_lat_l-P1" pos="0.005385 -0.007287 -0.009374" />
+        <site name="sternothyroid_l-P1" pos="-0.007438 -0.044805 -0.010208" />
+        <site name="omohyoid_sup_l-P1" pos="0.002568 -0.005431 -0.012571" />
+        <site name="thyrohyoid_l-P1" pos="-0.000414 -0.004272 -0.014985" />
+        <site name="thyrohyoid_l-P2" pos="-0.007530 -0.043790 -0.010872" />
+      </body>
+      <site name="platysma_r-P2" pos="0.055398 -0.049238 0.034633" />
+      <site name="platysma_r-P3" pos="0.057702 -0.043718 0.038758" />
+      <site name="platysma_r-P4" pos="0.060219 -0.035628 0.040955" />
+      <site name="orbi_oris_mar_inf_r-P1" pos="0.100737 -0.037277 0.002331" />
+      <site name="orbi_oris_mar_inf_r-P2" pos="0.098099 -0.036487 0.012864" />
+      <site name="orbi_oris_mar_inf_r-P3" pos="0.092159 -0.031818 0.023926" />
+      <site name="orbi_oris_mar_inf_r-P4" pos="0.087763 -0.023590 0.029128" />
+      <site name="orbi_oris_labi_inf_r-P1" pos="0.103761 -0.029695 0.002491" />
+      <site name="orbi_oris_labi_inf_r-P2" pos="0.100684 -0.029318 0.012480" />
+      <site name="orbi_oris_labi_inf_r-P3" pos="0.097235 -0.027150 0.020969" />
+      <site name="orbi_oris_labi_inf_r-P4" pos="0.088208 -0.022806 0.029217" />
+      <site name="bucinator_inf_r-P1" pos="0.088096 -0.028653 0.025127" />
+      <site name="bucinator_inf_r-P2" pos="0.079974 -0.026926 0.029011" />
+      <site name="bucinator_inf_r-P3" pos="0.061496 -0.019829 0.034449" />
+      <site name="dep_anguli_oris_r-P1" pos="0.084686 -0.046685 0.019760" />
+      <site name="dep_anguli_oris_r-P2" pos="0.088276 -0.022620 0.029938" />
+      <site name="dep_labii_inf_r-P1" pos="0.088564 -0.048131 0.015759" />
+      <site name="dep_labii_inf_r-P2" pos="0.096111 -0.035189 0.016387" />
+      <site name="mentalis_r-P1" pos="0.094181 -0.051313 0.005905" />
+      <site name="mentalis_r-P2" pos="0.091509 -0.041296 0.009475" />
+      <site name="masseteris_int_r-P2" pos="0.033394 -0.009720 0.046959" />
+      <site name="masseteris_sup_r-P2" pos="0.034562 -0.030182 0.043257" />
+      <site name="temporalis_ant_r-P3" pos="0.054938 -0.003759 0.039200" />
+      <site name="temporalis_post_r-P3" pos="0.050315 0.004634 0.043085" />
+      <site name="ptery_lat_sup_r-P2" pos="0.024089 0.019999 0.044215" />
+      <site name="ptery_lat_inf_r-P2" pos="0.024810 0.017582 0.044305" />
+      <site name="ptery_med_sup_r-P2" pos="0.029502 -0.026739 0.037733" />
+      <site name="ptery_med_inf_r-P2" pos="0.030314 -0.026441 0.039150" />
+      <site name="digastric_ant_r-P2" pos="0.087403 -0.057168 0.008136" />
+      <site name="geniohyoid_r-P2" pos="0.082514 -0.050675 0.003373" />
+      <site name="mylohyoid_post_r-P2" pos="0.053415 -0.030304 0.023720" />
+      <site name="mylohyoid_ant_r-P2" pos="0.069305 -0.040333 0.016288" />
+      <site name="platysma_l-P2" pos="0.055398 -0.049238 -0.034633" />
+      <site name="platysma_l-P3" pos="0.057702 -0.043718 -0.038758" />
+      <site name="platysma_l-P4" pos="0.060219 -0.035628 -0.040955" />
+      <site name="orbi_oris_mar_inf_l-P1" pos="0.100737 -0.037277 -0.002331" />
+      <site name="orbi_oris_mar_inf_l-P2" pos="0.098099 -0.036487 -0.012864" />
+      <site name="orbi_oris_mar_inf_l-P3" pos="0.092159 -0.031818 -0.023926" />
+      <site name="orbi_oris_mar_inf_l-P4" pos="0.087763 -0.023590 -0.029128" />
+      <site name="orbi_oris_labi_inf_l-P1" pos="0.103761 -0.029695 -0.002491" />
+      <site name="orbi_oris_labi_inf_l-P2" pos="0.100684 -0.029318 -0.012480" />
+      <site name="orbi_oris_labi_inf_l-P3" pos="0.097235 -0.027150 -0.020969" />
+      <site name="orbi_oris_labi_inf_l-P4" pos="0.088208 -0.022806 -0.029217" />
+      <site name="bucinator_inf_l-P1" pos="0.088096 -0.028653 -0.025127" />
+      <site name="bucinator_inf_l-P2" pos="0.079974 -0.026926 -0.029011" />
+      <site name="bucinator_inf_l-P3" pos="0.061496 -0.019829 -0.034449" />
+      <site name="dep_anguli_oris_l-P1" pos="0.084686 -0.046685 -0.019760" />
+      <site name="dep_anguli_oris_l-P2" pos="0.088276 -0.022620 -0.029938" />
+      <site name="dep_labii_inf_l-P1" pos="0.088564 -0.048131 -0.015759" />
+      <site name="dep_labii_inf_l-P2" pos="0.096111 -0.035189 -0.016387" />
+      <site name="mentalis_l-P1" pos="0.094181 -0.051313 -0.005905" />
+      <site name="mentalis_l-P2" pos="0.091509 -0.041296 -0.009475" />
+      <site name="masseteris_int_l-P2" pos="0.033394 -0.009720 -0.046959" />
+      <site name="masseteris_sup_l-P2" pos="0.034562 -0.030182 -0.043257" />
+      <site name="temporalis_ant_l-P3" pos="0.054938 -0.003759 -0.039200" />
+      <site name="temporalis_post_l-P3" pos="0.050315 0.004634 -0.043085" />
+      <site name="ptery_lat_sup_l-P2" pos="0.024089 0.019999 -0.044215" />
+      <site name="ptery_lat_inf_l-P2" pos="0.024810 0.017582 -0.044305" />
+      <site name="ptery_med_sup_l-P2" pos="0.029502 -0.026739 -0.037733" />
+      <site name="ptery_med_inf_l-P2" pos="0.030314 -0.026441 -0.039150" />
+      <site name="digastric_ant_l-P2" pos="0.087403 -0.057168 -0.008136" />
+      <site name="geniohyoid_l-P2" pos="0.082514 -0.050675 -0.003373" />
+      <site name="mylohyoid_post_l-P2" pos="0.053415 -0.030304 -0.023720" />
+      <site name="mylohyoid_ant_l-P2" pos="0.069305 -0.040333 -0.016288" />
+    </body>
+    <body name="eyeball_r" pos="0.074000 0.042000 0.030000" euler="-0 0 0">
+      <geom name="eyeball_r_geom" type="mesh" class="bone" mesh="eyeball_r_mesh" group="0" euler="0 1.57 0" />
+      <geom name="eyeball_r_inertial" type="sphere" size="0.012" rgba="0.8 0.7 .5 0.2" contype="0" conaffinity="0" density="1300" group="3" />
+      <camera name="eye_right" fovy="130" pos="0.01 0 0" euler="0 -1.57 0"/>
+      <geom name="eyeball_r" type="sphere" euler="0 0 0" pos="0.000000 0.000000 0.000000" size="0.012" class="wrap" />
+      <site name="eye_obli_inf_r_eyeball_r_sidesite" pos="0.000000 -0.022000 0.000000"/>
+      <site name="eye_obli_sup_r_eyeball_r_sidesite" pos="0.000000 0.022000 0.000000"/>
+      <site name="eye_rect_lat_r_eyeball_r_sidesite" pos="0.000000 0.000000 0.022000"/>
+      <site name="eye_rect_med_r_eyeball_r_sidesite" pos="0.000000 0.000000 -0.022000"/>
+      <site name="eye_rect_inf_r_eyeball_r_sidesite" pos="0.000000 -0.022000 0.000000"/>
+      <site name="eye_rect_sup_r_eyeball_r_sidesite" pos="0.000000 0.022000 0.000000"/>
+      <!-- <joint name="eye_add_abd_r" range="-0.771 0.520" limited="true" ref="0" axis="0 1 0" type="hinge" armature="0" damping="0" stiffness="0"/>
+      <joint name="eye_ele_dep_r" range="-0.822 0.487" limited="true" ref="0" axis="0 0 1" type="hinge" armature="0" damping="0" stiffness="0"/>
+      <joint name="eye_inc_exc_r" range="-0.175 0.175" limited="true" ref="0" axis="1 0 0" type="hinge" armature="0" damping="0" stiffness="0"/> -->
+      <site name="eye_rect_sup_r-P2" pos="0.006326 0.011471 -0.000141" />
+      <site name="eye_rect_inf_r-P2" pos="0.006000 -0.012000 0.000000" />
+      <site name="eye_rect_med_r-P2" pos="0.007535 -0.000531 -0.010229" />
+      <site name="eye_rect_lat_r-P2" pos="0.008000 -0.001000 0.010000" />
+      <site name="eye_obli_sup_r-P3" pos="-0.004974 0.008618 0.008723" />
+      <site name="eye_obli_inf_r-P2" pos="-0.006152 -0.003472 0.011199" />
+    </body>
+    <body name="eyeball_l" pos="0.074000 0.042000 -0.030000" euler="-0 0 0">
+      <geom name="eyeball_l_geom" type="mesh" class="bone" mesh="eyeball_l_mesh" group="0" euler="0 1.57 0" />
+      <geom name="eyeball_l_inertial" type="sphere" size="0.012" rgba="0.8 0.7 .5 0.2" contype="0" conaffinity="0" density="1300" group="3" />
+      <camera name="eye_left" fovy="130" pos="0.01 0 0" euler="0 -1.57 0"/>
+      <geom name="eyeball_l" type="sphere" euler="-0 -0 0" pos="0.000000 0.000000 -0.000000" size="0.012" class="wrap" />
+      <site name="eye_obli_inf_l_eyeball_l_sidesite" pos="0.000000 -0.022000 -0.000000"/>
+      <site name="eye_obli_sup_l_eyeball_l_sidesite" pos="0.000000 0.022000 0.000000"/>
+      <site name="eye_rect_lat_l_eyeball_l_sidesite" pos="0.000000 0.000000 -0.022000"/>
+      <site name="eye_rect_med_l_eyeball_l_sidesite" pos="0.000000 0.000000 0.022000"/>
+      <site name="eye_rect_inf_l_eyeball_l_sidesite" pos="0.000000 -0.022000 -0.000000"/>
+      <site name="eye_rect_sup_l_eyeball_l_sidesite" pos="0.000000 0.022000 0.000000"/>
+      <!-- <joint name="eye_add_abd_l" range="-0.771 0.520" limited="true" ref="0" axis="0 -1 0" type="hinge" armature="0" damping="0" stiffness="0"/>
+      <joint name="eye_ele_dep_l" range="-0.822 0.487" limited="true" ref="0" axis="0 0 1" type="hinge" armature="0" damping="0" stiffness="0"/>
+      <joint name="eye_inc_exc_l" range="-0.175 0.175" limited="true" ref="0" axis="-1 0 0" type="hinge" armature="0" damping="0" stiffness="0"/> -->
+      <site name="eye_rect_sup_l-P2" pos="0.006326 0.011471 0.000141" />
+      <site name="eye_rect_inf_l-P2" pos="0.006000 -0.012000 -0.000000" />
+      <site name="eye_rect_med_l-P2" pos="0.007535 -0.000531 0.010229" />
+      <site name="eye_rect_lat_l-P2" pos="0.008000 -0.001000 -0.010000" />
+      <site name="eye_obli_sup_l-P3" pos="-0.004974 0.008618 -0.008723" />
+      <site name="eye_obli_inf_l-P2" pos="-0.006152 -0.003472 -0.011199" />
+    </body>
+    <site name="occipitofrontalis_1_r-P1" pos="0.089887 0.075268 0.043742" />
+    <site name="occipitofrontalis_1_r-P2" pos="0.078659 0.103651 0.045015" />
+    <site name="occipitofrontalis_1_r-P3" pos="0.051263 0.128225 0.045270" />
+    <site name="occipitofrontalis_1_r-P4" pos="0.003244 0.145020 0.045321" />
+    <site name="occipitofrontalis_1_r-P5" pos="-0.042913 0.140669 0.045331" />
+    <site name="occipitofrontalis_1_r-P6" pos="-0.077528 0.111865 0.045333" />
+    <site name="occipitofrontalis_1_r-P7" pos="-0.087708 0.067990 0.045333" />
+    <site name="occipitofrontalis_1_r-P8" pos="-0.075323 0.040458 0.045334" />
+    <site name="occipitofrontalis_2_r-P1" pos="0.098923 0.074807 0.026719" />
+    <site name="occipitofrontalis_2_r-P2" pos="0.094770 0.102830 0.028105" />
+    <site name="occipitofrontalis_2_r-P3" pos="0.063005 0.136945 0.028038" />
+    <site name="occipitofrontalis_2_r-P4" pos="0.017590 0.152898 0.028296" />
+    <site name="occipitofrontalis_2_r-P5" pos="-0.042465 0.149443 0.028749" />
+    <site name="occipitofrontalis_2_r-P6" pos="-0.082290 0.117859 0.029211" />
+    <site name="occipitofrontalis_2_r-P7" pos="-0.096992 0.078607 0.028679" />
+    <site name="occipitofrontalis_2_r-P8" pos="-0.088778 0.039702 0.029008" />
+    <site name="occipitofrontalis_3_r-P1" pos="0.100040 0.074750 0.011048" />
+    <site name="occipitofrontalis_3_r-P2" pos="0.095723 0.107522 0.012579" />
+    <site name="occipitofrontalis_3_r-P3" pos="0.067156 0.137070 0.012943" />
+    <site name="occipitofrontalis_3_r-P4" pos="0.026040 0.154761 0.012144" />
+    <site name="occipitofrontalis_3_r-P5" pos="-0.032221 0.155710 0.011473" />
+    <site name="occipitofrontalis_3_r-P6" pos="-0.067263 0.137236 0.012029" />
+    <site name="occipitofrontalis_3_r-P7" pos="-0.090003 0.104148 0.011390" />
+    <site name="occipitofrontalis_3_r-P8" pos="-0.097970 0.071900 0.012122" />
+    <site name="occipitofrontalis_3_r-P9" pos="-0.091474 0.035901 0.011583" />
+    <site name="aur_post_r-P1" pos="-0.024119 0.040474 0.069053" />
+    <site name="aur_post_r-P2" pos="-0.004058 0.039957 0.070732" />
+    <site name="aur_sup_r-P1" pos="-0.002066 0.076322 0.076770" />
+    <site name="aur_sup_r-P2" pos="-0.001953 0.048320 0.072971" />
+    <site name="aur_ant_r-P1" pos="0.070077 0.039754 0.013273" />
+    <site name="aur_ant_r-P2" pos="0.059900 0.036704 0.018866" />
+    <site name="temporoparietalis_r-P1" pos="0.020626 0.067955 0.070763" />
+    <site name="temporoparietalis_r-P2" pos="0.007548 0.048742 0.071358" />
+    <site name="dep_supercili_r-P1" pos="0.100261 0.069457 0.018710" />
+    <site name="dep_supercili_r-P2" pos="0.096353 0.060274 0.012115" />
+    <site name="dep_supercili_r-P3" pos="0.091354 0.047771 0.012482" />
+    <site name="cor_supercili_r-P1" pos="0.098665 0.066379 0.018923" />
+    <site name="cor_supercili_r-P2" pos="0.089057 0.073694 0.046683" />
+    <site name="procerus_r-P1" pos="0.099145 0.069445 0.013382" />
+    <site name="procerus_r-P2" pos="0.096295 0.052399 0.004179" />
+    <site name="procerus_r-P3" pos="0.100605 0.044440 0.003247" />
+    <site name="orbicularis_ocu_r-P1" pos="0.096362 0.042806 0.011215" />
+    <site name="orbicularis_ocu_r-P2" pos="0.095985 0.054297 0.010840" />
+    <site name="orbicularis_ocu_r-P3" pos="0.097610 0.064306 0.017131" />
+    <site name="orbicularis_ocu_r-P4" pos="0.095418 0.069454 0.030715" />
+    <site name="orbicularis_ocu_r-P5" pos="0.088583 0.064988 0.043279" />
+    <site name="orbicularis_ocu_r-P6" pos="0.080739 0.055549 0.051767" />
+    <site name="orbicularis_ocu_r-P7" pos="0.074683 0.039342 0.055513" />
+    <site name="orbicularis_ocu_r-P8" pos="0.078694 0.020232 0.047197" />
+    <site name="orbicularis_ocu_r-P9" pos="0.083704 0.015429 0.030407" />
+    <site name="orbicularis_ocu_r-P10" pos="0.090152 0.026282 0.015840" />
+    <site name="orbicularis_ocu_r-P11" pos="0.091975 0.038911 0.010796" />
+    <site name="orbicularis_pal_r-P1" pos="0.093944 0.042929 0.016757" />
+    <site name="orbicularis_pal_r-P2" pos="0.094088 0.052626 0.019833" />
+    <site name="orbicularis_pal_r-P3" pos="0.089942 0.056580 0.029789" />
+    <site name="orbicularis_pal_r-P4" pos="0.083236 0.052631 0.041913" />
+    <site name="orbicularis_pal_r-P5" pos="0.076733 0.039238 0.046388" />
+    <site name="orbicularis_pal_r-P6" pos="0.081346 0.027023 0.035490" />
+    <site name="orbicularis_pal_r-P7" pos="0.085218 0.030452 0.023217" />
+    <site name="orbicularis_pal_r-P8" pos="0.091048 0.038958 0.015553" />
+    <site name="nasalis_trans_r-P1" pos="0.093720 0.007699 0.016065" />
+    <site name="nasalis_trans_r-P2" pos="0.107168 0.023520 0.010381" />
+    <site name="nasalis_trans_r-P3" pos="0.115322 0.032304 0.001708" />
+    <site name="nasalis_alar_r-P1" pos="0.095478 -0.000109 0.008918" />
+    <site name="nasalis_alar_r-P2" pos="0.101205 0.008619 0.015983" />
+    <site name="nasalis_alar_r-P3" pos="0.111856 0.017501 0.007850" />
+    <site name="leva_naso_med_r-P1" pos="0.107208 0.012785 0.010634" />
+    <site name="leva_naso_med_r-P2" pos="0.102801 0.022159 0.011653" />
+    <site name="leva_naso_med_r-P3" pos="0.093765 0.029475 0.013003" />
+    <site name="leva_naso_lat_r-P1" pos="0.096641 -0.005478 0.016988" />
+    <site name="leva_naso_lat_r-P2" pos="0.091086 0.007647 0.018529" />
+    <site name="leva_naso_lat_r-P3" pos="0.091634 0.025171 0.016093" />
+    <site name="leva_labii_sup_r-P1" pos="0.095592 -0.005722 0.019071" />
+    <site name="leva_labii_sup_r-P2" pos="0.088366 0.003965 0.023622" />
+    <site name="leva_labii_sup_r-P3" pos="0.083869 0.015364 0.030123" />
+    <site name="leva_anguli_oris_r-P1" pos="0.086376 -0.020706 0.028833" />
+    <site name="leva_anguli_oris_r-P2" pos="0.085155 -0.004451 0.026402" />
+    <site name="leva_anguli_oris_r-P3" pos="0.084130 0.010887 0.025126" />
+    <site name="zygomaticus_min_r-P1" pos="0.093639 -0.006679 0.022396" />
+    <site name="zygomaticus_min_r-P2" pos="0.086758 0.004462 0.031870" />
+    <site name="zygomaticus_min_r-P3" pos="0.075704 0.014982 0.048915" />
+    <site name="zygomaticus_maj_r-P1" pos="0.084685 -0.019813 0.029734" />
+    <site name="zygomaticus_maj_r-P2" pos="0.080048 -0.003869 0.037557" />
+    <site name="zygomaticus_maj_r-P3" pos="0.072116 0.004146 0.049368" />
+    <site name="zygomaticus_maj_r-P4" pos="0.060785 0.017899 0.059125" />
+    <site name="dep_septi_nasi_r-P1" pos="0.100194 -0.002027 0.002372" />
+    <site name="dep_septi_nasi_r-P2" pos="0.100942 -0.007029 0.003650" />
+    <site name="orbi_oris_mar_sup_r-P1" pos="0.102286 -0.006889 0.002331" />
+    <site name="orbi_oris_mar_sup_r-P2" pos="0.099601 -0.007027 0.012864" />
+    <site name="orbi_oris_mar_sup_r-P3" pos="0.093249 -0.010444 0.023926" />
+    <site name="orbi_oris_mar_sup_r-P4" pos="0.087925 -0.020430 0.029128" />
+    <site name="orbi_oris_labi_sup_r-P1" pos="0.104491 -0.015383 0.002491" />
+    <site name="orbi_oris_labi_sup_r-P2" pos="0.101398 -0.015322 0.012480" />
+    <site name="orbi_oris_labi_sup_r-P3" pos="0.097797 -0.016129 0.020969" />
+    <site name="orbi_oris_labi_sup_r-P4" pos="0.088335 -0.020313 0.029217" />
+    <site name="risorius_r-P1" pos="0.049532 -0.005961 0.049987" />
+    <site name="risorius_r-P2" pos="0.064888 -0.010859 0.042685" />
+    <site name="risorius_r-P3" pos="0.077350 -0.020693 0.036674" />
+    <site name="risorius_r-P4" pos="0.087085 -0.021458 0.030067" />
+    <site name="bucinator_sup_r-P1" pos="0.091499 -0.018146 0.025350" />
+    <site name="bucinator_sup_r-P2" pos="0.080449 -0.017787 0.030686" />
+    <site name="bucinator_sup_r-P3" pos="0.064330 -0.012725 0.034504" />
+    <site name="bucinator_sup_r-P4" pos="0.049339 -0.006918 0.033093" />
+    <site name="bucinator_inf_r-P4" pos="0.050323 -0.011726 0.032225" />
+    <site name="masseteris_int_r-P1" pos="0.028740 0.023778 0.062938" />
+    <site name="masseteris_sup_r-P1" pos="0.054713 0.012819 0.058327" />
+    <site name="temporalis_ant_r-P1" pos="0.039744 0.090254 0.065493" />
+    <site name="temporalis_ant_r-P2" pos="0.045407 0.070393 0.063688" />
+    <site name="temporalis_post_r-P1" pos="-0.014324 0.065218 0.076210" />
+    <site name="temporalis_post_r-P2" pos="0.006748 0.053853 0.071304" />
+    <site name="ptery_lat_sup_r-P1" pos="0.044388 0.028064 0.028496" />
+    <site name="ptery_lat_inf_r-P1" pos="0.040952 0.011389 0.025033" />
+    <site name="ptery_med_sup_r-P1" pos="0.049962 0.005832 0.022655" />
+    <site name="ptery_med_inf_r-P1" pos="0.038973 0.010458 0.023629" />
+    <site name="eye_rect_sup_r-P1" pos="0.046583 0.043200 0.018020" />
+    <site name="eye_rect_inf_r-P1" pos="0.045808 0.038207 0.018183" />
+    <site name="eye_rect_med_r-P1" pos="0.046828 0.040995 0.016098" />
+    <site name="eye_rect_lat_r-P1" pos="0.046261 0.040727 0.021094" />
+    <site name="eye_obli_sup_r-P1" pos="0.047535 0.043452 0.016403" />
+    <site name="eye_obli_sup_r-P2" pos="0.080326 0.055998 0.016400" />
+    <site name="eye_obli_inf_r-P1" pos="0.079405 0.036330 0.014000" />
+    <site name="digastric_post_r-P1" pos="-0.007540 0.011675 0.050943" />
+    <site name="stylohyoid_lat_r-P1" pos="0.008547 0.000657 0.041692" />
+    <site name="stylohyoid_med_r-P1" pos="0.009000 0.001000 0.042000" />
+    <site name="stern_mast_r-P2" pos="-0.007833 0.008121 0.057435" />
+    <site name="cleid_mast_r-P2" pos="-0.007833 0.008121 0.057435" />
+    <site name="cleid_occ_r-P2" pos="-0.031565 0.025287 0.062544" />
+    <site name="long_cap_sklc4_r-P5" pos="0.009780 0.012613 0.007430" />
+    <site name="splen_cap_sklc6_r-P2" pos="-0.059602 0.019076 0.042132" />
+    <site name="splen_cap_sklthx_r-P2" pos="-0.037794 0.010879 0.047474" />
+    <site name="rectcap_post_maj_r-P2" pos="-0.048746 0.004910 0.023000" />
+    <site name="rectcap_post_min_r-P2" pos="-0.050598 0.003328 0.013032" />
+    <site name="obl_cap_sup_r-P2" pos="-0.047755 0.005868 0.031456" />
+    <site name="rectcap_ant_r-P2" pos="0.006915 0.011885 0.009539" />
+    <site name="rectcap_lat_r-P2" pos="-0.007765 0.007139 0.039316" />
+    <site name="trap_cl_r-P2" pos="-0.075522 0.020369 0.009477" />
+    <site name="semi_cap_sklc5_r-P2" pos="-0.072766 0.019916 0.018000" />
+    <site name="semi_cap_sklthx_r-P2" pos="-0.075721 0.019950 0.011100" />
+    <site name="longissi_cap_sklc6_r-P2" pos="-0.012000 0.012000 0.061000" />
+    <site name="longissi_cap_sklt2_r-P3" pos="-0.012000 0.012000 0.061000" />
+    <site name="occipitofrontalis_1_l-P1" pos="0.089887 0.075268 -0.043742" />
+    <site name="occipitofrontalis_1_l-P2" pos="0.078659 0.103651 -0.045015" />
+    <site name="occipitofrontalis_1_l-P3" pos="0.051263 0.128225 -0.045270" />
+    <site name="occipitofrontalis_1_l-P4" pos="0.003244 0.145020 -0.045321" />
+    <site name="occipitofrontalis_1_l-P5" pos="-0.042913 0.140669 -0.045331" />
+    <site name="occipitofrontalis_1_l-P6" pos="-0.077528 0.111865 -0.045333" />
+    <site name="occipitofrontalis_1_l-P7" pos="-0.087708 0.067990 -0.045333" />
+    <site name="occipitofrontalis_1_l-P8" pos="-0.075323 0.040458 -0.045334" />
+    <site name="occipitofrontalis_2_l-P1" pos="0.098923 0.074807 -0.026719" />
+    <site name="occipitofrontalis_2_l-P2" pos="0.094770 0.102830 -0.028105" />
+    <site name="occipitofrontalis_2_l-P3" pos="0.063005 0.136945 -0.028038" />
+    <site name="occipitofrontalis_2_l-P4" pos="0.017590 0.152898 -0.028296" />
+    <site name="occipitofrontalis_2_l-P5" pos="-0.042465 0.149443 -0.028749" />
+    <site name="occipitofrontalis_2_l-P6" pos="-0.082290 0.117859 -0.029211" />
+    <site name="occipitofrontalis_2_l-P7" pos="-0.096992 0.078607 -0.028679" />
+    <site name="occipitofrontalis_2_l-P8" pos="-0.088778 0.039702 -0.029008" />
+    <site name="occipitofrontalis_3_l-P1" pos="0.100040 0.074750 -0.011048" />
+    <site name="occipitofrontalis_3_l-P2" pos="0.095723 0.107522 -0.012579" />
+    <site name="occipitofrontalis_3_l-P3" pos="0.067156 0.137070 -0.012943" />
+    <site name="occipitofrontalis_3_l-P4" pos="0.026040 0.154761 -0.012144" />
+    <site name="occipitofrontalis_3_l-P5" pos="-0.032221 0.155710 -0.011473" />
+    <site name="occipitofrontalis_3_l-P6" pos="-0.067263 0.137236 -0.012029" />
+    <site name="occipitofrontalis_3_l-P7" pos="-0.090003 0.104148 -0.011390" />
+    <site name="occipitofrontalis_3_l-P8" pos="-0.097970 0.071900 -0.012122" />
+    <site name="occipitofrontalis_3_l-P9" pos="-0.091474 0.035901 -0.011583" />
+    <site name="aur_post_l-P1" pos="-0.024119 0.040474 -0.069053" />
+    <site name="aur_post_l-P2" pos="-0.004058 0.039957 -0.070732" />
+    <site name="aur_sup_l-P1" pos="-0.002066 0.076322 -0.076770" />
+    <site name="aur_sup_l-P2" pos="-0.001953 0.048320 -0.072971" />
+    <site name="aur_ant_l-P1" pos="0.070077 0.039754 -0.013273" />
+    <site name="aur_ant_l-P2" pos="0.059900 0.036704 -0.018866" />
+    <site name="temporoparietalis_l-P1" pos="0.020626 0.067955 -0.070763" />
+    <site name="temporoparietalis_l-P2" pos="0.007548 0.048742 -0.071358" />
+    <site name="dep_supercili_l-P1" pos="0.100261 0.069457 -0.018710" />
+    <site name="dep_supercili_l-P2" pos="0.096353 0.060274 -0.012115" />
+    <site name="dep_supercili_l-P3" pos="0.091354 0.047771 -0.012482" />
+    <site name="cor_supercili_l-P1" pos="0.098665 0.066379 -0.018923" />
+    <site name="cor_supercili_l-P2" pos="0.089057 0.073694 -0.046683" />
+    <site name="procerus_l-P1" pos="0.099145 0.069445 -0.013382" />
+    <site name="procerus_l-P2" pos="0.096295 0.052399 -0.004179" />
+    <site name="procerus_l-P3" pos="0.100605 0.044440 -0.003247" />
+    <site name="orbicularis_ocu_l-P1" pos="0.096362 0.042806 -0.011215" />
+    <site name="orbicularis_ocu_l-P2" pos="0.095985 0.054297 -0.010840" />
+    <site name="orbicularis_ocu_l-P3" pos="0.097610 0.064306 -0.017131" />
+    <site name="orbicularis_ocu_l-P4" pos="0.095418 0.069454 -0.030715" />
+    <site name="orbicularis_ocu_l-P5" pos="0.088583 0.064988 -0.043279" />
+    <site name="orbicularis_ocu_l-P6" pos="0.080739 0.055549 -0.051767" />
+    <site name="orbicularis_ocu_l-P7" pos="0.074683 0.039342 -0.055513" />
+    <site name="orbicularis_ocu_l-P8" pos="0.078694 0.020232 -0.047197" />
+    <site name="orbicularis_ocu_l-P9" pos="0.083704 0.015429 -0.030407" />
+    <site name="orbicularis_ocu_l-P10" pos="0.090152 0.026282 -0.015840" />
+    <site name="orbicularis_ocu_l-P11" pos="0.091975 0.038911 -0.010796" />
+    <site name="orbicularis_pal_l-P1" pos="0.093944 0.042929 -0.016757" />
+    <site name="orbicularis_pal_l-P2" pos="0.094088 0.052626 -0.019833" />
+    <site name="orbicularis_pal_l-P3" pos="0.089942 0.056580 -0.029789" />
+    <site name="orbicularis_pal_l-P4" pos="0.083236 0.052631 -0.041913" />
+    <site name="orbicularis_pal_l-P5" pos="0.076733 0.039238 -0.046388" />
+    <site name="orbicularis_pal_l-P6" pos="0.081346 0.027023 -0.035490" />
+    <site name="orbicularis_pal_l-P7" pos="0.085218 0.030452 -0.023217" />
+    <site name="orbicularis_pal_l-P8" pos="0.091048 0.038958 -0.015553" />
+    <site name="nasalis_trans_l-P1" pos="0.093720 0.007699 -0.016065" />
+    <site name="nasalis_trans_l-P2" pos="0.107168 0.023520 -0.010381" />
+    <site name="nasalis_trans_l-P3" pos="0.115322 0.032304 -0.001708" />
+    <site name="nasalis_alar_l-P1" pos="0.095478 -0.000109 -0.008918" />
+    <site name="nasalis_alar_l-P2" pos="0.101205 0.008619 -0.015983" />
+    <site name="nasalis_alar_l-P3" pos="0.111856 0.017501 -0.007850" />
+    <site name="leva_naso_med_l-P1" pos="0.107208 0.012785 -0.010634" />
+    <site name="leva_naso_med_l-P2" pos="0.102801 0.022159 -0.011653" />
+    <site name="leva_naso_med_l-P3" pos="0.093765 0.029475 -0.013003" />
+    <site name="leva_naso_lat_l-P1" pos="0.096641 -0.005478 -0.016988" />
+    <site name="leva_naso_lat_l-P2" pos="0.091086 0.007647 -0.018529" />
+    <site name="leva_naso_lat_l-P3" pos="0.091634 0.025171 -0.016093" />
+    <site name="leva_labii_sup_l-P1" pos="0.095592 -0.005722 -0.019071" />
+    <site name="leva_labii_sup_l-P2" pos="0.088366 0.003965 -0.023622" />
+    <site name="leva_labii_sup_l-P3" pos="0.083869 0.015364 -0.030123" />
+    <site name="leva_anguli_oris_l-P1" pos="0.086376 -0.020706 -0.028833" />
+    <site name="leva_anguli_oris_l-P2" pos="0.085155 -0.004451 -0.026402" />
+    <site name="leva_anguli_oris_l-P3" pos="0.084130 0.010887 -0.025126" />
+    <site name="zygomaticus_min_l-P1" pos="0.093639 -0.006679 -0.022396" />
+    <site name="zygomaticus_min_l-P2" pos="0.086758 0.004462 -0.031870" />
+    <site name="zygomaticus_min_l-P3" pos="0.075704 0.014982 -0.048915" />
+    <site name="zygomaticus_maj_l-P1" pos="0.084685 -0.019813 -0.029734" />
+    <site name="zygomaticus_maj_l-P2" pos="0.080048 -0.003869 -0.037557" />
+    <site name="zygomaticus_maj_l-P3" pos="0.072116 0.004146 -0.049368" />
+    <site name="zygomaticus_maj_l-P4" pos="0.060785 0.017899 -0.059125" />
+    <site name="dep_septi_nasi_l-P1" pos="0.100194 -0.002027 -0.002372" />
+    <site name="dep_septi_nasi_l-P2" pos="0.100942 -0.007029 -0.003650" />
+    <site name="orbi_oris_mar_sup_l-P1" pos="0.102286 -0.006889 -0.002331" />
+    <site name="orbi_oris_mar_sup_l-P2" pos="0.099601 -0.007027 -0.012864" />
+    <site name="orbi_oris_mar_sup_l-P3" pos="0.093249 -0.010444 -0.023926" />
+    <site name="orbi_oris_mar_sup_l-P4" pos="0.087925 -0.020430 -0.029128" />
+    <site name="orbi_oris_labi_sup_l-P1" pos="0.104491 -0.015383 -0.002491" />
+    <site name="orbi_oris_labi_sup_l-P2" pos="0.101398 -0.015322 -0.012480" />
+    <site name="orbi_oris_labi_sup_l-P3" pos="0.097797 -0.016129 -0.020969" />
+    <site name="orbi_oris_labi_sup_l-P4" pos="0.088335 -0.020313 -0.029217" />
+    <site name="risorius_l-P1" pos="0.049532 -0.005961 -0.049987" />
+    <site name="risorius_l-P2" pos="0.064888 -0.010859 -0.042685" />
+    <site name="risorius_l-P3" pos="0.077350 -0.020693 -0.036674" />
+    <site name="risorius_l-P4" pos="0.087085 -0.021458 -0.030067" />
+    <site name="bucinator_sup_l-P1" pos="0.091499 -0.018146 -0.025350" />
+    <site name="bucinator_sup_l-P2" pos="0.080449 -0.017787 -0.030686" />
+    <site name="bucinator_sup_l-P3" pos="0.064330 -0.012725 -0.034504" />
+    <site name="bucinator_sup_l-P4" pos="0.049339 -0.006918 -0.033093" />
+    <site name="bucinator_inf_l-P4" pos="0.050323 -0.011726 -0.032225" />
+    <site name="masseteris_int_l-P1" pos="0.028740 0.023778 -0.062938" />
+    <site name="masseteris_sup_l-P1" pos="0.054713 0.012819 -0.058327" />
+    <site name="temporalis_ant_l-P1" pos="0.039744 0.090254 -0.065493" />
+    <site name="temporalis_ant_l-P2" pos="0.045407 0.070393 -0.063688" />
+    <site name="temporalis_post_l-P1" pos="-0.014324 0.065218 -0.076210" />
+    <site name="temporalis_post_l-P2" pos="0.006748 0.053853 -0.071304" />
+    <site name="ptery_lat_sup_l-P1" pos="0.044388 0.028064 -0.028496" />
+    <site name="ptery_lat_inf_l-P1" pos="0.040952 0.011389 -0.025033" />
+    <site name="ptery_med_sup_l-P1" pos="0.049962 0.005832 -0.022655" />
+    <site name="ptery_med_inf_l-P1" pos="0.038973 0.010458 -0.023629" />
+    <site name="eye_rect_sup_l-P1" pos="0.046583 0.043200 -0.018020" />
+    <site name="eye_rect_inf_l-P1" pos="0.045808 0.038207 -0.018183" />
+    <site name="eye_rect_med_l-P1" pos="0.046828 0.040995 -0.016098" />
+    <site name="eye_rect_lat_l-P1" pos="0.046261 0.040727 -0.021094" />
+    <site name="eye_obli_sup_l-P1" pos="0.047535 0.043452 -0.016403" />
+    <site name="eye_obli_sup_l-P2" pos="0.080326 0.055998 -0.016400" />
+    <site name="eye_obli_inf_l-P1" pos="0.079405 0.036330 -0.014000" />
+    <site name="digastric_post_l-P1" pos="-0.007540 0.011675 -0.050943" />
+    <site name="stylohyoid_lat_l-P1" pos="0.008547 0.000657 -0.041692" />
+    <site name="stylohyoid_med_l-P1" pos="0.009000 0.001000 -0.042000" />
+    <site name="stern_mast_l-P2" pos="-0.007833 0.008121 -0.057435" />
+    <site name="cleid_mast_l-P2" pos="-0.007833 0.008121 -0.057435" />
+    <site name="cleid_occ_l-P2" pos="-0.031565 0.025287 -0.062544" />
+    <site name="long_cap_sklc4_l-P5" pos="0.009780 0.012613 -0.007430" />
+    <site name="splen_cap_sklc6_l-P2" pos="-0.059602 0.019076 -0.042132" />
+    <site name="splen_cap_sklthx_l-P2" pos="-0.037794 0.010879 -0.047474" />
+    <site name="rectcap_post_maj_l-P2" pos="-0.048746 0.004910 -0.023000" />
+    <site name="rectcap_post_min_l-P2" pos="-0.050598 0.003328 -0.013032" />
+    <site name="obl_cap_sup_l-P2" pos="-0.047755 0.005868 -0.031456" />
+    <site name="rectcap_ant_l-P2" pos="0.006915 0.011885 -0.009539" />
+    <site name="rectcap_lat_l-P2" pos="-0.007765 0.007139 -0.039316" />
+    <site name="trap_cl_l-P2" pos="-0.075522 0.020369 -0.009477" />
+    <site name="semi_cap_sklc5_l-P2" pos="-0.072766 0.019916 -0.018000" />
+    <site name="semi_cap_sklthx_l-P2" pos="-0.075721 0.019950 -0.011100" />
+    <site name="longissi_cap_sklc6_l-P2" pos="-0.012000 0.012000 -0.061000" />
+    <site name="longissi_cap_sklt2_l-P3" pos="-0.012000 0.012000 -0.061000" />
+  </body>
+</mujoco>

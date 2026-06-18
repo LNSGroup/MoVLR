@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="MuJoCo Full Body Model">
+  
+
+  <compiler inertiafromgeom="auto" angle="radian" balanceinertia="true" boundmass="0.001" boundinertia="0.001">
+    <lengthrange inttotal="50" useexisting="true"></lengthrange>
+  </compiler>
+   <option>
+      <flag contact="enable" gravity="enable"/>
+  </option>
+  <default>
+    <joint limited="true" damping="1e-2" armature="1e-2" stiffness="0"></joint>
+    <geom rgba="0.8 0.6 0.4 1" margin="0.001"></geom>
+    <site size="0.001"></site>
+    <tendon width="0.005" rgba="0.95 0.3 0.3 1" limited="false"></tendon>
+    <default class="muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" scale="200"></muscle>
+    </default>
+    <default class="skin">
+      <geom type="capsule" rgba="0.8 0.7 .5 .0" contype="1" conaffinity="1" condim="3" margin="0.0001" group="1"/>
+    </default>
+    <default class="coll">
+      <geom type="capsule" group="1" contype="1" conaffinity="0" condim="3" rgba="0.8 0.7 .5 0.2" margin="0.001" material="skin"/>
+    </default>
+    <default class="collision">
+        <!-- User parameter for geoms is used to identify collision types -->
+      <geom material="collision" contype="1" conaffinity="0"/>
+    </default>
+    <default class="motor">
+      <general gear="100" ctrllimited='true' ctrlrange='-1 1.'></general>
+    </default>
+    <default class="wrap">
+        <geom rgba=".5 .5 .9 1" group="3" contype="0" conaffinity="0"/>
+    </default>
+    <default class="hip">
+      <joint limited="true" damping="1.0" armature="1e-2" stiffness="0"/>
+    </default>
+    <default class="knee">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0"/>
+    </default>
+    <default class="ankle">
+      <joint limited="true" damping="0.1" armature="1e-2" stiffness="0"/>
+    </default>
+    <default class="toe">
+      <joint limited="true" damping="0.05" armature="1e-2" stiffness="0"/>
+    </default>
+    <default class="shoulder">
+      <joint limited="true" damping="1.0" armature="1e-4" stiffness="0"/>
+    </default>
+    <default class="elbow">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0"/>
+    </default>
+    <default class="hand">
+      <joint limited="true" damping="0.05" armature="1e-4" stiffness="0"/>
+    </default>
+    <default class="spine">
+      <joint limited="true" damping="0.2" armature="1e-4" stiffness="0"/>
+    </default>
+  </default>
+  <size njmax="1000" nconmax="400" nuser_jnt="1"></size>
+  <visual>
+    <quality shadowsize="2048"/>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    <map znear="0.01"/>
+  </visual>
+  
+  <worldbody>
+    <geom name="floor" pos="0 0 0" size="10 1 0.125" type="plane" condim="3" rgba="1 1 1 1" material="grid_vis"></geom>
+    <body name="pelvis" pos="0 0 0.95" quat="0.7071067811865475 0.7071067811865475 0.0 0.0">
+      <joint name="pelvis_tz" type="slide" pos="0 0 0" axis="       0        0        1" limited="true" range="      -3        3" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_ty" type="slide" pos="0 0 0" axis="       0        1        0" limited="true" range="      -1        2" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_tx" type="slide" pos="0 0 0" axis="       1        0        0" limited="false" range="      -5        5" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_tilt" type="hinge" pos="0 0 0" axis="       0        0        1" limited="true" range=" -1.5708   1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_list" type="hinge" pos="0 0 0" axis="       1        0        0" limited="true" range=" -1.5708   1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_rotation" type="hinge" pos="0 0 0" axis="       0        1        0" limited="true" range=" -1.5708   1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      
+      <include file="Body/Body_Leg_r.xml"/>
+      <include file="Body/Body_Leg_l.xml"/>
+      <include file="Body/Body_Torso_Simple.xml"/>
+      <camera name="pelvis_camera" pos="5 2 5" euler="-0.5 0.7 0.3" mode="track"></camera>
+    </body>
+  </worldbody>
+
+  <include file="Asset/Asset_Lowerbody.xml"/>
+  <include file="Asset/Asset_Torso.xml"/>
+  <include file="Asset/Asset_Upperbody.xml"/>
+  <include file="Asset/Asset_Others.xml"/>
+
+  <!-- <include file="Tendon/Tendon_Leg_r.xml"/>
+  <include file="Tendon/Tendon_Leg_l.xml"/>
+  <include file="Tendon/Tendon_Arm_r.xml"/>
+  <include file="Tendon/Tendon_Arm_l.xml"/>
+  <include file="Tendon/Tendon_Torso.xml"/>
+
+  <include file="Muscle/Muscle_Leg_r.xml"/>
+  <include file="Muscle/Muscle_Leg_l.xml"/>
+  <include file="Muscle/Muscle_Arm_r.xml"/>
+  <include file="Muscle/Muscle_Arm_l.xml"/>
+  <include file="Muscle/Muscle_Torso.xml"/> -->
+
+  <include file="Equality/Equality_Lowerbody.xml"/>
+  <include file="Equality/Equality_Upperbody.xml"/>
+  <include file="Equality/Equality_Torso.xml"/>
+
+   <actuator>
+
+    <general name="hip_flexion_r" joint="hip_flexion_r" class="motor"></general>
+    <general name="hip_adduction_r" joint="hip_adduction_r" class="motor"></general>
+    <general name="hip_rotation_r" joint="hip_rotation_r" class="motor"></general>
+    <general name="knee_angle_r" joint="knee_angle_r" class="motor"></general>
+    <general name="ankle_angle_r" joint="ankle_angle_r" gear="150" ctrllimited='true' ctrlrange='-1 1.'></general>
+    <general name="subtalar_angle_r" joint="subtalar_angle_r" gear="30" ctrllimited='true' ctrlrange='-1 1.'></general>
+    <general name="mtp_angle_r" joint="mtp_angle_r" gear="30" ctrllimited='true' ctrlrange='-1 1.'></general>
+
+    <general name="hip_flexion_l" joint="hip_flexion_l" class="motor"></general>
+    <general name="hip_adduction_l" joint="hip_adduction_l" class="motor"></general>
+    <general name="hip_rotation_l" joint="hip_rotation_l" class="motor"></general>
+    <general name="knee_angle_l" joint="knee_angle_l" class="motor"></general>
+    <general name="ankle_angle_l" joint="ankle_angle_l" gear="150" ctrllimited='true' ctrlrange='-1 1.'></general>
+    <general name="subtalar_angle_l" joint="subtalar_angle_l" gear="30" ctrllimited='true' ctrlrange='-1 1.'></general>
+    <general name="mtp_angle_l" joint="mtp_angle_l" gear="30" ctrllimited='true' ctrlrange='-1 1.'></general>
+
+    <!-- <general name="sternoclavicular_r2_r" joint="sternoclavicular_r2_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="sternoclavicular_r3_r" joint="sternoclavicular_r3_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrotscap_r3_r" joint="unrotscap_r3_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrotscap_r2_r" joint="unrotscap_r2_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="acromioclavicular_r2_r" joint="acromioclavicular_r2_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="acromioclavicular_r3_r" joint="acromioclavicular_r3_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="acromioclavicular_r1_r" joint="acromioclavicular_r1_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrothum_r1_r" joint="unrothum_r1_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrothum_r3_r" joint="unrothum_r3_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrothum_r2_r" joint="unrothum_r2_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general> -->
+    <general name="elv_angle_r" joint="elv_angle_r"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="shoulder_elv_r" joint="shoulder_elv_r"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <!-- <general name="shoulder1_r2_r" joint="shoulder1_r2_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general> -->
+    <general name="shoulder_rot_r" joint="shoulder_rot_r"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="elbow_flexion_r" joint="elbow_flexion_r"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="pro_sup_r" joint="pro_sup_r"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="deviation_r" joint="deviation_r"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="flexion_r" joint="flexion_r"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <!-- <general name="wrist_hand_r1_r" joint="wrist_hand_r1_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="wrist_hand_r3_r" joint="wrist_hand_r3_r" gear="150" ctrllimited='true' ctrlrange='-1 1'></general> -->
+    
+    <!-- <general name="sternoclavicular_r2_l" joint="sternoclavicular_r2_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="sternoclavicular_r3_l" joint="sternoclavicular_r3_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrotscap_r3_l" joint="unrotscap_r3_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrotscap_r2_l" joint="unrotscap_r2_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="acromioclavicular_r2_l" joint="acromioclavicular_r2_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="acromioclavicular_r3_l" joint="acromioclavicular_r3_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="acromioclavicular_r1_l" joint="acromioclavicular_r1_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrothum_r1_l" joint="unrothum_r1_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrothum_r3_l" joint="unrothum_r3_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="unrothum_r2_l" joint="unrothum_r2_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general> -->
+    <general name="elv_angle_l" joint="elv_angle_l"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="shoulder_elv_l" joint="shoulder_elv_l"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <!-- <general name="shoulder1_r2_l" joint="shoulder1_r2_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general> -->
+    <general name="shoulder_rot_l" joint="shoulder_rot_l"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="elbow_flexion_l" joint="elbow_flexion_l"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="pro_sup_l" joint="pro_sup_l"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="deviation_l" joint="deviation_l"  ctrllimited='true' ctrlrange='-1 1'></general>
+    <general name="flexion_l" joint="flexion_l" ctrllimited='true' ctrlrange='-1 1'></general>
+    <!-- <general name="wrist_hand_r1_l" joint="wrist_hand_r1_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general> -->
+    <!-- <general name="wrist_hand_r3_l" joint="wrist_hand_r3_l" gear="150" ctrllimited='true' ctrlrange='-1 1'></general> -->
+   
+    
+  </actuator>
+
+</mujoco>

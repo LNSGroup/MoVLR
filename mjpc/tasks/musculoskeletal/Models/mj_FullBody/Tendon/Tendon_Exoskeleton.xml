@@ -1,0 +1,28 @@
+<mujoco>
+    <tendon>
+        <spatial name="upper_leg_spring_left" limited="true" range="0. 0.001">
+            <site site="upper_leg_spring_left_exo"></site>
+            <site site="upper_leg_spring_left_human"></site>
+        </spatial>
+        <spatial name="upper_leg_spring_right" limited="true" range="0. 0.001">
+            <site site="upper_leg_spring_right_exo"></site>
+            <site site="upper_leg_spring_right_human"></site>
+        </spatial>
+        <spatial name="lower_leg_spring_left" limited="true" range="0. 0.001">
+            <site site="lower_leg_spring_left_exo"></site>
+            <site site="lower_leg_spring_left_human"></site>
+        </spatial>
+        <spatial name="lower_leg_spring_right" limited="true" range="0. 0.001">
+            <site site="lower_leg_spring_right_exo"></site>
+            <site site="lower_leg_spring_right_human"></site>
+        </spatial>
+    </tendon>
+
+    <sensor>
+        <tendonlimitfrc tendon="upper_leg_spring_left" />
+        <tendonlimitfrc tendon="upper_leg_spring_right" />
+        <tendonlimitfrc tendon="lower_leg_spring_left" />
+        <tendonlimitfrc tendon="lower_leg_spring_right" />
+    </sensor>
+
+</mujoco>

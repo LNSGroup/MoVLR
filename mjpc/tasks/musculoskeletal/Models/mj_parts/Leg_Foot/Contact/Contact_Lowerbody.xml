@@ -1,0 +1,52 @@
+<mujoco>
+  <contact>
+    <exclude body1="femur_r" body2="pelvis"/>
+    <exclude body1="femur_r" body2="abdomen"/>
+    <exclude body1="femur_r" body2="tibia_r"/>
+    <exclude body1="femur_r" body2="patella_r"/>
+    <exclude body1="tibia_r" body2="patella_r"/>
+    <exclude body1="talus_r" body2="midfoot_r"/>
+    <exclude body1="tibia_r" body2="midfoot_r"/>
+    <exclude body1="tibia_r" body2="calcn_r"/>
+    <exclude body1="metatarsal_1_r" body2="metatarsal_2_r"/>
+    <exclude body1="metatarsal_2_r" body2="metatarsal_3_r"/>
+    <exclude body1="metatarsal_3_r" body2="metatarsal_4_r"/>
+    <exclude body1="metatarsal_4_r" body2="metatarsal_5_r"/>
+    <exclude body1="digits_1_prox_r" body2="digits_2_prox_r"/>
+    <exclude body1="digits_2_prox_r" body2="digits_3_prox_r"/>
+    <exclude body1="digits_3_prox_r" body2="digits_4_prox_r"/>
+    <exclude body1="digits_4_prox_r" body2="digits_5_prox_r"/>
+    <exclude body1="digits_1_prox_r" body2="metatarsal_2_r"/>
+    <exclude body1="digits_3_prox_r" body2="metatarsal_2_r"/>
+    <exclude body1="digits_4_prox_r" body2="metatarsal_3_r"/>
+    <exclude body1="digits_5_prox_r" body2="metatarsal_4_r"/>
+    <exclude body1="digits_3_prox_r" body2="digits_4_mid_r"/>
+    <exclude body1="digits_4_prox_r" body2="digits_5_mid_r"/>
+    <exclude body1="digits_5_prox_r" body2="digits_4_mid_r"/>
+    
+    <exclude body1="femur_l" body2="pelvis"/>
+    <exclude body1="femur_l" body2="abdomen"/>
+    <exclude body1="femur_l" body2="tibia_l"/>
+    <exclude body1="femur_l" body2="patella_l"/>
+    <exclude body1="tibia_l" body2="patella_l"/>
+    <exclude body1="talus_l" body2="midfoot_l"/>
+    <exclude body1="tibia_l" body2="midfoot_l"/>
+    <exclude body1="tibia_l" body2="calcn_l"/>
+    <exclude body1="metatarsal_1_l" body2="metatarsal_2_l"/>
+    <exclude body1="metatarsal_2_l" body2="metatarsal_3_l"/>
+    <exclude body1="metatarsal_3_l" body2="metatarsal_4_l"/>
+    <exclude body1="metatarsal_4_l" body2="metatarsal_5_l"/>
+    <exclude body1="digits_1_prox_l" body2="digits_2_prox_l"/>
+    <exclude body1="digits_2_prox_l" body2="digits_3_prox_l"/>
+    <exclude body1="digits_3_prox_l" body2="digits_4_prox_l"/>
+    <exclude body1="digits_4_prox_l" body2="digits_5_prox_l"/>
+    <exclude body1="digits_1_prox_l" body2="metatarsal_2_l"/>
+    <exclude body1="digits_3_prox_l" body2="metatarsal_2_l"/>
+    <exclude body1="digits_4_prox_l" body2="metatarsal_3_l"/>
+    <exclude body1="digits_5_prox_l" body2="metatarsal_4_l"/>
+    <exclude body1="digits_3_prox_l" body2="digits_4_mid_l"/>
+    <exclude body1="digits_4_prox_l" body2="digits_5_mid_l"/>
+    <exclude body1="digits_5_prox_l" body2="digits_4_mid_l"/>
+
+  </contact>
+</mujoco> 

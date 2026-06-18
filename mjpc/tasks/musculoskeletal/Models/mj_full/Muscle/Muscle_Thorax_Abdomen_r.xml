@@ -1,0 +1,133 @@
+<mujoco>
+    <actuator>
+        <muscle name="PECM1_r" lengthrange="0.096 0.129" force="408.800" tendon="PECM1_r_tendon" class="torso_muscle" />
+        <muscle name="PECM2_r" lengthrange="0.143 0.189" force="683.200" tendon="PECM2_r_tendon" class="torso_muscle" />
+        <muscle name="PECM3_r" lengthrange="0.180 0.235" force="571.200" tendon="PECM3_r_tendon" class="torso_muscle" />
+        <muscle name="PECMIN_r" lengthrange="0.121 0.156" force="429.800" tendon="PECMIN_r_tendon" class="torso_muscle" />
+        <muscle name="subclavius_r" lengthrange="0.01 1" force="0.001" tendon="subclavius_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="SerrAnt1_r" lengthrange="0.088 0.122" force="96.294" tendon="SerrAnt1_r_tendon" class="torso_muscle"  />
+        <muscle name="SerrAnt2_r" lengthrange="0.088 0.122" force="117.587" tendon="SerrAnt2_r_tendon" class="torso_muscle"  />
+        <muscle name="SerrAnt3_r" lengthrange="0.142 0.196" force="240.704" tendon="SerrAnt3_r_tendon" class="torso_muscle"  />
+        <muscle name="SerrAnt4_r" lengthrange="0.142 0.196" force="214.857" tendon="SerrAnt4_r_tendon" class="torso_muscle"  />
+        <muscle name="SerrAnt5_r" lengthrange="0.142 0.196" force="75.247" tendon="SerrAnt5_r_tendon" class="torso_muscle"  />
+        <muscle name="SerrAnt6_r" lengthrange="0.142 0.196" force="195.557" tendon="SerrAnt6_r_tendon" class="torso_muscle"  />
+        <muscle name="SerrAnt7_r" lengthrange="0.174 0.243" force="154.227" tendon="SerrAnt7_r_tendon" class="torso_muscle"  />
+        <muscle name="SerrAnt8_r" lengthrange="0.174 0.243" force="105.037" tendon="SerrAnt8_r_tendon" class="torso_muscle"  />
+        <muscle name="SerrAnt9_r" lengthrange="0.174 0.243" force="76.860" tendon="SerrAnt9_r_tendon" class="torso_muscle"  />
+        <muscle name="ExtIC_IS1_1_r" lengthrange="0.023 0.029" force="251.778" tendon="ExtIC_IS1_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS1_3_r" lengthrange="0.018 0.023" force="193.937" tendon="ExtIC_IS1_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS1_5_r" lengthrange="0.029 0.038" force="90.363" tendon="ExtIC_IS1_5_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS2_1_r" lengthrange="0.017 0.022" force="225.806" tendon="ExtIC_IS2_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS2_3_r" lengthrange="0.019 0.025" force="170.943" tendon="ExtIC_IS2_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS2_5_r" lengthrange="0.031 0.038" force="170.943" tendon="ExtIC_IS2_5_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS2_7_r" lengthrange="0.031 0.041" force="97.281" tendon="ExtIC_IS2_7_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS3_1_r" lengthrange="0.021 0.027" force="229.113" tendon="ExtIC_IS3_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS3_3_r" lengthrange="0.019 0.025" force="171.698" tendon="ExtIC_IS3_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS3_5_r" lengthrange="0.021 0.027" force="171.698" tendon="ExtIC_IS3_5_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS3_7_r" lengthrange="0.031 0.042" force="126.755" tendon="ExtIC_IS3_7_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS4_1_r" lengthrange="0.023 0.028" force="226.450" tendon="ExtIC_IS4_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS4_3_r" lengthrange="0.019 0.025" force="168.485" tendon="ExtIC_IS4_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS4_5_r" lengthrange="0.020 0.027" force="168.485" tendon="ExtIC_IS4_5_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS4_7_r" lengthrange="0.031 0.040" force="136.690" tendon="ExtIC_IS4_7_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS5_1_r" lengthrange="0.024 0.029" force="218.117" tendon="ExtIC_IS5_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS5_3_r" lengthrange="0.021 0.029" force="161.382" tendon="ExtIC_IS5_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS5_5_r" lengthrange="0.024 0.033" force="161.382" tendon="ExtIC_IS5_5_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS5_7_r" lengthrange="0.032 0.041" force="112.067" tendon="ExtIC_IS5_7_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS6_1_r" lengthrange="0.021 0.026" force="199.607" tendon="ExtIC_IS6_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS6_3_r" lengthrange="0.022 0.029" force="147.016" tendon="ExtIC_IS6_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS6_5_r" lengthrange="0.023 0.030" force="147.016" tendon="ExtIC_IS6_5_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS6_7_r" lengthrange="0.028 0.037" force="114.439" tendon="ExtIC_IS6_7_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS7_1_r" lengthrange="0.028 0.034" force="171.717" tendon="ExtIC_IS7_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS7_3_r" lengthrange="0.026 0.035" force="125.987" tendon="ExtIC_IS7_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS7_5_r" lengthrange="0.028 0.037" force="125.987" tendon="ExtIC_IS7_5_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS7_7_r" lengthrange="0.027 0.035" force="109.059" tendon="ExtIC_IS7_7_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS8_1_r" lengthrange="0.035 0.042" force="139.605" tendon="ExtIC_IS8_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS8_3_r" lengthrange="0.024 0.033" force="102.086" tendon="ExtIC_IS8_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS8_5_r" lengthrange="0.025 0.033" force="102.086" tendon="ExtIC_IS8_5_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS8_7_r" lengthrange="0.021 0.028" force="94.044" tendon="ExtIC_IS8_7_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS9_1_r" lengthrange="0.029 0.035" force="150.889" tendon="ExtIC_IS9_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS9_3_r" lengthrange="0.025 0.033" force="110.013" tendon="ExtIC_IS9_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS9_5_r" lengthrange="0.030 0.040" force="110.013" tendon="ExtIC_IS9_5_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS10_1_r" lengthrange="0.043 0.051" force="123.689" tendon="ExtIC_IS10_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS10_3_r" lengthrange="0.037 0.048" force="89.944" tendon="ExtIC_IS10_3_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS11_1_r" lengthrange="0.033 0.040" force="53.674" tendon="ExtIC_IS11_1_r_tendon" class="torso_muscle" />
+        <muscle name="ExtIC_IS11_3_r" lengthrange="0.032 0.041" force="38.937" tendon="ExtIC_IS11_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS1_1_r" lengthrange="0.019 0.025" force="52.839" tendon="IntIC_IS1_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS1_3_r" lengthrange="0.028 0.037" force="40.700" tendon="IntIC_IS1_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS1_5_r" lengthrange="0.066 0.084" force="18.964" tendon="IntIC_IS1_5_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS2_1_r" lengthrange="0.017 0.023" force="68.434" tendon="IntIC_IS2_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS2_3_r" lengthrange="0.025 0.034" force="51.807" tendon="IntIC_IS2_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS2_5_r" lengthrange="0.037 0.049" force="51.807" tendon="IntIC_IS2_5_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS2_7_r" lengthrange="0.031 0.040" force="29.483" tendon="IntIC_IS2_7_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS3_1_r" lengthrange="0.019 0.025" force="91.513" tendon="IntIC_IS3_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS3_3_r" lengthrange="0.020 0.027" force="68.580" tendon="IntIC_IS3_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS3_5_r" lengthrange="0.032 0.042" force="68.580" tendon="IntIC_IS3_5_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS3_7_r" lengthrange="0.039 0.050" force="50.629" tendon="IntIC_IS3_7_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS4_1_r" lengthrange="0.020 0.025" force="109.542" tendon="IntIC_IS4_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS4_3_r" lengthrange="0.029 0.038" force="81.502" tendon="IntIC_IS4_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS4_5_r" lengthrange="0.038 0.051" force="81.502" tendon="IntIC_IS4_5_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS4_7_r" lengthrange="0.025 0.031" force="66.122" tendon="IntIC_IS4_7_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS5_1_r" lengthrange="0.021 0.026" force="128.418" tendon="IntIC_IS5_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS5_3_r" lengthrange="0.031 0.041" force="95.015" tendon="IntIC_IS5_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS5_5_r" lengthrange="0.038 0.051" force="95.015" tendon="IntIC_IS5_5_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS5_7_r" lengthrange="0.023 0.029" force="65.981" tendon="IntIC_IS5_7_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS6_1_r" lengthrange="0.018 0.023" force="148.643" tendon="IntIC_IS6_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS6_3_r" lengthrange="0.030 0.040" force="109.480" tendon="IntIC_IS6_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS6_5_r" lengthrange="0.037 0.050" force="109.480" tendon="IntIC_IS6_5_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS6_7_r" lengthrange="0.020 0.023" force="85.220" tendon="IntIC_IS6_7_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS7_1_r" lengthrange="0.020 0.025" force="115.412" tendon="IntIC_IS7_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS7_3_r" lengthrange="0.033 0.043" force="84.677" tendon="IntIC_IS7_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS7_5_r" lengthrange="0.034 0.046" force="84.677" tendon="IntIC_IS7_5_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS7_7_r" lengthrange="0.018 0.025" force="70.364" tendon="IntIC_IS7_7_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS8_1_r" lengthrange="0.020 0.026" force="114.784" tendon="IntIC_IS8_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS8_3_r" lengthrange="0.032 0.043" force="83.936" tendon="IntIC_IS8_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS8_5_r" lengthrange="0.033 0.044" force="83.936" tendon="IntIC_IS8_5_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS8_7_r" lengthrange="0.020 0.026" force="72.301" tendon="IntIC_IS8_7_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS9_1_r" lengthrange="0.018 0.022" force="141.856" tendon="IntIC_IS9_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS9_3_r" lengthrange="0.024 0.031" force="103.427" tendon="IntIC_IS9_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS9_5_r" lengthrange="0.026 0.033" force="103.427" tendon="IntIC_IS9_5_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS10_1_r" lengthrange="0.027 0.034" force="163.200" tendon="IntIC_IS10_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS10_3_r" lengthrange="0.033 0.042" force="118.676" tendon="IntIC_IS10_3_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS11_1_r" lengthrange="0.019 0.026" force="97.761" tendon="IntIC_IS11_1_r_tendon" class="torso_muscle" />
+        <muscle name="IntIC_IS11_3_r" lengthrange="0.030 0.038" force="70.921" tendon="IntIC_IS11_3_r_tendon" class="torso_muscle" />
+        <muscle name="subcostales_R3R5_r" lengthrange="0.01 1" force="0.001" tendon="subcostales_R3R5_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="subcostales_R4R6_r" lengthrange="0.01 1" force="0.001" tendon="subcostales_R4R6_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="subcostales_R5R7_r" lengthrange="0.01 1" force="0.001" tendon="subcostales_R5R7_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="subcostales_R8R10_r" lengthrange="0.01 1" force="0.001" tendon="subcostales_R8R10_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="subcostales_R9R11_r" lengthrange="0.01 1" force="0.001" tendon="subcostales_R9R11_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="subcostales_R10R12_r" lengthrange="0.01 1" force="0.001" tendon="subcostales_R10R12_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="trans_thox_R2_r" lengthrange="0.01 1" force="0.001" tendon="trans_thox_R2_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="trans_thox_R3_r" lengthrange="0.01 1" force="0.001" tendon="trans_thox_R3_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="trans_thox_R4_r" lengthrange="0.01 1" force="0.001" tendon="trans_thox_R4_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="trans_thox_R5_r" lengthrange="0.01 1" force="0.001" tendon="trans_thox_R5_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="trans_thox_R6_r" lengthrange="0.01 1" force="0.001" tendon="trans_thox_R6_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="rect_abd_r" lengthrange="0.310 0.400" force="705.913" tendon="rect_abd_r_tendon" class="torso_muscle" />
+        <muscle name="EO_R5_r" lengthrange="0.090 0.101" force="186.945" tendon="EO_R5_r_tendon" class="torso_muscle" />
+        <muscle name="EO_R6_r" lengthrange="0.130 0.143" force="633.126" tendon="EO_R6_r_tendon" class="torso_muscle" />
+        <muscle name="EO_R7_r" lengthrange="0.169 0.195" force="526.818" tendon="EO_R7_r_tendon" class="torso_muscle" />
+        <muscle name="EO_R8_r" lengthrange="0.208 0.242" force="231.361" tendon="EO_R8_r_tendon" class="torso_muscle" />
+        <muscle name="EO_R9_r" lengthrange="0.242 0.278" force="706.147" tendon="EO_R9_r_tendon" class="torso_muscle" />
+        <muscle name="EO_R10_r" lengthrange="0.110 0.133" force="125.580" tendon="EO_R10_r_tendon" class="torso_muscle" />
+        <muscle name="EO_R11_r" lengthrange="0.067 0.089" force="102.571" tendon="EO_R11_r_tendon" class="torso_muscle" />
+        <muscle name="EO_R12_r" lengthrange="0.059 0.077" force="47.266" tendon="EO_R12_r_tendon" class="torso_muscle" />
+        <muscle name="IO1_r" lengthrange="0.107 0.123" force="449.081" tendon="IO1_r_tendon" class="torso_muscle" />
+        <muscle name="IO2_r" lengthrange="0.126 0.141" force="462.301" tendon="IO2_r_tendon" class="torso_muscle" />
+        <muscle name="IO3_r" lengthrange="0.140 0.161" force="122.046" tendon="IO3_r_tendon" class="torso_muscle" />
+        <muscle name="IO4_r" lengthrange="0.104 0.133" force="426.769" tendon="IO4_r_tendon" class="torso_muscle" />
+        <muscle name="IO5_r" lengthrange="0.092 0.121" force="425.390" tendon="IO5_r_tendon" class="torso_muscle" />
+        <muscle name="IO6_r" lengthrange="0.076 0.103" force="227.188" tendon="IO6_r_tendon" class="torso_muscle" />
+        <muscle name="TR1_r" lengthrange="0.099 0.121" force="160.000" tendon="TR1_r_tendon" class="torso_muscle" />
+        <muscle name="TR2_r" lengthrange="0.227 0.271" force="63.000" tendon="TR2_r_tendon" class="torso_muscle" />
+        <muscle name="TR3_r" lengthrange="0.189 0.233" force="63.000" tendon="TR3_r_tendon" class="torso_muscle" />
+        <muscle name="TR4_r" lengthrange="0.192 0.236" force="63.000" tendon="TR4_r_tendon" class="torso_muscle" />
+        <muscle name="TR5_r" lengthrange="0.128 0.150" force="190.000" tendon="TR5_r_tendon" class="torso_muscle" />
+        <muscle name="pyramidalis_r" lengthrange="0.01 1" force="0.001" tendon="pyramidalis_r_tendon" class="torso_muscle" group="1" />
+        <muscle name="QL_post_I_2-L4_r" lengthrange="0.025 0.032" force="21.023" tendon="QL_post_I_2-L4_r_tendon" class="torso_muscle" />
+        <muscle name="QL_post_I_2-L3_r" lengthrange="0.050 0.065" force="13.983" tendon="QL_post_I_2-L3_r_tendon" class="torso_muscle" />
+        <muscle name="QL_post_I_2-L2_r" lengthrange="0.070 0.081" force="8.727" tendon="QL_post_I_2-L2_r_tendon" class="torso_muscle" />
+        <muscle name="QL_post_I_3-L1_r" lengthrange="0.099 0.124" force="12.812" tendon="QL_post_I_3-L1_r_tendon" class="torso_muscle" />
+        <muscle name="QL_ant_I_3-12_1_r" lengthrange="0.105 0.135" force="8.826" tendon="QL_ant_I_3-12_1_r_tendon" class="torso_muscle"  />
+        <muscle name="QL_ant_I_3-12_2_r" lengthrange="0.098 0.126" force="5.851" tendon="QL_ant_I_3-12_2_r_tendon" class="torso_muscle"  />
+        <muscle name="QL_ant_I_3-12_3_r" lengthrange="0.080 0.106" force="6.743" tendon="QL_ant_I_3-12_3_r_tendon" class="torso_muscle"  />
+    </actuator>
+</mujoco>

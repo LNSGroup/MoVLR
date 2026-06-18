@@ -1,0 +1,58 @@
+<mujoco>
+    <asset>
+        
+        <mesh name="femur_r_mesh" file="../Geometry/femur_r.obj" scale="1 1 1"/>
+        <mesh name="tibia_r_mesh" file="../Geometry/tibia_r.obj" scale="1 1 1"/>
+        <mesh name="fibula_r_mesh" file="../Geometry/fibula_r.obj" scale="1 1 1"/>
+        <mesh name="talus_r_mesh" file="../Geometry/talus_r.obj" scale="1 1 1"/>
+        <mesh name="calcn_r_mesh" file="../Geometry/calcn_r.obj" scale="1 1 1"/>
+        <mesh name="midfoot_r_mesh" file="../Geometry/midfoot_r.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_1_r_mesh" file="../Geometry/metatarsal_1_r.obj" scale="1 1 1"/>
+        <mesh name="toe_1_prox_r_mesh" file="../Geometry/toe_1_prox_r.obj" scale="1 1 1"/>
+        <mesh name="toe_1_dist_r_mesh" file="../Geometry/toe_1_dist_r.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_2_r_mesh" file="../Geometry/metatarsal_2_r.obj" scale="1 1 1"/>
+        <mesh name="toe_2_prox_r_mesh" file="../Geometry/toe_2_prox_r.obj" scale="1 1 1"/>
+        <mesh name="toe_2_mid_r_mesh" file="../Geometry/toe_2_mid_r.obj" scale="1 1 1"/>
+        <mesh name="toe_2_dist_r_mesh" file="../Geometry/toe_2_dist_r.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_3_r_mesh" file="../Geometry/metatarsal_3_r.obj" scale="1 1 1"/>
+        <mesh name="toe_3_prox_r_mesh" file="../Geometry/toe_3_prox_r.obj" scale="1 1 1"/>
+        <mesh name="toe_3_mid_r_mesh" file="../Geometry/toe_3_mid_r.obj" scale="1 1 1"/>
+        <mesh name="toe_3_dist_r_mesh" file="../Geometry/toe_3_dist_r.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_4_r_mesh" file="../Geometry/metatarsal_4_r.obj" scale="1 1 1"/>
+        <mesh name="toe_4_prox_r_mesh" file="../Geometry/toe_4_prox_r.obj" scale="1 1 1"/>
+        <mesh name="toe_4_mid_r_mesh" file="../Geometry/toe_4_mid_r.obj" scale="1 1 1"/>
+        <mesh name="toe_4_dist_r_mesh" file="../Geometry/toe_4_dist_r.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_5_r_mesh" file="../Geometry/metatarsal_5_r.obj" scale="1 1 1"/>
+        <mesh name="toe_5_prox_r_mesh" file="../Geometry/toe_5_prox_r.obj" scale="1 1 1"/>
+        <mesh name="toe_5_mid_r_mesh" file="../Geometry/toe_5_mid_r.obj" scale="1 1 1"/>
+        <mesh name="toe_5_dist_r_mesh" file="../Geometry/toe_5_dist_r.obj" scale="1 1 1"/>
+        <mesh name="patella_r_mesh" file="../Geometry/patella_r.obj" scale="1 1 1"/>
+        
+        <mesh name="femur_l_mesh" file="../Geometry/femur_l.obj" scale="1 1 1"/>
+        <mesh name="tibia_l_mesh" file="../Geometry/tibia_l.obj" scale="1 1 1"/>
+        <mesh name="fibula_l_mesh" file="../Geometry/fibula_l.obj" scale="1 1 1"/>
+        <mesh name="talus_l_mesh" file="../Geometry/talus_l.obj" scale="1 1 1"/>
+        <mesh name="calcn_l_mesh" file="../Geometry/calcn_l.obj" scale="1 1 1"/>
+        <mesh name="midfoot_l_mesh" file="../Geometry/midfoot_l.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_1_l_mesh" file="../Geometry/metatarsal_1_l.obj" scale="1 1 1"/>
+        <mesh name="toe_1_prox_l_mesh" file="../Geometry/toe_1_prox_l.obj" scale="1 1 1"/>
+        <mesh name="toe_1_dist_l_mesh" file="../Geometry/toe_1_dist_l.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_2_l_mesh" file="../Geometry/metatarsal_2_l.obj" scale="1 1 1"/>
+        <mesh name="toe_2_prox_l_mesh" file="../Geometry/toe_2_prox_l.obj" scale="1 1 1"/>
+        <mesh name="toe_2_mid_l_mesh" file="../Geometry/toe_2_mid_l.obj" scale="1 1 1"/>
+        <mesh name="toe_2_dist_l_mesh" file="../Geometry/toe_2_dist_l.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_3_l_mesh" file="../Geometry/metatarsal_3_l.obj" scale="1 1 1"/>
+        <mesh name="toe_3_prox_l_mesh" file="../Geometry/toe_3_prox_l.obj" scale="1 1 1"/>
+        <mesh name="toe_3_mid_l_mesh" file="../Geometry/toe_3_mid_l.obj" scale="1 1 1"/>
+        <mesh name="toe_3_dist_l_mesh" file="../Geometry/toe_3_dist_l.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_4_l_mesh" file="../Geometry/metatarsal_4_l.obj" scale="1 1 1"/>
+        <mesh name="toe_4_prox_l_mesh" file="../Geometry/toe_4_prox_l.obj" scale="1 1 1"/>
+        <mesh name="toe_4_mid_l_mesh" file="../Geometry/toe_4_mid_l.obj" scale="1 1 1"/>
+        <mesh name="toe_4_dist_l_mesh" file="../Geometry/toe_4_dist_l.obj" scale="1 1 1"/>
+        <mesh name="metatarsal_5_l_mesh" file="../Geometry/metatarsal_5_l.obj" scale="1 1 1"/>
+        <mesh name="toe_5_prox_l_mesh" file="../Geometry/toe_5_prox_l.obj" scale="1 1 1"/>
+        <mesh name="toe_5_mid_l_mesh" file="../Geometry/toe_5_mid_l.obj" scale="1 1 1"/>
+        <mesh name="toe_5_dist_l_mesh" file="../Geometry/toe_5_dist_l.obj" scale="1 1 1"/>
+        <mesh name="patella_l_mesh" file="../Geometry/patella_l.obj" scale="1 1 1"/>
+    </asset>
+</mujoco> 

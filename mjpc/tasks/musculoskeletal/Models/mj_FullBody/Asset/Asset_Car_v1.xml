@@ -1,0 +1,15 @@
+<mujoco>
+    <asset>
+        <mesh name="base_link" file="Geometry/car_v1/base_link.STL"/>
+        <mesh name="left_side" file="Geometry/car_v1/left_side.STL"/>
+        <mesh name="left_wheel" file="Geometry/car_v1/left_wheel.STL"/>
+        <mesh name="right_side" file="Geometry/car_v1/right_side.STL"/>
+        <mesh name="right_wheel" file="Geometry/car_v1/right_wheel.STL"/>
+        <mesh name="left_handler" file="Geometry/car_v1/left_handler.STL"/>
+        <mesh name="left_side1" file="Geometry/car_v1/left_side1.STL"/>
+        <mesh name="left_bar" file="Geometry/car_v1/left_bar.STL"/>
+        <mesh name="right_handler" file="Geometry/car_v1/right_handler.STL"/>
+        <mesh name="right_side1" file="Geometry/car_v1/right_side1.STL"/>
+        <mesh name="right_bar" file="Geometry/car_v1/right_bar.STL"/>
+    </asset>
+</mujoco>

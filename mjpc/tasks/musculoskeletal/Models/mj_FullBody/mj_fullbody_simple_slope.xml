@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="MuJoCo Full Body Model">
+  <compiler inertiafromgeom="auto" angle="radian" balanceinertia="true" boundmass="0.001" boundinertia="0.001">
+    <lengthrange inttotal="50" useexisting="true"></lengthrange>
+  </compiler>
+   <option>
+      <flag contact="enable" gravity="enable"/>
+  </option>
+  <default>
+    <joint limited="true" damping="1e-2" armature="1e-2" stiffness="0"></joint>
+    <geom rgba="0.8 0.6 0.4 1" margin="0.001"></geom>
+    <site size="0.001"></site>
+    <tendon width="0.005" rgba="0.95 0.3 0.3 1" limited="false"></tendon>
+    <default class="muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" scale="200"></muscle>
+    </default>
+    <default class="collision">
+        <!-- User parameter for geoms is used to identify collision types -->
+      <geom material="collision" contype="1" conaffinity="0"/>
+    </default>
+     
+    <default class="skin">
+      <geom type="capsule" rgba="0.8 0.7 .5 .2" contype="1" conaffinity="1" condim="3" margin="0.0001" group="1"/>
+    </default>
+    <default class="coll">
+      <geom type="capsule" group="1" contype="1" conaffinity="0" condim="3" rgba="0.8 0.7 .5 0.2" margin="0.001" material="skin"/>
+    </default>
+    <default class="wrap">
+        <geom rgba=".5 .5 .9 1" group="3" contype="0" conaffinity="0"/>
+    </default>
+    <default class="hip">
+      <joint limited="true" damping="1.0" armature="1e-2" stiffness="0"/>
+    </default>
+    <default class="knee">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0"/>
+    </default>
+    <default class="ankle">
+      <joint limited="true" damping="0.1" armature="1e-2" stiffness="0"/>
+    </default>
+    <default class="toe">
+      <joint limited="true" damping="0.05" armature="1e-2" stiffness="0"/>
+    </default>
+    <default class="shoulder">
+      <joint limited="true" damping="1.0" armature="1e-4" stiffness="0"/>
+    </default>
+    <default class="elbow">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0"/>
+    </default>
+    <default class="hand">
+      <joint limited="true" damping="0.05" armature="1e-4" stiffness="0"/>
+    </default>
+    <default class="spine">
+      <joint limited="true" damping="0.2" armature="1e-4" stiffness="0"/>
+    </default>
+  </default>
+  <size njmax="1000" nconmax="400" nuser_jnt="1"></size>
+  <visual>
+    <quality shadowsize="2048"/>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    <map znear="0.01"/>
+    <global offwidth="1920" offheight="1080"/>
+    <!-- <rgba actuator="0.97 0.61 0.60 1" actuatorpositive="1 0 0 1" /> -->
+  </visual>
+  
+  <worldbody>
+    <!-- <geom name="floor" pos="0 0 0" size="100 1 0.125" type="plane" condim="3" rgba="1 1 1 1" material="grid_vis"></geom> -->
+    <!-- <geom name="ground" type="hfield" hfield="hf_stair" size="0 0 1" pos="0 0 0" quat="1 0 0 0" material="gray_plane"/> -->
+    <geom conaffinity="1" condim="3" hfield="mytilted" material="plane" name="floor" pos="7.5 0 0" rgba="0.8 0.9 0.8 1" type="hfield" />
+    <body name="pelvis" pos="0 0 0.95" quat="0.7071067811865475 0.7071067811865475 0.0 0.0">
+      <joint name="pelvis_tz" type="slide" pos="0 0 0" axis="       0        0        1" limited="true" range="      -3        3" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_ty" type="slide" pos="0 0 0" axis="       0        1        0" limited="true" range="      -1        2" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_tx" type="slide" pos="0 0 0" axis="       1        0        0" limited="false" range="      -5        5" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_tilt" type="hinge" pos="0 0 0" axis="       0        0        1" limited="true" range=" -1.5708   1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_list" type="hinge" pos="0 0 0" axis="       1        0        0" limited="true" range=" -1.5708   1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_rotation" type="hinge" pos="0 0 0" axis="       0        1        0" limited="true" range=" -1.5708   1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      
+      <include file="Body/Body_Leg_r.xml"/>
+      <include file="Body/Body_Leg_l.xml"/>
+      <include file="Body/Body_Torso_Simple.xml"/>
+      <camera name="pelvis_camera" pos="2.25 1 2.25" euler="-0.5 0.7 0.3" mode="track"></camera>
+    </body>
+  </worldbody>
+
+  <include file="Asset/Asset_Lowerbody.xml"/>
+  <include file="Asset/Asset_Torso.xml"/>
+  <include file="Asset/Asset_Upperbody.xml"/>
+  <include file="Asset/Asset_Others.xml"/>
+
+  <include file="Tendon/Tendon_Leg_r.xml"/>
+  <include file="Tendon/Tendon_Leg_l.xml"/>
+  <include file="Tendon/Tendon_Arm_r.xml"/>
+  <include file="Tendon/Tendon_Arm_l.xml"/>
+  <include file="Tendon/Tendon_Torso.xml"/>
+
+  <include file="Muscle/Muscle_Leg_r.xml"/>
+  <include file="Muscle/Muscle_Leg_l.xml"/>
+  <include file="Muscle/Muscle_Arm_r.xml"/>
+  <include file="Muscle/Muscle_Arm_l.xml"/>
+  <include file="Muscle/Muscle_Torso.xml"/>
+
+  <include file="Equality/Equality_Lowerbody.xml"/>
+  <include file="Equality/Equality_Upperbody.xml"/>
+  <include file="Equality/Equality_Torso.xml"/>
+
+  <contact>
+    <exclude body1="femur_r" body2="pelvis"/>
+    <exclude body1="femur_r" body2="tibia_r"/>
+    <exclude body1="femur_r" body2="patella_r"/>
+    <exclude body1="tibia_r" body2="patella_r"/>
+
+    <exclude body1="tibia_r" body2="talus_r"/>
+    <exclude body1="tibia_r" body2="calcn_r"/>
+    <exclude body1="talus_r" body2="calcn_r"/>
+    <exclude body1="calcn_r" body2="toes_r"/>
+
+
+    <exclude body1="femur_l" body2="pelvis"/>
+    <exclude body1="femur_l" body2="tibia_l"/>
+    <exclude body1="femur_l" body2="patella_l"/>
+    <exclude body1="tibia_l" body2="patella_l"/>
+    <exclude body1="tibia_l" body2="calcn_l"/>
+    <exclude body1="tibia_l" body2="talus_l"/>
+    <exclude body1="talus_l" body2="calcn_l"/>
+    <exclude body1="calcn_l" body2="toes_l"/>
+</contact>
+
+<!-- <keyframe> <key qpos='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'/></keyframe> -->
+  <!-- <include file="../../walk2/keyframes/walk_simple.xml" /> -->
+
+</mujoco>

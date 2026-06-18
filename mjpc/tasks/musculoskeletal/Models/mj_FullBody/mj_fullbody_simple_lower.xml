@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="MS_Human_700_Simple_Model">
+  <compiler inertiafromgeom="auto" angle="radian" boundmass="0.0001">
+    <lengthrange inttotal="50" useexisting="true"></lengthrange>
+  </compiler>
+  <option>
+    <flag contact="enable" gravity="enable" />
+  </option>
+  <default>
+    <joint limited="true" damping="1e-2" armature="1e-2" stiffness="0" solimplimit="0.9999 0.9999 0.001 0.5 2" range="-1 1"/>
+    <geom rgba="1 1 1 1" margin="0.001" />
+    <site size="0.002" group="3"/>
+    <tendon width="0.005" rgba="0.95 0.3 0.3 1" limited="false" />
+    <default class="muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" range="0.75 1.05" />
+    </default>
+    <default class="bone">
+      <geom rgba="0.9 0.7 0.5 1" contype="0" conaffinity="1" />
+    </default>
+    <default class="wrap">
+      <geom rgba="0.5 0.5 0.9 1" group="3" contype="0" conaffinity="0" mass="0"/>
+    </default>
+    <default class="hip">
+      <joint limited="true" damping="1.0" armature="1e-2" stiffness="0" />
+    </default>
+    <default class="knee">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0" />
+    </default>
+    <default class="ankle">
+      <joint limited="true" damping="0.1" armature="1e-2" stiffness="0" />
+    </default>
+    <default class="toe">
+      <joint limited="true" damping="0.05" armature="1e-2" stiffness="0" />
+    </default>
+    <default class="shoulder">
+      <joint limited="true" damping="1.0" armature="1e-4" stiffness="0" />
+    </default>
+    <default class="elbow">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0" />
+    </default>
+    <default class="hand">
+      <joint limited="true" damping="0.05" armature="1e-4" stiffness="0" />
+    </default>
+    <default class="spine">
+      <joint limited="true" damping="0.2" armature="1e-4" stiffness="0" />
+    </default>
+  </default>
+  <size memory="1000M" nuser_jnt="1"></size>
+  <visual>
+    <global offwidth="3840" offheight="2160"/>
+    <quality shadowsize="8192" offsamples="24"/>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1" />
+    <map znear="0.002" />
+  </visual>
+
+  <worldbody>
+    <geom name="floor" pos="0 0 0" size="10 1 0.1" type="plane" condim="3" rgba="1 1 1 1" material="MatPlane" />
+    <body name="pelvis" pos="0 0 0.95" quat="0.7071067811865475 0.7071067811865475 0.0 0.0">
+      <geom name="r_pelvis" type="mesh" mesh="r_pelvis" class="bone" />
+      <geom name="l_pelvis" type="mesh" mesh="l_pelvis" class="bone" />
+      <!-- <inertial pos="-0.0707 0 0" mass="11.777" fullinertia="0.1028 0.0871 0.0579 0 0 0" /> -->
+      
+      <joint name="pelvis_tz" type="slide" pos="0 0 0" axis="0 0 1" limited="true" range="-3 3" ref="0" armature="0" damping="0" stiffness="0" />
+      <joint name="pelvis_ty" type="slide" pos="0 0 0" axis="0 1 0" limited="true" range="-3 3" ref="0" armature="0" damping="0" stiffness="0" />
+      <joint name="pelvis_tx" type="slide" pos="0 0 0" axis="1 0 0" limited="false" range="-5 5" ref="0" armature="0" damping="0" stiffness="0" />
+      <joint name="pelvis_tilt" type="hinge" pos="0 0 0" axis="0 0 1" limited="true" range="-1.5708 1.5708" ref="0" armature="0" damping="0" stiffness="0" />
+      <joint name="pelvis_list" type="hinge" pos="0 0 0" axis="1 0 0" limited="true" range="-1.5708 1.5708" ref="0" armature="0" damping="0" stiffness="0" />
+      <joint name="pelvis_rotation" type="hinge" pos="0 0 0" axis="0 1 0" limited="true" range="-1.5708 1.5708" ref="0" armature="0" damping="0" stiffness="0" />
+
+      <include file="Body/Body_Leg_r.xml" />
+      <include file="Body/Body_Leg_l.xml" />
+      <include file="Body/Body_Torso_Simple.xml" />
+      <camera name="record_camera" pos="2 0.35 2" euler="-0.2 0.78 0.15" mode="track"/>
+    </body>
+  </worldbody>
+
+  <include file="Asset/Asset_Lowerbody.xml" />
+  <include file="Asset/Asset_Torso.xml" />
+  <include file="Asset/Asset_Upperbody.xml" />
+  <include file="Asset/Asset_Others.xml" />
+
+  <include file="Tendon/Tendon_Leg_r.xml" />
+  <include file="Tendon/Tendon_Leg_l.xml" />
+  <!-- <include file="Tendon/Tendon_Arm_r.xml" />
+  <include file="Tendon/Tendon_Arm_l.xml" />
+  <include file="Tendon/Tendon_Torso.xml" /> -->
+
+  <include file="Muscle/Muscle_Leg_r.xml" />
+  <include file="Muscle/Muscle_Leg_l.xml" />
+  <!-- <include file="Muscle/Muscle_Arm_r.xml" /> -->
+  <!-- <include file="Muscle/Muscle_Arm_l.xml" /> -->
+  <!-- <include file="Muscle/Muscle_Torso.xml" /> -->
+
+  <include file="Equality/Equality_Lowerbody.xml" />
+  <!-- <include file="Equality/Equality_Upperbody.xml" /> -->
+  <!-- <include file="Equality/Equality_Torso.xml" /> -->
+  <!-- <include file="Equality/Equality_Softfoot.xml" /> -->
+
+  <keyframe>
+    <key qpos='0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 -0.019 0.052 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 -0.019 0.052 0.0'/>
+  </keyframe>
+
+</mujoco>

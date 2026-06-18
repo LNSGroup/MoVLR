@@ -1,0 +1,13 @@
+<mujoco>
+    <asset>
+        <mesh name="base_link" file="Geometry/car_v2/base_link.STL" scale="1 1 1"/>
+        <mesh name="left_frame" file="Geometry/car_v2/left_frame.STL" scale="1 0.85 1"/>
+        <mesh name="left_handler" file="Geometry/car_v2/left_handler.STL" scale="1 1 1"/>
+        <mesh name="right_frame" file="Geometry/car_v2/right_frame.STL" scale="1 0.85 1"/>
+        <mesh name="right_handler" file="Geometry/car_v2/right_handler.STL" scale="1 1 1"/>
+        <mesh name="lf_wheel" file="Geometry/car_v2/lf_wheel.STL" scale="1 1 1"/>
+        <mesh name="rf_wheel" file="Geometry/car_v2/rf_wheel.STL" scale="1 1 1"/>
+        <mesh name="lb_wheel" file="Geometry/car_v2/lb_wheel.STL" scale="1 1 1"/>
+        <mesh name="rb_wheel" file="Geometry/car_v2/rb_wheel.STL" scale="1 1 1"/>
+    </asset>
+</mujoco>

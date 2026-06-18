@@ -1,0 +1,362 @@
+<mujoco>
+  <tendon>
+
+    <spatial name="FlexHal_l_tendon">
+      <site site="FlexHal_l-P1"/>
+      <site site="FlexHal_l-P2"/>
+      <site site="FlexHal_l-P3"/>
+      <site site="FlexHal_l-P4"/>
+      <site site="FlexHal_l-P5"/>
+      <geom geom="metatarsal_flexwrap_1_l" sidesite="FlexHal_l_metatarsal_flexwrap_1_l_sidesite"/>
+      <site site="FlexHal_l-P6"/>
+      <site site="FlexHal_l-P7"/>
+      <site site="FlexHal_l-P8"/>
+    </spatial>
+    <spatial name="ExtHal_l_tendon">
+      <site site="ExtHal_l-P1"/>
+      <site site="ExtHal_l-P2"/>
+      <site site="ExtHal_l-P3"/>
+      <site site="ExtHal_l-P4"/>
+      <site site="ExtHal_l-P5"/>
+      <site site="ExtHal_l-P6"/>
+      <site site="ExtHal_l-P7"/>
+      <site site="ExtHal_l-P8"/>
+    </spatial>
+    <spatial name="FlexDig_2_l_tendon">
+      <site site="FlexDig_2_l-P1"/>
+      <site site="FlexDig_2_l-P2"/>
+      <site site="FlexDig_2_l-P3"/>
+      <site site="FlexDig_2_l-P4"/>
+      <site site="FlexDig_2_l-P5"/>
+      <geom geom="metatarsal_flexwrap_2_l" sidesite="FlexDig_2_l_metatarsal_flexwrap_2_l_sidesite"/>
+      <site site="FlexDig_2_l-P6"/>
+      <site site="FlexDig_2_l-P7"/>
+      <site site="FlexDig_2_l-P8"/>
+    </spatial>
+    <spatial name="FlexDig_3_l_tendon">
+      <site site="FlexDig_3_l-P1"/>
+      <site site="FlexDig_3_l-P2"/>
+      <site site="FlexDig_3_l-P3"/>
+      <site site="FlexDig_3_l-P4"/>
+      <site site="FlexDig_3_l-P5"/>
+      <geom geom="metatarsal_flexwrap_3_l" sidesite="FlexDig_3_l_metatarsal_flexwrap_3_l_sidesite"/>
+      <site site="FlexDig_3_l-P6"/>
+      <site site="FlexDig_3_l-P7"/>
+      <site site="FlexDig_3_l-P8"/>
+    </spatial>
+    <spatial name="FlexDig_4_l_tendon">
+      <site site="FlexDig_4_l-P1"/>
+      <site site="FlexDig_4_l-P2"/>
+      <site site="FlexDig_4_l-P3"/>
+      <site site="FlexDig_4_l-P4"/>
+      <site site="FlexDig_4_l-P5"/>
+      <geom geom="metatarsal_flexwrap_4_l" sidesite="FlexDig_4_l_metatarsal_flexwrap_4_l_sidesite"/>
+      <site site="FlexDig_4_l-P6"/>
+      <site site="FlexDig_4_l-P7"/>
+      <site site="FlexDig_4_l-P8"/>
+    </spatial>
+    <spatial name="FlexDig_5_l_tendon">
+      <site site="FlexDig_5_l-P1"/>
+      <site site="FlexDig_5_l-P2"/>
+      <site site="FlexDig_5_l-P3"/>
+      <site site="FlexDig_5_l-P4"/>
+      <site site="FlexDig_5_l-P5"/>
+      <geom geom="metatarsal_flexwrap_5_l" sidesite="FlexDig_5_l_metatarsal_flexwrap_5_l_sidesite"/>
+      <site site="FlexDig_5_l-P6"/>
+      <site site="FlexDig_5_l-P7"/>
+      <site site="FlexDig_5_l-P8"/>
+    </spatial>
+    <spatial name="ExtDig_2_l_tendon">
+      <site site="ExtDig_2_l-P1"/>
+      <site site="ExtDig_2_l-P2"/>
+      <site site="ExtDig_2_l-P3"/>
+      <site site="ExtDig_2_l-P4"/>
+      <site site="ExtDig_2_l-P5"/>
+      <site site="ExtDig_2_l-P6"/>
+      <site site="ExtDig_2_l-P7"/>
+      <site site="ExtDig_2_l-P8"/>
+      <site site="ExtDig_2_l-P9"/>
+    </spatial>
+    <spatial name="ExtDig_3_l_tendon">
+      <site site="ExtDig_3_l-P1"/>
+      <site site="ExtDig_3_l-P2"/>
+      <site site="ExtDig_3_l-P3"/>
+      <site site="ExtDig_3_l-P4"/>
+      <site site="ExtDig_3_l-P5"/>
+      <site site="ExtDig_3_l-P6"/>
+      <site site="ExtDig_3_l-P7"/>
+      <site site="ExtDig_3_l-P8"/>
+      <site site="ExtDig_3_l-P9"/>
+    </spatial>
+    <spatial name="ExtDig_4_l_tendon">
+      <site site="ExtDig_4_l-P1"/>
+      <site site="ExtDig_4_l-P2"/>
+      <site site="ExtDig_4_l-P3"/>
+      <site site="ExtDig_4_l-P4"/>
+      <site site="ExtDig_4_l-P5"/>
+      <site site="ExtDig_4_l-P6"/>
+      <site site="ExtDig_4_l-P7"/>
+      <site site="ExtDig_4_l-P8"/>
+      <site site="ExtDig_4_l-P9"/>
+    </spatial>
+    <spatial name="ExtDig_5_l_tendon">
+      <site site="ExtDig_5_l-P1"/>
+      <site site="ExtDig_5_l-P2"/>
+      <site site="ExtDig_5_l-P3"/>
+      <site site="ExtDig_5_l-P4"/>
+      <site site="ExtDig_5_l-P5"/>
+      <site site="ExtDig_5_l-P6"/>
+      <site site="ExtDig_5_l-P7"/>
+      <site site="ExtDig_5_l-P8"/>
+      <site site="ExtDig_5_l-P9"/>
+    </spatial>
+    <spatial name="ExtDig_Brev_2_l_tendon">
+      <site site="ExtDig_Brev_2_l-P1"/>
+      <geom geom="midfoot_wrap_l" sidesite="ExtDig_Brev_2_l_midfoot_wrap_l_sidesite"/>
+      <site site="ExtDig_Brev_2_l-P2"/>
+      <site site="ExtDig_Brev_2_l-P3"/>
+      <site site="ExtDig_Brev_2_l-P4"/>
+      <site site="ExtDig_Brev_2_l-P5"/>
+      <site site="ExtDig_Brev_2_l-P6"/>
+    </spatial>
+    <spatial name="ExtDig_Brev_3_l_tendon">
+      <site site="ExtDig_Brev_3_l-P1"/>
+      <geom geom="midfoot_wrap_l" sidesite="ExtDig_Brev_3_l_midfoot_wrap_l_sidesite"/>
+      <site site="ExtDig_Brev_3_l-P2"/>
+      <site site="ExtDig_Brev_3_l-P3"/>
+      <site site="ExtDig_Brev_3_l-P4"/>
+      <site site="ExtDig_Brev_3_l-P5"/>
+      <site site="ExtDig_Brev_3_l-P6"/>
+    </spatial>
+    <spatial name="ExtDig_Brev_4_l_tendon">
+      <site site="ExtDig_Brev_4_l-P1"/>
+      <geom geom="midfoot_wrap_l" sidesite="ExtDig_Brev_4_l_midfoot_wrap_l_sidesite"/>
+      <site site="ExtDig_Brev_4_l-P2"/>
+      <site site="ExtDig_Brev_4_l-P3"/>
+      <site site="ExtDig_Brev_4_l-P4"/>
+      <site site="ExtDig_Brev_4_l-P5"/>
+      <site site="ExtDig_Brev_4_l-P6"/>
+    </spatial>
+    <spatial name="ExtHal_Brev_l_tendon">
+      <site site="ExtHal_Brev_l-P1"/>
+      <geom geom="midfoot_wrap_l" sidesite="ExtHal_Brev_l_midfoot_wrap_l_sidesite"/>
+      <site site="ExtHal_Brev_l-P2"/>
+      <site site="ExtHal_Brev_l-P3"/>
+      <site site="ExtHal_Brev_l-P4"/>
+    </spatial>
+    <spatial name="FlexHal_Brev_Lat_l_tendon">
+      <site site="FlexHal_Brev_Lat_l-P1"/>
+      <site site="FlexHal_Brev_Lat_l-P2"/>
+      <site site="FlexHal_Brev_Lat_l-P3"/>
+      <geom geom="metatarsal_flexwrap_1_l" sidesite="FlexHal_Brev_Lat_l_metatarsal_flexwrap_1_l_sidesite"/>
+      <site site="FlexHal_Brev_Lat_l-P4"/>
+    </spatial>
+    <spatial name="FlexHal_Brev_Med_l_tendon">
+      <site site="FlexHal_Brev_Med_l-P1"/>
+      <site site="FlexHal_Brev_Med_l-P2"/>
+      <site site="FlexHal_Brev_Med_l-P3"/>
+      <geom geom="metatarsal_flexwrap_1_l" sidesite="FlexHal_Brev_Med_l_metatarsal_flexwrap_1_l_sidesite"/>
+      <site site="FlexHal_Brev_Med_l-P4"/>
+    </spatial>
+    <spatial name="FlexDig_Brev_2_l_tendon">
+      <site site="FlexDig_Brev_2_l-P1"/>
+      <geom geom="metatarsal_flexwrap_2_l" sidesite="FlexDig_Brev_2_l_metatarsal_flexwrap_2_l_sidesite"/>
+      <site site="FlexDig_Brev_2_l-P2"/>
+      <site site="FlexDig_Brev_2_l-P3"/>
+    </spatial>
+    <spatial name="FlexDig_Brev_3_l_tendon">
+      <site site="FlexDig_Brev_3_l-P1"/>
+      <geom geom="metatarsal_flexwrap_3_l" sidesite="FlexDig_Brev_3_l_metatarsal_flexwrap_3_l_sidesite"/>
+      <site site="FlexDig_Brev_3_l-P2"/>
+      <site site="FlexDig_Brev_3_l-P3"/>
+    </spatial>
+    <spatial name="FlexDig_Brev_4_l_tendon">
+      <site site="FlexDig_Brev_4_l-P1"/>
+      <geom geom="metatarsal_flexwrap_4_l" sidesite="FlexDig_Brev_4_l_metatarsal_flexwrap_4_l_sidesite"/>
+      <site site="FlexDig_Brev_4_l-P2"/>
+      <site site="FlexDig_Brev_4_l-P3"/>
+    </spatial>
+    <spatial name="FlexDig_Brev_5_l_tendon">
+      <site site="FlexDig_Brev_5_l-P1"/>
+      <geom geom="metatarsal_flexwrap_5_l" sidesite="FlexDig_Brev_5_l_metatarsal_flexwrap_5_l_sidesite"/>
+      <site site="FlexDig_Brev_5_l-P2"/>
+      <site site="FlexDig_Brev_5_l-P3"/>
+    </spatial>
+    <spatial name="QuadPlant_2_l_tendon">
+      <site site="QuadPlant_2_l-P1"/>
+      <site site="QuadPlant_2_l-P2"/>
+      <site site="QuadPlant_2_l-P3"/>
+      <geom geom="metatarsal_flexwrap_2_l" sidesite="FlexDig_Brev_2_l_metatarsal_flexwrap_2_l_sidesite"/>
+      <site site="QuadPlant_2_l-P4"/>
+      <site site="QuadPlant_2_l-P5"/>
+      <site site="QuadPlant_2_l-P6"/>
+    </spatial>
+    <spatial name="QuadPlant_3_l_tendon">
+      <site site="QuadPlant_3_l-P1"/>
+      <site site="QuadPlant_3_l-P2"/>
+      <site site="QuadPlant_3_l-P3"/>
+      <geom geom="metatarsal_flexwrap_3_l" sidesite="FlexDig_Brev_3_l_metatarsal_flexwrap_3_l_sidesite"/>
+      <site site="QuadPlant_3_l-P4"/>
+      <site site="QuadPlant_3_l-P5"/>
+      <site site="QuadPlant_3_l-P6"/>
+    </spatial>
+    <spatial name="QuadPlant_4_l_tendon">
+      <site site="QuadPlant_4_l-P1"/>
+      <site site="QuadPlant_4_l-P2"/>
+      <site site="QuadPlant_4_l-P3"/>
+      <geom geom="metatarsal_flexwrap_4_l" sidesite="FlexDig_Brev_4_l_metatarsal_flexwrap_4_l_sidesite"/>
+      <site site="QuadPlant_4_l-P4"/>
+      <site site="QuadPlant_4_l-P5"/>
+      <site site="QuadPlant_4_l-P6"/>
+    </spatial>
+    <spatial name="QuadPlant_5_l_tendon">
+      <site site="QuadPlant_5_l-P1"/>
+      <site site="QuadPlant_5_l-P2"/>
+      <site site="QuadPlant_5_l-P3"/>
+      <geom geom="metatarsal_flexwrap_5_l" sidesite="FlexDig_Brev_5_l_metatarsal_flexwrap_5_l_sidesite"/>
+      <site site="QuadPlant_5_l-P4"/>
+      <site site="QuadPlant_5_l-P5"/>
+      <site site="QuadPlant_5_l-P6"/>
+    </spatial>
+    <spatial name="ADMF_l_tendon">
+      <site site="ADMF_l-P1"/>
+      <site site="ADMF_l-P2"/>
+    </spatial>
+    <spatial name="FDMB_l_tendon">
+      <site site="FDMB_l-P1"/>
+      <geom geom="metatarsal_flexwrap_5_l" sidesite="FDMB_l_metatarsal_flexwrap_5_l_sidesite"/>
+      <site site="FDMB_l-P2"/>
+    </spatial>
+    <spatial name="LumFoot_2_l_tendon">
+      <site site="LumFoot_2_l-P1"/>
+      <site site="LumFoot_2_l-P2"/>
+      <geom geom="metatarsal_flexwrap_2_l" sidesite="FlexDig_Brev_2_l_metatarsal_flexwrap_2_l_sidesite"/>
+      <site site="LumFoot_2_l-P3"/>
+      <site site="LumFoot_2_l-P4"/>
+      <site site="LumFoot_2_l-P5"/>
+      <site site="LumFoot_2_l-P6"/>
+      <site site="LumFoot_2_l-P7"/>
+      <site site="LumFoot_2_l-P8"/>
+    </spatial>
+    <spatial name="LumFoot_3_l_tendon">
+      <site site="LumFoot_3_l-P1"/>
+      <site site="LumFoot_3_l-P2"/>
+      <geom geom="metatarsal_flexwrap_3_l" sidesite="FlexDig_Brev_3_l_metatarsal_flexwrap_3_l_sidesite"/>
+      <site site="LumFoot_3_l-P3"/>
+      <site site="LumFoot_3_l-P4"/>
+      <site site="LumFoot_3_l-P5"/>
+      <site site="LumFoot_3_l-P6"/>
+      <site site="LumFoot_3_l-P7"/>
+      <site site="LumFoot_3_l-P8"/>
+    </spatial>
+    <spatial name="LumFoot_4_l_tendon">
+      <site site="LumFoot_4_l-P1"/>
+      <site site="LumFoot_4_l-P2"/>
+      <!-- <geom geom="metatarsal_flexwrap_4_l" sidesite="FlexDig_Brev_4_l_metatarsal_flexwrap_4_l_sidesite"/> -->
+      <geom geom="metatarsal_flexwrap_4_l" />
+      <site site="LumFoot_4_l-P3"/>
+      <site site="LumFoot_4_l-P4"/>
+      <site site="LumFoot_4_l-P5"/>
+      <site site="LumFoot_4_l-P6"/>
+      <site site="LumFoot_4_l-P7"/>
+      <site site="LumFoot_4_l-P8"/>
+    </spatial>
+    <spatial name="LumFoot_5_l_tendon">
+      <site site="LumFoot_5_l-P1"/>
+      <site site="LumFoot_5_l-P2"/>
+      <geom geom="metatarsal_flexwrap_5_l" sidesite="FlexDig_Brev_5_l_metatarsal_flexwrap_5_l_sidesite"/>
+      <site site="LumFoot_5_l-P3"/>
+      <site site="LumFoot_5_l-P4"/>
+      <site site="LumFoot_5_l-P5"/>
+      <site site="LumFoot_5_l-P6"/>
+      <site site="LumFoot_5_l-P7"/>
+      <site site="LumFoot_5_l-P8"/>
+    </spatial>
+    <spatial name="PlaInt_3_l_tendon">
+      <site site="PlaInt_3_l-P1"/>
+      <geom geom="metatarsal_flexwrap_3_l" sidesite="FlexDig_Brev_3_l_metatarsal_flexwrap_3_l_sidesite"/>
+      <site site="PlaInt_3_l-P2"/>
+      <site site="PlaInt_3_l-P3"/>
+      <site site="PlaInt_3_l-P4"/>
+      <site site="PlaInt_3_l-P5"/>
+      <site site="PlaInt_3_l-P6"/>
+      <site site="PlaInt_3_l-P7"/>
+    </spatial>
+    <spatial name="PlaInt_4_l_tendon">
+      <site site="PlaInt_4_l-P1"/>
+      <geom geom="metatarsal_flexwrap_4_l" sidesite="FlexDig_Brev_4_l_metatarsal_flexwrap_4_l_sidesite"/>
+      <site site="PlaInt_4_l-P2"/>
+      <site site="PlaInt_4_l-P3"/>
+      <site site="PlaInt_4_l-P4"/>
+      <site site="PlaInt_4_l-P5"/>
+      <site site="PlaInt_4_l-P6"/>
+      <site site="PlaInt_4_l-P7"/>
+    </spatial>
+    <spatial name="PlaInt_5_l_tendon">
+      <site site="PlaInt_5_l-P1"/>
+      <geom geom="metatarsal_flexwrap_5_l" sidesite="FlexDig_Brev_5_l_metatarsal_flexwrap_5_l_sidesite"/>
+      <site site="PlaInt_5_l-P2"/>
+      <site site="PlaInt_5_l-P3"/>
+      <site site="PlaInt_5_l-P4"/>
+      <site site="PlaInt_5_l-P5"/>
+      <site site="PlaInt_5_l-P6"/>
+      <site site="PlaInt_5_l-P7"/>
+    </spatial>
+    <spatial name="DorInt_2_l_tendon">
+      <site site="DorInt_2_l-P1"/>
+      <geom geom="metatarsal_flexwrap_2_l" sidesite="FlexDig_Brev_2_l_metatarsal_flexwrap_2_l_sidesite"/>
+      <site site="DorInt_2_l-P2"/>
+      <site site="DorInt_2_l-P3"/>
+      <site site="DorInt_2_l-P4"/>
+      <site site="DorInt_2_l-P5"/>
+      <site site="DorInt_2_l-P6"/>
+      <site site="DorInt_2_l-P7"/>
+    </spatial>
+    <spatial name="DorInt_3_l_tendon">
+      <site site="DorInt_3_l-P1"/>
+      <geom geom="metatarsal_flexwrap_2_l" sidesite="FlexDig_Brev_2_l_metatarsal_flexwrap_2_l_sidesite"/>
+      <site site="DorInt_3_l-P2"/>
+      <site site="DorInt_3_l-P3"/>
+      <site site="DorInt_3_l-P4"/>
+      <site site="DorInt_3_l-P5"/>
+      <site site="DorInt_3_l-P6"/>
+      <site site="DorInt_3_l-P7"/>
+    </spatial>
+    <spatial name="DorInt_4_l_tendon">
+      <site site="DorInt_4_l-P1"/>
+      <geom geom="metatarsal_flexwrap_3_l" sidesite="FlexDig_Brev_3_l_metatarsal_flexwrap_3_l_sidesite"/>
+      <site site="DorInt_4_l-P2"/>
+      <site site="DorInt_4_l-P3"/>
+      <site site="DorInt_4_l-P4"/>
+      <site site="DorInt_4_l-P5"/>
+      <site site="DorInt_4_l-P6"/>
+      <site site="DorInt_4_l-P7"/>
+    </spatial>
+    <spatial name="DorInt_5_l_tendon">
+      <site site="DorInt_5_l-P1"/>
+      <geom geom="metatarsal_flexwrap_4_l" sidesite="FlexDig_Brev_4_l_metatarsal_flexwrap_4_l_sidesite"/>
+      <site site="DorInt_5_l-P2"/>
+      <site site="DorInt_5_l-P3"/>
+      <site site="DorInt_5_l-P4"/>
+      <site site="DorInt_5_l-P5"/>
+      <site site="DorInt_5_l-P6"/>
+      <site site="DorInt_5_l-P7"/>
+    </spatial>
+    <spatial name="AddHalTrans_l_tendon">
+      <site site="AddHalTrans_l-P1"/>
+      <geom geom="metatarsal_flexwrap_2_l" sidesite="AddHalTrans_l_metatarsal_flexwrap_2_l_sidesite"/>
+      <site site="AddHalTrans_l-P2"/>
+    </spatial>
+    <spatial name="AddHalOpp_l_tendon">
+      <site site="AddHalOpp_l-P1"/>
+      <geom geom="metatarsal_flexwrap_2_l" sidesite="AddHalOpp_l_metatarsal_flexwrap_2_l_sidesite"/>
+      <site site="AddHalOpp_l-P2"/>
+    </spatial>
+    <spatial name="AbdHal_l_tendon">
+      <site site="AbdHal_l-P1"/>
+      <geom geom="metatarsal_flexwrap_1_l" sidesite="AbdHal_l_metatarsal_flexwrap_1_l_sidesite"/>
+      <site site="AbdHal_l-P2"/>
+    </spatial>
+  </tendon>
+
+</mujoco>

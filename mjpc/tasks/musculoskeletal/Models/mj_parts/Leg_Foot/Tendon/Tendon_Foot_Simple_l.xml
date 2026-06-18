@@ -1,0 +1,116 @@
+<mujoco>
+  <tendon>
+
+    <spatial name="FlexHal_l_tendon">
+      <site site="FlexHal_l-P1"/>
+      <site site="FlexHal_l-P2"/>
+      <site site="FlexHal_l-P3"/>
+      <site site="FlexHal_l-P4"/>
+      <site site="FlexHal_l-P5"/>
+      <geom geom="metatarsal_flexwrap_1_l" sidesite="FlexHal_l_metatarsal_flexwrap_1_l_sidesite"/>
+      <site site="FlexHal_l-P6"/>
+      <site site="FlexHal_l-P7"/>
+      <site site="FlexHal_l-P8"/>
+    </spatial>
+    <spatial name="ExtHal_l_tendon">
+      <site site="ExtHal_l-P1"/>
+      <site site="ExtHal_l-P2"/>
+      <site site="ExtHal_l-P3"/>
+      <site site="ExtHal_l-P4"/>
+      <site site="ExtHal_l-P5"/>
+      <site site="ExtHal_l-P6"/>
+      <site site="ExtHal_l-P7"/>
+      <site site="ExtHal_l-P8"/>
+    </spatial>
+    <spatial name="FlexDig_2_l_tendon">
+      <site site="FlexDig_2_l-P1"/>
+      <site site="FlexDig_2_l-P2"/>
+      <site site="FlexDig_2_l-P3"/>
+      <site site="FlexDig_2_l-P4"/>
+      <site site="FlexDig_2_l-P5"/>
+      <geom geom="metatarsal_flexwrap_2_l" sidesite="FlexDig_2_l_metatarsal_flexwrap_2_l_sidesite"/>
+      <site site="FlexDig_2_l-P6"/>
+      <site site="FlexDig_2_l-P7"/>
+      <site site="FlexDig_2_l-P8"/>
+    </spatial>
+    <spatial name="FlexDig_3_l_tendon">
+      <site site="FlexDig_3_l-P1"/>
+      <site site="FlexDig_3_l-P2"/>
+      <site site="FlexDig_3_l-P3"/>
+      <site site="FlexDig_3_l-P4"/>
+      <site site="FlexDig_3_l-P5"/>
+      <geom geom="metatarsal_flexwrap_3_l" sidesite="FlexDig_3_l_metatarsal_flexwrap_3_l_sidesite"/>
+      <site site="FlexDig_3_l-P6"/>
+      <site site="FlexDig_3_l-P7"/>
+      <site site="FlexDig_3_l-P8"/>
+    </spatial>
+    <spatial name="FlexDig_4_l_tendon">
+      <site site="FlexDig_4_l-P1"/>
+      <site site="FlexDig_4_l-P2"/>
+      <site site="FlexDig_4_l-P3"/>
+      <site site="FlexDig_4_l-P4"/>
+      <site site="FlexDig_4_l-P5"/>
+      <geom geom="metatarsal_flexwrap_4_l" sidesite="FlexDig_4_l_metatarsal_flexwrap_4_l_sidesite"/>
+      <site site="FlexDig_4_l-P6"/>
+      <site site="FlexDig_4_l-P7"/>
+      <site site="FlexDig_4_l-P8"/>
+    </spatial>
+    <spatial name="FlexDig_5_l_tendon">
+      <site site="FlexDig_5_l-P1"/>
+      <site site="FlexDig_5_l-P2"/>
+      <site site="FlexDig_5_l-P3"/>
+      <site site="FlexDig_5_l-P4"/>
+      <site site="FlexDig_5_l-P5"/>
+      <geom geom="metatarsal_flexwrap_5_l" sidesite="FlexDig_5_l_metatarsal_flexwrap_5_l_sidesite"/>
+      <site site="FlexDig_5_l-P6"/>
+      <site site="FlexDig_5_l-P7"/>
+      <site site="FlexDig_5_l-P8"/>
+    </spatial>
+    <spatial name="ExtDig_2_l_tendon">
+      <site site="ExtDig_2_l-P1"/>
+      <site site="ExtDig_2_l-P2"/>
+      <site site="ExtDig_2_l-P3"/>
+      <site site="ExtDig_2_l-P4"/>
+      <site site="ExtDig_2_l-P5"/>
+      <site site="ExtDig_2_l-P6"/>
+      <site site="ExtDig_2_l-P7"/>
+      <site site="ExtDig_2_l-P8"/>
+      <site site="ExtDig_2_l-P9"/>
+    </spatial>
+    <spatial name="ExtDig_3_l_tendon">
+      <site site="ExtDig_3_l-P1"/>
+      <site site="ExtDig_3_l-P2"/>
+      <site site="ExtDig_3_l-P3"/>
+      <site site="ExtDig_3_l-P4"/>
+      <site site="ExtDig_3_l-P5"/>
+      <site site="ExtDig_3_l-P6"/>
+      <site site="ExtDig_3_l-P7"/>
+      <site site="ExtDig_3_l-P8"/>
+      <site site="ExtDig_3_l-P9"/>
+    </spatial>
+    <spatial name="ExtDig_4_l_tendon">
+      <site site="ExtDig_4_l-P1"/>
+      <site site="ExtDig_4_l-P2"/>
+      <site site="ExtDig_4_l-P3"/>
+      <site site="ExtDig_4_l-P4"/>
+      <site site="ExtDig_4_l-P5"/>
+      <site site="ExtDig_4_l-P6"/>
+      <site site="ExtDig_4_l-P7"/>
+      <site site="ExtDig_4_l-P8"/>
+      <site site="ExtDig_4_l-P9"/>
+    </spatial>
+    <spatial name="ExtDig_5_l_tendon">
+      <site site="ExtDig_5_l-P1"/>
+      <site site="ExtDig_5_l-P2"/>
+      <site site="ExtDig_5_l-P3"/>
+      <site site="ExtDig_5_l-P4"/>
+      <site site="ExtDig_5_l-P5"/>
+      <site site="ExtDig_5_l-P6"/>
+      <site site="ExtDig_5_l-P7"/>
+      <site site="ExtDig_5_l-P8"/>
+      <site site="ExtDig_5_l-P9"/>
+    </spatial>
+
+  </tendon>
+
+</mujoco>

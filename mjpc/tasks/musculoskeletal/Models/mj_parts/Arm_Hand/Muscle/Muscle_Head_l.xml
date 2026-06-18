@@ -1,0 +1,12 @@
+<mujoco>
+    <actuator>
+
+        <muscle name="eye_rect_sup_l" lengthrange="0.034 0.047" force="1.177" tendon="eye_rect_sup_l_tendon" class="torso_muscle"/>
+        <muscle name="eye_rect_inf_l" lengthrange="0.034 0.048" force="1.427" tendon="eye_rect_inf_l_tendon" class="torso_muscle"/>
+        <muscle name="eye_rect_med_l" lengthrange="0.031 0.043" force="1.574" tendon="eye_rect_med_l_tendon" class="torso_muscle"/>
+        <muscle name="eye_rect_lat_l" lengthrange="0.037 0.051" force="1.471" tendon="eye_rect_lat_l_tendon" class="torso_muscle"/>
+        <muscle name="eye_obli_sup_l" lengthrange="0.051 0.063" force="0.603" tendon="eye_obli_sup_l_tendon" class="torso_muscle"/>
+        <muscle name="eye_obli_inf_l" lengthrange="0.031 0.043" force="0.559" tendon="eye_obli_inf_l_tendon" class="torso_muscle"/>
+
+    </actuator>
+</mujoco>

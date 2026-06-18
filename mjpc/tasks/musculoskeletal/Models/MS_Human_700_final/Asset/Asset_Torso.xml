@@ -1,0 +1,56 @@
+<mujoco>
+    <asset>
+        <mesh name="lumbar5" file="../Geometry/lumbar5.stl" scale="1 1 1"></mesh>
+        <mesh name="lumbar4" file="../Geometry/lumbar4.stl" scale="1 1 1"></mesh>
+        <mesh name="lumbar3" file="../Geometry/lumbar3.stl" scale="1 1 1"></mesh>
+        <mesh name="lumbar2" file="../Geometry/lumbar2.stl" scale="1 1 1"></mesh>
+        <mesh name="lumbar1" file="../Geometry/lumbar1.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic12" file="../Geometry/thoracic12.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic11" file="../Geometry/thoracic11.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic10" file="../Geometry/thoracic10.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic9" file="../Geometry/thoracic9.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic8" file="../Geometry/thoracic8.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic7" file="../Geometry/thoracic7.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic6" file="../Geometry/thoracic6.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic5" file="../Geometry/thoracic5.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic4" file="../Geometry/thoracic4.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic3" file="../Geometry/thoracic3.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic2" file="../Geometry/thoracic2.stl" scale="1 1 1"></mesh>
+        <mesh name="thoracic1" file="../Geometry/thoracic1.stl" scale="1 1 1"></mesh>
+        <mesh name="rotatedcerv7" file="../Geometry/rotatedcerv7.stl" scale="1 1 1"></mesh>
+        <mesh name="cerv6" file="../Geometry/cerv6.stl" scale="1 1 1"></mesh>
+        <mesh name="cerv5" file="../Geometry/cerv5.stl" scale="1 1 1"></mesh>
+        <mesh name="cerv4" file="../Geometry/cerv4.stl" scale="1 1 1"></mesh>
+        <mesh name="cerv3" file="../Geometry/cerv3.stl" scale="1 1 1"></mesh>
+        <mesh name="cerv2" file="../Geometry/cerv2.stl" scale="1 1 1"></mesh>
+        <mesh name="cerv1" file="../Geometry/cerv1.stl" scale="1 1 1"></mesh>
+        <mesh name="jaw" file="../Geometry/jaw.stl" scale="1 1 1"></mesh>
+        <mesh name="skull" file="../Geometry/skull.stl" scale="1 1 1"></mesh>
+        <mesh name="Rib1R" file="../Geometry/Rib1R.obj" scale="1 1 1"></mesh>
+        <mesh name="Sternum" file="../Geometry/Sternum.obj" scale="1 1 1"></mesh>
+
+        <mesh name="Rib1L" file="../Geometry/Rib1L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib2R" file="../Geometry/Rib2R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib2L" file="../Geometry/Rib2L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib3R" file="../Geometry/Rib3R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib3L" file="../Geometry/Rib3L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib4R" file="../Geometry/Rib4R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib4L" file="../Geometry/Rib4L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib5R" file="../Geometry/Rib5R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib5L" file="../Geometry/Rib5L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib6R" file="../Geometry/Rib6R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib6L" file="../Geometry/Rib6L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib7R" file="../Geometry/Rib7R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib7L" file="../Geometry/Rib7L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib8R" file="../Geometry/Rib8R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib8L" file="../Geometry/Rib8L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib9R" file="../Geometry/Rib9R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib9L" file="../Geometry/Rib9L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib10R" file="../Geometry/Rib10R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib10L" file="../Geometry/Rib10L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib11R" file="../Geometry/Rib11R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib11L" file="../Geometry/Rib11L.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib12R" file="../Geometry/Rib12R.obj" scale="1 1 1"></mesh>
+        <mesh name="Rib12L" file="../Geometry/Rib12L.obj" scale="1 1 1"></mesh>
+    </asset>
+</mujoco> 

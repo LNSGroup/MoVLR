@@ -1,0 +1,13 @@
+<mujoco>
+    <asset>
+        <mesh name="HipBase" file="Geometry/exoskeleton/HipBase.stl" />
+        <mesh name="LeftHAA" file="Geometry/exoskeleton/LeftHAA.stl" scale="1.25 1 1"/>
+        <mesh name="UpperLeftLeg" file="Geometry/exoskeleton/UpperLeftLeg.stl" scale="1 1 1"/>
+        <mesh name="LowerLeftLeg" file="Geometry/exoskeleton/LowerLeftLeg.stl" scale="1 1 1"/>
+        <mesh name="LeftFoot" file="Geometry/exoskeleton/LeftFoot.stl" scale="1.5 1.5 1.35" />
+        <mesh name="RightHAA" file="Geometry/exoskeleton/RightHAA.stl" scale="1.25 1 1"/>
+        <mesh name="UpperRightLeg" file="Geometry/exoskeleton/UpperRightLeg.stl" scale="1 1 1"/>
+        <mesh name="LowerRightLeg" file="Geometry/exoskeleton/LowerRightLeg.stl" scale="1 1 1"/>
+        <mesh name="RightFoot" file="Geometry/exoskeleton/RightFoot.stl" scale="1.5 1.5 1.35" />
+    </asset>
+</mujoco>

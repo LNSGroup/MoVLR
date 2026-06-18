@@ -1,0 +1,6 @@
+<mujoco>
+    <equality>
+        <weld name="left_foot" body1="calcn_l" body2="ankle_plate_left" anchor="0 0 0"></weld>
+        <weld name="right_foot" body1="calcn_r" body2="ankle_plate_right" anchor="0 0 0"></weld>
+    </equality>
+</mujoco>

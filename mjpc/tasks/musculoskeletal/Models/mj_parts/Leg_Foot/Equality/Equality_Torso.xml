@@ -1,0 +1,18 @@
+<mujoco>
+    <equality>
+        
+        <!-- <joint name="L4_L5_IVDjnt_r3_con" joint1="L4_L5_IVDjnt_r3" joint2="lumbar_FE" active="true" polycoef="0 1.619 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L4_L5_IVD_rotjnt_r2_con" joint1="L4_L5_IVD_rotjnt_r2" joint2="lumbar_AR" active="true" polycoef="0 1.436 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L4_L5_IVD_bendjnt_r1_con" joint1="L4_L5_IVD_bendjnt_r1" joint2="lumbar_LB" active="true" polycoef="0 1.336 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L3_L4_IVDjnt_r3_con" joint1="L3_L4_IVDjnt_r3" joint2="lumbar_FE" active="true" polycoef="0 2.302 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L3_L4_IVD_rotjnt_r2_con" joint1="L3_L4_IVD_rotjnt_r2" joint2="lumbar_AR" active="true" polycoef="0 1.436 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L3_L4_IVD_bendjnt_r1_con" joint1="L3_L4_IVD_bendjnt_r1" joint2="lumbar_LB" active="true" polycoef="0 1.81 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L2_L3_IVDjnt_r3_con" joint1="L2_L3_IVDjnt_r3" joint2="lumbar_FE" active="true" polycoef="0 2.773 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L2_L3_IVD_rotjnt_r2_con" joint1="L2_L3_IVD_rotjnt_r2" joint2="lumbar_AR" active="true" polycoef="0 1.133 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L2_L3_IVD_bendjnt_r1_con" joint1="L2_L3_IVD_bendjnt_r1" joint2="lumbar_LB" active="true" polycoef="0 1.846 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L1_L2_IVDjnt_r3_con" joint1="L1_L2_IVDjnt_r3" joint2="lumbar_FE" active="true" polycoef="0 2.812 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L1_L2_IVD_rotjnt_r2_con" joint1="L1_L2_IVD_rotjnt_r2" joint2="lumbar_AR" active="true" polycoef="0 0.9822 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" />
+        <joint name="L1_L2_IVD_bendjnt_r1_con" joint1="L1_L2_IVD_bendjnt_r1" joint2="lumbar_LB" active="true" polycoef="0 1.387 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2" /> -->
+        
+    </equality>
+</mujoco>

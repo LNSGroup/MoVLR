@@ -1,0 +1,60 @@
+<mujoco>
+  <asset>
+    
+    <mesh name="FootModel_talus_r" file="Geometry/FootModel_talus_r.stl" scale="1 1 1"></mesh>
+    <mesh name="FootModel_calcn_r" file="Geometry/FootModel_calcn_r.stl" scale="1 1 1"></mesh>
+    <mesh name="FootModel_midfoot_r" file="Geometry/FootModel_midfoot_r.stl" scale="1 1 1"></mesh>
+    <mesh name="FootModel_forefoot_r" file="Geometry/FootModel_forefoot_r.stl" scale="1 1 1"></mesh>
+    <mesh name="r_toe_1" file="Geometry/r_toe_1.obj" scale="1 1 1"></mesh>
+    <mesh name="r_toe_2" file="Geometry/r_toe_2.obj" scale="1 1 1"></mesh>
+    <mesh name="r_toe_3" file="Geometry/r_toe_3.obj" scale="1 1 1"></mesh>
+    <mesh name="r_toe_4" file="Geometry/r_toe_4.obj" scale="1 1 1"></mesh>
+    <mesh name="r_toe_5" file="Geometry/r_toe_5.obj" scale="1 1 1"></mesh>
+    
+    <mesh name="FootModel_talus_l" file="Geometry/FootModel_talus_l.obj" scale="1 1 1"></mesh>
+    <mesh name="FootModel_calcn_l" file="Geometry/FootModel_calcn_l.obj" scale="1 1 1"></mesh>
+    <mesh name="FootModel_midfoot_l" file="Geometry/FootModel_midfoot_l.obj" scale="1 1 1"></mesh>
+    <mesh name="FootModel_forefoot_l" file="Geometry/FootModel_forefoot_l.obj" scale="1 1 1"></mesh>
+    <mesh name="l_toe_1" file="Geometry/l_toe_1.stl" scale="1 1 1"></mesh>
+    <mesh name="l_toe_2" file="Geometry/l_toe_2.stl" scale="1 1 1"></mesh>
+    <mesh name="l_toe_3" file="Geometry/l_toe_3.stl" scale="1 1 1"></mesh>
+    <mesh name="l_toe_4" file="Geometry/l_toe_4.stl" scale="1 1 1"></mesh>
+    <mesh name="l_toe_5" file="Geometry/l_toe_5.stl" scale="1 1 1"></mesh>
+    
+    <mesh name="r_pelvis" file="Geometry/r_pelvis.stl" scale="1 1 1"></mesh>
+    <mesh name="l_pelvis" file="Geometry/l_pelvis.stl" scale="1 1 1"></mesh>
+    <mesh name="sacrum" file="Geometry/sacrum.stl" scale="1 1 1"></mesh>
+    <mesh name="r_femur" file="Geometry/r_femur.stl" scale="1 1 1"></mesh>
+    <mesh name="r_tibia" file="Geometry/r_tibia.stl" scale="1 1 1"></mesh>
+    <mesh name="r_fibula" file="Geometry/r_fibula.stl" scale="1 1 1"></mesh>
+    <mesh name="r_talus" file="Geometry/r_talus.stl" scale="1 1 1"></mesh>
+    <mesh name="r_foot" file="Geometry/r_foot.stl" scale="1 1 1"></mesh>
+    <mesh name="r_bofoot" file="Geometry/r_bofoot.stl" scale="1 1 1"></mesh>
+    <mesh name="r_patella" file="Geometry/r_patella.stl" scale="1 1 1"></mesh>
+    <mesh name="l_femur" file="Geometry/l_femur.stl" scale="1 1 1"></mesh>
+    <mesh name="l_tibia" file="Geometry/l_tibia.stl" scale="1 1 1"></mesh>
+    <mesh name="l_fibula" file="Geometry/l_fibula.stl" scale="1 1 1"></mesh>
+    <mesh name="l_talus" file="Geometry/l_talus.stl" scale="1 1 1"></mesh>
+    <mesh name="l_foot" file="Geometry/l_foot.stl" scale="1 1 1"></mesh>
+    <mesh name="l_bofoot" file="Geometry/l_bofoot.stl" scale="1 1 1"></mesh>
+    <mesh name="l_patella" file="Geometry/l_patella.stl" scale="1 1 1"></mesh>
+    <mesh name="hat_spine" file="Geometry/hat_spine.stl" scale="1 1 1"></mesh>
+    <mesh name="hat_jaw" file="Geometry/hat_jaw.stl" scale="1 1 1"></mesh>
+    <mesh name="hat_skull" file="Geometry/hat_skull.stl" scale="1 1 1"></mesh>
+    <mesh name="hat_ribs_scap" file="Geometry/hat_ribs_scap.stl" scale="1 1 1"></mesh>
+    <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2" width="100" height="100"></texture>
+    <material name='collision' rgba="0.8 0.6 .4 1"/>
+    <material name="MatPlane" reflectance="0.0" texture="texplane" texrepeat="1 1" texuniform="true"></material>
+    
+    <texture type="skybox" builtin="gradient" rgb1="0.8 0.8 0.8" rgb2="0.5 0.5 0.5" width="512" height="512"/>
+    <texture name="plane" type="2d" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.3 0.4 0.5" width="10" height="10"/>
+    <material name="plane" texture="plane" texrepeat="5 5" reflectance="0.2"/>
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.1 0.2 0.3" rgb2="0.2 0.3 0.4" mark="edge" markrgb="0.2 0.3 0.4" width="300" height="300"/>
+    <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance="0.1"/>
+    <texture name="grid_vis" type="2d" builtin="checker" rgb1="0.7 0.7 0.7" rgb2="0.7 0.7 0.7" width="300" height="300"/>
+    <material name="grid_vis" texture="grid_vis" texrepeat="0.1 0.1" texuniform="true" reflectance="0.1"/>
+    
+
+  </asset>
+
+</mujoco>

@@ -1,0 +1,99 @@
+<mujoco>
+  <asset>
+    <mesh name="r_pelvis" file="../Geometry/r_pelvis.stl" scale="       1        1        1"></mesh>
+    <mesh name="l_pelvis" file="../Geometry/l_pelvis.stl" scale="       1        1        1"></mesh>
+    <mesh name="sacrum" file="../Geometry/sacrum.stl" scale="       1        1        1"></mesh>
+    <mesh name="r_femur" file="../Geometry/r_femur.stl" scale="       1        1        1"></mesh>
+    <mesh name="r_tibia" file="../Geometry/r_tibia.stl" scale="       1        1        1"></mesh>
+    <mesh name="r_fibula" file="../Geometry/r_fibula.stl" scale="       1        1        1"></mesh>
+    <mesh name="r_talus" file="../Geometry/r_talus.stl" scale="       1        1        1"></mesh>
+    <mesh name="r_foot" file="../Geometry/r_foot.stl" scale="       1        1        1"></mesh>
+    <mesh name="r_bofoot" file="../Geometry/r_bofoot.stl" scale="       1        1        1"></mesh>
+    <mesh name="r_patella" file="../Geometry/r_patella.stl" scale="       1        1        1"></mesh>
+    <mesh name="l_femur" file="../Geometry/l_femur.stl" scale="       1        1        1"></mesh>
+    <mesh name="l_tibia" file="../Geometry/l_tibia.stl" scale="       1        1        1"></mesh>
+    <mesh name="l_fibula" file="../Geometry/l_fibula.stl" scale="       1        1        1"></mesh>
+    <mesh name="l_talus" file="../Geometry/l_talus.stl" scale="       1        1        1"></mesh>
+    <mesh name="l_foot" file="../Geometry/l_foot.stl" scale="       1        1        1"></mesh>
+    <mesh name="l_bofoot" file="../Geometry/l_bofoot.stl" scale="       1        1        1"></mesh>
+    <mesh name="l_patella" file="../Geometry/l_patella.stl" scale="       1        1        1"></mesh>
+    <mesh name="hat_spine" file="../Geometry/hat_spine.stl" scale="       1        1        1"></mesh>
+    <mesh name="hat_jaw" file="../Geometry/hat_jaw.stl" scale="       1        1        1"></mesh>
+    <mesh name="hat_skull" file="../Geometry/hat_skull.stl" scale="       1        1        1"></mesh>
+    <mesh name="hat_ribs_scap" file="../Geometry/hat_ribs_scap.stl" scale="       1        1        1"></mesh>
+    <mesh name="humerus_rv" file="../Geometry/humerus_rv.stl" scale="       1        1        1"></mesh>
+    <mesh name="ulna_rv" file="../Geometry/ulna_rv.stl" scale="       1        1        1"></mesh>
+    <mesh name="radius_rv" file="../Geometry/radius_rv.stl" scale="       1        1        1"></mesh>
+    <mesh name="pisiform_rvs" file="../Geometry/pisiform_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="lunate_rvs" file="../Geometry/lunate_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="scaphoid_rvs" file="../Geometry/scaphoid_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="triquetrum_rvs" file="../Geometry/triquetrum_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="hamate_rvs" file="../Geometry/hamate_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="capitate_rvs" file="../Geometry/capitate_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="trapezoid_rvs" file="../Geometry/trapezoid_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="trapezium_rvs" file="../Geometry/trapezium_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal2_rvs" file="../Geometry/metacarpal2_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="index_proximal_rvs" file="../Geometry/index_proximal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="index_medial_rvs" file="../Geometry/index_medial_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="index_distal_rvs" file="../Geometry/index_distal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal3_rvs" file="../Geometry/metacarpal3_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="middle_proximal_rvs" file="../Geometry/middle_proximal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="middle_medial_rvs" file="../Geometry/middle_medial_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="middle_distal_rvs" file="../Geometry/middle_distal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal4_rvs" file="../Geometry/metacarpal4_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="ring_proximal_rvs" file="../Geometry/ring_proximal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="ring_medial_rvs" file="../Geometry/ring_medial_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="ring_distal_rvs" file="../Geometry/ring_distal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal5_rvs" file="../Geometry/metacarpal5_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="little_proximal_rvs" file="../Geometry/little_proximal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="little_medial_rvs" file="../Geometry/little_medial_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="little_distal_rvs" file="../Geometry/little_distal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal1_rvs" file="../Geometry/metacarpal1_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="thumb_proximal_rvs" file="../Geometry/thumb_proximal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="thumb_distal_rvs" file="../Geometry/thumb_distal_rvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="humerus_lv" file="../Geometry/humerus_lv.stl" scale="       1        1        1"></mesh>
+    <mesh name="ulna_lv" file="../Geometry/ulna_lv.stl" scale="       1        1        1"></mesh>
+    <mesh name="radius_lv" file="../Geometry/radius_lv.stl" scale="       1        1        1"></mesh>
+    <mesh name="pisiform_lvs" file="../Geometry/pisiform_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="lunate_lvs" file="../Geometry/lunate_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="scaphoid_lvs" file="../Geometry/scaphoid_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="triquetrum_lvs" file="../Geometry/triquetrum_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="hamate_lvs" file="../Geometry/hamate_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="capitate_lvs" file="../Geometry/capitate_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="trapezoid_lvs" file="../Geometry/trapezoid_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="trapezium_lvs" file="../Geometry/trapezium_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal2_lvs" file="../Geometry/metacarpal2_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="index_proximal_lvs" file="../Geometry/index_proximal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="index_medial_lvs" file="../Geometry/index_medial_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="index_distal_lvs" file="../Geometry/index_distal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal3_lvs" file="../Geometry/metacarpal3_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="middle_proximal_lvs" file="../Geometry/middle_proximal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="middle_medial_lvs" file="../Geometry/middle_medial_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="middle_distal_lvs" file="../Geometry/middle_distal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal4_lvs" file="../Geometry/metacarpal4_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="ring_proximal_lvs" file="../Geometry/ring_proximal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="ring_medial_lvs" file="../Geometry/ring_medial_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="ring_distal_lvs" file="../Geometry/ring_distal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal5_lvs" file="../Geometry/metacarpal5_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="little_proximal_lvs" file="../Geometry/little_proximal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="little_medial_lvs" file="../Geometry/little_medial_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="little_distal_lvs" file="../Geometry/little_distal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="metacarpal1_lvs" file="../Geometry/metacarpal1_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="thumb_proximal_lvs" file="../Geometry/thumb_proximal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <mesh name="thumb_distal_lvs" file="../Geometry/thumb_distal_lvs.stl" scale="    0.85     0.85     0.85"></mesh>
+    <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2" width="100" height="100"></texture>
+    <material name='collision' rgba="0.8 0.6 .4 1"/>
+    <material name="MatPlane" reflectance="0.0" texture="texplane" texrepeat="1 1" texuniform="true"></material>
+    
+    <texture type="skybox" builtin="gradient" rgb1="0.8 0.8 0.8" rgb2="0.5 0.5 0.5" width="512" height="512"/>
+    <texture name="plane" type="2d" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.3 0.4 0.5" width="10" height="10"/>
+    <material name="plane" texture="plane" texrepeat="5 5" reflectance="0.2"/>
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.1 0.2 0.3" rgb2="0.2 0.3 0.4" mark="edge" markrgb="0.2 0.3 0.4" width="300" height="300"/>
+    <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance="0.1"/>
+    <texture name="grid_vis" type="2d" builtin="checker" rgb1="0.7 0.7 0.7" rgb2="0.7 0.7 0.7" width="300" height="300"/>
+    <material name="grid_vis" texture="grid_vis" texrepeat="0.1 0.1" texuniform="true" reflectance="0.1"/>
+    
+
+  </asset>
+
+</mujoco>

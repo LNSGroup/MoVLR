@@ -1,0 +1,404 @@
+<mujoco>
+  <body name="talus_r" pos="-0.005000 -0.400000 0.010000" euler="-0 0 0" childclass="ankle">
+    <geom name="talus_skin_r" size="0.025" fromto="-0.02 0 -0.008 0.01 0 -0.008" />
+    <geom name="talus_r_geom" type="mesh" class="bone" mesh="talus_r_mesh" group="0" />
+    <joint name="ankle_flexion_r" range="-0.436 0.524" limited="true" ref="0" axis="0 0 -1" type="hinge" />
+    <joint name="ankle_in_ev_r" range="-0.087 0.087" limited="true" ref="0" axis="1 0 0" type="hinge" />
+    <joint name="ankle_rot_r" range="-0.087 0.087" limited="true" ref="0" axis="0 1 0" type="hinge" />
+    <body name="calcn_r" pos="-0.010000 -0.041000 -0.005000" euler="-0 0 0">
+      <geom name="calcn_skin_r" size="0.028" fromto="-0.015 0.005 -0.008 0.030 0.011 -0.005" />
+      <geom name="calcn_r_geom" type="mesh" class="bone" mesh="calcn_r_mesh" group="0" />
+      <site name="calcn_touch_r" class="touch" size="0.025" fromto="-0.022 -0.003 -0.01 0.027771 0.0180761 0.00295262"/>
+      <joint name="subtalar_angle_r" range="-0.349 0.349" limited="true" ref="0" axis="0.7357 0.6157 -0.2824" type="hinge" />
+      <body name="midfoot_r" pos="0.047000 0.025000 0.004000" euler="-0 0 0">
+        <geom name="midfoot_skin_r" size="0.03" fromto="0.005 -0.008 0.007 0.008 -0.002 -0.009" />
+        <geom name="midfoot_r_geom" type="mesh" class="bone" mesh="midfoot_r_mesh" group="0" />
+        <geom name="midfoot_wrap_r" type="cylinder" euler="0.7 -0.15 0" pos="0.005000 0.003800 0.008000" size="0.01 0.015" class="wrap" />
+        <site name="ExtHal_Brev_r_midfoot_wrap_r_sidesite" pos="0.005000 0.023800 0.008000"/>
+        <site name="ExtDig_Brev_4_r_midfoot_wrap_r_sidesite" pos="0.005000 0.023800 0.008000"/>
+        <site name="ExtDig_Brev_3_r_midfoot_wrap_r_sidesite" pos="0.005000 0.023800 0.008000"/>
+        <site name="ExtDig_Brev_2_r_midfoot_wrap_r_sidesite" pos="0.005000 0.023800 0.008000"/>
+        <!-- <joint name="midtarsal_angle_r" range="-0.052 0.052" limited="true" ref="0" axis="0.9392 0.5666 -0.4183" type="hinge" /> -->
+        <body name="metatarsal_1_r" pos="0.030000 0.000000 -0.015000" euler="-0 0 0">
+          <geom name="metatarsal_1_skin_r" size="0.013" fromto="0 -0.002 0 0.06 -0.027 0" />
+          <geom name="metatarsal_1_r_geom" type="mesh" class="bone" mesh="metatarsal_1_r_mesh" group="0" />
+          <site name="metatarsal_1_touch_r" class="touch" size="0.013" fromto="0 -0.002 0 0.06 -0.027 0"/>
+          <geom name="metatarsal_flexwrap_1_r" type="cylinder" euler="0.1 -0.1 1.5" pos="0.061000 -0.025000 0.001500" size="0.01 0.0125" class="wrap" />
+          <site name="FlexHal_Brev_Med_r_metatarsal_flexwrap_1_r_sidesite" pos="0.061000 -0.045000 0.001500"/>
+          <site name="FlexHal_Brev_Lat_r_metatarsal_flexwrap_1_r_sidesite" pos="0.061000 -0.045000 0.001500"/>
+          <site name="AbdHal_r_metatarsal_flexwrap_1_r_sidesite" pos="0.061000 -0.045000 0.001500"/>
+          <site name="FlexHal_r_metatarsal_flexwrap_1_r_sidesite" pos="0.061000 -0.045000 0.001500"/>
+          <!-- <joint name="tarsometatarsal_angle_1_r" range="0.000 0.070" limited="true" ref="0" axis="0 0 1" type="hinge" /> -->
+          <body name="digits_1_prox_r" pos="0.064000 -0.035000 0.001000" euler="-0 0.1 0" childclass="toe">
+            <geom name="digits_1_prox_skin_r" size="0.013" fromto="0.0048 0.007 0.002 0.036 0.005 0.008" />
+            <geom name="toe_1_prox_r_geom" type="mesh" class="bone" mesh="toe_1_prox_r_mesh" group="0" />
+            <site name="digits_1_prox_touch_r" class="touch" size="0.013" fromto="0.0048 0.007 0.002 0.036 0.005 0.008"/>
+            <joint name="mtp_angle_1_r" pos="-0.002 0.008 0" range="-1.047 0.524" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" />
+            <!-- <joint name="toe1_lateral_r" pos="-0.002 0.008 0" range="-0.175 0.262" limited="true" ref="0" axis="0 1 0" type="hinge" /> -->
+            <body name="digits_1_dist_r" pos="0.044000 0.000000 0.010000" euler="-0 0 0">
+              <geom name="digits_1_dist_skin_r" size="0.01" fromto="0.0035 0.001 0.0015 0.0160 0.001 0.005" />
+              <geom name="toe_1_dist_r_geom" type="mesh" class="bone" mesh="toe_1_dist_r_mesh" group="0" />
+              <site name="digits_1_dist_touch_r" class="touch" size="0.01" fromto="0.0035 0.001 0.0015 0.0160 0.001 0.005"/>
+              <!-- <joint name="itp_1_r" pos="-0.004 0 0" range="0.000 1.571" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" /> -->
+              <site name="FlexHal_r-P8" pos="0.019537 -0.004117 0.005552" />
+              <site name="ExtHal_r-P8" pos="0.003637 0.005186 0.001873" />
+            </body>
+            <site name="FlexHal_r-P6" pos="0.007218 -0.005000 0.003341" />
+            <site name="FlexHal_r-P7" pos="0.034170 -0.005047 0.007541" />
+            <site name="ExtHal_r-P6" pos="0.011830 0.017330 0.006054" />
+            <site name="ExtHal_r-P7" pos="0.039665 0.008189 0.010518" />
+            <site name="ExtHal_Brev_r-P4" pos="0.015063 0.014496 0.008909" />
+            <site name="FlexHal_Brev_Lat_r-P4" pos="0.011147 -0.004128 -0.002247" />
+            <site name="FlexHal_Brev_Med_r-P4" pos="0.009373 -0.003899 0.008260" />
+            <site name="AddHalTrans_r-P2" pos="0.007000 -0.002000 0.014000" />
+            <site name="AddHalOpp_r-P2" pos="0.007000 -0.002000 0.014000" />
+            <site name="AbdHal_r-P2" pos="0.012000 0.002000 -0.009000" />
+          </body>
+          <site name="perlong_r-P7" pos="-0.003010 -0.008094 0.005713" />
+          <site name="tibant_r-P6" pos="0.003125 -0.008275 -0.008611" />
+          <site name="FlexHal_r-P4" pos="0.027000 -0.024058 -0.001000" />
+          <site name="FlexHal_r-P5" pos="0.053929 -0.037407 0.001054" />
+          <site name="ExtHal_r-P4" pos="0.014291 0.011990 0.003095" />
+          <site name="ExtHal_r-P5" pos="0.063054 -0.012507 0.004794" />
+          <site name="ExtHal_Brev_r-P3" pos="0.066000 -0.015071 0.007314" />
+          <site name="FlexHal_Brev_Lat_r-P3" pos="0.059000 -0.037039 0.000000" />
+          <site name="metatarsal_flexwrap_1_r_cylinder_FlexHal_Brev_Med_r_3_sidesite" pos="0.058000 -0.035980 0.009000" size="0.0005" />
+          <site name="FDMB_r-P1" pos="-0.010743 -0.018311 0.046000" />
+          <site name="AddHalTrans_r-P1" pos="-0.002000 -0.013000 0.018000" />
+          <site name="AddHalOpp_r-P1" pos="0.035000 -0.032000 0.042000" />
+        </body>
+        <body name="metatarsal_2_r" pos="0.022300 0.005000 0.002000" euler="-0 0 0">
+          <geom name="metatarsal_2_skin_r" size="0.01" fromto="0 -0.002 0 0.062 -0.032 0.0045" />
+          <geom name="metatarsal_2_r_geom" type="mesh" class="bone" mesh="metatarsal_2_r_mesh" group="0" />
+          <site name="metatarsal_2_touch_r" class="touch" size="0.01" fromto="0 -0.002 0 0.062 -0.032 0.0045"/>
+          <geom name="metatarsal_flexwrap_2_r" type="cylinder" euler="0 -0.15 1.5" pos="0.066000 -0.033500 0.005000" size="0.0065 0.01" class="wrap" />
+          <site name="QuadPlant2_r_metatarsal_flexwrap_2_r_sidesite" pos="0.066000 -0.050000 0.005000"/>
+          <site name="FlexDig_Brev_2_r_metatarsal_flexwrap_2_r_sidesite" pos="0.066000 -0.050000 0.005000"/>
+          <site name="AddHalTrans_r_metatarsal_flexwrap_2_r_sidesite" pos="0.066000 -0.050000 0.005000"/>
+          <site name="AddHalOpp_r_metatarsal_flexwrap_2_r_sidesite" pos="0.066000 -0.050000 0.005000"/>
+          <site name="FlexDig_2_r_metatarsal_flexwrap_2_r_sidesite" pos="0.066000 -0.050000 0.005000"/>
+          <!-- <joint name="tarsometatarsal_angle_2_r" range="0.000 0.035" limited="true" ref="0" axis="0 0 1" type="hinge" /> -->
+          <body name="digits_2_prox_r" pos="0.067000 -0.042000 0.002000" euler="-0 0.1 0" childclass="toe">
+            <geom name="digits_2_prox_skin_r" size="0.008" fromto="0.0064 0.0052 0.0055 0.0314 0.0020 0.0128"/>
+            <geom name="toe_2_prox_r_geom" type="mesh" class="bone" mesh="toe_2_prox_r_mesh" group="0" />
+            <site name="digits_2_prox_touch_r" class="touch" size="0.008" fromto="0.0064 0.0052 0.0055 0.0314 0.0020 0.0128"/>
+            <joint name="mtp_angle_2_r" pos="0 0.007 0.003" range="-1.047 0.524" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" />
+            <body name="digits_2_mid_r" pos="0.038000 0.001000 0.015000" euler="-0 0 0">
+              <geom name="digits_2_mid_skin_r" size="0.005" fromto="0.001 0.001 0.001 0.011 0.001 0.003" />
+              <geom name="toe_2_mid_r_geom" type="mesh" class="bone" mesh="toe_2_mid_r_mesh" group="0" />
+              <site name="digits_2_mid_touch_r" class="touch" size="0.005" fromto="0.001 0.001 0.001 0.011 0.001 0.003"/>
+              <!-- <joint name="itp_prox_2_r" pos="-0.003 0.001 -0.001" range="0.000 1.571" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" /> -->
+              <body name="digits_2_dist_r" pos="0.013300 0.000500 0.003300" euler="-0 0 0">
+                <geom name="digits_2_dist_skin_r" size="0.004" fromto="0.001 0.000 0.000 0.005 0.000 0.001" />
+                <geom name="toe_2_dist_r_geom" type="mesh" class="bone" mesh="toe_2_dist_r_mesh" group="0" />
+                <site name="digits_2_dist_touch_r" class="touch" size="0.004" fromto="0.001 0.000 0.000 0.005 0.000 0.001"/>
+                <!-- <joint name="itp_dist_2_r" pos="-0.0013 0 0" range="-0.087 0.785" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" /> -->
+                <site name="FlexDig_2_r-P8" pos="0.003715 -0.001240 0.000916" />
+                <site name="ExtDig_2_r-P9" pos="0.000757 0.002859 0.000378" />
+                <site name="QuadPlant_2_r-P6" pos="0.003715 -0.001240 0.000916" />
+                <site name="LumFoot_2_r-P8" pos="0.003345 0.001509 0.000595" />
+                <site name="DorInt_2_r-P7" pos="0.003345 0.001509 0.000595" />
+                <site name="DorInt_3_r-P7" pos="0.003345 0.001509 0.000595" />
+              </body>
+              <site name="FlexDig_2_r-P7" pos="0.002536 -0.001658 0.000158" />
+              <site name="ExtDig_2_r-P7" pos="0.001356 0.005389 0.000748" />
+              <site name="ExtDig_2_r-P8" pos="0.010607 0.003904 0.002871" />
+              <site name="ExtDig_Brev_2_r-P6" pos="0.001177 0.004959 0.002538" />
+              <site name="FlexDig_Brev_2_r-P3" pos="0.006867 -0.000455 0.001789" />
+              <site name="QuadPlant_2_r-P5" pos="0.002536 -0.001658 0.000158" />
+              <site name="LumFoot_2_r-P6" pos="0.002209 0.004781 -0.001955" />
+              <site name="LumFoot_2_r-P7" pos="0.010534 0.003249 0.001390" />
+              <site name="DorInt_2_r-P5" pos="0.002209 0.004781 -0.001955" />
+              <site name="DorInt_2_r-P6" pos="0.010534 0.003249 0.001390" />
+              <site name="DorInt_3_r-P5" pos="0.000938 0.004781 0.003985" />
+              <site name="DorInt_3_r-P6" pos="0.010222 0.003249 0.004507" />
+            </body>
+            <site name="FlexDig_2_r-P6" pos="0.005190 -0.000146 0.005426" />
+            <site name="ExtDig_2_r-P5" pos="0.006857 0.013529 0.006685" />
+            <site name="ExtDig_2_r-P6" pos="0.032520 0.007916 0.013950" />
+            <site name="ExtDig_Brev_2_r-P4" pos="0.006764 0.013224 0.007616" />
+            <site name="ExtDig_Brev_2_r-P5" pos="0.032319 0.007537 0.015945" />
+            <site name="FlexDig_Brev_2_r-P2" pos="0.031711 -0.000761 0.012903" />
+            <site name="QuadPlant_2_r-P4" pos="0.005190 -0.000146 0.005426" />
+            <site name="LumFoot_2_r-P3" pos="0.007637 0.002172 0.000105" />
+            <site name="LumFoot_2_r-P4" pos="0.017000 0.010616 0.004000" />
+            <site name="LumFoot_2_r-P5" pos="0.033142 0.007207 0.010025" />
+            <site name="DorInt_2_r-P2" pos="0.008661 0.002172 -0.000266" />
+            <site name="DorInt_2_r-P3" pos="0.017000 0.010616 0.004000" />
+            <site name="DorInt_2_r-P4" pos="0.033142 0.007207 0.010025" />
+            <site name="DorInt_3_r-P2" pos="0.006337 0.002845 0.012232" />
+            <site name="DorInt_3_r-P3" pos="0.016145 0.010616 0.012526" />
+            <site name="DorInt_3_r-P4" pos="0.032388 0.007207 0.017540" />
+          </body>
+          <site name="FlexDig_2_r-P4" pos="0.001700 -0.024000 -0.004000" />
+          <site name="FlexDig_2_r-P5" pos="0.059986 -0.040000 0.005659" />
+          <site name="ExtDig_2_r-P4" pos="0.066416 -0.024176 0.006861" />
+          <site name="ExtDig_Brev_2_r-P3" pos="0.066893 -0.024741 0.006860" />
+          <site name="FlexHal_Brev_Med_r-P2" pos="0.022700 -0.021000 -0.009000" />
+          <site name="FlexHal_Brev_Med_r-P3" pos="0.065700 -0.040980 -0.008000" />
+          <site name="QuadPlant_2_r-P2" pos="0.001700 -0.024000 -0.004000" />
+          <site name="QuadPlant_2_r-P3" pos="0.059986 -0.040000 0.005659" />
+          <site name="LumFoot_2_r-P2" pos="0.059700 -0.039212 0.002364" />
+          <site name="DorInt_2_r-P1" pos="0.020412 -0.005000 -0.004599" />
+          <site name="metatarsal_flexwrap_2_r_cylinder_AddHalOpp_r_1_sidesite" pos="0.066700 -0.040330 0.007000" size="0.0005" />
+        </body>
+        <body name="metatarsal_3_r" pos="0.020000 0.000000 0.013000" euler="-0 0 0">
+          <geom name="metatarsal_3_skin_r" size="0.008" fromto="0 -0.002 0 0.056 -0.025 0.005" />
+          <geom name="metatarsal_3_r_geom" type="mesh" class="bone" mesh="metatarsal_3_r_mesh" group="0" />
+          <site name="metatarsal_3_touch_r" class="touch" size="0.008" fromto="0 -0.002 0 0.056 -0.025 0.005"/>
+          <geom name="metatarsal_flexwrap_3_r" type="cylinder" euler="0 -0.2 1.5" pos="0.059000 -0.027000 0.007000" size="0.006 0.01" class="wrap" />
+          <site name="QuadPlant3_r_metatarsal_flexwrap_3_r_sidesite" pos="0.059000 -0.043000 0.007000"/>
+          <site name="FlexDig_Brev_3_r_metatarsal_flexwrap_3_r_sidesite" pos="0.059000 -0.043000 0.007000"/>
+          <site name="FlexDig_3_r_metatarsal_flexwrap_3_r_sidesite" pos="0.059000 -0.043000 0.007000"/>
+          <!-- <joint name="tarsometatarsal_angle_3_r" range="-0.017 0.035" limited="true" ref="0" axis="0 0 1" type="hinge" /> -->
+          <body name="digits_3_prox_r" pos="0.066000 -0.035000 0.011000" euler="-0 0.08 0" childclass="toe">
+            <geom name="digits_3_prox_skin_r" size="0.008" fromto="0.000 0.004 -0.002 0.019 0.004 0.003" />
+            <geom name="toe_3_prox_r_geom" type="mesh" class="bone" mesh="toe_3_prox_r_mesh" group="0" />
+            <site name="digits_3_prox_touch_r" class="touch" size="0.008" fromto="0.000 0.004 -0.002 0.019 0.004 0.003"/>
+            <joint name="mtp_angle_3_r" pos="-0.008 0.008 -0.006" range="-1.047 0.524" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" />
+            <body name="digits_3_mid_r" pos="0.026500 0.003000 0.004000" euler="-0 0 0">
+              <geom name="digits_3_mid_skin_r" size="0.005" fromto="0.001 0.001 0.001 0.011 0.001 0.003" />
+              <geom name="toe_3_mid_r_geom" type="mesh" class="bone" mesh="toe_3_mid_r_mesh" group="0" />
+              <site name="digits_3_mid_touch_r" class="touch" size="0.005" fromto="0.001 0.001 0.001 0.011 0.001 0.003"/>
+              <!-- <joint name="itp_prox_3_r" pos="-0.0035 -0.001 -0.001" range="0.000 1.571" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" /> -->
+              <body name="digits_3_dist_r" pos="0.012300 -0.000500 0.002700" euler="-0 0 0">
+                <geom name="digits_3_dist_skin_r" size="0.0045" fromto="0.001 0.000 0.000 0.005 0.000 0.0015" />
+                <geom name="toe_3_dist_r_geom" type="mesh" class="bone" mesh="toe_3_dist_r_mesh" group="0" />
+                <site name="digits_3_dist_touch_r" class="touch" size="0.0045" fromto="0.001 0.000 0.000 0.005 0.000 0.0015"/>
+                <!-- <joint name="itp_dist_3_r" pos="-0.0013 0 0" range="-0.087 0.785" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" /> -->
+                <site name="FlexDig_3_r-P8" pos="0.005700 -0.001876 0.001177" />
+                <site name="ExtDig_3_r-P9" pos="0.001456 0.002493 0.000624" />
+                <site name="QuadPlant_3_r-P6" pos="0.005700 -0.001876 0.001177" />
+                <site name="LumFoot_3_r-P8" pos="0.004634 0.001609 0.001398" />
+                <site name="PlaInt_3_r-P7" pos="0.004634 0.001609 0.001398" />
+                <site name="DorInt_4_r-P7" pos="0.004634 0.001609 0.001398" />
+              </body>
+              <site name="FlexDig_3_r-P7" pos="0.000896 -0.003324 0.000006" />
+              <site name="ExtDig_3_r-P7" pos="0.002059 0.002919 0.000852" />
+              <site name="ExtDig_3_r-P8" pos="0.009792 0.002463 0.002762" />
+              <site name="ExtDig_Brev_3_r-P6" pos="0.001973 0.002492 0.001923" />
+              <site name="FlexDig_Brev_3_r-P3" pos="0.005040 -0.001606 0.001085" />
+              <site name="QuadPlant_3_r-P5" pos="0.000896 -0.003324 0.000006" />
+              <site name="LumFoot_3_r-P6" pos="0.003077 0.003254 -0.001253" />
+              <site name="LumFoot_3_r-P7" pos="0.009318 0.002564 0.000939" />
+              <site name="PlaInt_3_r-P5" pos="0.003077 0.003254 -0.001253" />
+              <site name="PlaInt_3_r-P6" pos="0.009318 0.002564 0.000939" />
+              <site name="DorInt_4_r-P5" pos="0.002734 0.003254 0.003022" />
+              <site name="DorInt_4_r-P6" pos="0.009105 0.002564 0.003605" />
+            </body>
+            <site name="FlexDig_3_r-P6" pos="-0.001317 -0.001554 -0.004193" />
+            <site name="ExtDig_3_r-P5" pos="0.000797 0.013482 -0.002089" />
+            <site name="ExtDig_3_r-P6" pos="0.023184 0.006779 0.003326" />
+            <site name="ExtDig_Brev_3_r-P4" pos="0.001068 0.012605 -0.001946" />
+            <site name="ExtDig_Brev_3_r-P5" pos="0.023079 0.006298 0.004641" />
+            <site name="FlexDig_Brev_3_r-P2" pos="0.021264 0.000134 0.001838" />
+            <site name="QuadPlant_3_r-P4" pos="-0.001317 -0.001554 -0.004193" />
+            <site name="LumFoot_3_r-P3" pos="-0.001094 0.001256 -0.008319" />
+            <site name="LumFoot_3_r-P4" pos="0.006669 0.009267 -0.005508" />
+            <site name="LumFoot_3_r-P5" pos="0.021122 0.007124 0.000073" />
+            <site name="PlaInt_3_r-P2" pos="-0.001308 0.000971 -0.008500" />
+            <site name="PlaInt_3_r-P3" pos="0.006669 0.009267 -0.005508" />
+            <site name="PlaInt_3_r-P4" pos="0.021122 0.007124 0.000073" />
+            <site name="DorInt_4_r-P2" pos="-0.001975 0.002057 0.001071" />
+            <site name="DorInt_4_r-P3" pos="0.006067 0.009267 0.002003" />
+            <site name="DorInt_4_r-P4" pos="0.020692 0.007124 0.005431" />
+          </body>
+          <site name="FlexDig_3_r-P4" pos="0.004000 -0.019000 -0.015000" />
+          <site name="FlexDig_3_r-P5" pos="0.055945 -0.034622 0.005094" />
+          <site name="ExtDig_3_r-P4" pos="0.058365 -0.017681 0.006558" />
+          <site name="ExtDig_Brev_3_r-P3" pos="0.059209 -0.018035 0.006489" />
+          <site name="QuadPlant_3_r-P2" pos="0.004000 -0.019000 -0.015000" />
+          <site name="QuadPlant_3_r-P3" pos="0.055945 -0.034622 0.005094" />
+          <site name="LumFoot_3_r-P2" pos="0.055602 -0.033149 0.003000" />
+          <site name="PlaInt_3_r-P1" pos="0.009000 -0.007000 -0.010000" />
+          <site name="DorInt_3_r-P1" pos="0.022916 -0.003050 -0.002909" />
+        </body>
+        <body name="metatarsal_4_r" pos="0.015000 -0.003000 0.020000" euler="-0 0 0">
+          <geom name="metatarsal_4_skin_r" size="0.008" fromto="0 0 0 0.054 -0.022 0.006" />
+          <geom name="metatarsal_4_r_geom" type="mesh" class="bone" mesh="metatarsal_4_r_mesh" group="0" />
+          <site name="metatarsal_4_touch_r" class="touch" size="0.008" fromto="0 0 0 0.054 -0.022 0.006"/>
+          <geom name="metatarsal_flexwrap_4_r" type="cylinder" euler="0 -0.2 1.5" pos="0.056000 -0.022500 0.008000" size="0.006 0.01" class="wrap" />
+          <site name="QuadPlant4_r_metatarsal_flexwrap_4_r_sidesite" pos="0.056000 -0.038500 0.008000"/>
+          <site name="FlexDig_Brev_4_r_metatarsal_flexwrap_4_r_sidesite" pos="0.056000 -0.038500 0.008000"/>
+          <site name="FlexDig_4_r_metatarsal_flexwrap_4_r_sidesite" pos="0.056000 -0.038500 0.008000"/>
+          <!-- <joint name="tarsometatarsal_angle_4_r" range="0.000 0.122" limited="true" ref="0" axis="0 0 1" type="hinge" /> -->
+          <body name="digits_4_prox_r" pos="0.062000 -0.029000 0.009500" euler="-0 0.1 0" childclass="toe">
+            <geom name="digits_4_prox_skin_r" size="0.007" fromto="0.001 0.003 0.003 0.019 0.000 0.009" />
+            <geom name="toe_4_prox_r_geom" type="mesh" class="bone" mesh="toe_4_prox_r_mesh" group="0" />
+            <site name="digits_4_prox_touch_r" class="touch" size="0.008" fromto="0.001 0.003 0.003 0.019 0.000 0.009"/>
+            <joint name="mtp_angle_4_r" pos="-0.007 0.007 -0.0015" range="-1.047 0.524" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" />
+            <body name="digits_4_mid_r" pos="0.025500 -0.001000 0.012000" euler="-0 0 0">
+              <geom name="digits_4_mid_skin_r" size="0.005" fromto="0.002 0.000 0.000 0.008 0.000 0.002" />
+              <geom name="toe_4_mid_r_geom" type="mesh" class="bone" mesh="toe_4_mid_r_mesh" group="0" />
+              <site name="digits_4_mid_touch_r" class="touch" size="0.005" fromto="0.002 0.000 0.000 0.008 0.000 0.002"/>
+              <!-- <joint name="itp_prox_4_r" pos="-0.0035 -0.001 -0.001" range="0.000 1.571" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" /> -->
+              <body name="digits_4_dist_r" pos="0.010300 -0.000500 0.002700" euler="-0 0 0">
+                <geom name="digits_4_dist_skin_r" size="0.004" fromto="0.001 0.000 0.000 0.005 0.000 0.002" />
+                <geom name="toe_4_dist_r_geom" type="mesh" class="bone" mesh="toe_4_dist_r_mesh" group="0" />
+                <site name="digits_4_dist_touch_r" class="touch" size="0.004" fromto="0.001 0.000 0.000 0.005 0.000 0.002"/>
+                <!-- <joint name="itp_dist_4_r" pos="-0.0013 0 0" range="-0.087 0.785" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" /> -->
+                <site name="FlexDig_4_r-P8" pos="0.004471 -0.002294 0.002346" />
+                <site name="ExtDig_4_r-P9" pos="0.000462 0.002027 0.000792" />
+                <site name="QuadPlant_4_r-P6" pos="0.004471 -0.002294 0.002346" />
+                <site name="LumFoot_4_r-P8" pos="0.003027 0.001222 0.001998" />
+                <site name="PlaInt_4_r-P7" pos="0.003027 0.001222 0.001998" />
+                <site name="DorInt_5_r-P7" pos="0.003027 0.001222 0.001998" />
+              </body>
+              <site name="FlexDig_4_r-P7" pos="0.001922 -0.004419 -0.000556" />
+              <site name="ExtDig_4_r-P7" pos="0.002065 0.003685 0.000749" />
+              <site name="ExtDig_4_r-P8" pos="0.007982 0.001945 0.002722" />
+              <site name="ExtDig_Brev_4_r-P6" pos="0.001970 0.003351 0.001691" />
+              <site name="FlexDig_Brev_4_r-P3" pos="0.004645 -0.003403 0.001607" />
+              <site name="QuadPlant_4_r-P5" pos="0.001922 -0.004419 -0.000556" />
+              <site name="LumFoot_4_r-P6" pos="0.003300 0.004132 -0.001589" />
+              <site name="LumFoot_4_r-P7" pos="0.008574 0.002122 0.001306" />
+              <site name="PlaInt_4_r-P5" pos="0.003300 0.004132 -0.001589" />
+              <site name="PlaInt_4_r-P6" pos="0.008574 0.002122 0.001306" />
+              <site name="DorInt_5_r-P5" pos="0.002861 0.004132 0.002783" />
+              <site name="DorInt_5_r-P6" pos="0.008308 0.002122 0.003952" />
+            </body>
+            <site name="FlexDig_4_r-P6" pos="-0.002319 -0.002950 0.000411" />
+            <site name="ExtDig_4_r-P5" pos="0.001882 0.011081 0.002977" />
+            <site name="ExtDig_4_r-P6" pos="0.022840 0.004241 0.011516" />
+            <site name="ExtDig_Brev_4_r-P4" pos="0.001762 0.010320 0.004178" />
+            <site name="ExtDig_Brev_4_r-P5" pos="0.022780 0.003793 0.012117" />
+            <site name="FlexDig_Brev_4_r-P2" pos="0.021353 -0.004738 0.010306" />
+            <site name="QuadPlant_4_r-P4" pos="-0.002319 -0.002950 0.000411" />
+            <site name="LumFoot_4_r-P3" pos="0.001200 0.000268 -0.003600" />
+            <site name="LumFoot_4_r-P4" pos="0.008492 0.008101 -0.000252" />
+            <site name="LumFoot_4_r-P5" pos="0.023827 0.005311 0.007748" />
+            <site name="PlaInt_4_r-P2" pos="0.000799 0.001230 -0.004935" />
+            <site name="PlaInt_4_r-P3" pos="0.008492 0.008101 -0.000252" />
+            <site name="PlaInt_4_r-P4" pos="0.023827 0.005311 0.007748" />
+            <site name="DorInt_5_r-P2" pos="-0.000444 0.000378 0.006154" />
+            <site name="DorInt_5_r-P3" pos="0.007726 0.008101 0.007383" />
+            <site name="DorInt_5_r-P4" pos="0.023237 0.005311 0.013632" />
+          </body>
+          <site name="FlexDig_4_r-P4" pos="0.009000 -0.016000 -0.022000" />
+          <site name="FlexDig_4_r-P5" pos="0.051563 -0.029993 0.008154" />
+          <site name="ExtDig_4_r-P4" pos="0.054355 -0.012541 0.008380" />
+          <site name="ExtDig_Brev_4_r-P3" pos="0.054000 -0.013218 0.010768" />
+          <site name="QuadPlant_4_r-P2" pos="0.009000 -0.016000 -0.022000" />
+          <site name="QuadPlant_4_r-P3" pos="0.051563 -0.029993 0.008154" />
+          <site name="LumFoot_4_r-P2" pos="0.051754 -0.027411 0.002340" />
+          <site name="PlaInt_4_r-P1" pos="0.011000 -0.007000 -0.004000" />
+          <site name="DorInt_4_r-P1" pos="0.024817 -0.002887 -0.001745" />
+        </body>
+        <body name="metatarsal_5_r" pos="0.005000 -0.005000 0.027000" euler="-0 0 0">
+          <geom name="metatarsal_5_skin_r" size="0.008" fromto="0 -0.002 0.002 0.056 -0.017 0.010" />
+          <geom name="metatarsal_5_r_geom" type="mesh" class="bone" mesh="metatarsal_5_r_mesh" group="0" />
+          <site name="metatarsal_5_touch_r" class="touch" size="0.008" fromto="0 -0.002 0.002 0.056 -0.017 0.010"/>
+          <geom name="metatarsal_flexwrap_5_r" type="cylinder" euler="0 -0.3 1.5" pos="0.059000 -0.019000 0.011500" size="0.0055 0.01" class="wrap" />
+          <site name="FDMB_r_metatarsal_flexwrap_5_r_sidesite" pos="0.059000 -0.034500 0.011500"/>
+          <site name="QuadPlant5_r_metatarsal_flexwrap_5_r_sidesite" pos="0.059000 -0.034500 0.011500"/>
+          <site name="FlexDig_Brev_5_r_metatarsal_flexwrap_5_r_sidesite" pos="0.059000 -0.034500 0.011500"/>
+          <site name="FlexDig_5_r_metatarsal_flexwrap_5_r_sidesite" pos="0.059000 -0.034500 0.011500"/>
+          <!-- <joint name="tarsometatarsal_angle_5_r" range="-0.035 0.087" limited="true" ref="0" axis="0 0 1" type="hinge" /> -->
+          <body name="digits_5_prox_r" pos="0.064000 -0.027000 0.014000" euler="-0 0 0" childclass="toe">
+            <geom name="digits_5_prox_skin_r" size="0.007" fromto="0.001 0.003 0.000 0.019 0.000 0.006" />
+            <geom name="toe_5_prox_r_geom" type="mesh" class="bone" mesh="toe_5_prox_r_mesh" group="0" />
+            <site name="digits_5_prox_touch_r" class="touch" size="0.008" fromto="0.001 0.003 0.000 0.019 0.000 0.006"/>
+            <joint name="mtp_angle_5_r" pos="-0.005 0.007 -0.003" range="-1.047 0.524" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" />
+            <!-- <joint name="toe5_lateral_r" pos="-0.005 0.007 -0.003" range="-0.122 0.000" limited="true" ref="0" axis="0 1 0" type="hinge" /> -->
+            <body name="digits_5_mid_r" pos="0.025500 0.000000 0.007000" euler="-0 0 0">
+              <geom name="digits_5_mid_skin_r" size="0.005" fromto="0.003 0.000 0.001 0.004 0.000 0.001" />
+              <geom name="toe_5_mid_r_geom" type="mesh" class="bone" mesh="toe_5_mid_r_mesh" group="0" />
+              <site name="digits_5_mid_touch_r" class="touch" size="0.005" fromto="0.003 0.000 0.001 0.004 0.000 0.001"/>
+              <!-- <joint name="itp_prox_5_r" pos="-0.0035 0 -0.001" range="0.000 1.571" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" /> -->
+              <body name="digits_5_dist_r" pos="0.007800 -0.000500 0.001600" euler="-0 0 0">
+                <geom name="digits_5_dist_skin_r" size="0.004" fromto="0.001 0.000 0.000 0.005 0.000 0.001" />
+                <geom name="toe_5_dist_r_geom" type="mesh" class="bone" mesh="toe_5_dist_r_mesh" group="0" />
+                <site name="digits_5_dist_touch_r" class="touch" size="0.004" fromto="0.001 0.000 0.000 0.005 0.000 0.001"/>
+                <!-- <joint name="itp_dist_5_r" pos="-0.0018 0 0" range="-0.087 0.785" limited="true" ref="0" axis="0.3 0 -0.866" type="hinge" /> -->
+                <site name="FlexDig_5_r-P8" pos="0.004302 -0.002666 0.000184" />
+                <site name="ExtDig_5_r-P9" pos="0.001052 0.002269 0.000472" />
+                <site name="QuadPlant_5_r-P6" pos="0.004302 -0.002666 0.000184" />
+                <site name="LumFoot_5_r-P8" pos="0.003966 0.000893 0.000771" />
+                <site name="PlaInt_5_r-P7" pos="0.003966 0.000893 0.000771" />
+              </body>
+              <site name="FlexDig_5_r-P7" pos="0.000480 -0.004000 -0.000531" />
+              <site name="ExtDig_5_r-P7" pos="0.002039 0.004313 -0.000085" />
+              <site name="ExtDig_5_r-P8" pos="0.006239 0.003115 0.001132" />
+              <site name="FlexDig_Brev_5_r-P3" pos="0.003586 -0.004721 0.000776" />
+              <site name="QuadPlant_5_r-P5" pos="0.000480 -0.004000 -0.000531" />
+              <site name="LumFoot_5_r-P6" pos="0.001475 0.004327 -0.001340" />
+              <site name="LumFoot_5_r-P7" pos="0.006486 0.002706 0.000397" />
+              <site name="PlaInt_5_r-P5" pos="0.001475 0.004327 -0.001340" />
+              <site name="PlaInt_5_r-P6" pos="0.006486 0.002706 0.000397" />
+            </body>
+            <site name="FlexDig_5_r-P6" pos="0.000221 -0.001465 -0.000793" />
+            <site name="ExtDig_5_r-P5" pos="0.001756 0.012097 -0.000176" />
+            <site name="ExtDig_5_r-P6" pos="0.022473 0.005971 0.005279" />
+            <site name="FlexDig_Brev_5_r-P2" pos="0.019844 -0.004453 0.004889" />
+            <site name="QuadPlant_5_r-P4" pos="0.000221 -0.001465 -0.000793" />
+            <site name="ADMF_r-P2" pos="0.000464 0.005111 0.005928" />
+            <site name="FDMB_r-P2" pos="-0.000181 -0.002251 -0.002187" />
+            <site name="LumFoot_5_r-P3" pos="0.002380 0.002926 -0.005602" />
+            <site name="LumFoot_5_r-P4" pos="0.006362 0.008569 -0.000808" />
+            <site name="LumFoot_5_r-P5" pos="0.022779 0.006228 0.004199" />
+            <site name="PlaInt_5_r-P2" pos="0.002892 0.003142 -0.005854" />
+            <site name="PlaInt_5_r-P3" pos="0.006362 0.008569 -0.000808" />
+            <site name="PlaInt_5_r-P4" pos="0.022779 0.006228 0.004199" />
+          </body>
+          <site name="per_tert_r-P3" pos="0.013398 -0.001028 0.005556" />
+          <site name="perbrev_r-P5" pos="-0.003466 0.000374 0.002234" />
+          <site name="FlexDig_5_r-P4" pos="0.019000 -0.014000 -0.029000" />
+          <site name="FlexDig_5_r-P5" pos="0.056022 -0.026917 0.011974" />
+          <site name="ExtDig_5_r-P4" pos="0.059311 -0.009699 0.010729" />
+          <site name="QuadPlant_5_r-P2" pos="0.019000 -0.014000 -0.029000" />
+          <site name="QuadPlant_5_r-P3" pos="0.056022 -0.026917 0.011974" />
+          <site name="metatarsal_flexwrap_5_r_cylinder_FDMB_r_1_sidesite" pos="0.058310 -0.027480 0.010950" size="0.0005" />
+          <site name="LumFoot_5_r-P2" pos="0.055881 -0.024826 0.004993" />
+          <site name="PlaInt_5_r-P1" pos="0.013000 -0.009279 -0.002551" />
+          <site name="DorInt_5_r-P1" pos="0.032663 -0.006000 0.000618" />
+        </body>
+        <site name="perlong_r-P6" pos="0.002125 -0.013949 0.022455" />
+        <site name="tibant_r-P4" pos="0.004298 0.019788 -0.024416" />
+        <site name="tibant_r-P5" pos="0.029262 -0.005828 -0.028231" />
+        <site name="tibpost_r-P4" pos="0.001474 -0.002537 -0.019734" />
+        <site name="tibpost_r-P5" pos="0.023620 -0.009428 0.008899" />
+        <site name="ExtDig_Brev_2_r-P2" pos="0.030553 0.014143 0.003246" />
+        <site name="ExtDig_Brev_3_r-P2" pos="0.029000 0.010670 0.014000" />
+        <site name="ExtDig_Brev_4_r-P2" pos="0.027000 0.005009 0.022000" />
+        <site name="ExtHal_Brev_r-P2" pos="0.037000 0.018000 -0.007051" />
+        <site name="FlexHal_Brev_Lat_r-P1" pos="-0.008546 -0.000137 -0.017557" />
+        <site name="FlexHal_Brev_Lat_r-P2" pos="0.041073 -0.018779 -0.013484" />
+        <site name="FlexHal_Brev_Med_r-P1" pos="0.003000 -0.010000 0.010000" />
+        <site name="LumFoot_2_r-P1" pos="0.024000 -0.019000 0.003000" />
+        <site name="LumFoot_3_r-P1" pos="0.024000 -0.019000 0.003000" />
+        <site name="LumFoot_4_r-P1" pos="0.024000 -0.019000 0.003000" />
+        <site name="LumFoot_5_r-P1" pos="0.024000 -0.019000 0.003000" />
+      </body>
+      <site name="plantaris_r-P2" pos="-0.031000 0.010000 -0.017000" />
+      <site name="gaslat_r-P2" pos="-0.029000 0.018000 -0.008000" />
+      <site name="gasmed_r-P2" pos="-0.029000 0.018000 -0.008000" />
+      <site name="perbrev_r-P4" pos="0.028343 0.024970 0.027477" />
+      <site name="perlong_r-P4" pos="-0.000000 0.028946 0.022002" />
+      <site name="perlong_r-P5" pos="0.031873 0.017644 0.025558" />
+      <site name="soleus_r-P2" pos="-0.029000 0.018000 -0.008000" />
+      <site name="FlexHal_r-P3" pos="-0.008362 0.025057 -0.020966" />
+      <site name="FlexDig_2_r-P3" pos="0.005624 0.038573 -0.028077" />
+      <site name="FlexDig_3_r-P3" pos="0.005624 0.038573 -0.028077" />
+      <site name="FlexDig_4_r-P3" pos="0.005624 0.038573 -0.028077" />
+      <site name="FlexDig_5_r-P3" pos="0.005624 0.038573 -0.028077" />
+      <site name="ExtDig_2_r-P3" pos="0.062000 0.046000 0.005000" />
+      <site name="ExtDig_3_r-P3" pos="0.062000 0.046000 0.005000" />
+      <site name="ExtDig_4_r-P3" pos="0.062000 0.046000 0.005000" />
+      <site name="ExtDig_5_r-P3" pos="0.062000 0.046000 0.005000" />
+      <site name="ExtDig_Brev_2_r-P1" pos="0.034000 0.028000 0.017000" />
+      <site name="ExtDig_Brev_3_r-P1" pos="0.034000 0.028000 0.017000" />
+      <site name="ExtDig_Brev_4_r-P1" pos="0.034000 0.028000 0.017000" />
+      <site name="ExtHal_Brev_r-P1" pos="0.034000 0.038000 0.013671" />
+      <site name="FlexDig_Brev_2_r-P1" pos="0.009000 -0.010000 -0.008000" />
+      <site name="FlexDig_Brev_3_r-P1" pos="0.009000 -0.010000 -0.008000" />
+      <site name="FlexDig_Brev_4_r-P1" pos="0.009000 -0.010000 -0.008000" />
+      <site name="FlexDig_Brev_5_r-P1" pos="0.009000 -0.010000 -0.008000" />
+      <site name="QuadPlant_2_r-P1" pos="0.009000 -0.010000 -0.008000" />
+      <site name="QuadPlant_3_r-P1" pos="0.009000 -0.010000 -0.008000" />
+      <site name="QuadPlant_4_r-P1" pos="0.009000 -0.010000 -0.008000" />
+      <site name="QuadPlant_5_r-P1" pos="0.009000 -0.010000 -0.008000" />
+      <site name="ADMF_r-P1" pos="0.000000 -0.009000 0.004000" />
+      <site name="AbdHal_r-P1" pos="-0.002000 -0.010000 -0.021000" />
+    </body>
+  </body>
+</mujoco>

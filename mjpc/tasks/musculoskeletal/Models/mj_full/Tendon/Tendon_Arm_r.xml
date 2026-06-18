@@ -1,0 +1,159 @@
+<mujoco>
+  <tendon>
+    <spatial name="DELT1_r_tendon">
+      <site site="DELT1_r-P1"/>
+      <site site="DELT1_r-P2"/>
+      <geom geom="delt2hum_r" sidesite="DELT1_r_delt2hum_r_sidesite"/>
+      <site site="DELT1_r-P3"/>
+      <site site="DELT1_r-P4"/>
+    </spatial>
+    <spatial name="DELT2_r_tendon">
+      <site site="DELT2_r-P1"/>
+      <!-- <geom geom="Deltoid2_r" sidesite="DELT2_r_Deltoid2_r_sidesite"/> -->
+      <geom geom="Deltoid2_r"/>
+      <site site="DELT2_r-P2"/>
+      <site site="DELT2_r-P3"/>
+    </spatial>
+    <spatial name="DELT3_r_tendon">
+      <site site="DELT3_r-P1"/>
+      <site site="DELT3_r-P2"/>
+      <geom geom="DELT_TMAJ_LAT_PEC_CORBhh_r"/>
+      <site site="DELT3_r-P3"/>
+    </spatial>
+    <spatial name="Infraspinatus_I_r_tendon">
+      <site site="Infraspinatus_I_r-P1"/>
+      <geom geom="infsp_new_r" sidesite="Infraspinatus_I_r_infsp_new_r_sidesite"/>
+      <site site="Infraspinatus_I_r-P2"/>
+    </spatial>
+    <spatial name="Infraspinatus_S_r_tendon">
+      <site site="Infraspinatus_S_r-P1"/>
+      <geom geom="infsp_new_r" sidesite="Infraspinatus_S_r_infsp_new_r_sidesite"/>
+      <site site="Infraspinatus_S_r-P2"/>
+    </spatial>
+    <spatial name="Subscapularis_S_r_tendon">
+      <site site="Subscapularis_S_r-P1"/>
+      <geom geom="Subscapularis_wrap_r" sidesite="Subscapularis_S_r_Subscapularis_wrap_r_sidesite"/>
+      <site site="Subscapularis_S_r-P2"/>
+    </spatial>
+    <spatial name="Subscapularis_M_r_tendon">
+      <site site="Subscapularis_M_r-P1"/>
+      <geom geom="Subscapularis_wrap_r" sidesite="Subscapularis_M_r_Subscapularis_wrap_r_sidesite"/>
+      <site site="Subscapularis_M_r-P2"/>
+    </spatial>
+    <spatial name="Subscapularis_I_r_tendon">
+      <site site="Subscapularis_I_r-P1"/>
+      <geom geom="Subscapularis_wrap_r" sidesite="Subscapularis_I_r_Subscapularis_wrap_r_sidesite"/>
+      <site site="Subscapularis_I_r-P2"/>
+    </spatial>
+    <spatial name="Supraspinatus_P_r_tendon">
+      <site site="Supraspinatus_P_r-P1"/>
+      <site site="Supraspinatus_P_r-P2"/>
+      <geom geom="SUPSP_r"/>
+      <site site="Supraspinatus_P_r-P3"/>
+    </spatial>
+    <spatial name="Supraspinatus_A_r_tendon">
+      <site site="Supraspinatus_A_r-P1"/>
+      <site site="Supraspinatus_A_r-P2"/>
+      <geom geom="SUPSP_r"/>
+      <site site="Supraspinatus_A_r-P3"/>
+    </spatial>
+    <spatial name="TMIN_r_tendon">
+      <site site="TMIN_r-P1"/>
+      <geom geom="TMINhum_r" sidesite="TMIN_r_TMINhum_r_sidesite"/>
+      <site site="TMIN_r-P2"/>
+    </spatial>
+    <spatial name="TMAJ_r_tendon">
+      <site site="TMAJ_r-P1"/>
+      <geom geom="TMAJ_LAThum_r" sidesite="TMAJ_r_TMAJ_LAThum_r_sidesite"/>
+      <site site="TMAJ_r-P2"/>
+      <site site="TMAJ_r-P3"/>
+    </spatial>
+    <spatial name="CORB_r_tendon">
+      <site site="CORB_r-P1"/>
+      <geom geom="TMAJ_LAT_PEC_CORBhh_r"/>
+      <site site="CORB_r-P2"/>
+    </spatial>
+    <spatial name="TRIlong_r_tendon">
+      <site site="TRIlong_r-P1"/>
+      <geom geom="TRIlonghh_r"/>
+      <site site="TRIlong_r-P2"/>
+      <site site="TRIlong_r-P3"/>
+      <site site="TRIlong_r-P4"/>
+      <geom geom="TRI_r" sidesite="TRIlong_r_TRI_r_sidesite"/>
+      <site site="TRIlong_r-P5"/>
+    </spatial>
+    <spatial name="TRIlat_r_tendon">
+      <site site="TRIlat_r-P1"/>
+      <site site="TRIlat_r-P2"/>
+      <site site="TRIlat_r-P3"/>
+      <site site="TRIlat_r-P4"/>
+      <geom geom="TRI_r" sidesite="TRIlat_r_TRI_r_sidesite"/>
+      <site site="TRIlat_r-P5"/>
+    </spatial>
+    <spatial name="TRImed_r_tendon">
+      <site site="TRImed_r-P1"/>
+      <site site="TRImed_r-P2"/>
+      <site site="TRImed_r-P3"/>
+      <site site="TRImed_r-P4"/>
+      <geom geom="TRI_r" sidesite="TRImed_r_TRI_r_sidesite"/>
+      <site site="TRImed_r-P5"/>
+    </spatial>
+    <spatial name="ANC_r_tendon">
+      <site site="ANC_r-P1"/>
+      <geom geom="ANC_r" sidesite="ANC_r_ANC_r_sidesite"/>
+      <site site="ANC_r-P2"/>
+    </spatial>
+    <spatial name="SUP_r_tendon">
+      <site site="SUP_r-P1"/>
+      <site site="SUP_r-P2"/>
+      <geom geom="SUP_r" sidesite="SUP_r_SUP_r_sidesite"/>
+      <site site="SUP_r-P3"/>
+    </spatial>
+    <spatial name="BIClong_r_tendon">
+      <site site="BIClong_r-P1"/>
+      <site site="BIClong_r-P2"/>
+      <geom geom="BIClong_r"/>
+      <site site="BIClong_r-P3"/>
+      <site site="BIClong_r-P4"/>
+      <site site="BIClong_r-P5"/>
+      <site site="BIClong_r-P6"/>
+      <site site="BIClong_r-P7"/>
+      <site site="BIClong_r-P8"/>
+      <geom geom="Elbow_BIC_BRD_r" sidesite="BIClong_r_Elbow_BIC_BRD_r_sidesite"/>
+      <site site="BIClong_r-P9"/>
+      <site site="BIClong_r-P10"/>
+    </spatial>
+    <spatial name="BICshort_r_tendon">
+      <site site="BICshort_r-P1"/>
+      <site site="BICshort_r-P2"/>
+      <site site="BICshort_r-P3"/>
+      <site site="BICshort_r-P4"/>
+      <site site="BICshort_r-P5"/>
+      <geom geom="Elbow_BIC_BRD_r" sidesite="BICshort_r_Elbow_BIC_BRD_r_sidesite"/>
+      <site site="BICshort_r-P6"/>
+      <site site="BICshort_r-P7"/>
+    </spatial>
+    <spatial name="BRA_r_tendon">
+      <site site="BRA_r-P1"/>
+      <site site="BRA_r-P2"/>
+      <site site="BRA_r-P3"/>
+    </spatial>
+    <spatial name="BRD_r_tendon">
+      <site site="BRD_r-P1"/>
+      <geom geom="Elbow_BIC_BRD_r" sidesite="BRD_r_Elbow_BIC_BRD_r_sidesite"/>
+      <site site="BRD_r-P2"/>
+      <site site="BRD_r-P3"/>
+    </spatial>
+    <spatial name="PT_r_tendon">
+      <site site="PT_r-P1"/>
+      <geom geom="Elbow_Ulna_r" sidesite="PT_r_Elbow_Ulna_r_sidesite"/>
+      <site site="PT_r-P2"/>
+      <site site="PT_r-P3"/>
+    </spatial>
+    <spatial name="PQ_r_tendon">
+      <site site="PQ_r-P1"/>
+      <geom geom="PQ2_r" sidesite="PQ_r_PQ2_r_sidesite"/>
+      <site site="PQ_r-P2"/>
+    </spatial>
+  </tendon>
+</mujoco>

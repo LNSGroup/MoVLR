@@ -1,0 +1,30 @@
+<mujoco>
+    <asset>
+        <material name='collision' rgba="0.8 0.6 .4 1"/>
+        <texture type="skybox" builtin="gradient" rgb1="0.8 0.8 0.8" rgb2="0.5 0.5 0.5" width="512" height="512"/>
+        <texture name="gray_plane" type="2d" builtin="checker" rgb1="0.7 0.7 0.7" rgb2="0.7 0.7 0.7" width="300" height="300"/>
+        <material name="gray_plane" texture="gray_plane" texrepeat="0.1 0.1" texuniform="true" reflectance="0.1"/>
+
+        <!-- <texture name="marblecube" type="cube" file="marble.png"/> -->
+        <!-- <material name="tablecube" texture="marblecube" rgba=".8 .8 .8 1"/> -->
+
+        <mesh name="waterbottle" file="../Geometry/waterbottle.stl" scale="0.8 0.8 1.3"/>
+        <mesh name="waterbottle_contact0" file="../Geometry/waterbottle_contact0.stl" scale="0.8 0.8 1.3"/>
+        <mesh name="waterbottle_contact1" file="../Geometry/waterbottle_contact1.stl" scale="0.8 0.8 1.3"/>
+
+        <mesh name="cup" file="../Geometry/cup.stl"/>
+        <mesh name="cup_contact0" file="../Geometry/cup_contact0.stl"/>
+        <mesh name="cup_contact1" file="../Geometry/cup_contact1.stl"/>
+        <mesh name="cup_contact2" file="../Geometry/cup_contact2.stl"/>
+        <mesh name="cup_contact3" file="../Geometry/cup_contact3.stl"/>
+        <mesh name="cup_contact4" file="../Geometry/cup_contact4.stl"/>
+        <mesh name="cup_contact5" file="../Geometry/cup_contact5.stl"/>
+        <mesh name="cup_contact6" file="../Geometry/cup_contact6.stl"/>
+        <mesh name="cup_contact7" file="../Geometry/cup_contact7.stl"/>
+        <mesh name="cup_contact8" file="../Geometry/cup_contact8.stl"/>
+        <mesh name="cup_contact9" file="../Geometry/cup_contact9.stl"/>
+        <mesh name="cup_contact10" file="../Geometry/cup_contact10.stl"/>
+        <mesh name="cup_contact11" file="../Geometry/cup_contact11.stl"/>
+
+    </asset>
+</mujoco> 

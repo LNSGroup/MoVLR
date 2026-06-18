@@ -1,0 +1,577 @@
+<mujoco>
+    <tendon>
+        <spatial name="PECM1_l_tendon">
+            <site site="PECM1_l-P1" />
+            <site site="PECM1_l-P2" />
+            <geom geom="PECMRib_l" sidesite="PECM1_l_PECMRib_l_sidesite"/>
+            <site site="PECM1_l-P3" />
+        </spatial>
+        <spatial name="PECM2_l_tendon">
+            <site site="PECM2_l-P1" />
+            <site site="PECM2_l-P2" />
+            <geom geom="PECMRib_l" sidesite="PECM2_l_PECMRib_l_sidesite"/>
+            <site site="PECM2_l-P3" />
+        </spatial>
+        <spatial name="PECM3_l_tendon">
+            <site site="PECM3_l-P1" />
+            <site site="PECM3_l-P2" />
+            <geom geom="PECMRib_l" sidesite="PECM3_l_PECMRib_l_sidesite"/>
+            <site site="PECM3_l-P3" />
+        </spatial>
+        <spatial name="PECMIN_l_tendon">
+            <site site="PECMIN_l-P1" />
+            <site site="PECMIN_l-P2" />
+        </spatial>
+        <spatial name="subclavius_l_tendon">
+            <site site="subclavius_l-P1" />
+            <site site="subclavius_l-P2" />
+        </spatial>
+        <spatial name="SerrAnt1_l_tendon">
+            <site site="SerrAnt1_l-P1" />
+            <site site="SerrAnt1_l-P2" />
+            <site site="SerrAnt1_l-P3" />
+            <site site="SerrAnt1_l-P4" />
+            <site site="SerrAnt1_l-P5" />
+            <site site="SerrAnt1_l-P6" />
+        </spatial>
+        <spatial name="SerrAnt2_l_tendon">
+            <site site="SerrAnt2_l-P1" />
+            <site site="SerrAnt2_l-P2" />
+            <site site="SerrAnt2_l-P3" />
+            <site site="SerrAnt2_l-P4" />
+            <site site="SerrAnt2_l-P5" />
+            <site site="SerrAnt2_l-P6" />
+        </spatial>
+        <spatial name="SerrAnt3_l_tendon">
+            <site site="SerrAnt3_l-P1" />
+            <site site="SerrAnt3_l-P2" />
+            <site site="SerrAnt3_l-P3" />
+            <site site="SerrAnt3_l-P4" />
+            <site site="SerrAnt3_l-P5" />
+            <site site="SerrAnt3_l-P6" />
+            <site site="SerrAnt3_l-P7" />
+        </spatial>
+        <spatial name="SerrAnt4_l_tendon">
+            <site site="SerrAnt4_l-P1" />
+            <site site="SerrAnt4_l-P2" />
+            <site site="SerrAnt4_l-P3" />
+            <site site="SerrAnt4_l-P4" />
+            <site site="SerrAnt4_l-P5" />
+            <site site="SerrAnt4_l-P6" />
+            <site site="SerrAnt4_l-P7" />
+        </spatial>
+        <spatial name="SerrAnt5_l_tendon">
+            <site site="SerrAnt5_l-P1" />
+            <site site="SerrAnt5_l-P2" />
+            <site site="SerrAnt5_l-P3" />
+            <site site="SerrAnt5_l-P4" />
+            <site site="SerrAnt5_l-P5" />
+            <site site="SerrAnt5_l-P6" />
+            <site site="SerrAnt5_l-P7" />
+        </spatial>
+        <spatial name="SerrAnt6_l_tendon">
+            <site site="SerrAnt6_l-P1" />
+            <site site="SerrAnt6_l-P2" />
+            <site site="SerrAnt6_l-P3" />
+            <site site="SerrAnt6_l-P4" />
+            <site site="SerrAnt6_l-P5" />
+            <site site="SerrAnt6_l-P6" />
+            <site site="SerrAnt6_l-P7" />
+        </spatial>
+        <spatial name="SerrAnt7_l_tendon">
+            <site site="SerrAnt7_l-P1" />
+            <site site="SerrAnt7_l-P2" />
+            <site site="SerrAnt7_l-P3" />
+            <site site="SerrAnt7_l-P4" />
+            <site site="SerrAnt7_l-P5" />
+        </spatial>
+        <spatial name="SerrAnt8_l_tendon">
+            <site site="SerrAnt8_l-P1" />
+            <site site="SerrAnt8_l-P2" />
+            <site site="SerrAnt8_l-P3" />
+            <site site="SerrAnt8_l-P4" />
+            <site site="SerrAnt8_l-P5" />
+        </spatial>
+        <spatial name="SerrAnt9_l_tendon">
+            <site site="SerrAnt9_l-P1" />
+            <site site="SerrAnt9_l-P2" />
+            <site site="SerrAnt9_l-P3" />
+            <site site="SerrAnt9_l-P4" />
+        </spatial>
+        <spatial name="ExtIC_IS1_1_l_tendon">
+            <site site="ExtIC_IS1_1_l-P1" />
+            <site site="ExtIC_IS1_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS1_3_l_tendon">
+            <site site="ExtIC_IS1_3_l-P1" />
+            <site site="ExtIC_IS1_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS1_5_l_tendon">
+            <site site="ExtIC_IS1_5_l-P1" />
+            <site site="ExtIC_IS1_5_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS2_1_l_tendon">
+            <site site="ExtIC_IS2_1_l-P1" />
+            <site site="ExtIC_IS2_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS2_3_l_tendon">
+            <site site="ExtIC_IS2_3_l-P1" />
+            <site site="ExtIC_IS2_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS2_5_l_tendon">
+            <site site="ExtIC_IS2_5_l-P1" />
+            <site site="ExtIC_IS2_5_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS2_7_l_tendon">
+            <site site="ExtIC_IS2_7_l-P1" />
+            <site site="ExtIC_IS2_7_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS3_1_l_tendon">
+            <site site="ExtIC_IS3_1_l-P1" />
+            <site site="ExtIC_IS3_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS3_3_l_tendon">
+            <site site="ExtIC_IS3_3_l-P1" />
+            <site site="ExtIC_IS3_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS3_5_l_tendon">
+            <site site="ExtIC_IS3_5_l-P1" />
+            <site site="ExtIC_IS3_5_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS3_7_l_tendon">
+            <site site="ExtIC_IS3_7_l-P1" />
+            <site site="ExtIC_IS3_7_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS4_1_l_tendon">
+            <site site="ExtIC_IS4_1_l-P1" />
+            <site site="ExtIC_IS4_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS4_3_l_tendon">
+            <site site="ExtIC_IS4_3_l-P1" />
+            <site site="ExtIC_IS4_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS4_5_l_tendon">
+            <site site="ExtIC_IS4_5_l-P1" />
+            <site site="ExtIC_IS4_5_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS4_7_l_tendon">
+            <site site="ExtIC_IS4_7_l-P1" />
+            <site site="ExtIC_IS4_7_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS5_1_l_tendon">
+            <site site="ExtIC_IS5_1_l-P1" />
+            <site site="ExtIC_IS5_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS5_3_l_tendon">
+            <site site="ExtIC_IS5_3_l-P1" />
+            <site site="ExtIC_IS5_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS5_5_l_tendon">
+            <site site="ExtIC_IS5_5_l-P1" />
+            <site site="ExtIC_IS5_5_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS5_7_l_tendon">
+            <site site="ExtIC_IS5_7_l-P1" />
+            <site site="ExtIC_IS5_7_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS6_1_l_tendon">
+            <site site="ExtIC_IS6_1_l-P1" />
+            <site site="ExtIC_IS6_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS6_3_l_tendon">
+            <site site="ExtIC_IS6_3_l-P1" />
+            <site site="ExtIC_IS6_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS6_5_l_tendon">
+            <site site="ExtIC_IS6_5_l-P1" />
+            <site site="ExtIC_IS6_5_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS6_7_l_tendon">
+            <site site="ExtIC_IS6_7_l-P1" />
+            <site site="ExtIC_IS6_7_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS7_1_l_tendon">
+            <site site="ExtIC_IS7_1_l-P1" />
+            <site site="ExtIC_IS7_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS7_3_l_tendon">
+            <site site="ExtIC_IS7_3_l-P1" />
+            <site site="ExtIC_IS7_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS7_5_l_tendon">
+            <site site="ExtIC_IS7_5_l-P1" />
+            <site site="ExtIC_IS7_5_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS7_7_l_tendon">
+            <site site="ExtIC_IS7_7_l-P1" />
+            <site site="ExtIC_IS7_7_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS8_1_l_tendon">
+            <site site="ExtIC_IS8_1_l-P1" />
+            <site site="ExtIC_IS8_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS8_3_l_tendon">
+            <site site="ExtIC_IS8_3_l-P1" />
+            <site site="ExtIC_IS8_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS8_5_l_tendon">
+            <site site="ExtIC_IS8_5_l-P1" />
+            <site site="ExtIC_IS8_5_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS8_7_l_tendon">
+            <site site="ExtIC_IS8_7_l-P1" />
+            <site site="ExtIC_IS8_7_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS9_1_l_tendon">
+            <site site="ExtIC_IS9_1_l-P1" />
+            <site site="ExtIC_IS9_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS9_3_l_tendon">
+            <site site="ExtIC_IS9_3_l-P1" />
+            <site site="ExtIC_IS9_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS9_5_l_tendon">
+            <site site="ExtIC_IS9_5_l-P1" />
+            <site site="ExtIC_IS9_5_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS10_1_l_tendon">
+            <site site="ExtIC_IS10_1_l-P1" />
+            <site site="ExtIC_IS10_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS10_3_l_tendon">
+            <site site="ExtIC_IS10_3_l-P1" />
+            <site site="ExtIC_IS10_3_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS11_1_l_tendon">
+            <site site="ExtIC_IS11_1_l-P1" />
+            <site site="ExtIC_IS11_1_l-P2" />
+        </spatial>
+        <spatial name="ExtIC_IS11_3_l_tendon">
+            <site site="ExtIC_IS11_3_l-P1" />
+            <site site="ExtIC_IS11_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS1_1_l_tendon">
+            <site site="IntIC_IS1_1_l-P1" />
+            <site site="IntIC_IS1_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS1_3_l_tendon">
+            <site site="IntIC_IS1_3_l-P1" />
+            <site site="IntIC_IS1_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS1_5_l_tendon">
+            <site site="IntIC_IS1_5_l-P1" />
+            <site site="IntIC_IS1_5_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS2_1_l_tendon">
+            <site site="IntIC_IS2_1_l-P1" />
+            <site site="IntIC_IS2_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS2_3_l_tendon">
+            <site site="IntIC_IS2_3_l-P1" />
+            <site site="IntIC_IS2_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS2_5_l_tendon">
+            <site site="IntIC_IS2_5_l-P1" />
+            <site site="IntIC_IS2_5_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS2_7_l_tendon">
+            <site site="IntIC_IS2_7_l-P1" />
+            <site site="IntIC_IS2_7_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS3_1_l_tendon">
+            <site site="IntIC_IS3_1_l-P1" />
+            <site site="IntIC_IS3_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS3_3_l_tendon">
+            <site site="IntIC_IS3_3_l-P1" />
+            <site site="IntIC_IS3_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS3_5_l_tendon">
+            <site site="IntIC_IS3_5_l-P1" />
+            <site site="IntIC_IS3_5_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS3_7_l_tendon">
+            <site site="IntIC_IS3_7_l-P1" />
+            <site site="IntIC_IS3_7_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS4_1_l_tendon">
+            <site site="IntIC_IS4_1_l-P1" />
+            <site site="IntIC_IS4_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS4_3_l_tendon">
+            <site site="IntIC_IS4_3_l-P1" />
+            <site site="IntIC_IS4_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS4_5_l_tendon">
+            <site site="IntIC_IS4_5_l-P1" />
+            <site site="IntIC_IS4_5_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS4_7_l_tendon">
+            <site site="IntIC_IS4_7_l-P1" />
+            <site site="IntIC_IS4_7_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS5_1_l_tendon">
+            <site site="IntIC_IS5_1_l-P1" />
+            <site site="IntIC_IS5_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS5_3_l_tendon">
+            <site site="IntIC_IS5_3_l-P1" />
+            <site site="IntIC_IS5_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS5_5_l_tendon">
+            <site site="IntIC_IS5_5_l-P1" />
+            <site site="IntIC_IS5_5_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS5_7_l_tendon">
+            <site site="IntIC_IS5_7_l-P1" />
+            <site site="IntIC_IS5_7_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS6_1_l_tendon">
+            <site site="IntIC_IS6_1_l-P1" />
+            <site site="IntIC_IS6_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS6_3_l_tendon">
+            <site site="IntIC_IS6_3_l-P1" />
+            <site site="IntIC_IS6_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS6_5_l_tendon">
+            <site site="IntIC_IS6_5_l-P1" />
+            <site site="IntIC_IS6_5_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS6_7_l_tendon">
+            <site site="IntIC_IS6_7_l-P1" />
+            <site site="IntIC_IS6_7_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS7_1_l_tendon">
+            <site site="IntIC_IS7_1_l-P1" />
+            <site site="IntIC_IS7_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS7_3_l_tendon">
+            <site site="IntIC_IS7_3_l-P1" />
+            <site site="IntIC_IS7_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS7_5_l_tendon">
+            <site site="IntIC_IS7_5_l-P1" />
+            <site site="IntIC_IS7_5_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS7_7_l_tendon">
+            <site site="IntIC_IS7_7_l-P1" />
+            <site site="IntIC_IS7_7_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS8_1_l_tendon">
+            <site site="IntIC_IS8_1_l-P1" />
+            <site site="IntIC_IS8_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS8_3_l_tendon">
+            <site site="IntIC_IS8_3_l-P1" />
+            <site site="IntIC_IS8_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS8_5_l_tendon">
+            <site site="IntIC_IS8_5_l-P1" />
+            <site site="IntIC_IS8_5_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS8_7_l_tendon">
+            <site site="IntIC_IS8_7_l-P1" />
+            <site site="IntIC_IS8_7_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS9_1_l_tendon">
+            <site site="IntIC_IS9_1_l-P1" />
+            <site site="IntIC_IS9_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS9_3_l_tendon">
+            <site site="IntIC_IS9_3_l-P1" />
+            <site site="IntIC_IS9_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS9_5_l_tendon">
+            <site site="IntIC_IS9_5_l-P1" />
+            <site site="IntIC_IS9_5_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS10_1_l_tendon">
+            <site site="IntIC_IS10_1_l-P1" />
+            <site site="IntIC_IS10_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS10_3_l_tendon">
+            <site site="IntIC_IS10_3_l-P1" />
+            <site site="IntIC_IS10_3_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS11_1_l_tendon">
+            <site site="IntIC_IS11_1_l-P1" />
+            <site site="IntIC_IS11_1_l-P2" />
+        </spatial>
+        <spatial name="IntIC_IS11_3_l_tendon">
+            <site site="IntIC_IS11_3_l-P1" />
+            <site site="IntIC_IS11_3_l-P2" />
+        </spatial>
+        <spatial name="subcostales_R3R5_l_tendon">
+            <site site="subcostales_R3R5_l-P1" />
+            <site site="subcostales_R3R5_l-P2" />
+        </spatial>
+        <spatial name="subcostales_R4R6_l_tendon">
+            <site site="subcostales_R4R6_l-P1" />
+            <site site="subcostales_R4R6_l-P2" />
+        </spatial>
+        <spatial name="subcostales_R5R7_l_tendon">
+            <site site="subcostales_R5R7_l-P1" />
+            <site site="subcostales_R5R7_l-P2" />
+        </spatial>
+        <spatial name="subcostales_R8R10_l_tendon">
+            <site site="subcostales_R8R10_l-P1" />
+            <site site="subcostales_R8R10_l-P2" />
+        </spatial>
+        <spatial name="subcostales_R9R11_l_tendon">
+            <site site="subcostales_R9R11_l-P1" />
+            <site site="subcostales_R9R11_l-P2" />
+        </spatial>
+        <spatial name="subcostales_R10R12_l_tendon">
+            <site site="subcostales_R10R12_l-P1" />
+            <site site="subcostales_R10R12_l-P2" />
+        </spatial>
+        <spatial name="trans_thox_R2_l_tendon">
+            <site site="trans_thox_R2_l-P1" />
+            <site site="trans_thox_R2_l-P2" />
+        </spatial>
+        <spatial name="trans_thox_R3_l_tendon">
+            <site site="trans_thox_R3_l-P1" />
+            <site site="trans_thox_R3_l-P2" />
+        </spatial>
+        <spatial name="trans_thox_R4_l_tendon">
+            <site site="trans_thox_R4_l-P1" />
+            <site site="trans_thox_R4_l-P2" />
+        </spatial>
+        <spatial name="trans_thox_R5_l_tendon">
+            <site site="trans_thox_R5_l-P1" />
+            <site site="trans_thox_R5_l-P2" />
+        </spatial>
+        <spatial name="trans_thox_R6_l_tendon">
+            <site site="trans_thox_R6_l-P1" />
+            <site site="trans_thox_R6_l-P2" />
+        </spatial>
+        <spatial name="rect_abd_l_tendon">
+            <site site="rect_abd_l-P1" />
+            <site site="rect_abd_l-P2" />
+            <site site="rect_abd_l-P3" />
+            <site site="rect_abd_l-P4" />
+        </spatial>
+        <spatial name="EO_R5_l_tendon">
+            <site site="EO_R5_l-P1" />
+            <site site="EO_R5_l-P2" />
+            <site site="EO_R5_l-P3" />
+        </spatial>
+        <spatial name="EO_R6_l_tendon">
+            <site site="EO_R6_l-P1" />
+            <site site="EO_R6_l-P2" />
+            <site site="EO_R6_l-P3" />
+        </spatial>
+        <spatial name="EO_R7_l_tendon">
+            <site site="EO_R7_l-P1" />
+            <site site="EO_R7_l-P2" />
+            <site site="EO_R7_l-P3" />
+        </spatial>
+        <spatial name="EO_R8_l_tendon">
+            <site site="EO_R8_l-P1" />
+            <site site="EO_R8_l-P2" />
+            <site site="EO_R8_l-P3" />
+            <site site="EO_R8_l-P3_0" />
+        </spatial>
+        <spatial name="EO_R9_l_tendon">
+            <site site="EO_R9_l-P1" />
+            <site site="EO_R9_l-P2" />
+            <site site="EO_R9_l-P3" />
+            <site site="EO_R9_l-P4" />
+            <site site="EO_R9_l-P5" />
+        </spatial>
+        <spatial name="EO_R10_l_tendon">
+            <site site="EO_R10_l-P1" />
+            <site site="EO_R10_l-P2" />
+        </spatial>
+        <spatial name="EO_R11_l_tendon">
+            <site site="EO_R11_l-P1" />
+            <site site="EO_R11_l-P2" />
+        </spatial>
+        <spatial name="EO_R12_l_tendon">
+            <site site="EO_R12_l-P1" />
+            <site site="EO_R12_l-P2" />
+        </spatial>
+        <spatial name="IO1_l_tendon">
+            <site site="IO1_l-P1" />
+            <site site="IO1_l-P2" />
+        </spatial>
+        <spatial name="IO2_l_tendon">
+            <site site="IO2_l-P1" />
+            <site site="IO2_l-P2" />
+        </spatial>
+        <spatial name="IO3_l_tendon">
+            <site site="IO3_l-P1" />
+            <site site="IO3_l-P2" />
+        </spatial>
+        <spatial name="IO4_l_tendon">
+            <site site="IO4_l-P1" />
+            <site site="IO4_l-P2" />
+        </spatial>
+        <spatial name="IO5_l_tendon">
+            <site site="IO5_l-P1" />
+            <site site="IO5_l-P2" />
+        </spatial>
+        <spatial name="IO6_l_tendon">
+            <site site="IO6_l-P1" />
+            <site site="IO6_l-P2" />
+        </spatial>
+        <spatial name="TR1_l_tendon">
+            <site site="TR1_l-P1" />
+            <site site="TR1_l-P2" />
+        </spatial>
+        <spatial name="TR2_l_tendon">
+            <site site="TR2_l-P1" />
+            <geom geom="TR_wrap_lumbar2_l" sidesite="TR2_l_TR_wrap_lumbar2_l_sidesite"/>
+            <site site="TR2_l-P2" />
+        </spatial>
+        <spatial name="TR3_l_tendon">
+            <site site="TR3_l-P1" />
+            <geom geom="TR_wrap_lumbar3_l" sidesite="TR3_l_TR_wrap_lumbar3_l_sidesite"/>
+            <site site="TR3_l-P2" />
+        </spatial>
+        <spatial name="TR4_l_tendon">
+            <site site="TR4_l-P1" />
+            <geom geom="TR_wrap_lumbar4_l" sidesite="TR4_l_TR_wrap_lumbar4_l_sidesite"/>
+            <site site="TR4_l-P2" />
+        </spatial>
+        <spatial name="TR5_l_tendon">
+            <site site="TR5_l-P1" />
+            <geom geom="TR_wrap_lumbar5_l" sidesite="TR5_l_TR_wrap_lumbar5_l_sidesite"/>
+            <site site="TR5_l-P2" />
+        </spatial>
+        <spatial name="pyramidalis_l_tendon">
+            <site site="pyramidalis_l-P1" />
+            <site site="pyramidalis_l-P2" />
+        </spatial>
+        <spatial name="QL_post_I_2-L4_l_tendon">
+            <site site="QL_post_I_2-L4_l-P1" />
+            <site site="QL_post_I_2-L4_l-P2" />
+        </spatial>
+        <spatial name="QL_post_I_2-L3_l_tendon">
+            <site site="QL_post_I_2-L3_l-P1" />
+            <site site="QL_post_I_2-L3_l-P2" />
+        </spatial>
+        <spatial name="QL_post_I_2-L2_l_tendon">
+            <site site="QL_post_I_2-L2_l-P1" />
+            <site site="QL_post_I_2-L2_l-P2" />
+        </spatial>
+        <spatial name="QL_post_I_3-L1_l_tendon">
+            <site site="QL_post_I_3-L1_l-P1" />
+            <site site="QL_post_I_3-L1_l-P2" />
+        </spatial>
+        <spatial name="QL_ant_I_3-12_1_l_tendon">
+            <site site="QL_ant_I_3-12_1_l-P1" />
+            <site site="QL_ant_I_3-12_1_l-P2" />
+        </spatial>
+        <spatial name="QL_ant_I_3-12_2_l_tendon">
+            <site site="QL_ant_I_3-12_2_l-P1" />
+            <site site="QL_ant_I_3-12_2_l-P2" />
+        </spatial>
+        <spatial name="QL_ant_I_3-12_3_l_tendon">
+            <site site="QL_ant_I_3-12_3_l-P1" />
+            <site site="QL_ant_I_3-12_3_l-P2" />
+        </spatial>
+
+    </tendon>
+</mujoco>

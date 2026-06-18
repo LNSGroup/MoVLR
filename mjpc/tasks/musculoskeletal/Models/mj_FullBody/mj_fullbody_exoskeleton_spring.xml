@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="MuJoCo Full Body Model">
+  <compiler inertiafromgeom="auto" angle="radian" balanceinertia="true" boundmass="0.001" boundinertia="0.001">
+    <lengthrange inttotal="50" useexisting="true"></lengthrange>
+  </compiler>
+   <option>
+      <flag contact="enable" gravity="enable"/>
+  </option>
+  <default>
+    <joint limited="true" damping="0.5" armature="0.1" stiffness="0"></joint>
+    <geom rgba="0.8 0.6 0.4 1" margin="0.001"></geom>
+    <site size="0.001"></site>
+    <tendon width="0.005" rgba="0.95 0.3 0.3 1" limited="false"></tendon>
+    <default class="muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" scale="200"></muscle>
+    </default>
+    <default class="collision">
+        <!-- User parameter for geoms is used to identify collision types -->
+      <geom material="collision" contype="1" conaffinity="0"/>
+    </default>
+    <default class="wrap">
+        <geom rgba=".5 .5 .9 1" group="3" contype="0" conaffinity="0"/>
+    </default>
+  </default>
+  <size njmax="1000" nconmax="400" nuser_jnt="1"></size>
+  <visual>
+    <quality shadowsize="2048"/>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    <map znear="0.01"/>
+  </visual>
+
+  <worldbody>
+    <geom name="floor" pos="0 0 0" size="10 1 0.125" type="plane" condim="3" rgba="1 1 1 1" material="grid_vis"></geom>
+    <include file="Body/Body_Exoskeleton.xml" />
+    <body name="pelvis" pos="0 0 1.1" quat="0.7071067811865475 0.7071067811865475 0.0 0.0">
+      <!-- <joint name="pelvis_tz" type="slide" pos="0 0 0" axis="       0        0        1" limited="true" range="      -3        3" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_ty" type="slide" pos="0 0 0" axis="       0        1        0" limited="true" range="      -1        2" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_tx" type="slide" pos="0 0 0" axis="       1        0        0" limited="false" range="      -5        5" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_tilt" type="hinge" pos="0 0 0" axis="       0        0        1" limited="true" range=" -1.5708   1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_list" type="hinge" pos="0 0 0" axis="       1        0        0" limited="true" range=" -1.5708   1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_rotation" type="hinge" pos="0 0 0" axis="       0        1        0" limited="true" range=" -1.5708   1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint> -->
+
+      <include file="Body/Body_Leg_r.xml"/>
+      <include file="Body/Body_Leg_l.xml"/>
+      <include file="Body/Body_Torso_Simple.xml"/>
+      <camera name="pelvis_camera" pos="5 2 5" euler="-0.5 0.7 0.3" mode="track"></camera>
+    </body>
+  </worldbody>
+
+  <include file="Asset/Asset_Lowerbody.xml"/>
+  <include file="Asset/Asset_Torso.xml"/>
+  <include file="Asset/Asset_Upperbody.xml"/>
+  <include file="Asset/Asset_Others.xml"/>
+  <include file="Asset/Asset_Exoskeleton.xml" />
+
+  <include file="Tendon/Tendon_Leg_r.xml"/>
+  <include file="Tendon/Tendon_Leg_l.xml"/>
+  <include file="Tendon/Tendon_Arm_r.xml"/>
+  <include file="Tendon/Tendon_Arm_l.xml"/>
+  <include file="Tendon/Tendon_Torso.xml"/>
+  <include file="Tendon/Tendon_Exoskeleton.xml"/>
+
+  <include file="Muscle/Motor_Exoskeleton.xml"/>
+  <include file="Muscle/Muscle_Leg_r.xml"/>
+  <include file="Muscle/Muscle_Leg_l.xml"/>
+  <include file="Muscle/Muscle_Arm_r.xml"/>
+  <include file="Muscle/Muscle_Arm_l.xml"/>
+  <include file="Muscle/Muscle_Torso.xml"/>
+  
+  <include file="Equality/Equality_Lowerbody.xml"/>
+  <include file="Equality/Equality_Upperbody.xml"/>
+  <include file="Equality/Equality_Torso.xml"/>
+  <include file="Equality/Equality_Exoskeleton.xml"/>
+
+</mujoco>

@@ -1,0 +1,61 @@
+<mujoco>
+  <actuator>
+    <muscle name="Ps_L1_VB_l" lengthrange="0.311 0.353" force="247.656" tendon="Ps_L1_VB_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L1_TP_l" lengthrange="0.305 0.350" force="74.387" tendon="Ps_L1_TP_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L1_L2_IVD_l" lengthrange="0.290 0.331" force="145.174" tendon="Ps_L1_L2_IVD_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L2_TP_l" lengthrange="0.273 0.311"  force="281.603" tendon="Ps_L2_TP_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L2_L3_IVD_l" lengthrange="0.255 0.294" force="178.485" tendon="Ps_L2_L3_IVD_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L3_TP_l" lengthrange="0.244 0.280" force="165.130" tendon="Ps_L3_TP_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L3_L4_IVD_l" lengthrange="0.229 0.259" force="61.810" tendon="Ps_L3_L4_IVD_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L4_TP_l" lengthrange="0.223 0.251" force="289.961" tendon="Ps_L4_TP_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L4_L5_IVD_l" lengthrange="0.197 0.226" force="128.325" tendon="Ps_L4_L5_IVD_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L5_TP_l" lengthrange="0.190 0.223" force="288.842" tendon="Ps_L5_TP_l_tendon" class="lower_muscle" />
+    <muscle name="Ps_L5_VB_l" lengthrange="0.172 0.202" force="360.958" tendon="Ps_L5_VB_l_tendon" class="lower_muscle" />
+    <muscle name="psoas_minor_l" lengthrange="0.01 1" force="0.001" tendon="psoas_minor_l_tendon" class="lower_muscle" group="1"/>
+    <muscle name="per_tert_l" lengthrange="0.149 0.173" force="175.386" tendon="per_tert_l_tendon" class="lower_muscle" />
+    <muscle name="pect_l" lengthrange="0.098 0.128" force="266.000" tendon="pect_l_tendon" class="lower_muscle" />
+    <muscle name="quad_fem_l" lengthrange="0.044 0.061" force="381.000" tendon="quad_fem_l_tendon" class="lower_muscle" />
+    <muscle name="sup_gem_l" lengthrange="0.067 0.074" force="164.000" tendon="sup_gem_l_tendon" class="lower_muscle" />
+    <muscle name="inf_gem_l" lengthrange="0.01 1" force="0.001" tendon="inf_gem_l_tendon" class="lower_muscle" group="1"/>
+    <muscle name="obturator_int_l" lengthrange="0.01 1" force="0.001" tendon="obturator_int_l_tendon" class="lower_muscle" group="1"/>
+    <muscle name="obturator_ext_l" lengthrange="0.01 1" force="0.001" tendon="obturator_ext_l_tendon" class="lower_muscle" group="1"/>
+    <muscle name="plantaris_l" lengthrange="0.01 1" force="0.001" tendon="plantaris_l_tendon" class="lower_muscle" group="1"/>
+    <muscle name="popliteus_l" lengthrange="0.01 1" force="0.001" tendon="popliteus_l_tendon" class="lower_muscle" group="1"/>
+    <muscle name="addbrev_l" lengthrange="0.113 0.144" force="621.702" tendon="addbrev_l_tendon" class="lower_muscle" />
+    <muscle name="addlong_l" lengthrange="0.213 0.245" force="908.113" tendon="addlong_l_tendon" class="lower_muscle" />
+    <muscle name="addmagDist_l" lengthrange="0.220 0.273" force="586.009" tendon="addmagDist_l_tendon" class="lower_muscle" />
+    <muscle name="addmagIsch_l" lengthrange="0.333 0.380" force="588.881" tendon="addmagIsch_l_tendon" class="lower_muscle" />
+    <muscle name="addmagMid_l" lengthrange="0.150 0.191" force="584.506" tendon="addmagMid_l_tendon" class="lower_muscle" />
+    <muscle name="addmagProx_l" lengthrange="0.120 0.151" force="568.553" tendon="addmagProx_l_tendon" class="lower_muscle" />
+    <muscle name="bflh140_l" lengthrange="0.406 0.435" force="1292.917" tendon="bflh140_l_tendon" class="lower_muscle" />
+    <muscle name="bfsh140_l" lengthrange="0.189 0.222" force="537.781" tendon="bfsh140_l_tendon" class="lower_muscle" />
+    <muscle name="gaslat140_l" lengthrange="0.436 0.456" force="1540.382" tendon="gaslat140_l_tendon" class="lower_muscle" />
+    <muscle name="gasmed_l" lengthrange="0.441 0.459" force="3072.851" tendon="gasmed_l_tendon" class="lower_muscle" />
+    <muscle name="glmax1_l" lengthrange="0.198 0.242" force="922.779" tendon="glmax1_l_tendon" class="lower_muscle" />
+    <muscle name="glmax2_l" lengthrange="0.227 0.274" force="1312.222" tendon="glmax2_l_tendon" class="lower_muscle" />
+    <muscle name="glmax3_l" lengthrange="0.228 0.278" force="879.294" tendon="glmax3_l_tendon" class="lower_muscle" />
+    <muscle name="glmed1_l" lengthrange="0.116 0.139" force="1039.136" tendon="glmed1_l_tendon" class="lower_muscle" />
+    <muscle name="glmed2_l" lengthrange="0.138 0.164" force="727.077" tendon="glmed2_l_tendon" class="lower_muscle" />
+    <muscle name="glmed3_l" lengthrange="0.107 0.130" force="827.912" tendon="glmed3_l_tendon" class="lower_muscle" />
+    <muscle name="glmin1_l" lengthrange="0.080 0.105" force="368.363" tendon="glmin1_l_tendon" class="lower_muscle" />
+    <muscle name="glmin2_l" lengthrange="0.084 0.104" force="394.820" tendon="glmin2_l_tendon" class="lower_muscle" />
+    <muscle name="glmin3_l" lengthrange="0.084 0.094" force="446.706" tendon="glmin3_l_tendon" class="lower_muscle" />
+    <muscle name="grac_l" lengthrange="0.373 0.441" force="277.160" tendon="grac_l_tendon" class="lower_muscle" />
+    <muscle name="iliacus_l" lengthrange="0.166 0.198" force="981.397" tendon="iliacus_l_tendon" class="lower_muscle" />
+    <muscle name="perbrev_l" lengthrange="0.212 0.225" force="510.263" tendon="perbrev_l_tendon" class="lower_muscle" />
+    <muscle name="perlong_l" lengthrange="0.370 0.386" force="1081.260" tendon="perlong_l_tendon" class="lower_muscle" />
+    <muscle name="piri_l" lengthrange="0.134 0.142" force="1014.142" tendon="piri_l_tendon" class="lower_muscle" />
+    <muscle name="recfem_l" lengthrange="0.517 0.540" force="2140.333" tendon="recfem_l_tendon" class="lower_muscle" />
+    <muscle name="sart_l" lengthrange="0.426 0.547" force="249.328" tendon="sart_l_tendon" class="lower_muscle" />
+    <muscle name="semimem_l" lengthrange="0.390 0.415" force="2130.058" tendon="semimem_l_tendon" class="lower_muscle" />
+    <muscle name="semiten_l" lengthrange="0.412 0.470" force="574.165" tendon="semiten_l_tendon" class="lower_muscle" />
+    <muscle name="soleus_l" lengthrange="0.324 0.338" force="5749.642" tendon="soleus_l_tendon" class="lower_muscle" />
+    <muscle name="tfl_l" lengthrange="0.531 0.559" force="410.643" tendon="tfl_l_tendon" class="lower_muscle" />
+    <muscle name="tibant_l" lengthrange="0.297 0.317" force="1204.145" tendon="tibant_l_tendon" class="lower_muscle" />
+    <muscle name="tibpost_l" lengthrange="0.349 0.360" force="1685.967" tendon="tibpost_l_tendon" class="lower_muscle" />
+    <muscle name="vasint_l" lengthrange="0.293 0.328" force="1693.983" tendon="vasint_l_tendon" class="lower_muscle" />
+    <muscle name="vaslat140_l" lengthrange="0.309 0.344" force="4985.032" tendon="vaslat140_l_tendon" class="lower_muscle" />
+    <muscle name="vasmed_l" lengthrange="0.290 0.324" force="2506.510" tendon="vasmed_l_tendon" class="lower_muscle" />
+
+  </actuator>
+</mujoco>

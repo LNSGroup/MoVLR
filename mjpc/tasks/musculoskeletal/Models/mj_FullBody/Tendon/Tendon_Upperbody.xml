@@ -1,0 +1,781 @@
+<mujoco>
+  <tendon>
+    <!-- Here Begin ARM Tendon -->
+    <spatial name="DELT1_r_tendon">
+      <site site="DELT1_r_P1"></site>
+      <site site="DELT1_r_P2"></site>
+      <site site="DELT1_r_P3"></site>
+      <site site="DELT1_r_P4"></site>
+    </spatial>
+    <spatial name="DELT2_r_tendon">
+      <site site="DELT2_r_P1"></site>
+      <site site="DELT2_r_P2"></site>
+      <site site="DELT2_r_P3"></site>
+      <site site="DELT2_r_P4"></site>
+    </spatial>
+    <spatial name="DELT3_r_tendon">
+      <site site="DELT3_r_P1"></site>
+      <site site="DELT3_r_P2"></site>
+      <site site="DELT3_r_P3"></site>
+    </spatial>
+    <spatial name="SUPSP_r_tendon">
+      <site site="SUPSP_r_P1"></site>
+      <site site="SUPSP_r_P2"></site>
+      <site site="SUPSP_r_P3"></site>
+    </spatial>
+    <spatial name="INFSP_r_tendon">
+      <site site="INFSP_r_P1"></site>
+      <site site="INFSP_r_P2"></site>
+    </spatial>
+    <spatial name="SUBSC_r_tendon">
+      <site site="SUBSC_r_P1"></site>
+      <site site="SUBSC_r_P2"></site>
+      <site site="SUBSC_r_P3"></site>
+    </spatial>
+    <spatial name="TMIN_r_tendon">
+      <site site="TMIN_r_P1"></site>
+      <site site="TMIN_r_P2"></site>
+      <site site="TMIN_r_P3"></site>
+    </spatial>
+    <spatial name="TMAJ_r_tendon">
+      <site site="TMAJ_r_P1"></site>
+      <site site="TMAJ_r_P2"></site>
+      <site site="TMAJ_r_P3"></site>
+      <site site="TMAJ_r_P4"></site>
+      <site site="TMAJ_r_P5"></site>
+    </spatial>
+    <spatial name="PECM1_r_tendon">
+      <site site="PECM1_r_P1"></site>
+      <site site="PECM1_r_P2"></site>
+      <site site="PECM1_r_P3"></site>
+      <site site="PECM1_r_P4"></site>
+    </spatial>
+    <spatial name="PECM2_r_tendon">
+      <site site="PECM2_r_P1"></site>
+      <site site="PECM2_r_P2"></site>
+      <site site="PECM2_r_P3"></site>
+      <site site="PECM2_r_P4"></site>
+      <site site="PECM2_r_P5"></site>
+    </spatial>
+    <spatial name="PECM3_r_tendon">
+      <site site="PECM3_r_P1"></site>
+      <site site="PECM3_r_P2"></site>
+      <site site="PECM3_r_P3"></site>
+      <site site="PECM3_r_P4"></site>
+      <site site="PECM3_r_P5"></site>
+    </spatial>
+    
+    <spatial name="CORB_r_tendon">
+      <site site="CORB_r_P1"></site>
+      <site site="CORB_r_P2"></site>
+      <site site="CORB_r_P3"></site>
+    </spatial>
+    <spatial name="TRIlong_r_tendon">
+      <site site="TRIlong_r_P1"></site>
+      <site site="TRIlong_r_P2"></site>
+      <site site="TRIlong_r_P3"></site>
+      <site site="TRIlong_r_P4"></site>
+      <site site="TRIlong_r_P5"></site>
+    </spatial>
+    <spatial name="TRIlat_r_tendon">
+      <site site="TRIlat_r_P1"></site>
+      <site site="TRIlat_r_P2"></site>
+      <site site="TRIlat_r_P3"></site>
+      <site site="TRIlat_r_P4"></site>
+      <site site="TRIlat_r_P5"></site>
+    </spatial>
+    <spatial name="TRImed_r_tendon">
+      <site site="TRImed_r_P1"></site>
+      <site site="TRImed_r_P2"></site>
+      <site site="TRImed_r_P3"></site>
+      <site site="TRImed_r_P4"></site>
+      <site site="TRImed_r_P5"></site>
+    </spatial>
+    <spatial name="ANC_r_tendon">
+      <site site="ANC_r_P1"></site>
+      <site site="ANC_r_P2"></site>
+    </spatial>
+    <spatial name="SUP_r_tendon">
+      <site site="SUP_r_P1"></site>
+      <site site="SUP_r_P2"></site>
+      <site site="SUP_r_P3"></site>
+    </spatial>
+    <spatial name="BIClong_r_tendon">
+      <site site="BIClong_r_P1"></site>
+      <site site="BIClong_r_P2"></site>
+      <site site="BIClong_r_P3"></site>
+      <site site="BIClong_r_P4"></site>
+      <site site="BIClong_r_P5"></site>
+      <site site="BIClong_r_P6"></site>
+      <site site="BIClong_r_P7"></site>
+      <site site="BIClong_r_P8"></site>
+      <site site="BIClong_r_P9"></site>
+      <site site="BIClong_r_P10"></site>
+    </spatial>
+    <spatial name="BICshort_r_tendon">
+      <site site="BICshort_r_P1"></site>
+      <site site="BICshort_r_P2"></site>
+      <site site="BICshort_r_P3"></site>
+      <site site="BICshort_r_P4"></site>
+      <site site="BICshort_r_P5"></site>
+      <site site="BICshort_r_P6"></site>
+      <site site="BICshort_r_P7"></site>
+    </spatial>
+    <spatial name="BRA_r_tendon">
+      <site site="BRA_r_P1"></site>
+      <site site="BRA_r_P2"></site>
+      <site site="BRA_r_P3"></site>
+      <site site="BRA_r_P4"></site>
+    </spatial>
+    <spatial name="BRD_r_tendon">
+      <site site="BRD_r_P1"></site>
+      <site site="BRD_r_P2"></site>
+      <site site="BRD_r_P3"></site>
+    </spatial>
+    <spatial name="ECRL_r_tendon">
+      <site site="ECRL_r_P1"></site>
+      <site site="ECRL_r_P2"></site>
+      <site site="ECRL_r_P3"></site>
+      <site site="ECRL_r_P4"></site>
+    </spatial>
+    <spatial name="ECRB_r_tendon">
+      <site site="ECRB_r_P1"></site>
+      <site site="ECRB_r_P2"></site>
+      <site site="ECRB_r_P3"></site>
+      <site site="ECRB_r_P4"></site>
+    </spatial>
+    <spatial name="ECU_r_tendon">
+      <site site="ECU_r_P1"></site>
+      <site site="ECU_r_P2"></site>
+      <site site="ECU_r_P3"></site>
+      <site site="ECU_r_P4"></site>
+      <site site="ECU_r_P5"></site>
+      <site site="ECU_r_P6"></site>
+    </spatial>
+    <spatial name="FCR_r_tendon">
+      <site site="FCR_r_P1"></site>
+      <site site="FCR_r_P2"></site>
+      <site site="FCR_r_P3"></site>
+    </spatial>
+    <spatial name="FCU_r_tendon">
+      <site site="FCU_r_P1"></site>
+      <site site="FCU_r_P2"></site>
+      <site site="FCU_r_P3"></site>
+      <site site="FCU_r_P4"></site>
+    </spatial>
+    <spatial name="PL_r_tendon">
+      <site site="PL_r_P1"></site>
+      <site site="PL_r_P2"></site>
+      <site site="PL_r_P3"></site>
+      <site site="PL_r_P4"></site>
+    </spatial>
+    <spatial name="PT_r_tendon">
+      <site site="PT_r_P1"></site>
+      <site site="PT_r_P2"></site>
+      <site site="PT_r_P3"></site>
+      <site site="PT_r_P4"></site>
+      <site site="PT_r_P5"></site>
+    </spatial>
+    <spatial name="PQ_r_tendon">
+      <site site="PQ_r_P1"></site>
+      <site site="PQ_r_P2"></site>
+    </spatial>
+    <spatial name="FDSL_r_tendon">
+      <site site="FDSL_r_P1"></site>
+      <site site="FDSL_r_P2"></site>
+      <site site="FDSL_r_P3"></site>
+      <site site="FDSL_r_P4"></site>
+      <site site="FDSL_r_P5"></site>
+      <site site="FDSL_r_P6"></site>
+      <site site="FDSL_r_P7"></site>
+      <site site="FDSL_r_P8"></site>
+    </spatial>
+    <spatial name="FDSR_r_tendon">
+      <site site="FDSR_r_P1"></site>
+      <site site="FDSR_r_P2"></site>
+      <site site="FDSR_r_P3"></site>
+      <site site="FDSR_r_P4"></site>
+      <site site="FDSR_r_P5"></site>
+      <site site="FDSR_r_P6"></site>
+      <site site="FDSR_r_P7"></site>
+      <site site="FDSR_r_P8"></site>
+    </spatial>
+    <spatial name="FDSM_r_tendon">
+      <site site="FDSM_r_P1"></site>
+      <site site="FDSM_r_P2"></site>
+      <site site="FDSM_r_P3"></site>
+      <site site="FDSM_r_P4"></site>
+      <site site="FDSM_r_P5"></site>
+      <site site="FDSM_r_P6"></site>
+      <site site="FDSM_r_P7"></site>
+      <site site="FDSM_r_P8"></site>
+      <site site="FDSM_r_P9"></site>
+    </spatial>
+    <spatial name="FDSI_r_tendon">
+      <site site="FDSI_r_P1"></site>
+      <site site="FDSI_r_P2"></site>
+      <site site="FDSI_r_P3"></site>
+      <site site="FDSI_r_P4"></site>
+      <site site="FDSI_r_P5"></site>
+      <site site="FDSI_r_P6"></site>
+      <site site="FDSI_r_P7"></site>
+      <site site="FDSI_r_P8"></site>
+      <site site="FDSI_r_P9"></site>
+    </spatial>
+    <spatial name="FDPL_r_tendon">
+      <site site="FDPL_r_P1"></site>
+      <site site="FDPL_r_P2"></site>
+      <site site="FDPL_r_P3"></site>
+      <site site="FDPL_r_P4"></site>
+      <site site="FDPL_r_P5"></site>
+      <site site="FDPL_r_P6"></site>
+      <site site="FDPL_r_P7"></site>
+      <site site="FDPL_r_P8"></site>
+      <site site="FDPL_r_P9"></site>
+    </spatial>
+    <spatial name="FDPR_r_tendon">
+      <site site="FDPR_r_P1"></site>
+      <site site="FDPR_r_P2"></site>
+      <site site="FDPR_r_P3"></site>
+      <site site="FDPR_r_P4"></site>
+      <site site="FDPR_r_P5"></site>
+      <site site="FDPR_r_P6"></site>
+      <site site="FDPR_r_P7"></site>
+      <site site="FDPR_r_P8"></site>
+      <site site="FDPR_r_P9"></site>
+    </spatial>
+    <spatial name="FDPM_r_tendon">
+      <site site="FDPM_r_P1"></site>
+      <site site="FDPM_r_P2"></site>
+      <site site="FDPM_r_P3"></site>
+      <site site="FDPM_r_P4"></site>
+      <site site="FDPM_r_P5"></site>
+      <site site="FDPM_r_P6"></site>
+      <site site="FDPM_r_P7"></site>
+      <site site="FDPM_r_P8"></site>
+      <site site="FDPM_r_P9"></site>
+      <site site="FDPM_r_P10"></site>
+    </spatial>
+    <spatial name="FDPI_r_tendon">
+      <site site="FDPI_r_P1"></site>
+      <site site="FDPI_r_P2"></site>
+      <site site="FDPI_r_P3"></site>
+      <site site="FDPI_r_P4"></site>
+      <site site="FDPI_r_P5"></site>
+      <site site="FDPI_r_P6"></site>
+      <site site="FDPI_r_P7"></site>
+      <site site="FDPI_r_P8"></site>
+      <site site="FDPI_r_P9"></site>
+    </spatial>
+    <spatial name="EDCL_r_tendon">
+      <site site="EDCL_r_P1"></site>
+      <site site="EDCL_r_P2"></site>
+      <site site="EDCL_r_P3"></site>
+      <site site="EDCL_r_P4"></site>
+      <site site="EDCL_r_P5"></site>
+      <site site="EDCL_r_P6"></site>
+      <site site="EDCL_r_P7"></site>
+      <site site="EDCL_r_P8"></site>
+      <site site="EDCL_r_P9"></site>
+      <site site="EDCL_r_P10"></site>
+    </spatial>
+    <spatial name="EDCR_r_tendon">
+      <site site="EDCR_r_P1"></site>
+      <site site="EDCR_r_P2"></site>
+      <site site="EDCR_r_P3"></site>
+      <site site="EDCR_r_P4"></site>
+      <site site="EDCR_r_P5"></site>
+      <site site="EDCR_r_P6"></site>
+      <site site="EDCR_r_P7"></site>
+      <site site="EDCR_r_P8"></site>
+      <site site="EDCR_r_P9"></site>
+      <site site="EDCR_r_P10"></site>
+    </spatial>
+    <spatial name="EDCM_r_tendon">
+      <site site="EDCM_r_P1"></site>
+      <site site="EDCM_r_P2"></site>
+      <site site="EDCM_r_P3"></site>
+      <site site="EDCM_r_P4"></site>
+      <site site="EDCM_r_P5"></site>
+      <site site="EDCM_r_P6"></site>
+      <site site="EDCM_r_P7"></site>
+      <site site="EDCM_r_P8"></site>
+      <site site="EDCM_r_P9"></site>
+      <site site="EDCM_r_P10"></site>
+      <site site="EDCM_r_P11"></site>
+    </spatial>
+    <spatial name="EDCI_r_tendon">
+      <site site="EDCI_r_P1"></site>
+      <site site="EDCI_r_P2"></site>
+      <site site="EDCI_r_P3"></site>
+      <site site="EDCI_r_P4"></site>
+      <site site="EDCI_r_P5"></site>
+      <site site="EDCI_r_P6"></site>
+      <site site="EDCI_r_P7"></site>
+      <site site="EDCI_r_P8"></site>
+      <site site="EDCI_r_P9"></site>
+      <site site="EDCI_r_P10"></site>
+    </spatial>
+    <spatial name="EDM_r_tendon">
+      <site site="EDM_r_P1"></site>
+      <site site="EDM_r_P2"></site>
+      <site site="EDM_r_P3"></site>
+      <site site="EDM_r_P4"></site>
+      <site site="EDM_r_P5"></site>
+      <site site="EDM_r_P6"></site>
+      <site site="EDM_r_P7"></site>
+      <site site="EDM_r_P8"></site>
+      <site site="EDM_r_P9"></site>
+      <site site="EDM_r_P10"></site>
+      <site site="EDM_r_P11"></site>
+    </spatial>
+    <spatial name="EIP_r_tendon">
+      <site site="EIP_r_P1"></site>
+      <site site="EIP_r_P2"></site>
+      <site site="EIP_r_P3"></site>
+      <site site="EIP_r_P4"></site>
+      <site site="EIP_r_P5"></site>
+      <site site="EIP_r_P6"></site>
+      <site site="EIP_r_P7"></site>
+      <site site="EIP_r_P8"></site>
+      <site site="EIP_r_P9"></site>
+      <site site="EIP_r_P10"></site>
+    </spatial>
+    <spatial name="EPL_r_tendon">
+      <site site="EPL_r_P1"></site>
+      <site site="EPL_r_P2"></site>
+      <site site="EPL_r_P3"></site>
+      <site site="EPL_r_P4"></site>
+      <site site="EPL_r_P5"></site>
+      <site site="EPL_r_P6"></site>
+      <site site="EPL_r_P7"></site>
+      <site site="EPL_r_P8"></site>
+      <site site="EPL_r_P9"></site>
+      <site site="EPL_r_P10"></site>
+      <site site="EPL_r_P11"></site>
+      <site site="EPL_r_P12"></site>
+    </spatial>
+    <spatial name="EPB_r_tendon">
+      <site site="EPB_r_P1"></site>
+      <site site="EPB_r_P2"></site>
+      <site site="EPB_r_P3"></site>
+      <site site="EPB_r_P4"></site>
+      <site site="EPB_r_P5"></site>
+      <site site="EPB_r_P6"></site>
+      <site site="EPB_r_P7"></site>
+      <site site="EPB_r_P8"></site>
+    </spatial>
+    <spatial name="FPL_r_tendon">
+      <site site="FPL_r_P1"></site>
+      <site site="FPL_r_P2"></site>
+      <site site="FPL_r_P3"></site>
+      <site site="FPL_r_P4"></site>
+      <site site="FPL_r_P5"></site>
+      <site site="FPL_r_P6"></site>
+      <site site="FPL_r_P7"></site>
+      <site site="FPL_r_P8"></site>
+      <site site="FPL_r_P9"></site>
+      <site site="FPL_r_P10"></site>
+      <site site="FPL_r_P11"></site>
+    </spatial>
+    <spatial name="APL_r_tendon">
+      <site site="APL_r_P1"></site>
+      <site site="APL_r_P2"></site>
+      <site site="APL_r_P3"></site>
+      <site site="APL_r_P4"></site>
+      <site site="APL_r_P5"></site>
+      <site site="APL_r_P6"></site>
+      <site site="APL_r_P7"></site>
+      <site site="APL_r_P8"></site>
+      <site site="APL_r_P9"></site>
+    </spatial>
+    <spatial name="DELT1_l_tendon">
+      <site site="DELT1_l_P1"></site>
+      <site site="DELT1_l_P2"></site>
+      <site site="DELT1_l_P3"></site>
+      <site site="DELT1_l_P4"></site>
+    </spatial>
+    <spatial name="DELT2_l_tendon">
+      <site site="DELT2_l_P1"></site>
+      <site site="DELT2_l_P2"></site>
+      <site site="DELT2_l_P3"></site>
+      <site site="DELT2_l_P4"></site>
+    </spatial>
+    <spatial name="DELT3_l_tendon">
+      <site site="DELT3_l_P1"></site>
+      <site site="DELT3_l_P2"></site>
+      <site site="DELT3_l_P3"></site>
+    </spatial>
+    <spatial name="SUPSP_l_tendon">
+      <site site="SUPSP_l_P1"></site>
+      <site site="SUPSP_l_P2"></site>
+      <site site="SUPSP_l_P3"></site>
+    </spatial>
+    <spatial name="INFSP_l_tendon">
+      <site site="INFSP_l_P1"></site>
+      <site site="INFSP_l_P2"></site>
+    </spatial>
+    <spatial name="SUBSC_l_tendon">
+      <site site="SUBSC_l_P1"></site>
+      <site site="SUBSC_l_P2"></site>
+      <site site="SUBSC_l_P3"></site>
+    </spatial>
+    <spatial name="TMIN_l_tendon">
+      <site site="TMIN_l_P1"></site>
+      <site site="TMIN_l_P2"></site>
+      <site site="TMIN_l_P3"></site>
+    </spatial>
+    <spatial name="TMAJ_l_tendon">
+      <site site="TMAJ_l_P1"></site>
+      <site site="TMAJ_l_P2"></site>
+      <site site="TMAJ_l_P3"></site>
+      <site site="TMAJ_l_P4"></site>
+      <site site="TMAJ_l_P5"></site>
+    </spatial>
+    <spatial name="PECM1_l_tendon">
+      <site site="PECM1_l_P1"></site>
+      <site site="PECM1_l_P2"></site>
+      <site site="PECM1_l_P3"></site>
+      <site site="PECM1_l_P4"></site>
+    </spatial>
+    <spatial name="PECM2_l_tendon">
+      <site site="PECM2_l_P1"></site>
+      <site site="PECM2_l_P2"></site>
+      <site site="PECM2_l_P3"></site>
+      <site site="PECM2_l_P4"></site>
+      <site site="PECM2_l_P5"></site>
+    </spatial>
+    <spatial name="PECM3_l_tendon">
+      <site site="PECM3_l_P1"></site>
+      <site site="PECM3_l_P2"></site>
+      <site site="PECM3_l_P3"></site>
+      <site site="PECM3_l_P4"></site>
+      <site site="PECM3_l_P5"></site>
+    </spatial>
+    
+    <spatial name="CORB_l_tendon">
+      <site site="CORB_l_P1"></site>
+      <site site="CORB_l_P2"></site>
+      <site site="CORB_l_P3"></site>
+    </spatial>
+    <spatial name="TRIlong_l_tendon">
+      <site site="TRIlong_l_P1"></site>
+      <site site="TRIlong_l_P2"></site>
+      <site site="TRIlong_l_P3"></site>
+      <site site="TRIlong_l_P4"></site>
+      <site site="TRIlong_l_P5"></site>
+    </spatial>
+    <spatial name="TRIlat_l_tendon">
+      <site site="TRIlat_l_P1"></site>
+      <site site="TRIlat_l_P2"></site>
+      <site site="TRIlat_l_P3"></site>
+      <site site="TRIlat_l_P4"></site>
+      <site site="TRIlat_l_P5"></site>
+    </spatial>
+    <spatial name="TRImed_l_tendon">
+      <site site="TRImed_l_P1"></site>
+      <site site="TRImed_l_P2"></site>
+      <site site="TRImed_l_P3"></site>
+      <site site="TRImed_l_P4"></site>
+      <site site="TRImed_l_P5"></site>
+    </spatial>
+    <spatial name="ANC_l_tendon">
+      <site site="ANC_l_P1"></site>
+      <site site="ANC_l_P2"></site>
+    </spatial>
+    <spatial name="SUP_l_tendon">
+      <site site="SUP_l_P1"></site>
+      <site site="SUP_l_P2"></site>
+      <site site="SUP_l_P3"></site>
+    </spatial>
+    <spatial name="BIClong_l_tendon">
+      <site site="BIClong_l_P1"></site>
+      <site site="BIClong_l_P2"></site>
+      <site site="BIClong_l_P3"></site>
+      <site site="BIClong_l_P4"></site>
+      <site site="BIClong_l_P5"></site>
+      <site site="BIClong_l_P6"></site>
+      <site site="BIClong_l_P7"></site>
+      <site site="BIClong_l_P8"></site>
+      <site site="BIClong_l_P9"></site>
+      <site site="BIClong_l_P10"></site>
+    </spatial>
+    <spatial name="BICshort_l_tendon">
+      <site site="BICshort_l_P1"></site>
+      <site site="BICshort_l_P2"></site>
+      <site site="BICshort_l_P3"></site>
+      <site site="BICshort_l_P4"></site>
+      <site site="BICshort_l_P5"></site>
+      <site site="BICshort_l_P6"></site>
+      <site site="BICshort_l_P7"></site>
+    </spatial>
+    <spatial name="BRA_l_tendon">
+      <site site="BRA_l_P1"></site>
+      <site site="BRA_l_P2"></site>
+      <site site="BRA_l_P3"></site>
+      <site site="BRA_l_P4"></site>
+    </spatial>
+    <spatial name="BRD_l_tendon">
+      <site site="BRD_l_P1"></site>
+      <site site="BRD_l_P2"></site>
+      <site site="BRD_l_P3"></site>
+    </spatial>
+    <spatial name="ECRL_l_tendon">
+      <site site="ECRL_l_P1"></site>
+      <site site="ECRL_l_P2"></site>
+      <site site="ECRL_l_P3"></site>
+      <site site="ECRL_l_P4"></site>
+    </spatial>
+    <spatial name="ECRB_l_tendon">
+      <site site="ECRB_l_P1"></site>
+      <site site="ECRB_l_P2"></site>
+      <site site="ECRB_l_P3"></site>
+      <site site="ECRB_l_P4"></site>
+    </spatial>
+    <spatial name="ECU_l_tendon">
+      <site site="ECU_l_P1"></site>
+      <site site="ECU_l_P2"></site>
+      <site site="ECU_l_P3"></site>
+      <site site="ECU_l_P4"></site>
+      <site site="ECU_l_P5"></site>
+      <site site="ECU_l_P6"></site>
+    </spatial>
+    <spatial name="FCR_l_tendon">
+      <site site="FCR_l_P1"></site>
+      <site site="FCR_l_P2"></site>
+      <site site="FCR_l_P3"></site>
+    </spatial>
+    <spatial name="FCU_l_tendon">
+      <site site="FCU_l_P1"></site>
+      <site site="FCU_l_P2"></site>
+      <site site="FCU_l_P3"></site>
+      <site site="FCU_l_P4"></site>
+    </spatial>
+    <spatial name="PL_l_tendon">
+      <site site="PL_l_P1"></site>
+      <site site="PL_l_P2"></site>
+      <site site="PL_l_P3"></site>
+      <site site="PL_l_P4"></site>
+    </spatial>
+    <spatial name="PT_l_tendon">
+      <site site="PT_l_P1"></site>
+      <site site="PT_l_P2"></site>
+      <site site="PT_l_P3"></site>
+      <site site="PT_l_P4"></site>
+      <site site="PT_l_P5"></site>
+    </spatial>
+    <spatial name="PQ_l_tendon">
+      <site site="PQ_l_P1"></site>
+      <site site="PQ_l_P2"></site>
+    </spatial>
+    <spatial name="FDSL_l_tendon">
+      <site site="FDSL_l_P1"></site>
+      <site site="FDSL_l_P2"></site>
+      <site site="FDSL_l_P3"></site>
+      <site site="FDSL_l_P4"></site>
+      <site site="FDSL_l_P5"></site>
+      <site site="FDSL_l_P6"></site>
+      <site site="FDSL_l_P7"></site>
+      <site site="FDSL_l_P8"></site>
+    </spatial>
+    <spatial name="FDSR_l_tendon">
+      <site site="FDSR_l_P1"></site>
+      <site site="FDSR_l_P2"></site>
+      <site site="FDSR_l_P3"></site>
+      <site site="FDSR_l_P4"></site>
+      <site site="FDSR_l_P5"></site>
+      <site site="FDSR_l_P6"></site>
+      <site site="FDSR_l_P7"></site>
+      <site site="FDSR_l_P8"></site>
+    </spatial>
+    <spatial name="FDSM_l_tendon">
+      <site site="FDSM_l_P1"></site>
+      <site site="FDSM_l_P2"></site>
+      <site site="FDSM_l_P3"></site>
+      <site site="FDSM_l_P4"></site>
+      <site site="FDSM_l_P5"></site>
+      <site site="FDSM_l_P6"></site>
+      <site site="FDSM_l_P7"></site>
+      <site site="FDSM_l_P8"></site>
+      <site site="FDSM_l_P9"></site>
+    </spatial>
+    <spatial name="FDSI_l_tendon">
+      <site site="FDSI_l_P1"></site>
+      <site site="FDSI_l_P2"></site>
+      <site site="FDSI_l_P3"></site>
+      <site site="FDSI_l_P4"></site>
+      <site site="FDSI_l_P5"></site>
+      <site site="FDSI_l_P6"></site>
+      <site site="FDSI_l_P7"></site>
+      <site site="FDSI_l_P8"></site>
+      <site site="FDSI_l_P9"></site>
+    </spatial>
+    <spatial name="FDPL_l_tendon">
+      <site site="FDPL_l_P1"></site>
+      <site site="FDPL_l_P2"></site>
+      <site site="FDPL_l_P3"></site>
+      <site site="FDPL_l_P4"></site>
+      <site site="FDPL_l_P5"></site>
+      <site site="FDPL_l_P6"></site>
+      <site site="FDPL_l_P7"></site>
+      <site site="FDPL_l_P8"></site>
+      <site site="FDPL_l_P9"></site>
+    </spatial>
+    <spatial name="FDPR_l_tendon">
+      <site site="FDPR_l_P1"></site>
+      <site site="FDPR_l_P2"></site>
+      <site site="FDPR_l_P3"></site>
+      <site site="FDPR_l_P4"></site>
+      <site site="FDPR_l_P5"></site>
+      <site site="FDPR_l_P6"></site>
+      <site site="FDPR_l_P7"></site>
+      <site site="FDPR_l_P8"></site>
+      <site site="FDPR_l_P9"></site>
+    </spatial>
+    <spatial name="FDPM_l_tendon">
+      <site site="FDPM_l_P1"></site>
+      <site site="FDPM_l_P2"></site>
+      <site site="FDPM_l_P3"></site>
+      <site site="FDPM_l_P4"></site>
+      <site site="FDPM_l_P5"></site>
+      <site site="FDPM_l_P6"></site>
+      <site site="FDPM_l_P7"></site>
+      <site site="FDPM_l_P8"></site>
+      <site site="FDPM_l_P9"></site>
+      <site site="FDPM_l_P10"></site>
+    </spatial>
+    <spatial name="FDPI_l_tendon">
+      <site site="FDPI_l_P1"></site>
+      <site site="FDPI_l_P2"></site>
+      <site site="FDPI_l_P3"></site>
+      <site site="FDPI_l_P4"></site>
+      <site site="FDPI_l_P5"></site>
+      <site site="FDPI_l_P6"></site>
+      <site site="FDPI_l_P7"></site>
+      <site site="FDPI_l_P8"></site>
+      <site site="FDPI_l_P9"></site>
+    </spatial>
+    <spatial name="EDCL_l_tendon">
+      <site site="EDCL_l_P1"></site>
+      <site site="EDCL_l_P2"></site>
+      <site site="EDCL_l_P3"></site>
+      <site site="EDCL_l_P4"></site>
+      <site site="EDCL_l_P5"></site>
+      <site site="EDCL_l_P6"></site>
+      <site site="EDCL_l_P7"></site>
+      <site site="EDCL_l_P8"></site>
+      <site site="EDCL_l_P9"></site>
+      <site site="EDCL_l_P10"></site>
+    </spatial>
+    <spatial name="EDCR_l_tendon">
+      <site site="EDCR_l_P1"></site>
+      <site site="EDCR_l_P2"></site>
+      <site site="EDCR_l_P3"></site>
+      <site site="EDCR_l_P4"></site>
+      <site site="EDCR_l_P5"></site>
+      <site site="EDCR_l_P6"></site>
+      <site site="EDCR_l_P7"></site>
+      <site site="EDCR_l_P8"></site>
+      <site site="EDCR_l_P9"></site>
+      <site site="EDCR_l_P10"></site>
+    </spatial>
+    <spatial name="EDCM_l_tendon">
+      <site site="EDCM_l_P1"></site>
+      <site site="EDCM_l_P2"></site>
+      <site site="EDCM_l_P3"></site>
+      <site site="EDCM_l_P4"></site>
+      <site site="EDCM_l_P5"></site>
+      <site site="EDCM_l_P6"></site>
+      <site site="EDCM_l_P7"></site>
+      <site site="EDCM_l_P8"></site>
+      <site site="EDCM_l_P9"></site>
+      <site site="EDCM_l_P10"></site>
+      <site site="EDCM_l_P11"></site>
+    </spatial>
+    <spatial name="EDCI_l_tendon">
+      <site site="EDCI_l_P1"></site>
+      <site site="EDCI_l_P2"></site>
+      <site site="EDCI_l_P3"></site>
+      <site site="EDCI_l_P4"></site>
+      <site site="EDCI_l_P5"></site>
+      <site site="EDCI_l_P6"></site>
+      <site site="EDCI_l_P7"></site>
+      <site site="EDCI_l_P8"></site>
+      <site site="EDCI_l_P9"></site>
+      <site site="EDCI_l_P10"></site>
+    </spatial>
+    <spatial name="EDM_l_tendon">
+      <site site="EDM_l_P1"></site>
+      <site site="EDM_l_P2"></site>
+      <site site="EDM_l_P3"></site>
+      <site site="EDM_l_P4"></site>
+      <site site="EDM_l_P5"></site>
+      <site site="EDM_l_P6"></site>
+      <site site="EDM_l_P7"></site>
+      <site site="EDM_l_P8"></site>
+      <site site="EDM_l_P9"></site>
+      <site site="EDM_l_P10"></site>
+      <site site="EDM_l_P11"></site>
+    </spatial>
+    <spatial name="EIP_l_tendon">
+      <site site="EIP_l_P1"></site>
+      <site site="EIP_l_P2"></site>
+      <site site="EIP_l_P3"></site>
+      <site site="EIP_l_P4"></site>
+      <site site="EIP_l_P5"></site>
+      <site site="EIP_l_P6"></site>
+      <site site="EIP_l_P7"></site>
+      <site site="EIP_l_P8"></site>
+      <site site="EIP_l_P9"></site>
+      <site site="EIP_l_P10"></site>
+    </spatial>
+    <spatial name="EPL_l_tendon">
+      <site site="EPL_l_P1"></site>
+      <site site="EPL_l_P2"></site>
+      <site site="EPL_l_P3"></site>
+      <site site="EPL_l_P4"></site>
+      <site site="EPL_l_P5"></site>
+      <site site="EPL_l_P6"></site>
+      <site site="EPL_l_P7"></site>
+      <site site="EPL_l_P8"></site>
+      <site site="EPL_l_P9"></site>
+      <site site="EPL_l_P10"></site>
+      <site site="EPL_l_P11"></site>
+      <site site="EPL_l_P12"></site>
+    </spatial>
+    <spatial name="EPB_l_tendon">
+      <site site="EPB_l_P1"></site>
+      <site site="EPB_l_P2"></site>
+      <site site="EPB_l_P3"></site>
+      <site site="EPB_l_P4"></site>
+      <site site="EPB_l_P5"></site>
+      <site site="EPB_l_P6"></site>
+      <site site="EPB_l_P7"></site>
+      <site site="EPB_l_P8"></site>
+    </spatial>
+    <spatial name="FPL_l_tendon">
+      <site site="FPL_l_P1"></site>
+      <site site="FPL_l_P2"></site>
+      <site site="FPL_l_P3"></site>
+      <site site="FPL_l_P4"></site>
+      <site site="FPL_l_P5"></site>
+      <site site="FPL_l_P6"></site>
+      <site site="FPL_l_P7"></site>
+      <site site="FPL_l_P8"></site>
+      <site site="FPL_l_P9"></site>
+      <site site="FPL_l_P10"></site>
+      <site site="FPL_l_P11"></site>
+    </spatial>
+    <spatial name="APL_l_tendon">
+      <site site="APL_l_P1"></site>
+      <site site="APL_l_P2"></site>
+      <site site="APL_l_P3"></site>
+      <site site="APL_l_P4"></site>
+      <site site="APL_l_P5"></site>
+      <site site="APL_l_P6"></site>
+      <site site="APL_l_P7"></site>
+      <site site="APL_l_P8"></site>
+      <site site="APL_l_P9"></site>
+    </spatial>
+  </tendon>
+</mujoco>

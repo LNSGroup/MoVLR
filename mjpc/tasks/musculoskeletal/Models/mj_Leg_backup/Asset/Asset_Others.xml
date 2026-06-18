@@ -1,0 +1,21 @@
+<mujoco>
+    <asset>
+        <material name='collision' rgba="0.8 0.6 .4 1"/>
+        <!-- <texture type="skybox" builtin="gradient" rgb1="1 1 1" rgb2="1 1 1" width="512" height="512"/> -->
+        <texture type="skybox" builtin="gradient" rgb1="0.8 0.8 0.8" rgb2="0.5 0.5 0.5" width="512" height="512"/>
+        <texture name="plane" type="2d" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.3 0.4 0.5" width="10" height="10"/>
+        <material name="plane" texture="plane" texrepeat="5 5" reflectance="0.2"/>
+        <texture name="grid" type="2d" builtin="checker" rgb1="0.1 0.2 0.3" rgb2="0.2 0.3 0.4" mark="edge" markrgb="0.2 0.3 0.4" width="300" height="300"/>
+        <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance="0.1"/>
+        <texture name="grid_vis" type="2d" builtin="checker" rgb1="0.7 0.7 0.7" rgb2="0.7 0.7 0.7" width="300" height="300"/>
+        <material name="grid_vis" texture="grid_vis" texrepeat="0.1 0.1" texuniform="true" reflectance="0.1"/>
+
+        
+        <mesh name="r_tibia_bisect" file="../Geometry/prosthetic/r_tibia_bisect.obj" scale="       1        1        1"></mesh>
+        <mesh name="r_pylon" file="../Geometry/prosthetic/r_pylon.obj" scale="       1        1        1"></mesh>
+        <mesh name="r_pros_foot" file="../Geometry/prosthetic/r_pros_foot.obj" scale="       1        1        1"></mesh>
+
+        <mesh name="crutch" file="../Geometry/prosthetic/crutch.stl" scale="1 1 0.98"></mesh>
+
+    </asset>
+</mujoco> 

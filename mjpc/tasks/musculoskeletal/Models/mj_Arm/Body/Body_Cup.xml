@@ -1,0 +1,34 @@
+<mujoco>
+<!-- =================================================
+    Copyright 2019 Vikash Kumar
+    Model   :: Objects (MuJoCoV2.0)
+    Author  :: Vikash Kumar (vikashplus@gmail.com), Sudeep Dasari (sdasari@andrew.cmu.edu )
+    Details :: https://github.com/vikashplus/object_sim
+    License :: Under Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+====================================================== -©vk©-->
+    <body name="cup" pos="0.27 0.25 0.95" quat="1 0.0 0.0 0.0">
+        <geom name="cup_visual" type="mesh" mesh="cup" rgba="1 0.75 0.8 1.0" contype="0" conaffinity="0"/>
+        <geom name="cup_contact0" type="mesh" mesh="cup_contact0" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact1" type="mesh" mesh="cup_contact1" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact2" type="mesh" mesh="cup_contact2" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact3" type="mesh" mesh="cup_contact3" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact4" type="mesh" mesh="cup_contact4" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact5" type="mesh" mesh="cup_contact5" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact6" type="mesh" mesh="cup_contact6" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact7" type="mesh" mesh="cup_contact7" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact8" type="mesh" mesh="cup_contact8" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact9" type="mesh" mesh="cup_contact9" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact10" type="mesh" mesh="cup_contact10" group='4' rgba="0.31 0.29 0.75 1"/>
+        <geom name="cup_contact11" type="mesh" mesh="cup_contact11" group='4' rgba="0.31 0.29 0.75 1"/>
+
+        <joint name="cup_tz" type="slide" pos="0 0 0" axis="0 0 1" limited="false" range="-3 3" ref="0" armature="0" damping="0" stiffness="0"></joint>
+        <joint name="cup_ty" type="slide" pos="0 0 0" axis="0 1 0" limited="false" range="-3 3" ref="0" armature="0" damping="0" stiffness="0"></joint>
+        <joint name="cup_tx" type="slide" pos="0 0 0" axis="1 0 0" limited="false" range="-5 5" ref="0" armature="0" damping="0" stiffness="0"></joint>
+        <joint name="cup_tilt" type="hinge" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14   3.14" ref="0" armature="0" damping="0" stiffness="0"></joint>
+        <joint name="cup_list" type="hinge" pos="0 0 0" axis="0 1 0" limited="true" range="-3.14   3.14" ref="0" armature="0" damping="0" stiffness="0"></joint>
+        <joint name="cup_rotation" type="hinge" pos="0 0 0" axis="0 0 1" limited="true" range="-3.14   3.14" ref="0" armature="0" damping="0" stiffness="0"></joint>
+
+        <site name="cup_up" pos="0 0 0.09" size="0.005 0.005 0.005" group="4"></site>
+        <site name="cup_down" pos="0 0 -0.05" size="0.005 0.005 0.005" group="4"></site>
+    </body>
+</mujoco>

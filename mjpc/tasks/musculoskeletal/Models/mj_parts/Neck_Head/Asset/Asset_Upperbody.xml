@@ -1,0 +1,10 @@
+<mujoco>
+    <asset>
+        <mesh name="clavicle_r_mesh" file="Geometry/clavicle_r.obj" scale="1 1 1"/>
+        <mesh name="scapula_r_mesh" file="Geometry/scapula_r.obj" scale="1 1 1"/>
+                
+        <mesh name="clavicle_l_mesh" file="Geometry/clavicle_l.obj" scale="1 1 1"/>
+        <mesh name="scapula_l_mesh" file="Geometry/scapula_l.obj" scale="1 1 1"/>
+        
+    </asset>
+</mujoco> 

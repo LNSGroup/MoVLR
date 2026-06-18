@@ -1,0 +1,7 @@
+<mujoco>
+    <sensor>
+        <accelerometer name="accelerometer" site="skull_sensor"/>
+        <gyro name="gyro" site="skull_sensor"/>
+        <velocimeter name="velocimeter" site="skull_sensor"/>
+    </sensor>
+</mujoco>

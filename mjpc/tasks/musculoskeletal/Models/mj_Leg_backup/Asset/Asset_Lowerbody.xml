@@ -1,0 +1,24 @@
+<mujoco>
+    <asset>
+        <mesh name="sacrum" file="../Geometry/sacrum.stl" scale="       1        1        1"></mesh>
+        <mesh name="r_pelvis" file="../Geometry/r_pelvis.stl" scale="       1        1        1"></mesh>
+        <mesh name="l_pelvis" file="../Geometry/l_pelvis.stl" scale="       1        1        1"></mesh>
+        
+        <mesh name="r_femur" file="../Geometry/r_femur.stl" scale="       1        1        1"></mesh>
+        <mesh name="r_tibia" file="../Geometry/r_tibia.stl" scale="       1        1        1"></mesh>
+        <mesh name="r_fibula" file="../Geometry/r_fibula.stl" scale="       1        1        1"></mesh>
+        <mesh name="r_talus" file="../Geometry/r_talus.stl" scale="       1        1        1"></mesh>
+        <mesh name="r_foot" file="../Geometry/r_foot.stl" scale="       1        1        1"></mesh>
+        <mesh name="r_bofoot" file="../Geometry/r_bofoot.stl" scale="       1        1        1"></mesh>
+        <mesh name="r_patella" file="../Geometry/r_patella.stl" scale="       1        1        1"></mesh>
+        
+        <mesh name="l_femur" file="../Geometry/l_femur.stl" scale="       1        1        1"></mesh>
+        <mesh name="l_tibia" file="../Geometry/l_tibia.stl" scale="       1        1        1"></mesh>
+        <mesh name="l_fibula" file="../Geometry/l_fibula.stl" scale="       1        1        1"></mesh>
+        <mesh name="l_talus" file="../Geometry/l_talus.stl" scale="       1        1        1"></mesh>
+        <mesh name="l_foot" file="../Geometry/l_foot.stl" scale="       1        1        1"></mesh>
+        <mesh name="l_bofoot" file="../Geometry/l_bofoot.stl" scale="       1        1        1"></mesh>
+        <mesh name="l_patella" file="../Geometry/l_patella.stl" scale="       1        1        1"></mesh>
+
+    </asset>
+</mujoco> 

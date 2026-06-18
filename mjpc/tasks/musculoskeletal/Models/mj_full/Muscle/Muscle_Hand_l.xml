@@ -1,0 +1,50 @@
+<mujoco>
+    <actuator>
+
+        <muscle name="ECRL_l" lengthrange="0.305 0.329" force="337.300" tendon="ECRL_l_tendon" class="upper_muscle" />
+        <muscle name="ECRB_l" lengthrange="0.266 0.284" force="249.391" tendon="ECRB_l_tendon" class="upper_muscle" />
+        <muscle name="ECU_l" lengthrange="0.280 0.299" force="192.430" tendon="ECU_l_tendon" class="upper_muscle" />
+        <muscle name="FCR_l" lengthrange="0.291 0.310" force="407.341" tendon="FCR_l_tendon" class="upper_muscle" />
+        <muscle name="FCU_l" lengthrange="0.293 0.308" force="469.315" tendon="FCU_l_tendon" class="upper_muscle" />
+        <muscle name="PL_l" lengthrange="0.317 0.336" force="100.754" tendon="PL_l_tendon" class="upper_muscle" />
+        <muscle name="FDSL_l" lengthrange="0.380 0.395" force="75.013" tendon="FDSL_l_tendon" class="upper_muscle" />
+        <muscle name="FDSR_l" lengthrange="0.379 0.401" force="170.783" tendon="FDSR_l_tendon" class="upper_muscle" />
+        <muscle name="FDSM_l" lengthrange="0.385 0.407" force="256.871" tendon="FDSM_l_tendon" class="upper_muscle" />
+        <muscle name="FDSI_l" lengthrange="0.380 0.405" force="161.610" tendon="FDSI_l_tendon" class="upper_muscle" />
+        <muscle name="FDPL_l" lengthrange="0.349 0.372" force="234.495" tendon="FDPL_l_tendon" class="upper_muscle" />
+        <muscle name="FDPR_l" lengthrange="0.352 0.376" force="171.611" tendon="FDPR_l_tendon" class="upper_muscle" />
+        <muscle name="FDPM_l" lengthrange="0.358 0.383" force="211.236" tendon="FDPM_l_tendon" class="upper_muscle" />
+        <muscle name="FDPI_l" lengthrange="0.362 0.385" force="195.829" tendon="FDPI_l_tendon" class="upper_muscle" />
+        <muscle name="EDCL_l" lengthrange="0.379 0.398" force="39.376" tendon="EDCL_l_tendon" class="upper_muscle" />
+        <muscle name="EDCR_l" lengthrange="0.393 0.412" force="109.050" tendon="EDCR_l_tendon" class="upper_muscle" />
+        <muscle name="EDCM_l" lengthrange="0.402 0.423" force="94.271" tendon="EDCM_l_tendon" class="upper_muscle" />
+        <muscle name="EDCI_l" lengthrange="0.401 0.422" force="48.733" tendon="EDCI_l_tendon" class="upper_muscle" />
+        <muscle name="EDM_l" lengthrange="0.381 0.402" force="72.301" tendon="EDM_l_tendon" class="upper_muscle" />
+        <muscle name="EIP_l" lengthrange="0.235 0.253" force="47.041" tendon="EIP_l_tendon" class="upper_muscle" />
+        <muscle name="EPL_l" lengthrange="0.266 0.282" force="87.816" tendon="EPL_l_tendon" class="upper_muscle" />
+        <muscle name="EPB_l" lengthrange="0.156 0.176" force="45.657" tendon="EPB_l_tendon" class="upper_muscle" />
+        <muscle name="FPL_l" lengthrange="0.238 0.255" force="199.502" tendon="FPL_l_tendon" class="upper_muscle" />
+        <muscle name="APL_l" lengthrange="0.173 0.194" force="115.564" tendon="APL_l_tendon" class="upper_muscle" />
+        <muscle name="APB_l" lengthrange="0.073 0.088" force="34.429" tendon="APB_l_tendon" class="upper_muscle" />
+        <muscle name="FPB_l" lengthrange="0.045 0.060" force="33.334" tendon="FPB_l_tendon" class="upper_muscle" />
+        <muscle name="OPP_l" lengthrange="0.035 0.048" force="51.631" tendon="OPP_l_tendon" class="upper_muscle" />
+        <muscle name="ADPt_l" lengthrange="0.044 0.057" force="57.232" tendon="ADPt_l_tendon" class="upper_muscle" />
+        <muscle name="ADPo_l" lengthrange="0.054 0.064" force="97.489" tendon="ADPo_l_tendon" class="upper_muscle" />
+        <muscle name="ADM_l" lengthrange="0.056 0.073" force="45.095" tendon="ADM_l_tendon" class="upper_muscle" />
+        <muscle name="FDM_l" lengthrange="0.052 0.067" force="27.346" tendon="FDM_l_tendon" class="upper_muscle" />
+        <muscle name="ODM_l" lengthrange="0.036 0.041" force="66.142" tendon="ODM_l_tendon" class="upper_muscle" />
+        <muscle name="1stPI_l" lengthrange="0.113 0.122" force="37.870" tendon="1stPI_l_tendon" class="upper_muscle" />
+        <muscle name="2ndPI_l" lengthrange="0.112 0.121" force="32.702" tendon="2ndPI_l_tendon" class="upper_muscle" />
+        <muscle name="3rdPI_l" lengthrange="0.092 0.101" force="30.683" tendon="3rdPI_l_tendon" class="upper_muscle" />
+        <muscle name="1stDI_MC1_l" lengthrange="0.119 0.126" force="59.919" tendon="1stDI_MC1_l_tendon" class="upper_muscle" />
+        <muscle name="1stDI_MC2_l" lengthrange="0.112 0.124" force="15.310" tendon="1stDI_MC2_l_tendon" class="upper_muscle" />
+        <muscle name="2ndDI_l" lengthrange="0.115 0.124" force="67.404" tendon="2ndDI_l_tendon" class="upper_muscle" />
+        <muscle name="3rdDI_l" lengthrange="0.116 0.126" force="47.595" tendon="3rdDI_l_tendon" class="upper_muscle" />
+        <muscle name="4thDI_l" lengthrange="0.112 0.122" force="45.609" tendon="4thDI_l_tendon" class="upper_muscle" />
+        <muscle name="LUML_l" lengthrange="0.095 0.113" force="3.050" tendon="LUML_l_tendon" class="upper_muscle" />
+        <muscle name="LUMR_l" lengthrange="0.112 0.133" force="4.059" tendon="LUMR_l_tendon" class="upper_muscle" />
+        <muscle name="LUMM_l" lengthrange="0.122 0.142" force="4.058" tendon="LUMM_l_tendon" class="upper_muscle" />
+        <muscle name="LUMI_l" lengthrange="0.118 0.138" force="5.589" tendon="LUMI_l_tendon" class="upper_muscle" />
+
+    </actuator>
+</mujoco>

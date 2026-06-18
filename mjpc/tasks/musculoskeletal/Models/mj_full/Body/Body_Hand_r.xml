@@ -1,0 +1,462 @@
+<mujoco>
+  <body name="proximal_row_r" pos="0.018000 -0.242000 0.025000" euler="-0 0 0" childclass="hand">
+    <geom name="lunate_r_geom" type="mesh" class="wrist_bone" mesh="lunate_r_mesh" group="0" />
+    <geom name="scaphoid_r_geom" type="mesh" class="wrist_bone" mesh="scaphoid_r_mesh" group="0" />
+    <geom name="pisiform_r_geom" type="mesh" class="wrist_bone" mesh="pisiform_r_mesh" group="0" />
+    <geom name="triquetral_r_geom" type="mesh" class="wrist_bone" mesh="triquetral_r_mesh" group="0" />
+    <geom name="EIP_ellipsoid_wrap_r" type="sphere" euler="0 0 0" pos="-0.001460 -0.012000 -0.008926" size="0.0237409" class="wrap" />
+    <site name="EIP_r_EIP_ellipsoid_wrap_r_sidesite" pos="-0.019511 -0.004306 0.063658"/>
+    <geom name="ECRL_torus_wrap_r" type="sphere" euler="0 0 0" pos="0.022200 -0.009600 0.020800" size="0.008" class="wrap" />
+    <site name="ECRL_r_ECRL_torus_wrap_r_sidesite" pos="0.022200 -0.009600 0.020800"/>
+    <geom name="ECRB_torus_wrap_r" type="sphere" euler="0 0 0" pos="0.012600 -0.009500 0.018600" size="0.002" class="wrap" />
+    <site name="ECRB_r_ECRB_torus_wrap_r_sidesite" pos="0.012600 -0.009500 0.018600"/>
+    <geom name="FCR_torus_wrap_r" type="sphere" euler="0 0 0" pos="0.003200 -0.004500 -0.019000" size="0.0015" class="wrap" />
+    <site name="FCR_r_FCR_torus_wrap_r_sidesite" pos="0.003200 -0.004500 -0.019000"/>
+    <geom name="FCU_torus_wrap_r" type="cylinder" euler="0 1.57 0" pos="-0.012000 -0.010000 -0.009000" size="0.0068 0.025" class="wrap" />
+    <site name="FCU_r_FCU_torus_wrap_r_sidesite" pos="-0.012000 -0.010000 -0.025800"/>
+    <geom name="PL_ellipsoid_wrap_r" type="cylinder" euler="0 1.57 0" pos="0.005700 -0.018000 -0.004100" size="0.0125 0.0125" class="wrap" />
+    <site name="PL_r_PL_ellipsoid_wrap_r_sidesite" pos="0.005700 -0.018000 -0.026600"/>
+    <geom name="FDS_ellipsoid_wrap_r" type="cylinder" euler="0.008378 1.48 -0.0171" pos="0.001200 -0.005700 -0.000300" size="0.013 0.025" class="wrap" />
+    <site name="FDSL_r_FDS_ellipsoid_wrap_r_sidesite" pos="-0.004810 -0.034454 -0.021355"/>
+    <site name="FDSR_r_FDS_ellipsoid_wrap_r_sidesite" pos="-0.004810 -0.034454 -0.021355"/>
+    <site name="FDSM_r_FDS_ellipsoid_wrap_r_sidesite" pos="-0.004810 -0.034454 -0.021355"/>
+    <site name="FDSI_r_FDS_ellipsoid_wrap_r_sidesite" pos="-0.004810 -0.034454 -0.021355"/>
+    <geom name="FDP_ellipsoid_wrap_r" type="cylinder" euler="-1.467 1.37 0.1218" pos="-0.002200 -0.006900 0.003200" size="0.013 0.025" class="wrap" />
+    <site name="FDPL_r_FDP_ellipsoid_wrap_r_sidesite" pos="-0.004810 -0.034454 -0.021356"/>
+    <site name="FDPR_r_FDP_ellipsoid_wrap_r_sidesite" pos="-0.004810 -0.034454 -0.021356"/>
+    <site name="FDPM_r_FDP_ellipsoid_wrap_r_sidesite" pos="-0.004810 -0.034454 -0.021355"/>
+    <site name="FDPI_r_FDP_ellipsoid_wrap_r_sidesite" pos="-0.004810 -0.034454 -0.021355"/>
+    <geom name="EDCL_torus_wrap_r" type="sphere" euler="0 0 0" pos="-0.012800 -0.013300 0.014800" size="0.004" class="wrap" />
+    <site name="EDCL_r_EDCL_torus_wrap_r_sidesite" pos="-0.012800 -0.013300 0.014800"/>
+    <geom name="EDCR_torus_wrap_r" type="sphere" euler="0 0 0" pos="-0.009800 -0.013700 0.016600" size="0.003" class="wrap" />
+    <site name="EDCR_r_EDCR_torus_wrap_r_sidesite" pos="-0.009800 -0.013700 0.016600"/>
+    <geom name="EDCM_torus_wrap_r" type="sphere" euler="0 0 0" pos="-0.000700 -0.011700 0.019100" size="0.0035" class="wrap" />
+    <site name="EDCM_r_EDCM_torus_wrap_r_sidesite" pos="-0.000700 -0.011700 0.019100"/>
+    <geom name="EDCI_torus_wrap_r" type="sphere" euler="0 0 0" pos="0.009000 -0.014900 0.021100" size="0.0035" class="wrap" />
+    <site name="EDCI_r_EDCI_torus_wrap_r_sidesite" pos="-0.012800 -0.013300 0.014800"/>
+    <geom name="EDM_ellipsoid_wrap_r" type="cylinder" euler="2.963 1.73 0.118" pos="-0.016700 -0.002200 0.004800" size="0.014 0.018" class="wrap" />
+    <site name="EDM_r_EDM_ellipsoid_wrap_r_sidesite" pos="-0.016700 0.002200 0.015000"/>
+    <geom name="FPL_ellipsoid_wrap_r" type="sphere" euler="0 0 0" pos="0.020000 -0.025000 -0.003300" size="0.015" class="wrap" />
+    <joint name="deviation_r" range="-0.174 0.436" limited="true" ref="0" axis="-0.8191 -0.1356 -0.5574" type="hinge" />
+    <joint name="flexion_r" range="-1.221 1.221" limited="true" ref="0" axis="0.9564 -0.2522 0.1471" type="hinge" />
+    <body name="capitate_r" pos="0.003992 -0.015050 0.002327" euler="-0 0 0">
+      <geom name="capitate_r_geom" type="mesh" class="wrist_bone" mesh="capitate_r_mesh" group="0" />
+      <joint name="wrist_hand_r_r1_r" range="-1.57 1.57" limited="true" ref="0" axis="0.8991 -0.3491 -0.264" type="hinge" />
+      <joint name="wrist_hand_r_r3_r" range="-1.57 1.57" limited="true" ref="0" axis="0.9971 0.0107 -0.0751" type="hinge" />
+      <body name="trapezium_r" pos="0.015290 -0.004569 -0.010310" euler="-0 0 0">
+        <geom name="trapezium_r_geom" type="mesh" class="wrist_bone" mesh="trapezium_r_mesh" group="0" />
+        <body name="firstmcphant" pos="0.000000 0.000000 0.000000" euler="-0 0 0">
+          <inertial mass="0.001" pos="0.000000 0.000000 0.000000" diaginertia="1e-8 1e-8 1e-8" />
+          <joint name="cmc_flexion_r" range="-0.785 0.262" limited="true" ref="0" axis="0.0424 0.6653 -0.7454" type="hinge" />
+          <body name="firstmc_r" pos="0.007200 -0.005400 -0.002500" euler="-0 0 0">
+            <geom name="firstmc_skin_1_r" size="0.01" fromto="0 0 0 0.0165 -0.0292 -0.0127"/>
+            <geom name="firstmc_skin_2_r" class="hand_inertial" size="0.018 0.025 0.008" pos="-0.006 -0.022 -0.005" euler="-0.3 0.85 0.5"/>
+            <geom name="firstmc_skin_3_r" class="hand_inertial" size="0.007 0.02 0.01" pos="0.008 -0.02 0.003" euler="-0.3 0.8 0.8"/>
+            <geom name="1mc_r_geom" type="mesh" class="bone" mesh="1mc_r_mesh" group="0" />
+            <geom name="MPthumb_r" type="cylinder" euler="0.3213 0.1101 -0.8348" pos="0.017700 -0.030500 -0.014300" size="0.0085 0.01" class="wrap" />
+            <site name="EPL_r_MPthumb_r_sidesite" pos="0.017700 -0.030500 0.004200"/>
+            <site name="EPB_r_MPthumb_r_sidesite" pos="0.017700 -0.030500 0.004200"/>
+            <joint name="cmc_abduction_r" range="-0.436 0.436" limited="true" ref="0" axis="0.4956 0.7317 0.468" type="hinge" />
+            <body name="proximal_thumb_r" pos="0.016500 -0.029200 -0.012700" euler="-0 0 0">
+              <geom name="proximal_thumb_skin_r" size="0.01" fromto="0.003 -0.007 -0.002 0.014 -0.025 -0.0101"/>
+              <geom name="thumb_prox_r_geom" type="mesh" class="bone" mesh="thumb_prox_r_mesh" group="0" />
+              <geom name="IPthumb_r" type="cylinder" euler="0.3047 0.01292 0.08796" pos="0.012100 -0.030200 -0.009600" size="0.0045 0.005" class="wrap" />
+              <joint name="mp_flexion_r" range="-0.698 0.698" limited="true" ref="0" axis="0.08429 0.2035 -0.9754" type="hinge" />
+              <body name="distal_thumb_r" pos="0.014000 -0.025900 -0.010100" euler="-0 0 0">
+                <geom name="distal_thumb_skin_r" size="0.007" fromto="0.0025426 -0.00489526 -0.0022617 0.009 -0.016 -0.006"/>
+                <geom name="thumb_dist_r_geom" type="mesh" class="bone" mesh="thumb_dist_r_mesh" group="0" />
+                <joint name="ip_flexion_r" range="-0.436 1.309" limited="true" ref="0" axis="0.0501 0.4796 -0.876" type="hinge" />
+                <site name="EPL_r-P12" pos="0.005430 -0.007140 -0.004640" />
+                <site name="FPL_r-P11" pos="0.002420 -0.011270 -0.004120" />
+              </body>
+              <site name="EPL_r-P10" pos="0.011470 -0.003620 0.001560" />
+              <site name="EPL_r-P11" pos="0.019210 -0.026500 -0.010380" />
+              <site name="EPB_r-P8" pos="0.009270 -0.006180 -0.005570" />
+              <site name="FPL_r-P9" pos="-0.003700 -0.016412 -0.006442" />
+              <site name="FPL_r-P10" pos="0.005900 -0.026020 -0.011140" />
+              <site name="APB_r-P3" pos="0.007706 -0.004717 -0.009000" />
+              <site name="APB_r-P4" pos="0.014800 -0.020000 -0.011000" />
+              <site name="FPB_r-P4" pos="0.002000 -0.013000 -0.004000" />
+              <site name="ADPt_r-P2" pos="0.001000 -0.013000 0.001000" />
+              <site name="ADPo_r-P2" pos="0.001469 -0.012970 -0.000666" />
+            </body>
+            <site name="EPL_r-P8" pos="0.006560 -0.004300 0.007920" />
+            <site name="EPL_r-P9" pos="0.021650 -0.024200 -0.005330" />
+            <site name="MPthumb_r_cylinder_EPL_r_8_sidesite" pos="0.021650 -0.024200 -0.005330" size="0.0005" />
+            <site name="EPB_r-P7" pos="0.021730 -0.023030 -0.011410" />
+            <site name="EPB_r-P6" pos="0.007230 0.002030 -0.001550" />
+            <site name="MPthumb_r_cylinder_EPB_r_6_sidesite" pos="0.021730 -0.023030 -0.011410" size="0.0005" />
+            <site name="FPL_r-P7" pos="-0.006080 -0.016240 -0.009400" />
+            <site name="FPL_r-P8" pos="0.000223 -0.023127 -0.011331" />
+            <site name="APL_r-P8" pos="0.006290 0.003230 -0.005890" />
+            <site name="APL_r-P9" pos="0.008270 -0.005860 -0.006040" />
+            <site name="FPB_r-P3" pos="0.008048 -0.033672 -0.014978" />
+            <site name="OPP_r-P2" pos="-0.002386 -0.008940 -0.005517" />
+            <site name="OPP_r-P3" pos="0.012000 -0.028000 -0.017000" />
+            <site name="1stDI_MC1_r-P1" pos="0.004434 -0.009700 0.003216" />
+          </body>
+          
+        </body>
+        <site name="EPL_r-P7" pos="0.009221 -0.000721 0.012035" />
+        <site name="APB_r-P2" pos="0.008014 -0.001309 -0.011754" />
+        <site name="FPB_r-P2" pos="0.001500 -0.012498 -0.004960" />
+      </body>
+      <body name="trapezoid_r" pos="0.009143 -0.004062 -0.002464" euler="-0 0 0">
+        <geom name="trapezoid_r_geom" type="mesh" class="wrist_bone" mesh="trapezoid_r_mesh" group="0" />
+      </body>
+      <body name="hamate_r" pos="-0.010970 -0.002495 -0.000750" euler="-0 0 0">
+        <geom name="hamate_r_geom" type="mesh" class="wrist_bone" mesh="hamate_r_mesh" group="0" />
+        <site name="FDM_r-P1" pos="-0.001738 -0.002578 -0.010279" />
+        <site name="ODM_r-P1" pos="-0.001738 -0.002578 -0.010279" />
+      </body>
+      <body name="secondmc_r" pos="0.014690 -0.037620 0.005032" euler="-0 0 0">
+        <geom name="secondmc_skin_1_r" size="0.01 0.028" euler="1.42 0.15 -0.1" pos="0 0 -0.001" />
+        <geom name="secondmc_skin_2_r" class="hand_inertial" size="0.008 0.024 0.01" pos="0.012 -0.000 -0.004" euler="-0.25 0.5 0.3"/>
+        <geom name="2mc_r_geom" type="mesh" class="bone" mesh="2mc_r_mesh" group="0" />
+        <geom name="2ndmcp_extI_r" type="cylinder" euler="0.5939 1.5 -1.991" pos="0.003501 -0.025000 0.003800" size="0.009 0.005" class="wrap" />
+        <site name="EIP_r_2ndmcp_extI_r_sidesite" pos="0.003501 -0.025000 0.022800"/>
+        <site name="EDCI_r_2ndmcp_extI_r_sidesite" pos="0.003501 -0.025000 0.022800"/>
+        <geom name="2ndmcp_FDSI_r" type="cylinder" euler="0.5939 1.5 -2.166" pos="0.003501 -0.027500 0.003620" size="0.008 0.01" class="wrap" />
+        <site name="FDSI_r_2ndmcp_FDSI_r_sidesite" pos="0.003501 -0.027500 -0.014380"/>
+        <geom name="2ndmcp_FDPI_r" type="cylinder" euler="0.5939 1.5 -2.236" pos="0.003501 -0.027500 0.003620" size="0.008 0.01" class="wrap" />
+        <site name="FDPI_r_2ndmcp_FDPI_r_sidesite" pos="0.003501 -0.027500 -0.014380"/>
+        <body name="2proxph_r" pos="0.003501 -0.028240 0.003620" euler="-0 0 0">
+          <geom name="2proxph_skin_r" size="0.009 0.018" pos="0.004 -0.0210 0.00362" euler="1.45 0.15 -0.35"/>
+          <geom name="2proxph_r_geom" type="mesh" class="bone" mesh="2proxph_r_mesh" group="0" />
+          <geom name="2ndpm_extI_r" type="cylinder" euler="-2.994 1.288 1.417" pos="0.007500 -0.040750 0.007300" size="0.00425 0.006" class="wrap" />
+          <site name="EIP_r_2ndpm_extI_r_sidesite" pos="0.007500 -0.040750 0.021550"/>
+          <site name="EDCI_r_2ndpm_extI_r_sidesite" pos="0.007500 -0.040750 0.021550"/>
+          <joint name="2mcp_abduction_r" range="-0.262 0.262" limited="true" ref="0" axis="0.2146 0.1915 0.9577" type="hinge" />
+          <joint name="2mcp_flexion_r" range="-0.785 1.571" limited="true" ref="0" axis="0.9786 0.02602 -0.1973" type="hinge" />
+          <body name="2midph_r" pos="0.007517 -0.041270 0.007326" euler="-0 0 0">
+            <geom name="2midph_skin_r" size="0.008 0.011" pos="0.0013 -0.012 0.00" euler="1.5 0.14 -0.35"/>
+            <geom name="2midph_r_geom" type="mesh" class="bone" mesh="2midph_r_mesh" group="0" />
+            <geom name="Secondmd_r" type="cylinder" euler="0.5018 -1.413 0.6473" pos="0.003600 -0.024300 0.000300" size="0.004 0.005" class="wrap" />
+            <site name="EIP_r_Secondmd_r_sidesite" pos="0.003600 -0.024300 0.014300"/>
+            <site name="EDCI_r_Secondmd_r_sidesite" pos="0.003600 -0.024300 0.014300"/>
+            <joint name="2pm_flexion_r" range="0.000 1.745" limited="true" ref="0" axis="0.9763 0.1267 -0.1754" type="hinge" />
+            <body name="2distph_r" pos="0.003333 -0.024890 0.001220" euler="-0 0 0">
+              <geom name="2distph_skin_r" size="0.007 0.007" pos="0.001 -0.008 0.00" euler="1.5 0.14 -0.35"/>
+              <geom name="2distph_r_geom" type="mesh" class="bone" mesh="2distph_r_mesh" group="0" />
+              <joint name="2md_flexion_r" range="0.000 1.396" limited="true" ref="0" axis="0.9867 0.1472 0.07495" type="hinge" />
+              <site name="FDPI_r-P10" pos="0.000460 -0.004600 -0.003000" />
+              <site name="EDCI_r-P9" pos="0.000250 -0.003700 0.002280" />
+              <site name="EIP_r-P10" pos="0.000000 -0.004000 0.002000" />
+              <site name="1stPI_r-P7" pos="-0.001818 0.002003 0.003638" />
+              <site name="1stPI_r-P8" pos="-0.000060 -0.007100 0.003004" />
+              <site name="1stDI_MC1_r-P8" pos="0.002242 -0.007096 0.002974" />
+              <site name="1stDI_MC2_r-P8" pos="0.002169 -0.011284 0.002895" />
+              <site name="LUMI_r-P8" pos="0.002242 -0.007096 0.002974" />
+            </body>
+            <site name="FDSI_r-P8" pos="0.000067 -0.008000 -0.004149" />
+            <site name="FDPI_r-P8" pos="-0.000000 -0.008000 -0.003814" />
+            <site name="FDPI_r-P9" pos="0.002000 -0.021000 -0.002000" />
+            <site name="EDCI_r-P7" pos="0.001230 -0.005000 0.005271" />
+            <site name="EDCI_r-P8" pos="0.002600 -0.018000 0.006000" />
+            <site name="EIP_r-P8" pos="0.001150 -0.005000 0.005359" />
+            <site name="EIP_r-P9" pos="0.002940 -0.018000 0.005650" />
+            <site name="1stPI_r-P6" pos="-0.001553 -0.011005 0.005270" />
+            <site name="1stDI_MC1_r-P6" pos="0.005943 -0.011045 0.004593" />
+            <site name="1stDI_MC1_r-P7" pos="0.005759 -0.024000 0.004393" />
+            <site name="1stDI_MC2_r-P6" pos="0.005943 -0.011045 0.004593" />
+            <site name="1stDI_MC2_r-P7" pos="0.005565 -0.024212 0.004181" />
+            <site name="LUMI_r-P6" pos="0.005943 -0.011045 0.004593" />
+            <site name="LUMI_r-P7" pos="0.005759 -0.024000 0.004393" />
+          </body>
+          <site name="FDSI_r-P6" pos="0.001683 -0.014000 -0.002705" />
+          <site name="FDSI_r-P7" pos="0.005984 -0.035000 0.002621" />
+          <site name="FDPI_r-P6" pos="0.000802 -0.011000 -0.002775" />
+          <site name="FDPI_r-P7" pos="0.005810 -0.034000 0.003060" />
+          <site name="EDCI_r-P5" pos="0.003082 -0.009692 0.011048" />
+          <site name="EDCI_r-P6" pos="0.007710 -0.038000 0.013000" />
+          <site name="EIP_r-P6" pos="0.002097 -0.010000 0.011000" />
+          <site name="EIP_r-P7" pos="0.007140 -0.038000 0.013000" />
+          <site name="1stPI_r-P3" pos="-0.005000 -0.011000 0.001000" />
+          <site name="1stPI_r-P4" pos="0.000558 -0.031486 0.011698" />
+          <site name="1stPI_r-P5" pos="0.004086 -0.040641 0.012029" />
+          <site name="1stDI_MC1_r-P3" pos="0.009000 -0.016000 -0.001000" />
+          <site name="1stDI_MC1_r-P4" pos="0.012223 -0.026349 0.007046" />
+          <site name="1stDI_MC1_r-P5" pos="0.011165 -0.038401 0.012602" />
+          <site name="1stDI_MC2_r-P3" pos="0.009000 -0.016000 -0.001000" />
+          <site name="1stDI_MC2_r-P4" pos="0.012223 -0.026349 0.007046" />
+          <site name="1stDI_MC2_r-P5" pos="0.011165 -0.038401 0.012602" />
+          <site name="LUMI_r-P3" pos="0.005000 -0.010000 -0.005000" />
+          <site name="LUMI_r-P4" pos="0.005000 -0.016000 -0.005000" />
+          <site name="LUMI_r-P5" pos="0.011165 -0.038401 0.012602" />
+        </body>
+        <site name="FDSI_r-P4" pos="-0.004070 -0.000250 -0.004790" />
+        <site name="FDSI_r-P5" pos="0.002934 -0.021000 -0.005790" />
+        <site name="2ndmcp_FDSI_r_cylinder_FDSI_r_5_sidesite" pos="0.000040 -0.030950 -0.003936" size="0.0005" />
+        <site name="FDPI_r-P4" pos="-0.002190 0.006695 -0.005537" />
+        <site name="FDPI_r-P5" pos="0.001039 -0.021000 -0.005000" />
+        <site name="2ndmcp_FDPI_r_cylinder_FDPI_r_4_sidesite" pos="0.000000 -0.021000 -0.005000" size="0.0005" />
+        <site name="EDCI_r-P4" pos="0.005457 -0.025592 0.012675" />
+        <site name="EIP_r-P4" pos="-0.010810 0.015000 0.007000" />
+        <site name="EIP_r-P5" pos="0.004410 -0.027000 0.013000" />
+        <site name="1stPI_r-P1" pos="-0.006000 0.011000 -0.003000" />
+        <site name="1stPI_r-P2" pos="-0.003000 -0.025000 0.003000" />
+        <site name="1stDI_MC1_r-P2" pos="0.009000 -0.026600 0.000000" />
+        <site name="1stDI_MC2_r-P1" pos="0.003000 0.016000 -0.003000" />
+        <site name="1stDI_MC2_r-P2" pos="0.008250 -0.025000 -0.002000" />
+        <site name="LUMI_r-P1" pos="-0.005500 0.022000 -0.014000" />
+        <site name="LUMI_r-P2" pos="0.005000 -0.022500 -0.006000" />
+        <site name="2ndmcp_extI_r_cylinder_LUMI_r_1_sidesite" pos="0.005000 -0.022500 -0.006000" size="0.0005" />
+      </body>
+      <body name="thirdmc_r" pos="0.000477 -0.039240 0.007377" euler="-0 0 0">
+        <geom name="thirdmc_skin_r" size="0.01 0.026" euler="1.42 0.01 0" pos="0 0 0"/>
+        <geom name="3mc_r_geom" type="mesh" class="bone" mesh="3mc_r_mesh" group="0" />
+        <geom name="_3rdmcp_r" type="cylinder" euler="2.579 -1.45 2.906" pos="0.001600 -0.027100 0.000100" size="0.005 0.01" class="wrap" />
+        <site name="FDSM_r__3rdmcp_r_sidesite" pos="0.001600 -0.027100 -0.014900"/>
+        <site name="EDCM_r__3rdmcp_r_sidesite" pos="0.001600 -0.027100 0.015100"/>
+        <site name="FDPM_r__3rdmcp_r_sidesite" pos="0.001600 -0.027100 -0.014900"/>
+        <body name="3proxph_r" pos="0.000240 -0.026290 0.001778" euler="-0 0 0">
+          <geom name="3proxph_skin_r" size="0.009 0.02" pos="0.001 -0.022 0.004" euler="1.5 0.045 -0.35"/>
+          <geom name="3proxph_r_geom" type="mesh" class="bone" mesh="3proxph_r_mesh" group="0" />
+          <geom name="Thirdpm_r" type="cylinder" euler="1.809 -1.506 1.853" pos="0.001700 -0.043900 0.005000" size="0.005 0.005" class="wrap" />
+          <site name="EDCM_r_Thirdpm_r_sidesite" pos="0.001700 -0.043900 0.020000"/>
+          <joint name="3mcp_abduction_r" range="-0.262 0.262" limited="true" ref="0" axis="-0.0215 0.1189 0.9927" type="hinge" />
+          <joint name="3mcp_flexion_r" range="-0.785 1.571" limited="true" ref="0" axis="0.9983 0.04734 -0.01041" type="hinge" />
+          <body name="3midph_r" pos="0.001650 -0.044210 0.006230" euler="-0 0 0">
+            <geom name="3midph_skin_r" size="0.008 0.013" pos="0.0012 -0.014 0.00" euler="1.55 0.06 -0.35"/>
+            <geom name="3midph_r_geom" type="mesh" class="bone" mesh="3midph_r_mesh" group="0" />
+            <geom name="Thirdmd_r" type="cylinder" euler="1.379 -1.493 1.519" pos="0.001400 -0.028000 0.001200" size="0.004 0.005" class="wrap" />
+            <site name="EDCM_r_Thirdmd_r_sidesite" pos="0.001400 -0.028000 0.015200"/>
+            <joint name="3pm_flexion_r" range="0.000 1.745" limited="true" ref="0" axis="0.9928 -0.062 0.1022" type="hinge" />
+            <body name="3distph_r" pos="0.001365 -0.029050 0.001954" euler="-0 0 0">
+              <geom name="3distph_skin_r" size="0.007 0.006" pos="0.0013 -0.009 0" euler="1.55 0.05 0"/>
+              <geom name="3distph_r_geom" type="mesh" class="bone" mesh="3distph_r_mesh" group="0" />
+              <joint name="3md_flexion_r" range="0.000 1.396" limited="true" ref="0" axis="0.9946 0.0361 0.09741" type="hinge" />
+              <site name="FDPM_r-P10" pos="0.000060 -0.005010 -0.004190" />
+              <site name="EDCM_r-P9" pos="0.000072 -0.006111 0.001908" />
+              <site name="2ndDI_r-P8" pos="0.000909 -0.006476 0.004583" />
+              <site name="3rdDI_r-P8" pos="0.000909 -0.006476 0.004583" />
+              <site name="LUMM_r-P8" pos="0.000909 -0.006476 0.004583" />
+            </body>
+            <site name="FDSM_r-P8" pos="0.001080 -0.010750 -0.001963" />
+            <site name="FDPM_r-P8" pos="0.000577 -0.011490 -0.003553" />
+            <site name="FDPM_r-P9" pos="0.000953 -0.021440 -0.002130" />
+            <site name="EDCM_r-P7" pos="0.000390 -0.004230 0.006250" />
+            <site name="EDCM_r-P8" pos="0.000948 -0.028033 0.005434" />
+            <site name="2ndDI_r-P6" pos="0.002671 -0.009167 0.005818" />
+            <site name="2ndDI_r-P7" pos="0.002574 -0.025088 0.007287" />
+            <site name="3rdDI_r-P6" pos="-0.002035 -0.009174 0.005879" />
+            <site name="3rdDI_r-P7" pos="0.000179 -0.025092 0.007318" />
+            <site name="LUMM_r-P6" pos="0.002671 -0.009167 0.005818" />
+            <site name="LUMM_r-P7" pos="0.002574 -0.025088 0.007287" />
+          </body>
+          <site name="FDSM_r-P6" pos="0.001000 -0.011000 -0.007708" />
+          <site name="FDSM_r-P7" pos="0.001750 -0.037000 -0.000346" />
+          <site name="FDPM_r-P6" pos="0.000960 -0.016000 -0.003926" />
+          <site name="FDPM_r-P7" pos="0.001902 -0.036430 0.001014" />
+          <site name="EDCM_r-P5" pos="-0.001180 -0.012000 0.009955" />
+          <site name="EDCM_r-P6" pos="0.001690 -0.041390 0.011270" />
+          <site name="2ndDI_r-P3" pos="0.008000 -0.012000 0.000000" />
+          <site name="2ndDI_r-P4" pos="0.008353 -0.028158 0.006986" />
+          <site name="2ndDI_r-P5" pos="0.004972 -0.040499 0.010456" />
+          <site name="3rdDI_r-P3" pos="-0.006000 -0.014000 0.001000" />
+          <site name="3rdDI_r-P4" pos="-0.004655 -0.028176 0.007154" />
+          <site name="3rdDI_r-P5" pos="-0.002821 -0.040510 0.010557" />
+          <site name="LUMM_r-P3" pos="0.009000 -0.016000 0.005000" />
+          <site name="LUMM_r-P4" pos="0.008353 -0.028158 0.006986" />
+          <site name="LUMM_r-P5" pos="0.004972 -0.040499 0.010456" />
+        </body>
+        <site name="PL_r-P4" pos="0.001790 0.008280 -0.002450" />
+        <site name="FDSR_r-P4" pos="-0.009140 0.005440 -0.010850" />
+        <site name="FDSM_r-P4" pos="0.001280 0.006390 -0.009520" />
+        <site name="FDSM_r-P5" pos="0.000243 -0.016000 -0.008500" />
+        <site name="FDPR_r-P4" pos="-0.010400 0.004730 -0.008040" />
+        <site name="FDPM_r-P4" pos="-0.001280 0.006090 -0.008380" />
+        <site name="FDPM_r-P5" pos="0.000500 -0.018682 -0.007672" />
+        <site name="EDCM_r-P4" pos="-0.000690 -0.027000 0.010000" />
+        <site name="2ndPI_r-P1" pos="-0.006000 0.016000 -0.003000" />
+        <site name="2ndDI_r-P1" pos="0.003000 0.016000 -0.003000" />
+        <site name="2ndDI_r-P2" pos="0.007000 -0.021000 0.001000" />
+        <site name="3rdDI_r-P1" pos="-0.004000 0.016000 -0.003000" />
+        <site name="3rdDI_r-P2" pos="-0.006000 -0.024000 0.000500" />
+        <site name="LUMR_r-P1" pos="-0.003149 0.020002 -0.016641" />
+        <site name="LUMM_r-P1" pos="0.002000 0.022000 -0.016000" />
+        <site name="LUMM_r-P2" pos="0.006000 -0.020000 -0.010000" />
+      </body>
+      <body name="fourthmc_r" pos="-0.009700 -0.014700 0.001500" euler="-0 0 0">
+        <geom name="fourthmc_skin_r" size="0.01 0.023" pos="-0.002 -0.024 0.004" euler="1.45 -0.1 0" />
+        <geom name="4mc_r_geom" type="mesh" class="bone" mesh="4mc_r_mesh" group="0" />
+        <geom name="_4thmcp_r" type="cylinder" euler="-2.972 -1.222 -2.463" pos="-0.005701 -0.050870 0.004413" size="0.005 0.01" class="wrap" />
+        <site name="FDSR_r__4thmcp_r_sidesite" pos="-0.005701 -0.050870 -0.010587"/>
+        <site name="EDCR_r__4thmcp_r_sidesite" pos="-0.005701 -0.050870 0.019413"/>
+        <site name="FDPR_r__4thmcp_r_sidesite" pos="-0.005701 -0.050870 -0.010587"/>
+        <joint name="4cmc_flexion_r" range="0.000 0.202" limited="true" ref="0" axis="0.58 -0.8006 -0.1506" type="hinge" />
+        <body name="4proxph_r" pos="-0.005300 -0.048900 0.007000" euler="-0 0 0">
+          <geom name="4proxph_skin_r" size="0.009 0.016" pos="-0.002 -0.021 0.003" euler="1.48 -0.10 0"/>
+          <geom name="4proxph_r_geom" type="mesh" class="bone" mesh="4proxph_r_mesh" group="0" />
+          <geom name="Fourthpm_r" type="cylinder" euler="0 -1.5 0" pos="-0.004161 -0.039800 0.004178" size="0.004 0.005" class="wrap" />
+          <site name="EDCR_r_Fourthpm_r_sidesite" pos="-0.004161 -0.039800 0.018178"/>
+          <joint name="4mcp_abduction_r" range="-0.262 0.262" limited="true" ref="0" axis="-0.02209 0.1444 0.9893" type="hinge" />
+          <joint name="4mcp_flexion_r" range="-0.785 1.571" limited="true" ref="0" axis="0.9948 -0.06526 -0.02972" type="hinge" />
+          <body name="4midph_r" pos="-0.003900 -0.039800 0.005700" euler="-0 0 0">
+            <geom name="4midph_skin_r" size="0.008 0.011" pos="-0.001 -0.012 0.0015" euler="1.48 -0.08 0"/>
+            <geom name="4midph_r_geom" type="mesh" class="bone" mesh="4midph_r_mesh" group="0" />
+            <geom name="Fourthmd_r" type="cylinder" euler="0 -1.5 0" pos="-0.002639 -0.023000 0.002562" size="0.005 0.005" class="wrap" />
+            <site name="EDCR_r_Fourthmd_r_sidesite" pos="-0.002639 -0.023000 0.017562"/>
+            <joint name="4pm_flexion_r" range="0.000 1.745" limited="true" ref="0" axis="0.9958 -0.03458 0.09232" type="hinge" />
+            <body name="4distph_r" pos="-0.002600 -0.024500 0.003300" euler="-0 0 0">
+              <geom name="4distph_skin_r" size="0.007 0.006" pos="0 -0.01 0" euler="1.4 -0.1 0"/>
+              <geom name="4distph_r_geom" type="mesh" class="bone" mesh="4distph_r_mesh" group="0" />
+              <joint name="4md_flexion_r" range="0.000 1.396" limited="true" ref="0" axis="0.9526 -0.14 0.2701" type="hinge" />
+              <site name="FDPR_r-P10" pos="-0.000099 -0.003901 -0.003112" />
+              <site name="EDCR_r-P9" pos="-0.000474 -0.004000 0.003704" />
+              <site name="2ndPI_r-P8" pos="0.000305 -0.009532 0.004403" />
+              <site name="4thDI_r-P8" pos="-0.000622 -0.007861 0.004213" />
+              <site name="LUMR_r-P8" pos="0.000305 -0.009532 0.004403" />
+            </body>
+            <site name="FDSR_r-P8" pos="-0.000900 -0.012000 -0.000523" />
+            <site name="FDPR_r-P8" pos="-0.000649 -0.007589 -0.004222" />
+            <site name="FDPR_r-P9" pos="-0.002193 -0.019679 0.000548" />
+            <site name="EDCR_r-P7" pos="-0.000955 -0.005000 0.006286" />
+            <site name="EDCR_r-P8" pos="-0.002374 -0.023000 0.007000" />
+            <site name="2ndPI_r-P6" pos="0.000951 -0.008741 0.006881" />
+            <site name="2ndPI_r-P7" pos="-0.001479 -0.022414 0.007381" />
+            <site name="4thDI_r-P6" pos="-0.004109 -0.007518 0.006990" />
+            <site name="4thDI_r-P7" pos="-0.003662 -0.021386 0.007377" />
+            <site name="LUMR_r-P6" pos="0.000951 -0.008741 0.006881" />
+            <site name="LUMR_r-P7" pos="-0.000669 -0.022414 0.007381" />
+          </body>
+          <site name="FDSR_r-P6" pos="-0.000984 -0.012000 -0.006000" />
+          <site name="FDSR_r-P7" pos="-0.003140 -0.036000 0.001060" />
+          <site name="FDPR_r-P6" pos="-0.000612 -0.011000 -0.005601" />
+          <site name="FDPR_r-P7" pos="-0.003674 -0.033000 0.002000" />
+          <site name="EDCR_r-P5" pos="-0.000902 -0.007000 0.007438" />
+          <site name="EDCR_r-P6" pos="-0.003551 -0.037000 0.009000" />
+          <site name="2ndPI_r-P3" pos="0.006000 -0.010000 -0.002000" />
+          <site name="2ndPI_r-P4" pos="0.001250 -0.029184 0.010272" />
+          <site name="2ndPI_r-P5" pos="-0.001636 -0.037450 0.012173" />
+          <site name="4thDI_r-P3" pos="-0.008000 -0.012000 -0.002000" />
+          <site name="4thDI_r-P4" pos="-0.010435 -0.025235 0.007689" />
+          <site name="4thDI_r-P5" pos="-0.009218 -0.037080 0.010388" />
+          <site name="LUMR_r-P3" pos="0.003000 -0.012000 -0.007000" />
+          <site name="LUMR_r-P4" pos="0.003000 -0.017000 0.003000" />
+          <site name="LUMR_r-P5" pos="-0.001636 -0.037450 0.012173" />
+        </body>
+        <site name="FDSL_r-P4" pos="-0.009270 -0.017401 -0.006515" />
+        <site name="FDSR_r-P5" pos="-0.003622 -0.039000 -0.005000" />
+        <site name="FDPL_r-P4" pos="-0.010708 -0.016516 0.000413" />
+        <site name="FDPR_r-P5" pos="-0.003325 -0.039000 -0.001000" />
+        <site name="EDCR_r-P4" pos="-0.004904 -0.049000 0.013212" />
+        <site name="2ndPI_r-P2" pos="0.001000 -0.047000 0.002500" />
+        <site name="4thDI_r-P1" pos="-0.005000 -0.007000 -0.003000" />
+        <site name="4thDI_r-P2" pos="-0.010000 -0.042000 0.007000" />
+        <site name="LUML_r-P1" pos="-0.002632 -0.007801 -0.005177" />
+        <site name="LUMR_r-P2" pos="0.000000 -0.039000 -0.001000" />
+      </body>
+      <body name="fifthmc_r" pos="-0.017100 -0.011800 -0.003600" euler="-0 0 0">
+        <geom name="fifthmc_skin_1_r" size="0.01 0.022" pos="-0.006 -0.02 0.005" euler="1.35 -0.25 0"/>
+        <geom name="fifthmc_skin_2_r" class="hand_inertial" size="0.014 0.022 0.006" pos="-0.005 -0.02 -0.005" euler="-0.2 0 -0.2"/>
+        <geom name="5mc_r_geom" type="mesh" class="bone" mesh="5mc_r_mesh" group="0" />
+        <geom name="_5thmcp_r" type="cylinder" euler="-2.672 -1.5 -2.466" pos="-0.013000 -0.043000 0.010020" size="0.005 0.01" class="wrap" />
+        <site name="FDSL_r__5thmcp_r_sidesite" pos="-0.013000 -0.043000 -0.004980"/>
+        <site name="FDM_r__5thmcp_r_sidesite" pos="-0.013000 -0.043000 -0.004980"/>
+        <site name="ADM_r__5thmcp_r_sidesite" pos="-0.013000 -0.043000 -0.004980"/>
+        <site name="EDM_r__5thmcp_r_sidesite" pos="-0.013000 -0.043000 0.025020"/>
+        <site name="EDCL_r__5thmcp_r_sidesite" pos="-0.013000 -0.043000 0.025020"/>
+        <site name="FDPL_r__5thmcp_r_sidesite" pos="-0.013000 -0.043000 -0.004980"/>
+        <joint name="CMC5_r_r1_r" range="0 0.553" limited="true" ref="0" axis="0.3718 -0.8665 0.3333" type="hinge" />
+        <body name="5proxph_r" pos="-0.011100 -0.042300 0.009700" euler="-0 0 0">
+          <geom name="5proxph_skin_r" size="0.009 0.012" pos="-0.008 -0.020 0.003" euler="1.5 -0.3 0"/>
+          <geom name="5proxph_r_geom" type="mesh" class="bone" mesh="5proxph_r_mesh" group="0" />
+          <geom name="Fifthpm_r" type="cylinder" euler="-1.75 -1.1 -2.954" pos="-0.013320 -0.032720 0.002940" size="0.004 0.005" class="wrap" />
+          <site name="EDM_r_Fifthpm_r_sidesite" pos="-0.013320 -0.032720 0.016940"/>
+          <site name="EDCL_r_Fifthpm_r_sidesite" pos="-0.013320 -0.032720 0.016940"/>
+          <joint name="5mcp_abduction_r" range="-0.262 0.262" limited="true" ref="0" axis="-0.025 0.2162 0.976" type="hinge" />
+          <joint name="5mcp_flexion_r" range="-0.785 1.571" limited="true" ref="0" axis="0.9715 -0.2128 -0.03446" type="hinge" />
+          <body name="5midph_r" pos="-0.012500 -0.033500 0.004300" euler="-0 0 0">
+            <geom name="5midph_skin_r" size="0.008 0.006" pos="-0.004 -0.012 0" euler="1.5 -0.3 0"/>
+            <geom name="5midph_r_geom" type="mesh" class="bone" mesh="5midph_r_mesh" group="0" />
+            <geom name="Fifthmd_r" type="cylinder" euler="-2 -1.25 -1.75" pos="-0.007369 -0.019410 0.001361" size="0.005 0.005" class="wrap" />
+            <site name="EDM_r_Fifthmd_r_sidesite" pos="-0.007369 -0.019410 0.016361"/>
+            <site name="EDCL_r_Fifthmd_r_sidesite" pos="-0.007369 -0.019410 0.016361"/>
+            <joint name="5pm_flexion_r" range="0.000 1.745" limited="true" ref="0" axis="0.9287 -0.3277 0.1766" type="hinge" />
+            <body name="5distph_r" pos="-0.007500 -0.019500 0.002000" euler="-0 0 0">
+              <geom name="5distph_skin_r" size="0.007 0.006" pos="-0.003 -0.009 0" euler="1.5 -0.3 0"/>
+              <geom name="5distph_r_geom" type="mesh" class="bone" mesh="5distph_r_mesh" group="0" />
+              <joint name="5md_flexion_r" range="0.000 1.396" limited="true" ref="0" axis="0.8927 -0.4268 0.1446" type="hinge" />
+              <site name="FDPL_r-P10" pos="-0.002848 -0.007365 -0.002789" />
+              <site name="EDCL_r-P9" pos="-0.001803 -0.006843 0.002612" />
+              <site name="EDM_r-P11" pos="-0.001929 -0.006380 0.004225" />
+              <site name="3rdPI_r-P8" pos="-0.001509 -0.008352 0.004370" />
+              <site name="LUML_r-P8" pos="-0.001509 -0.008352 0.004370" />
+            </body>
+            <site name="FDSL_r-P8" pos="-0.002434 -0.006168 -0.003132" />
+            <site name="FDPL_r-P8" pos="-0.002934 -0.008676 -0.004547" />
+            <site name="FDPL_r-P9" pos="-0.006273 -0.015984 -0.001723" />
+            <site name="EDCL_r-P7" pos="-0.001504 -0.007038 0.005788" />
+            <site name="EDCL_r-P8" pos="-0.006086 -0.019063 0.005020" />
+            <site name="EDM_r-P9" pos="-0.002024 -0.007038 0.005788" />
+            <site name="EDM_r-P10" pos="-0.006731 -0.018689 0.005896" />
+            <site name="3rdPI_r-P6" pos="-0.002563 -0.010210 0.005658" />
+            <site name="3rdPI_r-P7" pos="-0.005786 -0.019031 0.006013" />
+            <site name="LUML_r-P6" pos="-0.002563 -0.010210 0.005658" />
+            <site name="LUML_r-P7" pos="-0.005786 -0.019031 0.006013" />
+          </body>
+          <site name="FDSL_r-P6" pos="-0.005000 -0.014000 -0.004000" />
+          <site name="FDSL_r-P7" pos="-0.009720 -0.025386 -0.000000" />
+          <site name="FDPL_r-P6" pos="-0.004000 -0.010000 -0.004000" />
+          <site name="FDPL_r-P7" pos="-0.010500 -0.028881 -0.000482" />
+          <site name="EDCL_r-P5" pos="-0.002422 -0.006000 0.008641" />
+          <site name="EDCL_r-P6" pos="-0.010492 -0.030000 0.009867" />
+          <site name="EDM_r-P7" pos="-0.002384 -0.006000 0.008641" />
+          <site name="EDM_r-P8" pos="-0.010492 -0.030022 0.009867" />
+          <site name="ADM_r-P3" pos="-0.011500 -0.010000 -0.002000" />
+          <site name="FDM_r-P3" pos="-0.011500 -0.010000 -0.002000" />
+          <site name="3rdPI_r-P3" pos="0.003000 -0.015000 -0.002000" />
+          <site name="3rdPI_r-P4" pos="-0.004567 -0.025653 0.004922" />
+          <site name="3rdPI_r-P5" pos="-0.009797 -0.033337 0.009202" />
+          <site name="LUML_r-P3" pos="-0.001500 -0.019000 -0.003000" />
+          <site name="LUML_r-P4" pos="-0.003020 -0.022000 0.004000" />
+          <site name="LUML_r-P5" pos="-0.009797 -0.033337 0.009202" />
+        </body>
+        <site name="FDSL_r-P5" pos="-0.010000 -0.034000 0.001442" />
+        <site name="FDPL_r-P5" pos="-0.011000 -0.036000 0.004000" />
+        <site name="EDCL_r-P4" pos="-0.009800 -0.039300 0.015700" />
+        <site name="EDM_r-P5" pos="0.001979 0.002464 0.007758" />
+        <site name="EDM_r-P6" pos="-0.011042 -0.038531 0.015012" />
+        <site name="ADM_r-P2" pos="-0.015383 -0.036418 -0.001729" />
+        <site name="FDM_r-P2" pos="-0.018229 -0.035911 0.004213" />
+        <site name="ODM_r-P2" pos="-0.007930 -0.028290 0.003228" />
+        <site name="3rdPI_r-P1" pos="-0.000000 -0.012000 0.003000" />
+        <site name="3rdPI_r-P2" pos="-0.004500 -0.042500 0.007000" />
+        <site name="LUML_r-P2" pos="-0.005000 -0.038000 0.001000" />
+      </body>
+      <site name="ECRL_r-P4" pos="0.017170 -0.021220 0.005830" />
+      <site name="ECRB_r-P4" pos="0.005000 -0.011360 0.008500" />
+      <site name="ECU_r-P6" pos="-0.022510 -0.014010 -0.001280" />
+      <site name="FCR_r-P3" pos="0.011240 -0.018440 -0.004180" />
+      <site name="FCU_r-P4" pos="-0.020360 -0.017650 -0.007520" />
+      <site name="PL_r-P3" pos="0.009170 -0.018980 -0.017540" />
+      <site name="FDSL_r-P3" pos="-0.002350 -0.013930 -0.013760" />
+      <site name="FDSR_r-P3" pos="-0.000820 -0.013440 -0.013590" />
+      <site name="FDSM_r-P3" pos="0.006800 -0.013770 -0.013990" />
+      <site name="FDSI_r-P3" pos="0.008890 -0.013660 -0.013870" />
+      <site name="FDPL_r-P3" pos="-0.000880 -0.010270 -0.011880" />
+      <site name="FDPR_r-P3" pos="0.001060 -0.011770 -0.011840" />
+      <site name="FDPM_r-P3" pos="0.003350 -0.012800 -0.011440" />
+      <site name="FDPI_r-P3" pos="0.008960 -0.011680 -0.012120" />
+      <site name="EPL_r-P6" pos="0.024280 0.000140 0.003669" />
+      <site name="FPL_r-P6" pos="0.011131 -0.006455 -0.022573" />
+      <site name="APB_r-P1" pos="0.004484 -0.005190 -0.012640" />
+      <site name="FPB_r-P1" pos="0.009590 -0.006670 -0.014810" />
+      <site name="OPP_r-P1" pos="0.011290 -0.001470 -0.017310" />
+      <site name="ADPt_r-P1" pos="0.000640 -0.024220 0.001490" />
+      <site name="ADPo_r-P1" pos="-0.001310 -0.005270 -0.006650" />
+    </body>
+    <site name="ECRB_r_torus_ECRB_r_3_sidesite" pos="0.012840 -0.008028 0.009724" size="0.0005" />
+    <site name="PL_r_ellipsoid_PL_r_2_sidesite" pos="0.011210 -0.021740 -0.019400" size="0.0005" />
+    <site name="EDCR_r_torus_EDCR_r_3_sidesite" pos="-0.005355 -0.016940 0.026700" size="0.0005" />
+    <site name="EDCI_r_torus_EDCI_r_3_sidesite" pos="0.002697 -0.011540 0.014100" size="0.0005" />
+    <site name="EPB_r-P5" pos="0.029942 -0.009464 -0.009226" />
+    <site name="FPL_r-P5" pos="0.012148 -0.002895 -0.016993" />
+    <site name="FPL_r_ellipsoid_FPL_r_3_sidesite" pos="0.011540 0.010280 -0.009091" size="0.0005" />
+    <site name="FPL_r_ellipsoid_FPL_r_1_sidesite" pos="-0.001420 0.106800 -0.005850" size="0.0005" />
+    <site name="APL_r-P6" pos="0.030130 -0.000650 -0.010897" />
+    <site name="APL_r-P7" pos="0.031124 -0.006605 -0.012129" />
+    <site name="ADM_r-P1" pos="-0.009385 -0.011938 -0.013671" />
+  </body>
+</mujoco>

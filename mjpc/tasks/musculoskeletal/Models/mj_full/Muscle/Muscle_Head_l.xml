@@ -1,0 +1,53 @@
+<mujoco>
+    <actuator>
+
+        <muscle name="platysma_l" lengthrange="0.01 1" force="0.001" tendon="platysma_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="occipitofrontalis_1_l" lengthrange="0.01 1" force="0.001" tendon="occipitofrontalis_1_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="occipitofrontalis_2_l" lengthrange="0.01 1" force="0.001" tendon="occipitofrontalis_2_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="occipitofrontalis_3_l" lengthrange="0.01 1" force="0.001" tendon="occipitofrontalis_3_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="aur_post_l" lengthrange="0.01 1" force="0.001" tendon="aur_post_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="aur_sup_l" lengthrange="0.01 1" force="0.001" tendon="aur_sup_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="aur_ant_l" lengthrange="0.01 1" force="0.001" tendon="aur_ant_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="temporoparietalis_l" lengthrange="0.01 1" force="0.001" tendon="temporoparietalis_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="dep_supercili_l" lengthrange="0.01 1" force="0.001" tendon="dep_supercili_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="cor_supercili_l" lengthrange="0.01 1" force="0.001" tendon="cor_supercili_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="procerus_l" lengthrange="0.01 1" force="0.001" tendon="procerus_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="orbicularis_ocu_l" lengthrange="0.01 1" force="0.001" tendon="orbicularis_ocu_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="orbicularis_pal_l" lengthrange="0.01 1" force="0.001" tendon="orbicularis_pal_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="nasalis_trans_l" lengthrange="0.01 1" force="0.001" tendon="nasalis_trans_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="nasalis_alar_l" lengthrange="0.01 1" force="0.001" tendon="nasalis_alar_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="leva_naso_med_l" lengthrange="0.01 1" force="0.001" tendon="leva_naso_med_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="leva_naso_lat_l" lengthrange="0.01 1" force="0.001" tendon="leva_naso_lat_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="leva_labii_sup_l" lengthrange="0.01 1" force="0.001" tendon="leva_labii_sup_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="leva_anguli_oris_l" lengthrange="0.01 1" force="0.001" tendon="leva_anguli_oris_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="zygomaticus_min_l" lengthrange="0.01 1" force="0.001" tendon="zygomaticus_min_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="zygomaticus_maj_l" lengthrange="0.01 1" force="0.001" tendon="zygomaticus_maj_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="dep_septi_nasi_l" lengthrange="0.01 1" force="0.001" tendon="dep_septi_nasi_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="orbi_oris_mar_sup_l" lengthrange="0.01 1" force="0.001" tendon="orbi_oris_mar_sup_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="orbi_oris_mar_inf_l" lengthrange="0.01 1" force="0.001" tendon="orbi_oris_mar_inf_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="orbi_oris_labi_sup_l" lengthrange="0.01 1" force="0.001" tendon="orbi_oris_labi_sup_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="orbi_oris_labi_inf_l" lengthrange="0.01 1" force="0.001" tendon="orbi_oris_labi_inf_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="risorius_l" lengthrange="0.01 1" force="0.001" tendon="risorius_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="bucinator_sup_l" lengthrange="0.01 1" force="0.001" tendon="bucinator_sup_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="bucinator_inf_l" lengthrange="0.01 1" force="0.001" tendon="bucinator_inf_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="dep_anguli_oris_l" lengthrange="0.01 1" force="0.001" tendon="dep_anguli_oris_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="dep_labii_inf_l" lengthrange="0.01 1" force="0.001" tendon="dep_labii_inf_l_tendon" class="torso_muscle" group="1" />
+        <muscle name="mentalis_l" lengthrange="0.01 1" force="0.001" tendon="mentalis_l_tendon" class="torso_muscle" group="1" />
+
+        <muscle name="masseteris_int_l" lengthrange="0.035 0.039" force="65.800" tendon="masseteris_int_l_tendon" class="torso_muscle" />
+        <muscle name="masseteris_sup_l" lengthrange="0.053 0.060" force="272.800" tendon="masseteris_sup_l_tendon" class="torso_muscle" />
+        <muscle name="temporalis_ant_l" lengthrange="0.097 0.106" force="308.000" tendon="temporalis_ant_l_tendon" class="torso_muscle" />
+        <muscle name="temporalis_post_l" lengthrange="0.092 0.102" force="222.000" tendon="temporalis_post_l_tendon" class="torso_muscle" />
+        <muscle name="ptery_lat_sup_l" lengthrange="0.026 0.032" force="38.000" tendon="ptery_lat_sup_l_tendon" class="torso_muscle" />
+        <muscle name="ptery_lat_inf_l" lengthrange="0.026 0.032" force="112.800" tendon="ptery_lat_inf_l_tendon" class="torso_muscle" />
+        <muscle name="ptery_med_sup_l" lengthrange="0.038 0.042" force="120.000" tendon="ptery_med_sup_l_tendon" class="torso_muscle" />
+        <muscle name="ptery_med_inf_l" lengthrange="0.038 0.042" force="120.000" tendon="ptery_med_inf_l_tendon" class="torso_muscle"  />
+        <muscle name="eye_rect_sup_l" lengthrange="0.034 0.047" force="1.177" tendon="eye_rect_sup_l_tendon" class="torso_muscle"  />
+        <muscle name="eye_rect_inf_l" lengthrange="0.034 0.048" force="1.427" tendon="eye_rect_inf_l_tendon" class="torso_muscle"  />
+        <muscle name="eye_rect_med_l" lengthrange="0.031 0.043" force="1.574" tendon="eye_rect_med_l_tendon" class="torso_muscle"  />
+        <muscle name="eye_rect_lat_l" lengthrange="0.037 0.051" force="1.471" tendon="eye_rect_lat_l_tendon" class="torso_muscle"  />
+        <muscle name="eye_obli_sup_l" lengthrange="0.051 0.063" force="0.603" tendon="eye_obli_sup_l_tendon" class="torso_muscle"  />
+        <muscle name="eye_obli_inf_l" lengthrange="0.031 0.043" force="0.559" tendon="eye_obli_inf_l_tendon" class="torso_muscle"  />
+
+    </actuator>
+</mujoco>

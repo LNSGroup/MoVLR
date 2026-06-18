@@ -1,0 +1,36 @@
+<mujoco>
+    <asset>
+        <material name='collision' rgba="0.8 0.6 .4 1"/>
+        <!-- <texture type="skybox" builtin="gradient" rgb1="1 1 1" rgb2="1 1 1" width="512" height="512"/> -->
+        <texture type="skybox" builtin="gradient" rgb1="0.8 0.8 0.8" rgb2="0.5 0.5 0.5" width="512" height="512"/>
+        <texture name="plane" type="2d" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.3 0.4 0.5" width="10" height="10"/>
+        <material name="plane" texture="plane" texrepeat="125 10"/>
+        <texture name="grid" type="2d" builtin="checker" rgb1="0.1 0.2 0.3" rgb2="0.2 0.3 0.4" mark="edge" markrgb="0.2 0.3 0.4" width="300" height="300"/>
+        <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance="0.1"/>
+        <texture name="grid_vis" type="2d" builtin="checker" rgb1="0.7 0.7 0.7" rgb2="0.7 0.7 0.7" width="300" height="300"/>
+        <material name="grid_vis" texture="grid_vis" texrepeat="0.1 0.1" texuniform="true" reflectance="0.1"/>
+        <texture name="gray_plane" type="2d" builtin="checker" rgb1="0.7 0.7 0.7" rgb2="0.7 0.7 0.7" width="300" height="300"/>
+        <material name="gray_plane" texture="gray_plane" texrepeat="0.1 0.1" texuniform="true" reflectance="0.1"/>
+        <hfield file="../Terrain/stair3.png" name="hf_stair" ncol="0" nrow="0" size="5 5 0.2 0.1" />
+
+        <texture builtin="gradient" height="100" rgb1="1 1 1" rgb2="0 0 0" type="skybox" width="100" />
+        <texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom" random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127" />
+        <texture builtin="checker" height="100" name="texplane" rgb1="0.2 0.4 0.6" rgb2="0.8 0.8 0.8" type="2d" width="100" />
+        <material name="MatPlane" reflectance="0.5" shininess="1" specular="1" texrepeat="60 60" texture="texplane" />
+        <material name="geom" texture="texgeom" texuniform="true" />
+        <hfield file="../Terrain/stair6.png" name="mytilted" ncol="0" nrow="0" size="10 10 1 0.01" />
+        <hfield file="../Terrain/stair.png" name="mystair" ncol="0" nrow="0" size="10 10 0.5 0.01" />
+        <hfield file="../Terrain/step.png" name="step1" ncol="0" nrow="0" size="1 5 0.1 0.001" />
+        <hfield file="../Terrain/step.png" name="step2" ncol="0" nrow="0" size="1 5 0.2 0.001" />
+        <hfield file="../Terrain/step.png" name="step3" ncol="0" nrow="0" size="1 5 0.3 0.001" />
+        <hfield file="../Terrain/terrain.png" name="rough" ncol="0" nrow="0" size="10 10 0.1 0.001" />
+
+
+        <mesh name="r_tibia_bisect" file="../Geometry/prosthetic/r_tibia_bisect.obj" scale="       1        1        1"></mesh>
+        <mesh name="r_pylon" file="../Geometry/prosthetic/r_pylon.obj" scale="       1        1        1"></mesh>
+        <mesh name="r_pros_foot" file="../Geometry/prosthetic/r_pros_foot.obj" scale="       1        1        1"></mesh>
+
+        <mesh name="crutch" file="../Geometry/prosthetic/crutch.stl" scale="1 1 0.98"></mesh>
+
+    </asset>
+</mujoco> 

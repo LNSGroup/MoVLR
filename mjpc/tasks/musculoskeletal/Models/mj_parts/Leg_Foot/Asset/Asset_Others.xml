@@ -1,0 +1,13 @@
+<mujoco>
+    <asset>
+        <material name='collision' rgba="0.8 0.6 .4 1"/>
+        <texture type="skybox" builtin="gradient" rgb1="0.8 0.8 0.8" rgb2="0.5 0.5 0.5" width="512" height="512"/>
+        <texture name="gray_plane" type="2d" builtin="checker" rgb1="0.7 0.7 0.7" rgb2="0.7 0.7 0.7" width="300" height="300"/>
+        <material name="gray_plane" texture="gray_plane" texrepeat="0.1 0.1" texuniform="true" reflectance="0.1"/>
+
+        <hfield file="Terrain/stair.png" name="hf_stair" ncol="0" nrow="0" size="5 1 1 0.1" />
+
+        <mesh name="man_headwear" file="Geometry/mid_head.obj" scale="1 1.03 1" />
+        <mesh name="headwear_mesh" file="Geometry/headwear.obj" scale="1.01 1.1 1.05" />
+    </asset>
+</mujoco> 

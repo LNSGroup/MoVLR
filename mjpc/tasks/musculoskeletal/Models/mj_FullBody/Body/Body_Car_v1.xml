@@ -1,0 +1,24 @@
+<mujoco>
+    <body name="car" pos="0 -0.05 0.8" quat="1 1 -1 -1">
+        <freejoint/>
+        <geom type="mesh" rgba="1 1 1 1" mesh="base_link"/>
+        <geom pos="-0.367603 -0.634389 0.156336" quat="-0.454178 0.541333 -0.542017 -0.454861" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="left_side"/>
+        <geom pos="0.287397 -0.634467 0.155443" quat="-0.454178 0.541333 -0.542017 -0.454861" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="right_side"/>
+        <geom pos="-0.367603 -0.634389 0.156336" quat="-0.454178 0.541333 -0.542017 -0.454861" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="left_handler"/>
+        <geom pos="-0.367603 -0.634389 0.156336" quat="-0.454178 0.541333 -0.542017 -0.454861" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="left_side1"/>
+        <geom pos="-0.368189 -0.319137 -0.301701" quat="0.0871557 0.996194 -3.17181e-09 -0.000683667" type="mesh" rgba="1 1 1 1" mesh="left_bar"/>
+        <geom pos="0.287397 -0.634467 0.155443" quat="-0.454178 0.541333 -0.542017 -0.454861" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="right_handler"/>
+        <geom pos="0.287397 -0.634467 0.155443" quat="-0.454178 0.541333 -0.542017 -0.454861" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="right_side1"/>
+        <geom pos="0.287278 -0.259517 0.0359745" quat="-3.17181e-09 -0.000683667 -0.0871557 -0.996194" type="mesh" rgba="1 1 1 1" mesh="right_bar"/>
+        <body name="left_wheel" pos="-0.39324 -0.661238 -0.290326" quat="-0.477387 0.520978 -0.521691 -0.47804">
+          <inertial pos="-3.2324e-10 0.01 6.82976e-12" quat="0.707107 0 0 0.707107" mass="0.222225" diaginertia="0.000393376 0.000203911 0.000203911"/>
+          <joint limited="false" name="left_joint" pos="0 0 0" axis="0 -1 0"/>
+          <geom type="mesh" rgba="1 1 1 1" mesh="left_wheel"/>
+        </body>
+        <body name="right_wheel" pos="0.311759 -0.661321 -0.291275" quat="-0.477387 0.520978 -0.521691 -0.47804">
+          <inertial pos="-1.67823e-10 -0.01 -6.79745e-12" quat="0.707107 0 0 0.707107" mass="0.222225" diaginertia="0.000393376 0.000203911 0.000203911"/>
+          <joint limited="false" name="right_joint" pos="0 0 0" axis="0 -1 0"/>
+          <geom type="mesh" rgba="1 1 1 1" mesh="right_wheel"/>
+        </body>
+      </body>
+</mujoco>

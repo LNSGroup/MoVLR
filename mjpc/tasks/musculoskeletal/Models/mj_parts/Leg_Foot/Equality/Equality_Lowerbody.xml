@@ -1,0 +1,24 @@
+<mujoco>
+    <equality>
+        <!-- Lower Limb Constraints -->
+        <joint joint1="walker_knee_r_translation1" joint2="knee_angle_r" polycoef="-7.747e-07 2.641e-05 0.001818 -0.001015 0.000159" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="walker_knee_r_translation2" joint2="knee_angle_r" polycoef="-2.516e-05 0.003937 -0.01144 0.00508 -0.0005797" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="walker_knee_r_translation3" joint2="knee_angle_r" polycoef="-1.462e-05 0.006265 0.0006116 -0.004454 0.001208" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="walker_knee_r_rotation2" joint2="knee_angle_r" polycoef="-1.473e-08 0.0791 -0.03285 -0.02522 0.01083" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="walker_knee_r_rotation3" joint2="knee_angle_r" polycoef="1.089e-08 0.3695 -0.1695 0.02516 3.505e-07" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="patellofemoral_r_translation1" joint2="knee_angle_r" polycoef="0.05242 -0.01502 -0.03405 0.01334 -0.0008792" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="patellofemoral_r_translation2" joint2="knee_angle_r" polycoef="-0.01083 -0.04878 0.009276 0.01317 -0.003497" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="patellofemoral_r_rotation1" joint2="knee_angle_r" polycoef="0.01051 0.02476 -1.316 0.7163 -0.1383" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <!-- <joint name="patellofemoral_r_translation3_locked" active="true" joint1="patellofemoral_r_translation3" polycoef="0.00275 0 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/> -->
+        
+        <joint joint1="walker_knee_l_translation1" joint2="knee_angle_l" polycoef="-7.747e-07 2.641e-05 0.001818 -0.001015 0.000159" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="walker_knee_l_translation2" joint2="knee_angle_l" polycoef="-2.516e-05 0.003937 -0.01144 0.00508 -0.0005797" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="walker_knee_l_translation3" joint2="knee_angle_l" polycoef="1.462e-05 -0.006265 -0.0006116 0.004454 -0.001208" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="walker_knee_l_rotation2" joint2="knee_angle_l" polycoef="-1.473e-08 0.0791 -0.03285 -0.02522 0.01083" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="walker_knee_l_rotation3" joint2="knee_angle_l" polycoef="-1.089e-08 -0.3695 0.1695 -0.02516 -3.505e-07" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="patellofemoral_l_translation1" joint2="knee_angle_l" polycoef="0.05242 -0.01502 -0.03405 0.01334 -0.0008792" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="patellofemoral_l_translation2" joint2="knee_angle_l" polycoef="-0.01083 -0.04878 0.009276 0.01317 -0.003497" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <joint joint1="patellofemoral_l_rotation1" joint2="knee_angle_l" polycoef="0.01051 0.02476 -1.316 0.7163 -0.1383" solimp="0.9999 0.9999 0.001 0.5 2" active="true"/>
+        <!-- <joint name="patellofemoral_l_translation3_locked" active="true" joint1="patellofemoral_l_translation3" polycoef="-0.00275 0 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/> -->
+    </equality>
+</mujoco>

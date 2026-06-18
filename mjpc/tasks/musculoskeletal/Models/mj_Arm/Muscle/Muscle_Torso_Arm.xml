@@ -1,0 +1,34 @@
+<mujoco>
+    <actuator>
+        <muscle name="LD_L1_r" tendon="LD_L1_r_tendon" class="muscle" force="90.3992093984145" lengthrange="0.238419 0.570316"></muscle>
+        <muscle name="LD_L2_r" tendon="LD_L2_r_tendon" class="muscle" force="84.5398602647279" lengthrange="0.256534 0.613647"></muscle>
+        <muscle name="LD_L3_r" tendon="LD_L3_r_tendon" class="muscle" force="104.51784980832" lengthrange="0.271513 0.649478"></muscle>
+        <muscle name="LD_L4_r" tendon="LD_L4_r_tendon" class="muscle" force="100.727910578422" lengthrange="0.283672 0.678564"></muscle>
+        <muscle name="LD_L5_r" tendon="LD_L5_r_tendon" class="muscle" force="101.687721099877" lengthrange=" 0.29438 0.711729"></muscle>
+        <muscle name="LD_T12_r" tendon="LD_T12_r_tendon" class="muscle" force="53.7058616911437" lengthrange="0.222824 0.538726"></muscle>
+        <muscle name="LD_T11_r" tendon="LD_T11_r_tendon" class="muscle" force="62.9176668794062" lengthrange="0.208147 0.503241"></muscle>
+        <muscle name="LD_T10_r" tendon="LD_T10_r_tendon" class="muscle" force="64.4789945772921" lengthrange="0.191223 0.482517"></muscle>
+        <muscle name="LD_T9_r" tendon="LD_T9_r_tendon" class="muscle" force="40.6245682176283" lengthrange="0.167304  0.42216"></muscle>
+        <muscle name="LD_T8_r" tendon="LD_T8_r_tendon" class="muscle" force="40.7947116825992" lengthrange="0.167045 0.403868"></muscle>
+        <muscle name="LD_T7_r" tendon="LD_T7_r_tendon" class="muscle" force="37.0749985587083" lengthrange=" 0.15728  0.38026"></muscle>
+        <muscle name="LD_R12_r" tendon="LD_R12_r_tendon" class="muscle" force="42.9003007207539" lengthrange="0.193022 0.466673"></muscle>
+        <muscle name="LD_R11_r" tendon="LD_R11_r_tendon" class="muscle" force="63.3335730377631" lengthrange="0.168615 0.407664"></muscle>
+        <muscle name="LD_Il_r" tendon="LD_Il_r_tendon" class="muscle" force="65.3662549035565" lengthrange="0.252616 0.717639"></muscle>
+        
+        <muscle name="LD_L1_l" tendon="LD_L1_l_tendon" class="muscle" force="90.3987221989421" lengthrange="0.238421 0.570319"></muscle>
+        <muscle name="LD_L2_l" tendon="LD_L2_l_tendon" class="muscle" force="84.5396487969012" lengthrange="0.256528 0.613634"></muscle>
+        <muscle name="LD_L3_l" tendon="LD_L3_l_tendon" class="muscle" force="104.517882178821" lengthrange=" 0.27151 0.649472"></muscle>
+        <muscle name="LD_L4_l" tendon="LD_L4_l_tendon" class="muscle" force="100.727697374024" lengthrange="0.283671 0.678562"></muscle>
+        <muscle name="LD_L5_l" tendon="LD_L5_l_tendon" class="muscle" force="101.687716349125" lengthrange="0.294378 0.711724"></muscle>
+        <muscle name="LD_T12_l" tendon="LD_T12_l_tendon" class="muscle" force="53.705835978988" lengthrange="0.222826  0.53873"></muscle>
+        <muscle name="LD_T11_l" tendon="LD_T11_l_tendon" class="muscle" force="62.9177063405168" lengthrange="0.208145 0.503238"></muscle>
+        <muscle name="LD_T10_l" tendon="LD_T10_l_tendon" class="muscle" force="64.4790136556435" lengthrange="0.191224 0.482519"></muscle>
+        <muscle name="LD_T9_l" tendon="LD_T9_l_tendon" class="muscle" force="40.6245570993426" lengthrange="0.167303 0.422159"></muscle>
+        <muscle name="LD_T8_l" tendon="LD_T8_l_tendon" class="muscle" force="40.7946479816366" lengthrange="0.167044 0.403866"></muscle>
+        <muscle name="LD_T7_l" tendon="LD_T7_l_tendon" class="muscle" force="37.074951492661" lengthrange="0.157287 0.380275"></muscle>
+        <muscle name="LD_R12_l" tendon="LD_R12_l_tendon" class="muscle" force="42.9002959577856" lengthrange=" 0.19302 0.466668"></muscle>
+        <muscle name="LD_R11_l" tendon="LD_R11_l_tendon" class="muscle" force="63.3335896619254" lengthrange="0.168614 0.407662"></muscle>
+        <muscle name="LD_Il_l" tendon="LD_Il_l_tendon" class="muscle" force="65.3662158344297" lengthrange="0.252614 0.717635"></muscle>
+        
+    </actuator>
+</mujoco>

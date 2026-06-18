@@ -1,0 +1,60 @@
+<mujoco>
+    <body name="exoskeleton" pos="-0.2 0 1.02" euler="0 0 3.14">
+        <geom pos="-0.05 0 0" quat="0 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.5 0.5 0.5 1" mesh="HipBase" />
+        <!-- -0.1395 0 1.215 -->
+        <body name="hip_aa_frame_right_side" pos="0 0.08 0">
+            <inertial pos="-0.0274883 0.113672 0.0258262" quat="0.288866 0.78748 -0.0243216 0.543913" mass="3.407" diaginertia="0.0319465 0.0281204 0.00851425" />
+            <joint name="exo_right_hip_aa" pos="0 0 0" axis="1 0 0" limited="true" range="-0.316 0.279185" />
+            <geom pos="-0.1395 -0.10 0" quat="0 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.5 0.5 0.5 1" mesh="RightHAA" />
+            <!-- -0.1395 -0.08 0 -->
+            <body name="upper_leg_right" pos="-0.1395 0.13 0">
+                <inertial pos="0.000709 0.005254 -0.19205" quat="0.997192 0.0725923 -0.000366043 0.0184093" mass="4.995" diaginertia="0.127004 0.124338 0.0126583" />
+                <joint name="exo_right_hip_fe" pos="0 0 0" axis="0 1 0" limited="true" range="-0.353151 1.73627" />
+                <geom pos="0 -0.23 0" quat="0 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.5 0.5 0.5 1" mesh="UpperRightLeg" />
+                <!-- 0 -0.21 0 -->
+                <site name="upper_leg_spring_right_exo" group="1" size="0.01" pos="-0.01 -0.123 -0.233"></site>
+                <body name="lower_leg_right" pos="0 0 -0.385">
+                    <inertial pos="-0.00321 -0.025919 -0.142082" quat="0.428088 0.275727 0.433317 0.743607" mass="4.458" diaginertia="0.124756 0.0751993 0.0560447" />
+                    <joint name="exo_right_knee" pos="0 0 0" axis="0 -1 0" limited="true" range="-0.0854236 2.01253" />
+                    <geom pos="0 -0.23 0.385" quat="0 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.5 0.5 0.5 1" mesh="LowerRightLeg" />
+                    <!-- 0 -0.21 0.385 -->
+                    <site name="lower_leg_spring_right_exo" group="1" size="0.01" pos="0.015 -0.135 -0.123"></site>
+                    <body name="ankle_plate_right" pos="0 -0.07 -0.385">
+                        <inertial pos="-0.0248346 0.0136648 -0.0254757" quat="0.833746 -0.214253 -0.126656 0.49287" mass="2.121" diaginertia="0.0223967 0.0223041 0.0214945" />
+                        <joint name="exo_right_ankle" pos="0 0 0" axis="0 1 0" limited="true" range="-0.404971 0.248505" />
+                        <geom pos="0 -0.26 1.0395" quat="0 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.5 0.5 0.5 1" mesh="RightFoot" />
+                        <!-- 0 -0.14 1.0395 -->
+                    </body>
+                </body>
+            </body>
+        </body>
+        
+        <body name="hip_aa_frame_left_side" pos="0 -0.08 0">
+            <inertial pos="-0.0274883 -0.113672 0.0258262" quat="-0.288866 0.78748 0.0243216 0.543913" mass="3.407" diaginertia="0.0319465 0.0281204 0.00851425" />
+            <joint name="exo_left_hip_aa" pos="0 0 0" axis="-1 0 0" limited="true" range="-0.32367 0.28532" />
+            <geom pos="-0.1395 0.10 0" quat="0 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.5 0.5 0.5 1" mesh="LeftHAA" />
+            <!-- -0.1395 0.08 0 -->
+            <body name="upper_leg_left" pos="-0.1395 -0.13 0">
+                <inertial pos="0.000709 -0.005254 -0.19205" quat="0.997192 -0.0725923 -0.000366043 -0.0184093" mass="4.995" diaginertia="0.127004 0.124338 0.0126583" />
+                <joint name="exo_left_hip_fe" pos="0 0 0" axis="0 1 0" limited="true" range="-0.367293 1.72736" />
+                <geom pos="0 0.23 0" quat="0 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.5 0.5 0.5 1" mesh="UpperLeftLeg" />
+                <!-- 0 0.21 0 -->
+                <site name="upper_leg_spring_left_exo" group="1" size="0.01" pos="-0.01 0.123 -0.233"></site>  
+                <body name="lower_leg_left" pos="0 0 -0.385">
+                    <inertial pos="-0.00321 0.025919 -0.142082" quat="0.743607 0.433317 0.275727 0.428088" mass="4.458" diaginertia="0.124756 0.0751993 0.0560447" />
+                    <joint name="exo_left_knee" pos="0 0 0" axis="0 -1 0" limited="true" range="-0.0874848 1.96215" />
+                    <geom pos="0 0.23 0.385" quat="0 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.5 0.5 0.5 1" mesh="LowerLeftLeg" />
+                    <!-- 0 0.21 0.385 -->
+                    <site name="lower_leg_spring_left_exo" group="1" size="0.01" pos="0.015 0.135 -0.123"></site>
+                    <body name="ankle_plate_left" pos="0 0.07 -0.385">
+                        <inertial pos="-0.0248346 -0.0136648 -0.0254757" quat="0.49287 -0.126656 -0.214253 0.833746" mass="2.121" diaginertia="0.0223967 0.0223041 0.0214945" />
+                        <joint name="exo_left_ankle" pos="0 0 0" axis="0 1 0" limited="true" range="-0.459092 0.277219" />
+                        <geom pos="0 0.26 1.0395" quat="0 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.5 0.5 0.5 1" mesh="LeftFoot" />
+                        <!-- 0 0.14 1.0395 -->
+                    </body>
+                </body>
+            </body>
+        </body>
+        
+    </body>
+</mujoco>

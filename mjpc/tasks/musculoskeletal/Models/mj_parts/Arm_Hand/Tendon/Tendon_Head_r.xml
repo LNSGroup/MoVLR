@@ -1,0 +1,260 @@
+<mujoco>
+  <tendon>
+    <spatial name="platysma_r_tendon">
+      <site site="platysma_r-P1" />
+      <site site="platysma_r-P2" />
+      <site site="platysma_r-P3" />
+      <site site="platysma_r-P4" />
+    </spatial>
+    <spatial name="occipitofrontalis_1_r_tendon">
+      <site site="occipitofrontalis_1_r-P1" />
+      <site site="occipitofrontalis_1_r-P2" />
+      <site site="occipitofrontalis_1_r-P3" />
+      <site site="occipitofrontalis_1_r-P4" />
+      <site site="occipitofrontalis_1_r-P5" />
+      <site site="occipitofrontalis_1_r-P6" />
+      <site site="occipitofrontalis_1_r-P7" />
+      <site site="occipitofrontalis_1_r-P8" />
+    </spatial>
+    <spatial name="occipitofrontalis_2_r_tendon">
+      <site site="occipitofrontalis_2_r-P1" />
+      <site site="occipitofrontalis_2_r-P2" />
+      <site site="occipitofrontalis_2_r-P3" />
+      <site site="occipitofrontalis_2_r-P4" />
+      <site site="occipitofrontalis_2_r-P5" />
+      <site site="occipitofrontalis_2_r-P6" />
+      <site site="occipitofrontalis_2_r-P7" />
+      <site site="occipitofrontalis_2_r-P8" />
+    </spatial>
+    <spatial name="occipitofrontalis_3_r_tendon">
+      <site site="occipitofrontalis_3_r-P1" />
+      <site site="occipitofrontalis_3_r-P2" />
+      <site site="occipitofrontalis_3_r-P3" />
+      <site site="occipitofrontalis_3_r-P4" />
+      <site site="occipitofrontalis_3_r-P5" />
+      <site site="occipitofrontalis_3_r-P6" />
+      <site site="occipitofrontalis_3_r-P7" />
+      <site site="occipitofrontalis_3_r-P8" />
+      <site site="occipitofrontalis_3_r-P9" />
+    </spatial>
+    <spatial name="aur_post_r_tendon">
+      <site site="aur_post_r-P1" />
+      <site site="aur_post_r-P2" />
+    </spatial>
+    <spatial name="aur_sup_r_tendon">
+      <site site="aur_sup_r-P1" />
+      <site site="aur_sup_r-P2" />
+    </spatial>
+    <spatial name="aur_ant_r_tendon">
+      <site site="aur_ant_r-P1" />
+      <site site="aur_ant_r-P2" />
+    </spatial>
+    <spatial name="temporoparietalis_r_tendon">
+      <site site="temporoparietalis_r-P1" />
+      <site site="temporoparietalis_r-P2" />
+    </spatial>
+    <spatial name="dep_supercili_r_tendon">
+      <site site="dep_supercili_r-P1" />
+      <site site="dep_supercili_r-P2" />
+      <site site="dep_supercili_r-P3" />
+    </spatial>
+    <spatial name="cor_supercili_r_tendon">
+      <site site="cor_supercili_r-P1" />
+      <site site="cor_supercili_r-P2" />
+    </spatial>
+    <spatial name="procerus_r_tendon">
+      <site site="procerus_r-P1" />
+      <site site="procerus_r-P2" />
+      <site site="procerus_r-P3" />
+    </spatial>
+    <spatial name="orbicularis_ocu_r_tendon">
+      <site site="orbicularis_ocu_r-P1" />
+      <site site="orbicularis_ocu_r-P2" />
+      <site site="orbicularis_ocu_r-P3" />
+      <site site="orbicularis_ocu_r-P4" />
+      <site site="orbicularis_ocu_r-P5" />
+      <site site="orbicularis_ocu_r-P6" />
+      <site site="orbicularis_ocu_r-P7" />
+      <site site="orbicularis_ocu_r-P8" />
+      <site site="orbicularis_ocu_r-P9" />
+      <site site="orbicularis_ocu_r-P10" />
+      <site site="orbicularis_ocu_r-P11" />
+    </spatial>
+    <spatial name="orbicularis_pal_r_tendon">
+      <site site="orbicularis_pal_r-P1" />
+      <site site="orbicularis_pal_r-P2" />
+      <site site="orbicularis_pal_r-P3" />
+      <site site="orbicularis_pal_r-P4" />
+      <site site="orbicularis_pal_r-P5" />
+      <site site="orbicularis_pal_r-P6" />
+      <site site="orbicularis_pal_r-P7" />
+      <site site="orbicularis_pal_r-P8" />
+    </spatial>
+    <spatial name="nasalis_trans_r_tendon">
+      <site site="nasalis_trans_r-P1" />
+      <site site="nasalis_trans_r-P2" />
+      <site site="nasalis_trans_r-P3" />
+    </spatial>
+    <spatial name="nasalis_alar_r_tendon">
+      <site site="nasalis_alar_r-P1" />
+      <site site="nasalis_alar_r-P2" />
+      <site site="nasalis_alar_r-P3" />
+    </spatial>
+    <spatial name="leva_naso_med_r_tendon">
+      <site site="leva_naso_med_r-P1" />
+      <site site="leva_naso_med_r-P2" />
+      <site site="leva_naso_med_r-P3" />
+    </spatial>
+    <spatial name="leva_naso_lat_r_tendon">
+      <site site="leva_naso_lat_r-P1" />
+      <site site="leva_naso_lat_r-P2" />
+      <site site="leva_naso_lat_r-P3" />
+    </spatial>
+    <spatial name="leva_labii_sup_r_tendon">
+      <site site="leva_labii_sup_r-P1" />
+      <site site="leva_labii_sup_r-P2" />
+      <site site="leva_labii_sup_r-P3" />
+    </spatial>
+    <spatial name="leva_anguli_oris_r_tendon">
+      <site site="leva_anguli_oris_r-P1" />
+      <site site="leva_anguli_oris_r-P2" />
+      <site site="leva_anguli_oris_r-P3" />
+    </spatial>
+    <spatial name="zygomaticus_min_r_tendon">
+      <site site="zygomaticus_min_r-P1" />
+      <site site="zygomaticus_min_r-P2" />
+      <site site="zygomaticus_min_r-P3" />
+    </spatial>
+    <spatial name="zygomaticus_maj_r_tendon">
+      <site site="zygomaticus_maj_r-P1" />
+      <site site="zygomaticus_maj_r-P2" />
+      <site site="zygomaticus_maj_r-P3" />
+      <site site="zygomaticus_maj_r-P4" />
+    </spatial>
+    <spatial name="dep_septi_nasi_r_tendon">
+      <site site="dep_septi_nasi_r-P1" />
+      <site site="dep_septi_nasi_r-P2" />
+    </spatial>
+    <spatial name="orbi_oris_mar_sup_r_tendon">
+      <site site="orbi_oris_mar_sup_r-P1" />
+      <site site="orbi_oris_mar_sup_r-P2" />
+      <site site="orbi_oris_mar_sup_r-P3" />
+      <site site="orbi_oris_mar_sup_r-P4" />
+    </spatial>
+    <spatial name="orbi_oris_mar_inf_r_tendon">
+      <site site="orbi_oris_mar_inf_r-P1" />
+      <site site="orbi_oris_mar_inf_r-P2" />
+      <site site="orbi_oris_mar_inf_r-P3" />
+      <site site="orbi_oris_mar_inf_r-P4" />
+    </spatial>
+    <spatial name="orbi_oris_labi_sup_r_tendon">
+      <site site="orbi_oris_labi_sup_r-P1" />
+      <site site="orbi_oris_labi_sup_r-P2" />
+      <site site="orbi_oris_labi_sup_r-P3" />
+      <site site="orbi_oris_labi_sup_r-P4" />
+    </spatial>
+    <spatial name="orbi_oris_labi_inf_r_tendon">
+      <site site="orbi_oris_labi_inf_r-P1" />
+      <site site="orbi_oris_labi_inf_r-P2" />
+      <site site="orbi_oris_labi_inf_r-P3" />
+      <site site="orbi_oris_labi_inf_r-P4" />
+    </spatial>
+    <spatial name="risorius_r_tendon">
+      <site site="risorius_r-P1" />
+      <site site="risorius_r-P2" />
+      <site site="risorius_r-P3" />
+      <site site="risorius_r-P4" />
+    </spatial>
+    <spatial name="bucinator_sup_r_tendon">
+      <site site="bucinator_sup_r-P1" />
+      <site site="bucinator_sup_r-P2" />
+      <site site="bucinator_sup_r-P3" />
+      <site site="bucinator_sup_r-P4" />
+    </spatial>
+    <spatial name="bucinator_inf_r_tendon">
+      <site site="bucinator_inf_r-P1" />
+      <site site="bucinator_inf_r-P2" />
+      <site site="bucinator_inf_r-P3" />
+      <site site="bucinator_inf_r-P4" />
+    </spatial>
+    <spatial name="dep_anguli_oris_r_tendon">
+      <site site="dep_anguli_oris_r-P1" />
+      <site site="dep_anguli_oris_r-P2" />
+    </spatial>
+    <spatial name="dep_labii_inf_r_tendon">
+      <site site="dep_labii_inf_r-P1" />
+      <site site="dep_labii_inf_r-P2" />
+    </spatial>
+    <spatial name="mentalis_r_tendon">
+      <site site="mentalis_r-P1" />
+      <site site="mentalis_r-P2" />
+    </spatial>
+    
+    <spatial name="masseteris_int_r_tendon">
+      <site site="masseteris_int_r-P1" />
+      <site site="masseteris_int_r-P2" />
+    </spatial>
+    <spatial name="masseteris_sup_r_tendon">
+      <site site="masseteris_sup_r-P1" />
+      <site site="masseteris_sup_r-P2" />
+    </spatial>
+    <spatial name="temporalis_ant_r_tendon">
+      <site site="temporalis_ant_r-P1" />
+      <site site="temporalis_ant_r-P2" />
+      <site site="temporalis_ant_r-P3" />
+    </spatial>
+    <spatial name="temporalis_post_r_tendon">
+      <site site="temporalis_post_r-P1" />
+      <site site="temporalis_post_r-P2" />
+      <site site="temporalis_post_r-P3" />
+    </spatial>
+    <spatial name="ptery_lat_sup_r_tendon">
+      <site site="ptery_lat_sup_r-P1" />
+      <site site="ptery_lat_sup_r-P2" />
+    </spatial>
+    <spatial name="ptery_lat_inf_r_tendon">
+      <site site="ptery_lat_inf_r-P1" />
+      <site site="ptery_lat_inf_r-P2" />
+    </spatial>
+    <spatial name="ptery_med_sup_r_tendon">
+      <site site="ptery_med_sup_r-P1" />
+      <site site="ptery_med_sup_r-P2" />
+    </spatial>
+    <spatial name="ptery_med_inf_r_tendon">
+      <site site="ptery_med_inf_r-P1" />
+      <site site="ptery_med_inf_r-P2" />
+    </spatial>
+    <spatial name="eye_rect_sup_r_tendon" group="1">
+      <site site="eye_rect_sup_r-P1" />
+      <geom geom="eyeball_r" sidesite="eye_rect_sup_r_eyeball_r_sidesite"/>
+      <site site="eye_rect_sup_r-P2" />
+    </spatial>
+    <spatial name="eye_rect_inf_r_tendon" group="1">
+      <site site="eye_rect_inf_r-P1" />
+      <geom geom="eyeball_r" sidesite="eye_rect_inf_r_eyeball_r_sidesite"/>
+      <site site="eye_rect_inf_r-P2" />
+    </spatial>
+    <spatial name="eye_rect_med_r_tendon" group="1">
+      <site site="eye_rect_med_r-P1" />
+      <geom geom="eyeball_r" sidesite="eye_rect_med_r_eyeball_r_sidesite"/>
+      <site site="eye_rect_med_r-P2" />
+    </spatial>
+    <spatial name="eye_rect_lat_r_tendon" group="1">
+      <site site="eye_rect_lat_r-P1" />
+      <geom geom="eyeball_r" sidesite="eye_rect_lat_r_eyeball_r_sidesite"/>
+      <site site="eye_rect_lat_r-P2" />
+    </spatial>
+    <spatial name="eye_obli_sup_r_tendon" group="1">
+      <site site="eye_obli_sup_r-P1" />
+      <site site="eye_obli_sup_r-P2" />
+      <geom geom="eyeball_r" />
+      <site site="eye_obli_sup_r-P3" />
+    </spatial>
+    <spatial name="eye_obli_inf_r_tendon" group="1">
+      <site site="eye_obli_inf_r-P1" />
+      <geom geom="eyeball_r" />
+      <site site="eye_obli_inf_r-P2" />
+    </spatial>
+
+  </tendon>
+</mujoco>

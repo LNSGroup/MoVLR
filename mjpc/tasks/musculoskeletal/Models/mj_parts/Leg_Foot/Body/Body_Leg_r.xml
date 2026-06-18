@@ -1,0 +1,198 @@
+<mujoco>
+  <body name="femur_r" pos="-0.059000 -0.069000 0.088000" euler="-0 0 0" childclass="hip">
+    <inertial mass="6.979350" pos="0.000000 -0.170000 0.000000" diaginertia="0.100473 0.026337 0.105950" />
+    <geom name="femur_r_geom" type="mesh" class="bone" mesh="femur_r_mesh" group="0" />
+    <geom name="femur_skin_r" size=".067" class="skin" fromto="0 -0.05 0.01 0 -0.39 0" />
+    <geom name="GasLat_at_condyles_r" type="cylinder" euler="0 0 0" pos="0.005000 -0.410000 0.000000" size="0.026 0.05" class="wrap" />
+    <site name="plantaris_r_GasLat_at_condyles_r_sidesite" pos="-0.010000 -0.350000 0.000000"/>
+    <site name="gaslat_r_GasLat_at_condyles_r_sidesite" pos="-0.031000 -0.410000 0.000000"/>
+    <geom name="GasMed_at_condyles_r" type="cylinder" euler="0 0 0" pos="0.005000 -0.410000 0.000000" size="0.025 0.05" class="wrap" />
+    <site name="gasmed_r_GasMed_at_condyles_r_sidesite" pos="-0.010000 -0.350000 0.000000"/>
+    <geom name="KnExt_at_fem_r" type="cylinder" euler="-0.06234 0.05076 0" pos="0.003588 -0.402700 0.002091" size="0.025 0.05" class="wrap" />
+    <!-- <site name="vasmed_r_KnExt_at_fem_r_sidesite" pos="0.038588 -0.402700 0.002091"/>
+    <site name="vasint_r_KnExt_at_fem_r_sidesite" pos="0.038588 -0.402700 0.002091"/>
+    <site name="recfem_r_KnExt_at_fem_r_sidesite" pos="0.038588 -0.402700 0.002091"/> -->
+    <site name="recfem_r_KnExt_at_fem_r_sidesite" pos="0.028412 -0.418795 -0.0326861"/>
+    <site name="vasint_r_KnExt_at_fem_r_sidesite" pos="0.0140493 -0.375075 -0.00469312"/>
+    <site name="vaslat_r_KnExtVL_at_fem_r_sidesite" pos="0.0164816 -0.378983 -0.0366504"/>
+    <site name="vasmed_r_KnExt_at_fem_r_sidesite" pos="0.0179815 -0.374402 0.023524"/>
+    <geom name="KnExtVL_at_fem_r" type="cylinder" euler="-0.06234 0.05076 0" pos="0.001888 -0.402700 0.002091" size="0.025 0.05" class="wrap" />
+    <!-- <site name="vaslat_r_KnExtVL_at_fem_r_sidesite" pos="0.036888 -0.402700 0.002091"/> -->
+    <geom name="AB_at_femshaft_r" type="cylinder" euler="1.662 0.1866 0" pos="0.014640 -0.112600 0.023370" size="0.0165 0.035" class="wrap" />
+    <site name="addbrev_r_AB_at_femshaft_r_sidesite" pos="-0.011860 -0.112600 0.023370"/>
+    <geom name="AL_at_femshaft_r" type="cylinder" euler="1.777 0.1365 0" pos="0.030730 -0.231900 0.015110" size="0.0201 0.05" class="wrap" />
+    <site name="addlong_r_AL_at_femshaft_r_sidesite" pos="0.000630 -0.231900 0.015110"/>
+    <geom name="AMprox_at_femshaft_r" type="cylinder" euler="1.611 0.1866 0" pos="0.005183 -0.072890 0.025400" size="0.0211 0.035" class="wrap" />
+    <site name="addmagProx_r_AMprox_at_femshaft_r_sidesite" pos="-0.025917 -0.072890 0.025400"/>
+    <geom name="AMmid_at_femshaft_r" type="cylinder" euler="1.611 0.1366 0" pos="0.023010 -0.160700 0.020580" size="0.0214 0.06" class="wrap" />
+    <site name="addmagMid_r_AMmid_at_femshaft_r_sidesite" pos="-0.008390 -0.160700 0.020580"/>
+    <geom name="AMdist_at_femshaft_r" type="cylinder" euler="1.712 0.1866 0" pos="0.031610 -0.260700 0.009365" size="0.0218 0.1" class="wrap" />
+    <site name="addmagDist_r_AMdist_at_femshaft_r_sidesite" pos="-0.000190 -0.260700 0.009365"/>
+    <geom name="AMisch_at_condyles_r" type="cylinder" euler="1.711 -0.4634 0" pos="-0.022650 -0.376800 -0.003154" size="0.04 0.12" class="wrap" />
+    <site name="addmagIsch_r_AMisch_at_condyles_r_sidesite" pos="-0.022650 -0.376800 -0.053154"/>
+    <geom name="PECT_at_femshaft_r" type="cylinder" euler="1.813 0.2763 0" pos="0.006086 -0.084500 0.030440" size="0.015 0.025" class="wrap" />
+    <site name="pect_r_PECT_at_femshaft_r_sidesite" pos="0.006086 -0.084500 0.005440"/>
+    <geom name="Head_of_femur_r" type="sphere" euler="0 0 0" pos="0.000000 0.000000 0.000000" size="0.023" class="wrap" />
+    <site name="obturator_ext_r_Head_of_femur_r_sidesite" pos="0.000000 -0.033000 0.000000"/>
+    <joint name="hip_flexion_r" range="-0.524 2.094" limited="true" ref="0" axis="0 0 1" type="hinge" />
+    <joint name="hip_adduction_r" range="-0.873 0.524" limited="true" ref="0" axis="1 0 0" type="hinge" />
+    <joint name="hip_rotation_r" range="-0.698 0.698" limited="true" ref="0" axis="0 1 0" type="hinge" />
+    <body name="tibia_r" pos="0.003590 -0.406100 -0.000265" euler="-0 0 0" childclass="knee">
+      <inertial mass="3.157325" pos="0.000000 -0.186700 0.000000" diaginertia="0.042921 0.004343 0.043517" />
+      <geom name="tibia_r_geom" type="mesh" class="bone" mesh="tibia_r_mesh" group="0" />
+      <geom name="fibula_r_geom" type="mesh" class="bone" mesh="fibula_r_mesh" group="0" />
+      <geom name="tibia_skin_r" size=".048" class="skin" fromto="0 0 0 -0.01 -0.35 0.005" />
+      <geom name="GR_at_condyles_r" type="cylinder" euler="0 -0.4 0" pos="-0.003000 -0.020000 0.000000" size="0.036 0.05" class="wrap" />
+      <site name="grac_r_GR_at_condyles_r_sidesite" pos="-0.049000 -0.020000 0.000000"/>
+      <geom name="SM_at_condyles_r" type="cylinder" euler="0 -0.1 0" pos="-0.001000 -0.020000 0.000000" size="0.0345 0.05" class="wrap" />
+      <site name="semimem_r_SM_at_condyles_r_sidesite" pos="-0.045500 -0.020000 0.000000"/>
+      <geom name="ST_at_condyles_r" type="cylinder" euler="0 -0.2 0" pos="-0.002000 -0.020500 0.000000" size="0.0425 0.05" class="wrap" />
+      <site name="semiten_r_ST_at_condyles_r_sidesite" pos="-0.054500 -0.020500 0.000000"/>
+      <geom name="BF140_at_gastroc_r" type="cylinder" euler="0 0 0" pos="-0.039000 -0.060000 0.000000" size="0.029 0.075" class="wrap" />
+      <site name="bfsh_r_BF140_at_gastroc_r_sidesite" pos="-0.039000 -0.021000 0.000000"/>
+      <joint name="walker_knee_r_translation1" pos="-0.00809 -0.003535 -0.001485" range="0 0.01" limited="true" ref="0" axis="-4.566e-07 -0.07071 -0.9975" type="slide" />
+      <joint name="walker_knee_r_translation2" pos="-0.00809 -0.003535 -0.001485" range="-0.01 0.01" limited="true" ref="0" axis="-0.1243 0.9898 -0.07016" type="slide" />
+      <joint name="walker_knee_r_translation3" pos="-0.00809 -0.003535 -0.001485" range="-0.01 0.01" limited="true" ref="0" axis="0.9922 0.124 -0.008789" type="slide" />
+      <joint name="knee_angle_r" pos="-0.00809 -0.003535 -0.001485" range="0.000 2.443" limited="true" ref="0" axis="-4.566e-07 -0.07071 -0.9975" type="hinge" />
+      <joint name="walker_knee_r_rotation2" pos="-0.00809 -0.003535 -0.001485" range="-0.001678 0.05" limited="true" ref="0" axis="0.9922 0.124 -0.008789" type="hinge" />
+      <joint name="walker_knee_r_rotation3" pos="-0.00809 -0.003535 -0.001485" range="0 0.3" limited="true" ref="0" axis="-0.1243 0.9898 -0.07016" type="hinge" />
+
+      <site name="per_tert_r-P1" pos="-0.012796 -0.295752 0.020520" />
+      <site name="per_tert_r-P2" pos="0.014142 -0.385234 0.018706" />
+      <site name="popliteus_r-P2" pos="-0.028458 -0.031611 0.032553" />
+      <site name="popliteus_r-P3" pos="-0.013133 -0.067314 0.000690" />
+      <site name="bflh_r-P2" pos="-0.034360 -0.036480 0.036180" />
+      <site name="bflh_r-P3" pos="-0.027040 -0.050080 0.034760" />
+      <site name="bfsh_r-P2" pos="-0.028660 -0.032840 0.032040" />
+      <site name="grac_r-P2" pos="-0.018420 -0.047550 -0.029610" />
+      <site name="grac_r-P3" pos="0.007981 -0.079641 -0.008159" />
+      <site name="perbrev_r-P1" pos="-0.024300 -0.253200 0.025100" />
+      <site name="perbrev_r-P2" pos="-0.033900 -0.389300 0.024900" />
+      <site name="perbrev_r-P3" pos="-0.028500 -0.400400 0.025500" />
+      <site name="perlong_r-P1" pos="-0.020000 -0.137300 0.028200" />
+      <site name="perlong_r-P2" pos="-0.031700 -0.390000 0.023700" />
+      <site name="perlong_r-P3" pos="-0.027200 -0.401400 0.024000" />
+      <site name="recfem_r-P5" pos="0.032600 -0.063120 -0.000470" />
+      <site name="sart_r-P3" pos="-0.015206 -0.040100 -0.036500" />
+      <site name="sart_r-P4" pos="-0.006364 -0.055302 -0.026400" />
+      <site name="sart_r-P5" pos="0.009325 -0.069567 -0.007855" />
+      <site name="semimem_r-P3" pos="-0.027000 -0.041000 -0.019600" />
+      <site name="semiten_r-P2" pos="-0.031200 -0.050800 -0.022900" />
+      <site name="semiten_r-P3" pos="0.009727 -0.088403 -0.006755" />
+      <site name="soleus_r-P1" pos="-0.007600 -0.091600 0.009800" />
+      <site name="tfl_r-P4" pos="0.010800 -0.041000 0.034600" />
+      <site name="tibant_r-P1" pos="0.015400 -0.131200 0.016200" />
+      <site name="tibant_r-P2" pos="0.025100 -0.190600 0.012800" />
+      <site name="tibant_r-P3" pos="0.023300 -0.365900 -0.013200" />
+      <site name="tibpost_r-P1" pos="-0.004100 -0.130400 0.010300" />
+      <site name="tibpost_r-P2" pos="-0.016400 -0.365500 -0.017500" />
+      <site name="tibpost_r-P3" pos="-0.007954 -0.394728 -0.023305" />
+      <site name="vasint_r-P5" pos="0.032570 -0.063200 0.000430" />
+      <site name="vaslat_r-P5" pos="0.032540 -0.063380 0.005110" />
+      <site name="vasmed_r-P5" pos="0.031900 -0.063570 -0.006780" />
+      <site name="FlexHal_r-P1" pos="-0.031000 -0.216300 0.020000" />
+      <site name="FlexHal_r-P2" pos="-0.024200 -0.367100 -0.007600" />
+      <site name="ExtHal_r-P1" pos="-0.014000 -0.155000 0.018900" />
+      <site name="ExtHal_r-P2" pos="0.007100 -0.290900 0.016400" />
+      <site name="ExtHal_r-P3" pos="0.020000 -0.369300 -0.002800" />
+      <site name="FlexDig_2_r-P1" pos="-0.002300 -0.183200 -0.001800" />
+      <site name="FlexDig_2_r-P2" pos="-0.017600 -0.364500 -0.012400" />
+      <site name="FlexDig_3_r-P1" pos="-0.002300 -0.183200 -0.001800" />
+      <site name="FlexDig_3_r-P2" pos="-0.017600 -0.364500 -0.012400" />
+      <site name="FlexDig_4_r-P1" pos="-0.002300 -0.183200 -0.001800" />
+      <site name="FlexDig_4_r-P2" pos="-0.017600 -0.364500 -0.012400" />
+      <site name="FlexDig_5_r-P1" pos="-0.002300 -0.183200 -0.001800" />
+      <site name="FlexDig_5_r-P2" pos="-0.017600 -0.364500 -0.012400" />
+      <site name="ExtDig_2_r-P1" pos="-0.016000 -0.115700 0.020500" />
+      <site name="ExtDig_2_r-P2" pos="0.016400 -0.376000 0.011200" />
+      <site name="ExtDig_3_r-P1" pos="-0.016000 -0.115700 0.020500" />
+      <site name="ExtDig_3_r-P2" pos="0.016400 -0.376000 0.011200" />
+      <site name="ExtDig_4_r-P1" pos="-0.016000 -0.115700 0.020500" />
+      <site name="ExtDig_4_r-P2" pos="0.016400 -0.376000 0.011200" />
+      <site name="ExtDig_5_r-P1" pos="-0.016000 -0.115700 0.020500" />
+      <site name="ExtDig_5_r-P2" pos="0.016400 -0.376000 0.011200" />
+      <include file="Body/Body_Foot_r.xml" />
+    </body>
+    <body name="patella_r" pos="-0.00809 -0.40796 0" euler="-0 0 0">
+      <inertial mass="0.069044" pos="0.001800 0.026400 0.000000" diaginertia="2.298812e-06 1.050085e-05 1.050085e-05" />
+      <geom name="patella_r_geom" type="mesh" class="bone" mesh="patella_r_mesh" group="0" />
+      <joint name="patellofemoral_r_translation1" range="-0.05 0.1" limited="true" ref="0" axis="1 0 0" type="slide" />
+      <joint name="patellofemoral_r_translation2" range="-0.1 0.1" limited="true" ref="0" axis="0 1 0" type="slide" />
+      <!-- <joint name="patellofemoral_r_translation3" range="-0.003 0.003" limited="true" ref="0" axis="0 0 1" type="slide" /> -->
+      <joint name="patellofemoral_r_rotation1" range="-2.0 0.1" limited="true" ref="0" axis="0 0 1" type="hinge" />
+      <site name="recfem_r-P2" pos="0.010000 0.049000 0.000700" />
+      <site name="recfem_r-P3" pos="0.012100 0.043700 -0.001000" />
+      <site name="recfem_r-P4" pos="0.005000 0.002470 0.000030" />
+      <site name="vasint_r-P3" pos="0.005800 0.048000 -0.000600" />
+      <site name="vasint_r-P4" pos="0.005000 0.002470 -0.000390" />
+      <site name="vaslat_r-P3" pos="0.010300 0.042300 0.014100" />
+      <site name="vaslat_r-P4" pos="0.005000 0.002470 0.007330" />
+      <site name="vasmed_r-P3" pos="0.006300 0.044500 -0.017000" />
+      <site name="vasmed_r-P4" pos="0.005000 0.002470 -0.008500" />
+    </body>
+    <site name="pect_r-P2" pos="-0.012200 -0.082200 0.025300" />
+    <site name="quad_fem_r-P2" pos="-0.038100 -0.035900 0.036600" />
+    <site name="sup_gem_r-P2" pos="-0.023524 0.001417 0.035947" />
+    <site name="inf_gem_r-P2" pos="-0.030950 -0.004133 0.031579" />
+    <site name="obturator_int_r-P3" pos="-0.030269 -0.003300 0.032427" />
+    <site name="obturator_ext_r-P3" pos="-0.031692 -0.009994 0.032380" />
+    <site name="plantaris_r-P1" pos="0.009908 -0.360201 0.025021" />
+    <site name="popliteus_r-P1" pos="0.004629 -0.403687 0.037182" />
+    <site name="Ps_L1_VB_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L1_VB_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L1_TP_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L1_TP_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L1_L2_IVD_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L1_L2_IVD_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L2_TP_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L2_TP_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L2_L3_IVD_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L2_L3_IVD_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L3_TP_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L3_TP_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L3_L4_IVD_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L3_L4_IVD_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L4_TP_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L4_TP_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L4_L5_IVD_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L4_L5_IVD_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L5_TP_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L5_TP_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="Ps_L5_VB_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="Ps_L5_VB_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="addbrev_r-P2" pos="-0.002000 -0.118000 0.024900" />
+    <site name="addlong_r-P2" pos="0.011260 -0.239370 0.015830" />
+    <site name="addmagDist_r-P2" pos="0.011250 -0.262500 0.019300" />
+    <site name="addmagIsch_r-P2" pos="0.004810 -0.387970 -0.032730" />
+    <site name="addmagMid_r-P2" pos="0.002420 -0.162400 0.029220" />
+    <site name="addmagProx_r-P2" pos="-0.015270 -0.078860 0.032020" />
+    <site name="bfsh_r-P1" pos="0.005000 -0.211100 0.023400" />
+    <site name="gaslat_r-P1" pos="0.002000 -0.381000 0.020590" />
+    <site name="gasmed_r-P1" pos="0.006000 -0.385000 -0.022000" />
+    <site name="glmax1_r-P3" pos="-0.044400 -0.032600 0.030200" />
+    <site name="glmax1_r-P4" pos="-0.027700 -0.056600 0.047000" />
+    <site name="glmax2_r-P3" pos="-0.045000 -0.058400 0.025200" />
+    <site name="glmax2_r-P4" pos="-0.015600 -0.101600 0.041900" />
+    <site name="glmax3_r-P3" pos="-0.028100 -0.112500 0.009400" />
+    <site name="glmax3_r-P4" pos="-0.006000 -0.141900 0.041100" />
+    <site name="glmed1_r-P2" pos="-0.021800 -0.011700 0.055500" />
+    <site name="glmed2_r-P2" pos="-0.025800 -0.005800 0.052700" />
+    <site name="glmed3_r-P2" pos="-0.030900 -0.004700 0.051800" />
+    <site name="glmin1_r-P2" pos="-0.007200 -0.010400 0.056000" />
+    <site name="glmin2_r-P2" pos="-0.009600 -0.010400 0.056000" />
+    <site name="glmin3_r-P2" pos="-0.013500 -0.008300 0.055000" />
+    <site name="iliacus_r-P3" pos="-0.013200 -0.046700 0.004600" />
+    <site name="iliacus_r-P4" pos="-0.023500 -0.052400 0.008800" />
+    <site name="piri_r-P2" pos="-0.014800 -0.003600 0.043700" />
+    <site name="sart_r-P2" pos="-0.005314 -0.356800 -0.042100" />
+    <site name="semimem_r-P2" pos="-0.030366 -0.370272 -0.019019" />
+    <site name="tfl_r-P2" pos="0.029400 -0.099500 0.059700" />
+    <site name="tfl_r-P3" pos="0.010700 -0.405000 0.032400" />
+    <site name="vasint_r-P1" pos="0.029000 -0.192400 0.031000" />
+    <site name="vasint_r-P2" pos="0.033500 -0.208400 0.028500" />
+    <site name="vaslat_r-P1" pos="0.004800 -0.185400 0.034900" />
+    <site name="vaslat_r-P2" pos="0.026900 -0.259100 0.040900" />
+    <site name="vasmed_r-P1" pos="0.014000 -0.209900 0.018800" />
+    <site name="vasmed_r-P2" pos="0.035600 -0.276900 0.000900" />
+  </body>
+</mujoco>

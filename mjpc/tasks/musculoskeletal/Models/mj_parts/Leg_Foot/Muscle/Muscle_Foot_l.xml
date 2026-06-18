@@ -1,0 +1,46 @@
+<mujoco>
+  <actuator>
+
+    <muscle name="FlexHal_l" lengthrange="0.409 0.425" force="898.662" tendon="FlexHal_l_tendon" class="lower_muscle" />
+    <muscle name="ExtHal_l" lengthrange="0.373 0.396" force="257.084" tendon="ExtHal_l_tendon" class="lower_muscle" />
+    <muscle name="FlexDig_2_l" lengthrange="0.411 0.431" force="100.522" tendon="FlexDig_2_l_tendon" class="lower_muscle" />
+    <muscle name="FlexDig_3_l" lengthrange="0.401 0.421" force="100.522" tendon="FlexDig_3_l_tendon" class="lower_muscle" />
+    <muscle name="FlexDig_4_l" lengthrange="0.396 0.416" force="100.522" tendon="FlexDig_4_l_tendon" class="lower_muscle" />
+    <muscle name="FlexDig_5_l" lengthrange="0.391 0.411" force="100.522" tendon="FlexDig_5_l_tendon" class="lower_muscle" />
+    <muscle name="ExtDig_2_l" lengthrange="0.429 0.445" force="134.912" tendon="ExtDig_2_l_tendon" class="lower_muscle" />
+    <muscle name="ExtDig_3_l" lengthrange="0.414 0.430" force="134.912" tendon="ExtDig_3_l_tendon" class="lower_muscle" />
+    <muscle name="ExtDig_4_l" lengthrange="0.409 0.425" force="134.912" tendon="ExtDig_4_l_tendon" class="lower_muscle" />
+    <muscle name="ExtDig_5_l" lengthrange="0.404 0.420" force="134.912" tendon="ExtDig_5_l_tendon" class="lower_muscle" />
+    <muscle name="ExtDig_Brev_2_l" lengthrange="0.150 0.159" force="17.912" tendon="ExtDig_Brev_2_l_tendon" class="lower_muscle" />
+    <muscle name="ExtDig_Brev_3_l" lengthrange="0.132 0.140" force="17.864" tendon="ExtDig_Brev_3_l_tendon" class="lower_muscle" />
+    <muscle name="ExtDig_Brev_4_l" lengthrange="0.120 0.130" force="17.898" tendon="ExtDig_Brev_4_l_tendon" class="lower_muscle" />
+    <muscle name="ExtHal_Brev_l" lengthrange="0.131 0.139" force="46.607" tendon="ExtHal_Brev_l_tendon" class="lower_muscle" />
+    <muscle name="FlexHal_Brev_Lat_l" lengthrange="0.116 0.120" force="88.552" tendon="FlexHal_Brev_Lat_l_tendon" class="lower_muscle" />
+    <muscle name="FlexHal_Brev_Med_l" lengthrange="0.104 0.109" force="93.184" tendon="FlexHal_Brev_Med_l_tendon" class="lower_muscle" />
+    <muscle name="FlexDig_Brev_2_l" lengthrange="0.170 0.176" force="63.464" tendon="FlexDig_Brev_2_l_tendon" class="lower_muscle" />
+    <muscle name="FlexDig_Brev_3_l" lengthrange="0.151 0.159" force="56.829" tendon="FlexDig_Brev_3_l_tendon" class="lower_muscle" />
+    <muscle name="FlexDig_Brev_4_l" lengthrange="0.149 0.156" force="59.898" tendon="FlexDig_Brev_4_l_tendon" class="lower_muscle" />
+    <muscle name="FlexDig_Brev_5_l" lengthrange="0.142 0.149" force="60.445" tendon="FlexDig_Brev_5_l_tendon" class="lower_muscle"/>
+    <muscle name="QuadPlant_2_l" lengthrange="0.185 0.191" force="34.515" tendon="QuadPlant_2_l_tendon" class="lower_muscle" />
+    <muscle name="QuadPlant_3_l" lengthrange="0.175 0.181" force="34.515" tendon="QuadPlant_3_l_tendon" class="lower_muscle" />
+    <muscle name="QuadPlant_4_l" lengthrange="0.170 0.176" force="34.515" tendon="QuadPlant_4_l_tendon" class="lower_muscle" />
+    <muscle name="QuadPlant_5_l" lengthrange="0.165 0.171" force="34.515" tendon="QuadPlant_5_l_tendon" class="lower_muscle" />
+    <muscle name="ADMF_l" lengthrange="0.122 0.127" force="241.454" tendon="ADMF_l_tendon" class="lower_muscle" />
+    <muscle name="FDMB_l" lengthrange="0.048 0.053" force="91.583" tendon="FDMB_l_tendon" class="lower_muscle" />
+    <muscle name="LumFoot_2_l" lengthrange="0.125 0.129" force="9.305" tendon="LumFoot_2_l_tendon" class="lower_muscle" />
+    <muscle name="LumFoot_3_l" lengthrange="0.112 0.117" force="7.150" tendon="LumFoot_3_l_tendon" class="lower_muscle" />
+    <muscle name="LumFoot_4_l" lengthrange="0.104 0.110" force="8.217" tendon="LumFoot_4_l_tendon" class="lower_muscle" />
+    <muscle name="LumFoot_5_l" lengthrange="0.097 0.103" force="10.290" tendon="LumFoot_5_l_tendon" class="lower_muscle" />
+    <muscle name="PlaInt_3_l" lengthrange="0.111 0.114" force="57.094" tendon="PlaInt_3_l_tendon" class="lower_muscle"  />
+    <muscle name="PlaInt_4_l" lengthrange="0.100 0.104" force="49.828" tendon="PlaInt_4_l_tendon" class="lower_muscle"  />
+    <muscle name="PlaInt_5_l" lengthrange="0.096 0.101" force="50.042" tendon="PlaInt_5_l_tendon" class="lower_muscle"  />
+    <muscle name="DorInt_2_l" lengthrange="0.118 0.121" force="90.914" tendon="DorInt_2_l_tendon" class="lower_muscle" />
+    <muscle name="DorInt_3_l" lengthrange="0.115 0.119" force="57.816" tendon="DorInt_3_l_tendon" class="lower_muscle" />
+    <muscle name="DorInt_4_l" lengthrange="0.099 0.104" force="72.342" tendon="DorInt_4_l_tendon" class="lower_muscle" />
+    <muscle name="DorInt_5_l" lengthrange="0.087 0.092" force="106.973" tendon="DorInt_5_l_tendon" class="lower_muscle" />
+    <muscle name="AddHalTrans_l" lengthrange="0.076 0.080" force="53.633" tendon="AddHalTrans_l_tendon" class="lower_muscle" />
+    <muscle name="AddHalOpp_l" lengthrange="0.043 0.048" force="159.439" tendon="AddHalOpp_l_tendon" class="lower_muscle" />
+    <muscle name="AbdHal_l" lengthrange="0.150 0.156" force="368.059" tendon="AbdHal_l_tendon" class="lower_muscle" />
+
+  </actuator>
+</mujoco>

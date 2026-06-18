@@ -1,0 +1,341 @@
+<mujoco>
+  <body name="cervical7" pos="-0.006840 0.025660 0.000000" euler="-0 0 0.5236" childclass="cervical">
+    <geom name="cervical7_inertial" pos="0.00 0.007 0" euler="1.57 -0.04 0" size="0.055 0.009" class="cervical_inertial" />
+    <geom name="cervical7_geom" type="mesh" class="bone" mesh="cervical7_mesh" group="0" />
+    <joint name="cervical_FE" pos="0.00684 -0.005655 0" range="-0.057 0.083" limited="true" ref="0" axis="0 0 1" type="hinge" />
+    <joint name="cervical_LB" pos="0.00684 -0.005655 0" range="-0.045 0.045" limited="true" ref="0" axis="1 0 0" type="hinge" />
+    <joint name="cervical_AR" pos="0.00684 -0.005655 0" range="-0.030 0.030" limited="true" ref="0" axis="0 1 0" type="hinge" />
+    <body name="cervical6" pos="0.003837 0.016450 0.000000" euler="-0 0 0">
+      <geom name="cervical6_inertial" pos="0.002 0.01 0" euler="1.57 -0.04 0" size="0.048 0.009" class="cervical_inertial" />
+      <geom name="cervical6_geom" type="mesh" class="bone" mesh="cervical6_mesh" group="0" />
+      <joint name="aux7jnt_r3" pos="0.009419 -0.004065 0" range="-1.57 1.57" limited="true" ref="0" axis="0 0 1" type="hinge" />
+      <joint name="aux7jnt_r1" pos="0.009419 -0.004065 0" range="-1.57 1.57" limited="true" ref="0" axis="1 0 0" type="hinge" />
+      <joint name="aux7jnt_r2" pos="0.009419 -0.004065 0" range="-1.57 1.57" limited="true" ref="0" axis="0 1 0" type="hinge" />
+      <body name="cervical5" pos="0.004180 0.017900 0.000000" euler="-0 0 0">
+        <geom name="cervical5_geom" type="mesh" class="bone" mesh="cervical5_mesh" group="0" />
+        <geom name="cervical5_inertial" pos="0.000 0.01 0" euler="1.57 -0.04 0" size="0.048 0.008" class="cervical_inertial" />
+        <joint name="aux6jnt_r3" pos="0.00567 -0.00815 0" range="-1.57 1.57" limited="true" ref="0" axis="0 0 1" type="hinge" />
+        <joint name="aux6jnt_r1" pos="0.00567 -0.00815 0" range="-1.57 1.57" limited="true" ref="0" axis="1 0 0" type="hinge" />
+        <joint name="aux6jnt_r2" pos="0.00567 -0.00815 0" range="-1.57 1.57" limited="true" ref="0" axis="0 1 0" type="hinge" />
+        <body name="cervical4" pos="0.003410 0.019170 0.000000" euler="-0 0 0">
+          <geom name="cervical4_inertial" pos="-0.005 0.007 0" euler="1.57 -0.04 0" size="0.040 0.008" class="cervical_inertial" />
+          <geom name="cervical4_geom" type="mesh" class="bone" mesh="cervical4_mesh" group="0" />
+          <joint name="aux5jnt_r3" pos="0.00502 -0.01172 0" range="-1.57 1.57" limited="true" ref="0" axis="0 0 1" type="hinge" />
+          <joint name="aux5jnt_r1" pos="0.00502 -0.01172 0" range="-1.57 1.57" limited="true" ref="0" axis="1 0 0" type="hinge" />
+          <joint name="aux5jnt_r2" pos="0.00502 -0.01172 0" range="-1.57 1.57" limited="true" ref="0" axis="0 1 0" type="hinge" />
+          <body name="cervical3" pos="0.002610 0.015400 0.000000" euler="-0 0 0">
+            <geom name="cervical3_inertial" pos="-0.010 0.008 0" euler="1.57 -0.04 0" size="0.035 0.008" class="cervical_inertial" />
+            <geom name="cervical3_geom" type="mesh" class="bone" mesh="cervical3_mesh" group="0" />
+            <joint name="aux4jnt_r3" pos="0.00471 -0.00902 0" range="-1.57 1.57" limited="true" ref="0" axis="0 0 1" type="hinge" />
+            <joint name="aux4jnt_r1" pos="0.00471 -0.00902 0" range="-1.57 1.57" limited="true" ref="0" axis="1 0 0" type="hinge" />
+            <joint name="aux4jnt_r2" pos="0.00471 -0.00902 0" range="-1.57 1.57" limited="true" ref="0" axis="0 1 0" type="hinge" />
+            <body name="cervical2" pos="-0.000180 0.016290 0.000000" euler="-0 0 0">
+              <geom name="cervical2_inertial" pos="-0.015 0.007 0" euler="1.57 -0.04 0" size="0.035 0.008" class="cervical_inertial" />
+              <geom name="cervical2_geom" type="mesh" class="bone" mesh="cervical2_mesh" group="0" />
+              <joint name="aux3jnt_r3" pos="0.00543 -0.01123 0" range="-1.57 1.57" limited="true" ref="0" axis="0 0 1" type="hinge" />
+              <joint name="aux3jnt_r1" pos="0.00543 -0.01123 0" range="-1.57 1.57" limited="true" ref="0" axis="1 0 0" type="hinge" />
+              <joint name="aux3jnt_r2" pos="0.00543 -0.01123 0" range="-1.57 1.57" limited="true" ref="0" axis="0 1 0" type="hinge" />
+              <body name="cervical1" pos="0.00000 0.017760 0.000000" euler="-0 0 0">
+                <geom name="cervical1_inertial" pos="-0.014 0.004 0" euler="1.57 -0.04 0" size="0.035 0.006" class="cervical_inertial" />
+                <geom name="cervical1_geom" type="mesh" class="bone" mesh="cervical1_mesh" group="0" />
+                <joint name="head_FE" pos="0.00689 0.00352 0" range="-0.124 0.186" limited="true" ref="0" axis="0 0 1" type="hinge" />
+                <joint name="head_LB" pos="0.00689 0.00352 0" range="-0.052 0.052" limited="true" ref="0" axis="1 0 0" type="hinge" />
+                <joint name="head_AR" pos="0.00689 0.00352 0" range="-0.590 0.590" limited="true" ref="0" axis="0 1 0" type="hinge" />
+                
+                <include file="Body/Body_Head.xml"/>
+                
+                <site name="intertrans_ant_cerv_C1C2_r-P1" pos="0.040320 -0.002944 0.033911" />
+                <site name="intertrans_post_cerv_C1C2_r-P1" pos="0.033678 -0.000299 0.035318" />
+                <site name="intertrans_ant_cerv_C1C2_l-P1" pos="0.040320 -0.002944 -0.033911" />
+                <site name="intertrans_post_cerv_C1C2_l-P1" pos="0.033678 -0.000299 -0.035318" />
+                <site name="long_cap_sklc4_r-P4" pos="0.019777 0.002429 0.012476" />
+                <site name="long_col_c1thx_r-P8" pos="0.017241 0.005098 0.003100" />
+                <site name="long_col_c1c5_r-P4" pos="0.015513 0.005135 0.006200" />
+                <site name="rectcap_post_min_r-P1" pos="-0.026081 -0.002739 0.002961" />
+                <site name="obl_cap_sup_r-P1" pos="0.000229 0.004787 0.035945" />
+                <site name="obl_cap_inf_r-P2" pos="-0.000015 -0.001064 0.034555" />
+                <site name="rectcap_ant_r-P1" pos="0.005769 0.000638 0.035285" />
+                <site name="rectcap_lat_r-P1" pos="0.004542 0.001785 0.035287" />
+                <site name="intertrans_ant_cervical_C1C2_r-P1" pos="0.004760 -0.002944 0.033911" />
+                <site name="intertrans_post_cervical_C1C2_r-P1" pos="-0.001882 -0.000299 0.035318" />
+                <site name="long_cap_sklc4_l-P4" pos="0.019777 0.002429 -0.012476" />
+                <site name="long_col_c1thx_l-P8" pos="0.017241 0.005098 -0.003100" />
+                <site name="long_col_c1c5_l-P4" pos="0.015513 0.005135 -0.006200" />
+                <site name="rectcap_post_min_l-P1" pos="-0.026081 -0.002739 -0.002961" />
+                <site name="obl_cap_sup_l-P1" pos="0.000229 0.004787 -0.035945" />
+                <site name="obl_cap_inf_l-P2" pos="-0.000015 -0.001064 -0.034555" />
+                <site name="rectcap_ant_l-P1" pos="0.005769 0.000638 -0.035285" />
+                <site name="rectcap_lat_l-P1" pos="0.004542 0.001785 -0.035287" />
+                <site name="intertrans_ant_cervical_C1C2_l-P1" pos="0.004760 -0.002944 -0.033911" />
+                <site name="intertrans_post_cervical_C1C2_l-P1" pos="-0.001882 -0.000299 -0.035318" />
+              </body>
+              <site name="spinalis_cerv_C2T1_r-P1" pos="-0.030488 -0.005906 0.002381" />
+              <site name="intertrans_ant_cerv_C1C2_r-P2" pos="0.007299 0.004547 0.021182" />
+              <site name="intertrans_ant_cerv_C2C3_r-P1" pos="0.007732 0.000820 0.021337" />
+              <site name="intertrans_post_cerv_C1C2_r-P2" pos="0.000958 0.005474 0.024591" />
+              <site name="intertrans_post_cerv_C2C3_r-P1" pos="0.004072 0.000699 0.024090" />
+              <site name="spinalis_cerv_C2T1_l-P1" pos="-0.030488 -0.005906 -0.002381" />
+              <site name="intertrans_ant_cerv_C1C2_l-P2" pos="0.007299 0.004547 -0.021182" />
+              <site name="intertrans_ant_cerv_C2C3_l-P1" pos="0.007732 0.000820 -0.021337" />
+              <site name="intertrans_post_cerv_C1C2_l-P2" pos="0.000958 0.005474 -0.024591" />
+              <site name="intertrans_post_cerv_C2C3_l-P1" pos="0.004072 0.000699 -0.024090" />
+              <site name="long_cap_sklc4_r-P3" pos="0.018125 0.007198 0.015208" />
+              <site name="long_col_c1thx_r-P7" pos="0.018931 0.009847 0.003560" />
+              <site name="long_col_c1c5_r-P3" pos="0.018688 0.003805 0.012948" />
+              <site name="levator_scap_r-P2" pos="0.004340 0.001178 0.024449" />
+              <site name="rectcap_post_maj_r-P1" pos="-0.030920 0.002857 0.004247" />
+              <site name="obl_cap_inf_r-P1" pos="-0.030446 -0.001911 0.003792" />
+              <site name="multifidus_C6_C2_r-P1" pos="-0.028224 -0.001077 0.003539" />
+              <site name="rotatores_C4_C2_r-P1" pos="-0.020176 0.001029 0.005845" />
+              <site name="rotatores_C3_C2_r-P2" pos="-0.020093 0.002662 0.005674" />
+              <site name="spinalis_cervical_C2T1_r-P1" pos="-0.030488 -0.005906 0.002381" />
+              <site name="interspin_C2C3_r-P1" pos="-0.030768 -0.005117 0.002375" />
+              <site name="intertrans_ant_cervical_C1C2_r-P2" pos="0.007299 0.004547 0.021182" />
+              <site name="intertrans_ant_cervical_C2C3_r-P1" pos="0.007732 0.000820 0.021337" />
+              <site name="intertrans_post_cervical_C1C2_r-P2" pos="0.000958 0.005474 0.024591" />
+              <site name="intertrans_post_cervical_C2C3_r-P1" pos="0.004072 0.000699 0.024090" />
+              <site name="long_cap_sklc4_l-P3" pos="0.018125 0.007198 -0.015208" />
+              <site name="long_col_c1thx_l-P7" pos="0.018931 0.009847 -0.003560" />
+              <site name="long_col_c1c5_l-P3" pos="0.018688 0.003805 -0.012948" />
+              <site name="levator_scap_l-P2" pos="0.004340 0.001178 -0.024449" />
+              <site name="rectcap_post_maj_l-P1" pos="-0.030920 0.002857 -0.004247" />
+              <site name="obl_cap_inf_l-P1" pos="-0.030446 -0.001911 -0.003792" />
+              <site name="multifidus_C6_C2_l-P1" pos="-0.028224 -0.001077 -0.003539" />
+              <site name="rotatores_C4_C2_l-P1" pos="-0.020176 0.001029 -0.005845" />
+              <site name="rotatores_C3_C2_l-P2" pos="-0.020093 0.002662 -0.005674" />
+              <site name="spinalis_cervical_C2T1_l-P1" pos="-0.030488 -0.005906 -0.002381" />
+              <site name="interspin_C2C3_l-P1" pos="-0.030768 -0.005117 -0.002375" />
+              <site name="intertrans_ant_cervical_C1C2_l-P2" pos="0.007299 0.004547 -0.021182" />
+              <site name="intertrans_ant_cervical_C2C3_l-P1" pos="0.007732 0.000820 -0.021337" />
+              <site name="intertrans_post_cervical_C1C2_l-P2" pos="0.000958 0.005474 -0.024591" />
+              <site name="intertrans_post_cervical_C2C3_l-P1" pos="0.004072 0.000699 -0.024090" />
+            </body>
+            <site name="splen_cerv_c3thx_r-P2" pos="0.005837 0.003380 0.028380" />
+            <site name="semi_cerv_c3thx_r-P2" pos="-0.032520 -0.000637 0.004354" />
+            <site name="intertrans_ant_cerv_C2C3_r-P2" pos="0.009739 0.012221 0.020511" />
+            <site name="intertrans_ant_cerv_C3C4_r-P1" pos="0.008484 0.007722 0.020533" />
+            <site name="intertrans_post_cerv_C2C3_r-P2" pos="0.005066 0.009244 0.025182" />
+            <site name="intertrans_post_cerv_C3C4_r-P1" pos="0.006039 0.004084 0.025482" />
+            <site name="splen_cerv_c3thx_l-P2" pos="0.005837 0.003380 -0.028380" />
+            <site name="semi_cerv_c3thx_l-P2" pos="-0.032520 -0.000637 -0.004354" />
+            <site name="intertrans_ant_cerv_C2C3_l-P2" pos="0.009739 0.012221 -0.020511" />
+            <site name="intertrans_ant_cerv_C3C4_l-P1" pos="0.008484 0.007722 -0.020533" />
+            <site name="intertrans_post_cerv_C2C3_l-P2" pos="0.005066 0.009244 -0.025182" />
+            <site name="intertrans_post_cerv_C3C4_l-P1" pos="0.006039 0.004084 -0.025482" />
+            <site name="scalenus_med_r-P2" pos="0.002454 0.005711 0.027036" />
+            <site name="long_cap_sklc4_r-P2" pos="0.014357 0.009755 0.017375" />
+            <site name="long_col_c1thx_r-P6" pos="0.018765 0.006201 0.003680" />
+            <site name="splen_cervical_c3thx_r-P2" pos="0.005837 0.003380 0.028380" />
+            <site name="multifidus_C7_C3_r-P1" pos="-0.029785 0.000741 0.003763" />
+            <site name="semi_cervical_c3thx_r-P2" pos="-0.032520 -0.000637 0.004354" />
+            <site name="rotatores_C5_C3_r-P1" pos="-0.021974 0.001294 0.005478" />
+            <site name="rotatores_C3_C2_r-P1" pos="-0.007917 0.005723 0.021585" />
+            <site name="rotatores_C4_C3_r-P2" pos="-0.021889 0.002964 0.005037" />
+            <site name="interspin_C2C3_r-P2" pos="-0.031414 0.003943 0.001244" />
+            <site name="interspin_C3C4_r-P1" pos="-0.032417 -0.002163 0.002772" />
+            <site name="intertrans_ant_cervical_C2C3_r-P2" pos="0.009739 0.012221 0.020511" />
+            <site name="intertrans_ant_cervical_C3C4_r-P1" pos="0.008484 0.007722 0.020533" />
+            <site name="intertrans_post_cervical_C2C3_r-P2" pos="0.005066 0.009244 0.025182" />
+            <site name="intertrans_post_cervical_C3C4_r-P1" pos="0.006039 0.004084 0.025482" />
+            <site name="scalenus_med_l-P2" pos="0.002454 0.005711 -0.027036" />
+            <site name="long_cap_sklc4_l-P2" pos="0.014357 0.009755 -0.017375" />
+            <site name="long_col_c1thx_l-P6" pos="0.018765 0.006201 -0.003680" />
+            <site name="splen_cervical_c3thx_l-P2" pos="0.005837 0.003380 -0.028380" />
+            <site name="multifidus_C7_C3_l-P1" pos="-0.029785 0.000741 -0.003763" />
+            <site name="semi_cervical_c3thx_l-P2" pos="-0.032520 -0.000637 -0.004354" />
+            <site name="rotatores_C5_C3_l-P1" pos="-0.021974 0.001294 -0.005478" />
+            <site name="rotatores_C3_C2_l-P1" pos="-0.007917 0.005723 -0.021585" />
+            <site name="rotatores_C4_C3_l-P2" pos="-0.021889 0.002964 -0.005037" />
+            <site name="interspin_C2C3_l-P2" pos="-0.031414 0.003943 -0.001244" />
+            <site name="interspin_C3C4_l-P1" pos="-0.032417 -0.002163 -0.002772" />
+            <site name="intertrans_ant_cervical_C2C3_l-P2" pos="0.009739 0.012221 -0.020511" />
+            <site name="intertrans_ant_cervical_C3C4_l-P1" pos="0.008484 0.007722 -0.020533" />
+            <site name="intertrans_post_cervical_C2C3_l-P2" pos="0.005066 0.009244 -0.025182" />
+            <site name="intertrans_post_cervical_C3C4_l-P1" pos="0.006039 0.004084 -0.025482" />
+          </body>
+          <site name="longissi_cerv_c4thx_r-P5" pos="0.005566 0.004341 0.024659" />
+          <site name="intertrans_ant_cerv_C3C4_r-P2" pos="0.011986 0.010479 0.017895" />
+          <site name="intertrans_ant_cerv_C4C5_r-P1" pos="0.011211 0.006185 0.016938" />
+          <site name="intertrans_post_cerv_C3C4_r-P2" pos="0.006629 0.007993 0.024170" />
+          <site name="intertrans_post_cerv_C4C5_r-P1" pos="0.006736 0.002242 0.025582" />
+          <site name="longissi_cerv_c4thx_l-P5" pos="0.005566 0.004341 -0.024659" />
+          <site name="intertrans_ant_cerv_C3C4_l-P2" pos="0.011986 0.010479 -0.017895" />
+          <site name="intertrans_ant_cerv_C4C5_l-P1" pos="0.011211 0.006185 -0.016938" />
+          <site name="intertrans_post_cerv_C3C4_l-P2" pos="0.006629 0.007993 -0.024170" />
+          <site name="intertrans_post_cerv_C4C5_l-P1" pos="0.006736 0.002242 -0.025582" />
+          <site name="scalenus_ant_r-P2" pos="0.011846 0.006606 0.018649" />
+          <site name="long_cap_sklc4_r-P1" pos="0.012632 0.011328 0.018797" />
+          <site name="long_col_c1thx_r-P5" pos="0.019111 0.003460 0.003790" />
+          <site name="long_col_c1c5_r-P2" pos="0.013558 0.009330 0.015530" />
+          <site name="multifidus_T1_C4_r-P1" pos="-0.028073 0.002683 0.003635" />
+          <site name="rotatores_C6_C4_r-P1" pos="-0.019238 0.003284 0.005729" />
+          <site name="rotatores_C4_C2_r-P2" pos="-0.006832 0.007300 0.019700" />
+          <site name="rotatores_C4_C3_r-P1" pos="-0.007246 0.007305 0.019791" />
+          <site name="rotatores_C5_C4_r-P2" pos="-0.017796 0.004763 0.005188" />
+          <site name="longissi_cervical_c4thx_r-P5" pos="0.005566 0.004341 0.024659" />
+          <site name="interspin_C3C4_r-P2" pos="-0.030544 0.004920 0.002430" />
+          <site name="interspin_C4C5_r-P1" pos="-0.030304 0.000554 0.002614" />
+          <site name="intertrans_ant_cervical_C3C4_r-P2" pos="0.011986 0.010479 0.017895" />
+          <site name="intertrans_ant_cervical_C4C5_r-P1" pos="0.011211 0.006185 0.016938" />
+          <site name="intertrans_post_cervical_C3C4_r-P2" pos="0.006629 0.007993 0.024170" />
+          <site name="intertrans_post_cervical_C4C5_r-P1" pos="0.006736 0.002242 0.025582" />
+          <site name="scalenus_ant_l-P2" pos="0.011846 0.006606 -0.018649" />
+          <site name="long_cap_sklc4_l-P1" pos="0.012632 0.011328 -0.018797" />
+          <site name="long_col_c1thx_l-P5" pos="0.019111 0.003460 -0.003790" />
+          <site name="long_col_c1c5_l-P2" pos="0.013558 0.009330 -0.015530" />
+          <site name="multifidus_T1_C4_l-P1" pos="-0.028073 0.002683 -0.003635" />
+          <site name="rotatores_C6_C4_l-P1" pos="-0.019238 0.003284 -0.005729" />
+          <site name="rotatores_C4_C2_l-P2" pos="-0.006832 0.007300 -0.019700" />
+          <site name="rotatores_C4_C3_l-P1" pos="-0.007246 0.007305 -0.019791" />
+          <site name="rotatores_C5_C4_l-P2" pos="-0.017796 0.004763 -0.005188" />
+          <site name="longissi_cervical_c4thx_l-P5" pos="0.005566 0.004341 -0.024659" />
+          <site name="interspin_C3C4_l-P2" pos="-0.030544 0.004920 -0.002430" />
+          <site name="interspin_C4C5_l-P1" pos="-0.030304 0.000554 -0.002614" />
+          <site name="intertrans_ant_cervical_C3C4_l-P2" pos="0.011986 0.010479 -0.017895" />
+          <site name="intertrans_ant_cervical_C4C5_l-P1" pos="0.011211 0.006185 -0.016938" />
+          <site name="intertrans_post_cervical_C3C4_l-P2" pos="0.006629 0.007993 -0.024170" />
+          <site name="intertrans_post_cervical_C4C5_l-P1" pos="0.006736 0.002242 -0.025582" />
+        </body>
+        <site name="iliocost_cerv_c5rib_r-P3" pos="0.003331 0.005312 0.025788" />
+        <site name="spinalis_cerv_C2T1_r-P2" pos="-0.033987 0.010269 0.007835" />
+        <site name="intertrans_ant_cerv_C4C5_r-P2" pos="0.013995 0.009733 0.016727" />
+        <site name="intertrans_ant_cerv_C5C6_r-P1" pos="0.010956 0.003499 0.016066" />
+        <site name="intertrans_post_cerv_C4C5_r-P2" pos="0.006193 0.006381 0.026537" />
+        <site name="intertrans_post_cerv_C5C6_r-P1" pos="0.005133 0.000699 0.026853" />
+        <site name="iliocost_cerv_c5rib_l-P3" pos="0.003331 0.005312 -0.025788" />
+        <site name="spinalis_cerv_C2T1_l-P2" pos="-0.033987 0.010269 -0.007835" />
+        <site name="intertrans_ant_cerv_C4C5_l-P2" pos="0.013995 0.009733 -0.016727" />
+        <site name="intertrans_ant_cerv_C5C6_l-P1" pos="0.010956 0.003499 -0.016066" />
+        <site name="intertrans_post_cerv_C4C5_l-P2" pos="0.006193 0.006381 -0.026537" />
+        <site name="intertrans_post_cerv_C5C6_l-P1" pos="0.005133 0.000699 -0.026853" />
+        <site name="scalenus_post_r-P2" pos="0.003788 0.005750 0.026114" />
+        <site name="long_col_c1thx_r-P4" pos="0.019088 0.002443 0.003900" />
+        <site name="long_col_c1c5_r-P1" pos="0.013253 0.006608 0.019578" />
+        <site name="long_col_c5thx_r-P8" pos="0.013669 0.006126 0.019247" />
+        <site name="multifidus_T2_C5_r-P1" pos="-0.031627 0.010376 0.005063" />
+        <site name="semi_cap_sklc5_r-P1" pos="-0.008522 0.011500 0.020008" />
+        <site name="rotatores_C7_C5_r-P1" pos="-0.020396 0.008792 0.003354" />
+        <site name="rotatores_C5_C3_r-P2" pos="-0.007607 0.015341 0.019853" />
+        <site name="rotatores_C5_C4_r-P1" pos="-0.007946 0.015358 0.018346" />
+        <site name="rotatores_C6_C5_r-P2" pos="-0.019880 0.010137 0.003554" />
+        <site name="iliocost_cervical_c5rib_r-P3" pos="0.003331 0.005312 0.025788" />
+        <site name="spinalis_cervical_C2T1_r-P2" pos="-0.033987 0.010269 0.007835" />
+        <site name="interspin_C4C5_r-P2" pos="-0.032985 0.013111 0.003126" />
+        <site name="interspin_C5C6_r-P1" pos="-0.035394 0.007199 0.002985" />
+        <site name="intertrans_ant_cervical_C4C5_r-P2" pos="0.013995 0.009733 0.016727" />
+        <site name="intertrans_ant_cervical_C5C6_r-P1" pos="0.010956 0.003499 0.016066" />
+        <site name="intertrans_post_cervical_C4C5_r-P2" pos="0.006193 0.006381 0.026537" />
+        <site name="intertrans_post_cervical_C5C6_r-P1" pos="0.005133 0.000699 0.026853" />
+        <site name="scalenus_post_l-P2" pos="0.003788 0.005750 -0.026114" />
+        <site name="long_col_c1thx_l-P4" pos="0.019088 0.002443 -0.003900" />
+        <site name="long_col_c1c5_l-P1" pos="0.013253 0.006608 -0.019578" />
+        <site name="long_col_c5thx_l-P8" pos="0.013669 0.006126 -0.019247" />
+        <site name="multifidus_T2_C5_l-P1" pos="-0.031627 0.010376 -0.005063" />
+        <site name="semi_cap_sklc5_l-P1" pos="-0.008522 0.011500 -0.020008" />
+        <site name="rotatores_C7_C5_l-P1" pos="-0.020396 0.008792 -0.003354" />
+        <site name="rotatores_C5_C3_l-P2" pos="-0.007607 0.015341 -0.019853" />
+        <site name="rotatores_C5_C4_l-P1" pos="-0.007946 0.015358 -0.018346" />
+        <site name="rotatores_C6_C5_l-P2" pos="-0.019880 0.010137 -0.003554" />
+        <site name="iliocost_cervical_c5rib_l-P3" pos="0.003331 0.005312 -0.025788" />
+        <site name="spinalis_cervical_C2T1_l-P2" pos="-0.033987 0.010269 -0.007835" />
+        <site name="interspin_C4C5_l-P2" pos="-0.032985 0.013111 -0.003126" />
+        <site name="interspin_C5C6_l-P1" pos="-0.035394 0.007199 -0.002985" />
+        <site name="intertrans_ant_cervical_C4C5_l-P2" pos="0.013995 0.009733 -0.016727" />
+        <site name="intertrans_ant_cervical_C5C6_l-P1" pos="0.010956 0.003499 -0.016066" />
+        <site name="intertrans_post_cervical_C4C5_l-P2" pos="0.006193 0.006381 -0.026537" />
+        <site name="intertrans_post_cervical_C5C6_l-P1" pos="0.005133 0.000699 -0.026853" />
+      </body>
+      <site name="intertrans_ant_cerv_C5C6_r-P2" pos="0.013238 0.008168 0.017131" />
+      <site name="intertrans_ant_cerv_C6C7_r-P1" pos="0.009584 0.000081 0.018698" />
+      <site name="intertrans_post_cerv_C5C6_r-P2" pos="0.004500 0.009816 0.027370" />
+      <site name="intertrans_post_cerv_C6C7_r-P1" pos="0.003176 0.003880 0.027919" />
+      <site name="intertrans_ant_cerv_C5C6_l-P2" pos="0.013238 0.008168 -0.017131" />
+      <site name="intertrans_ant_cerv_C6C7_l-P1" pos="0.009584 0.000081 -0.018698" />
+      <site name="intertrans_post_cerv_C5C6_l-P2" pos="0.004500 0.009816 -0.027370" />
+      <site name="intertrans_post_cerv_C6C7_l-P1" pos="0.003176 0.003880 -0.027919" />
+      <site name="long_col_c1thx_r-P3" pos="0.019852 0.002478 0.004020" />
+      <site name="long_col_c5thx_r-P7" pos="0.014173 0.005409 0.019736" />
+      <site name="splen_cap_sklc6_r-P1" pos="-0.041880 0.010345 0.004457" />
+      <site name="multifidus_C6_C2_r-P2" pos="-0.008464 0.011126 0.015810" />
+      <site name="multifidus_T3_C6_r-P1" pos="-0.035233 0.011063 0.003862" />
+      <site name="rotatores_T1_C6_r-P1" pos="-0.028700 0.013614 0.004992" />
+      <site name="rotatores_C6_C4_r-P2" pos="-0.007852 0.013499 0.019815" />
+      <site name="rotatores_C6_C5_r-P1" pos="-0.008508 0.011914 0.019739" />
+      <site name="rotatores_C7_C6_r-P2" pos="-0.028643 0.014736 0.004992" />
+      <site name="longissi_cap_sklc6_r-P1" pos="0.002053 0.007872 0.024993" />
+      <site name="interspin_C5C6_r-P2" pos="-0.040643 0.013958 0.002661" />
+      <site name="interspin_C6C7_r-P1" pos="-0.040616 0.007418 0.003051" />
+      <site name="intertrans_ant_cervical_C5C6_r-P2" pos="0.013238 0.008168 0.017131" />
+      <site name="intertrans_ant_cervical_C6C7_r-P1" pos="0.009584 0.000081 0.018698" />
+      <site name="intertrans_post_cervical_C5C6_r-P2" pos="0.004500 0.009816 0.027370" />
+      <site name="intertrans_post_cervical_C6C7_r-P1" pos="0.003176 0.003880 0.027919" />
+      <site name="long_col_c1thx_l-P3" pos="0.019852 0.002478 -0.004020" />
+      <site name="long_col_c5thx_l-P7" pos="0.014173 0.005409 -0.019736" />
+      <site name="splen_cap_sklc6_l-P1" pos="-0.041880 0.010345 -0.004457" />
+      <site name="multifidus_C6_C2_l-P2" pos="-0.008464 0.011126 -0.015810" />
+      <site name="multifidus_T3_C6_l-P1" pos="-0.035233 0.011063 -0.003862" />
+      <site name="rotatores_T1_C6_l-P1" pos="-0.028700 0.013614 -0.004992" />
+      <site name="rotatores_C6_C4_l-P2" pos="-0.007852 0.013499 -0.019815" />
+      <site name="rotatores_C6_C5_l-P1" pos="-0.008508 0.011914 -0.019739" />
+      <site name="rotatores_C7_C6_l-P2" pos="-0.028643 0.014736 -0.004992" />
+      <site name="longissi_cap_sklc6_l-P1" pos="0.002053 0.007872 -0.024993" />
+      <site name="interspin_C5C6_l-P2" pos="-0.040643 0.013958 -0.002661" />
+      <site name="interspin_C6C7_l-P1" pos="-0.040616 0.007418 -0.003051" />
+      <site name="intertrans_ant_cervical_C5C6_l-P2" pos="0.013238 0.008168 -0.017131" />
+      <site name="intertrans_ant_cervical_C6C7_l-P1" pos="0.009584 0.000081 -0.018698" />
+      <site name="intertrans_post_cervical_C5C6_l-P2" pos="0.004500 0.009816 -0.027370" />
+      <site name="intertrans_post_cervical_C6C7_l-P1" pos="0.003176 0.003880 -0.027919" />
+    </body>
+    <site name="intertrans_ant_cerv_C6C7_r-P2" pos="0.005903 0.007452 0.020058" />
+    <site name="intertrans_ant_cerv_C7T1_r-P1" pos="0.005038 0.005360 0.023309" />
+    <site name="intertrans_post_cerv_C6C7_r-P2" pos="0.001776 0.017342 0.028578" />
+    <site name="intertrans_post_cerv_C7T1_r-P1" pos="-0.000898 0.014019 0.026850" />
+    <site name="intertrans_ant_cerv_C6C7_l-P2" pos="0.005903 0.007452 -0.020058" />
+    <site name="intertrans_ant_cerv_C7T1_l-P1" pos="0.005038 0.005360 -0.023309" />
+    <site name="intertrans_post_cerv_C6C7_l-P2" pos="0.001776 0.017342 -0.028578" />
+    <site name="intertrans_post_cerv_C7T1_l-P1" pos="-0.000898 0.014019 -0.026850" />
+    <site name="long_col_c1thx_r-P2" pos="0.017578 0.001387 0.004000" />
+    <site name="long_col_c5thx_r-P6" pos="0.014915 0.007116 0.018748" />
+    <site name="trap_acr_r-P2" pos="-0.050038 0.010780 0.002179" />
+    <site name="rhom_min_C7_r-P2" pos="-0.046361 0.009428 0.004436" />
+    <site name="serr_post_sup_C7_r-P2" pos="-0.045532 0.009742 0.004608" />
+    <site name="multifidus_C7_C3_r-P2" pos="-0.008281 0.014421 0.018100" />
+    <site name="multifidus_T4_C7_r-P2" pos="-0.041340 0.009384 0.002593" />
+    <site name="semi_thx_c7t6_r-P3" pos="-0.043711 0.005673 0.004875" />
+    <site name="rotatores_T2_C7_r-P1" pos="-0.030126 0.008471 0.004722" />
+    <site name="rotatores_C7_C5_r-P2" pos="-0.011556 0.012937 0.017954" />
+    <site name="rotatores_C7_C6_r-P1" pos="-0.012805 0.011734 0.016421" />
+    <site name="rotatores_T1_C7_r-P2" pos="-0.029740 0.010294 0.004715" />
+    <site name="iliocost_thox_r1r7_r-P1" pos="-0.000168 0.014015 0.030209" />
+    <site name="interspin_C6C7_r-P2" pos="-0.045776 0.015091 0.002773" />
+    <site name="interspin_C7T1_r-P1" pos="-0.047993 0.005224 0.002296" />
+    <site name="leva_cost_C7R1_r-P1" pos="0.002257 0.014067 0.031239" />
+    <site name="leva_cost_C7R2_r-P1" pos="0.001320 0.014114 0.030622" />
+    <site name="intertrans_ant_cervical_C6C7_r-P2" pos="0.005903 0.007452 0.020058" />
+    <site name="intertrans_ant_cervical_C7T1_r-P1" pos="0.005038 0.005360 0.023309" />
+    <site name="intertrans_post_cervical_C6C7_r-P2" pos="0.001776 0.017342 0.028578" />
+    <site name="intertrans_post_cervical_C7T1_r-P1" pos="-0.000898 0.014019 0.026850" />
+    <site name="long_col_c1thx_l-P2" pos="0.017578 0.001387 -0.004000" />
+    <site name="long_col_c5thx_l-P6" pos="0.014915 0.007116 -0.018748" />
+    <site name="trap_acr_l-P2" pos="-0.050038 0.010780 -0.002179" />
+    <site name="rhom_min_C7_l-P2" pos="-0.046361 0.009428 -0.004436" />
+    <site name="serr_post_sup_C7_l-P2" pos="-0.045532 0.009742 -0.004608" />
+    <site name="multifidus_C7_C3_l-P2" pos="-0.008281 0.014421 -0.018100" />
+    <site name="multifidus_T4_C7_l-P2" pos="-0.041340 0.009384 -0.002593" />
+    <site name="semi_thx_c7t6_l-P3" pos="-0.043711 0.005673 -0.004875" />
+    <site name="rotatores_T2_C7_l-P1" pos="-0.030126 0.008471 -0.004722" />
+    <site name="rotatores_C7_C5_l-P2" pos="-0.011556 0.012937 -0.017954" />
+    <site name="rotatores_C7_C6_l-P1" pos="-0.012805 0.011734 -0.016421" />
+    <site name="rotatores_T1_C7_l-P2" pos="-0.029740 0.010294 -0.004715" />
+    <site name="iliocost_thox_r1r7_l-P1" pos="-0.000168 0.014015 -0.030209" />
+    <site name="interspin_C6C7_l-P2" pos="-0.045776 0.015091 -0.002773" />
+    <site name="interspin_C7T1_l-P1" pos="-0.047993 0.005224 -0.002296" />
+    <site name="leva_cost_C7R1_l-P1" pos="0.002257 0.014067 -0.031239" />
+    <site name="leva_cost_C7R2_l-P1" pos="0.001320 0.014114 -0.030622" />
+    <site name="intertrans_ant_cervical_C6C7_l-P2" pos="0.005903 0.007452 -0.020058" />
+    <site name="intertrans_ant_cervical_C7T1_l-P1" pos="0.005038 0.005360 -0.023309" />
+    <site name="intertrans_post_cervical_C6C7_l-P2" pos="0.001776 0.017342 -0.028578" />
+    <site name="intertrans_post_cervical_C7T1_l-P1" pos="-0.000898 0.014019 -0.026850" />
+  </body>
+
+</mujoco>

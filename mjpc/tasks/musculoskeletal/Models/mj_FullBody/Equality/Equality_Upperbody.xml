@@ -1,0 +1,31 @@
+<mujoco>
+    <equality>
+        <!-- Upper Body Constraints -->
+        <joint name="sternoclavicular_r2_con_r" joint1="sternoclavicular_r2_r" joint2="shoulder_elv_r" active="true" polycoef="8.32667e-17 -0.242001        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="sternoclavicular_r3_con_r" joint1="sternoclavicular_r3_r" joint2="shoulder_elv_r" active="true" polycoef="-7.63278e-17   0.1025        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrotscap_r2_con_r" joint1="unrotscap_r2_r" joint2="shoulder_elv_r" active="true" polycoef="-8.32667e-17 0.242001        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrotscap_r3_con_r" joint1="unrotscap_r3_r" joint2="shoulder_elv_r" active="true" polycoef="7.63278e-17  -0.1025        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="acromioclavicular_r1_con_r" joint1="acromioclavicular_r1_r" joint2="shoulder_elv_r" active="true" polycoef="-6.93889e-17    0.178        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="acromioclavicular_r2_con_r" joint1="acromioclavicular_r2_r" joint2="shoulder_elv_r" active="true" polycoef="2.77556e-17 -0.0490002        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="acromioclavicular_r3_con_r" joint1="acromioclavicular_r3_r" joint2="shoulder_elv_r" active="true" polycoef="-5.55112e-17 0.396002        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrothum_r1_con_r" joint1="unrothum_r1_r" joint2="shoulder_elv_r" active="true" polycoef="6.93889e-17   -0.178        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrothum_r2_con_r" joint1="unrothum_r2_r" joint2="shoulder_elv_r" active="true" polycoef="-2.77556e-17 0.0490002        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrothum_r3_con_r" joint1="unrothum_r3_r" joint2="shoulder_elv_r" active="true" polycoef="5.55112e-17 -0.396002        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="shoulder1_r2_con_r" joint1="shoulder1_r2_r" joint2="elv_angle_r" active="true" polycoef="-5.55112e-17       -1        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="wrist_hand_r1_con_r" joint1="wrist_hand_r1_r" joint2="deviation_r" active="true" polycoef="1.66533e-16  1.35714 -0.818507        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="wrist_hand_r3_con_r" joint1="wrist_hand_r3_r" joint2="flexion_r" active="true" polycoef="       0        1        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="sternoclavicular_r2_con_l" joint1="sternoclavicular_r2_l" joint2="shoulder_elv_l" active="true" polycoef="8.32667e-17 -0.242001        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="sternoclavicular_r3_con_l" joint1="sternoclavicular_r3_l" joint2="shoulder_elv_l" active="true" polycoef="-7.63278e-17   0.1025        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrotscap_r2_con_l" joint1="unrotscap_r2_l" joint2="shoulder_elv_l" active="true" polycoef="-8.32667e-17 0.242001        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrotscap_r3_con_l" joint1="unrotscap_r3_l" joint2="shoulder_elv_l" active="true" polycoef="7.63278e-17  -0.1025        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="acromioclavicular_r1_con" joint1="acromioclavicular_r1_l" joint2="shoulder_elv_l" active="true" polycoef="-6.93889e-17    0.178        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="acromioclavicular_r2_con_l" joint1="acromioclavicular_r2_l" joint2="shoulder_elv_l" active="true" polycoef="2.77556e-17 -0.0490002        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="acromioclavicular_r3_con_l" joint1="acromioclavicular_r3_l" joint2="shoulder_elv_l" active="true" polycoef="-5.55112e-17 0.396002        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrothum_r1_con_l" joint1="unrothum_r1_l" joint2="shoulder_elv_l" active="true" polycoef="6.93889e-17   -0.178        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrothum_r2_con_l" joint1="unrothum_r2_l" joint2="shoulder_elv_l" active="true" polycoef="-2.77556e-17 0.0490002        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="unrothum_r3_con_l" joint1="unrothum_r3_l" joint2="shoulder_elv_l" active="true" polycoef="5.55112e-17 -0.396002        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="shoulder1_r2_con_l" joint1="shoulder1_r2_l" joint2="elv_angle_l" active="true" polycoef="-5.55112e-17       -1        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="wrist_hand_r1_con_l" joint1="wrist_hand_r1_l" joint2="deviation_l" active="true" polycoef="1.66533e-16  1.35714 -0.818507        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+        <joint name="wrist_hand_r3_con_l" joint1="wrist_hand_r3_l" joint2="flexion_l" active="true" polycoef="       0        1        0        0        0" solimp="0.9999 0.9999 0.001 0.5 2"></joint>
+    </equality>
+</mujoco>

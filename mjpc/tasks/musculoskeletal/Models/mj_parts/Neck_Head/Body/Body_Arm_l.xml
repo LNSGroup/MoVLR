@@ -1,0 +1,103 @@
+<mujoco>
+  <body name="clavicle_l" pos="-0.009000 0.004000 -0.019000" euler="-0 0 0" childclass="shoulder">
+    <geom name="clavicle_inertial_l" class="shoulder_inertial" pos="-0.037 0.015 -0.065" euler="0.1 0.4 -0.3" size="0.03 0.01 0.075" />
+    <geom name="clavicle_l_geom" type="mesh" class="bone" mesh="clavicle_l_mesh" group="0" />
+    <!-- <joint name="sternoclavicular_r2_l" range="-0.75 0" limited="true" ref="0" axis="-0.0153 -0.9893 -0.1451" type="hinge" />
+    <joint name="sternoclavicular_r3_l" range="0 0.32" limited="true" ref="0" axis="0.9945 0 -0.105" type="hinge" /> -->
+    <body name="clavphant_l" pos="-0.063330 0.020070 -0.140500" euler="-0 0 0">
+      <inertial mass="0.001" pos="0.000000 0.000000 0.000000" diaginertia="1e-7 1e-7 1e-7" />
+      <!-- <joint name="unrotscap_r3_l" range="-0.32 0" limited="true" ref="0" axis="0.9945 0 -0.105" type="hinge" />
+      <joint name="unrotscap_r2_l" range="0 0.75" limited="true" ref="0" axis="-0.0153 -0.9893 -0.1451" type="hinge" /> -->
+      <body name="scapula_l" pos="0.000000 0.000000 0.000000" euler="-0 0 0">
+        <geom name="scapula_inertial_l" class="shoulder_inertial" pos="-0.06 -0.08 0.04" euler="0 -0.7 -0.15" size="0.015 0.08 0.055" />
+        <geom name="scapula_l_geom" type="mesh" class="bone" mesh="scapula_l_mesh" group="0" />
+        <geom name="Deltoid2_l" type="sphere" euler="-0 -0 0" pos="-0.005800 -0.041000 -0.009600" size="0.035" class="wrap" />
+        <site name="DELT2_l_Deltoid2_l_sidesite" pos="-0.005800 -0.041000 -0.049600"/>
+        <geom name="Subscapularis_wrap_l" type="cylinder" euler="-1.2 0.16 1" pos="-0.015000 -0.039000 0.020000" size="0.01256 0.04284" class="wrap" />
+        <site name="Subscapularis_I_l_Subscapularis_wrap_l_sidesite" pos="0.007560 -0.039000 0.020000"/>
+        <site name="Subscapularis_M_l_Subscapularis_wrap_l_sidesite" pos="0.007560 -0.039000 0.020000"/>
+        <site name="Subscapularis_S_l_Subscapularis_wrap_l_sidesite" pos="0.007560 -0.039000 0.020000"/>
+        <site name="lat_dorsi_l_delt2hum_l_sidesite" pos="0.000000 -0.090000 0.010000" />
+        <!-- <joint name="acromioclavicular_r2_l" range="-0.16 0" limited="true" ref="0" axis="-0.1571 -0.9473 -0.2793" type="hinge" />
+        <joint name="acromioclavicular_r3_l" range="0 1.3" limited="true" ref="0" axis="0.7541 -0.2976 0.5855" type="hinge" />
+        <joint name="acromioclavicular_r1_l" range="0 0.6" limited="true" ref="0" axis="-0.6377 -0.1186 0.7611" type="hinge" /> -->
+        
+        <site name="SerrAnt1_l-P6" pos="-0.057447 -0.014850 0.077712"/>
+        <site name="SerrAnt2_l-P6" pos="-0.061995 -0.029871 0.082923"/>
+        <site name="SerrAnt3_l-P7" pos="-0.068220 -0.046077 0.083719"/>
+        <site name="SerrAnt4_l-P7" pos="-0.072374 -0.063082 0.083437"/>
+        <site name="SerrAnt5_l-P7" pos="-0.076349 -0.078443 0.083875"/>
+        <site name="SerrAnt6_l-P7" pos="-0.079131 -0.096023 0.080289"/>
+        <site name="SerrAnt7_l-P5" pos="-0.082971 -0.118225 0.072119"/>
+        <site name="SerrAnt8_l-P5" pos="-0.084289 -0.136405 0.068951"/>
+        <site name="SerrAnt9_l-P4" pos="-0.080581 -0.156418 0.058850"/>
+                                                  
+        <site name="DELT1_l-P3" pos="0.040153 -0.031101 0.026210" />
+        <site name="DELT2_l-P2" pos="-0.007531 -0.000202 -0.025856" />
+        <site name="DELT2_l-P3" pos="-0.010780 -0.000340 -0.006200" />
+        <site name="DELT3_l-P1" pos="-0.056398 -0.017104 0.020050" />
+        <site name="DELT3_l-P2" pos="-0.062358 -0.032824 -0.006237" />
+        <site name="Infraspinatus_I_l-P1" pos="-0.080779 -0.110562 0.062481" />
+        <site name="Infraspinatus_S_l-P1" pos="-0.071526 -0.062591 0.074155" />
+        <site name="Subscapularis_S_l-P1" pos="-0.056196 -0.031272 0.074919" />
+        <site name="Subscapularis_M_l-P1" pos="-0.064276 -0.068871 0.064238" />
+        <site name="Subscapularis_I_l-P1" pos="-0.077532 -0.118252 0.064993" />
+        <site name="Supraspinatus_P_l-P1" pos="-0.062084 -0.025777 0.040178" />
+        <site name="Supraspinatus_P_l-P2" pos="-0.030355 -0.014191 0.011058" />
+        <site name="Supraspinatus_A_l-P1" pos="-0.050157 -0.022261 0.065472" />
+        <site name="Supraspinatus_A_l-P2" pos="-0.022728 -0.011422 0.014396" />
+        <site name="TMIN_l-P2" pos="-0.053084 -0.091668 0.028825" />
+        <site name="TMAJ_l-P2" pos="-0.067135 -0.122209 0.031651" />
+        <site name="TMAJ_l-P3" pos="-0.078447 -0.131527 0.047668" />
+        <site name="CORB_l-P1" pos="0.021221 -0.027748 0.021045" />
+        <site name="TRIlong_l-P1" pos="-0.025734 -0.065921 0.010861" />
+        <site name="BIClong_l-P1" pos="-0.014583 -0.018719 0.014159" />
+        <site name="BIClong_l-P2" pos="-0.008502 -0.014990 0.007320" />
+        <site name="BICshort_l-P1" pos="0.020660 -0.026111 0.021717" />
+        <site name="BICshort_l-P2" pos="0.008978 -0.067040 0.014602" />
+        <site name="omohyoid_inf_l-P3" pos="-0.034789 -0.023414 0.055995" />
+        <site name="levator_scap_l-P1" pos="-0.065135 -0.024787 0.084895" />
+        <site name="PECMIN_l-P2" pos="0.016297 -0.023503 0.030920" />
+        <site name="SerrAnt1_1_l-P6" pos="-0.057447 -0.014850 0.077712" />
+        <site name="SerrAnt2_1_l-P6" pos="-0.061995 -0.029871 0.082923" />
+        <site name="SerrAnt3_1_l-P7" pos="-0.068220 -0.046077 0.083719" />
+        <site name="SerrAnt4_1_l-P7" pos="-0.071445 -0.063082 0.083437" />
+        <site name="SerrAnt5_1_l-P7" pos="-0.075103 -0.078443 0.083875" />
+        <site name="SerrAnt6_1_l-P7" pos="-0.079131 -0.096023 0.080289" />
+        <site name="SerrAnt7_1_l-P5" pos="-0.081967 -0.118225 0.072119" />
+        <site name="SerrAnt8_1_l-P5" pos="-0.084289 -0.136405 0.068951" />
+        <site name="SerrAnt9_1_l-P4" pos="-0.080581 -0.156418 0.058850" />
+        <site name="trap_acr_l-P1" pos="-0.022807 -0.002534 0.007408" />
+        <site name="trap_acr_T1_l-P1" pos="-0.026867 -0.005284 0.009542" />
+        <site name="trap_acr_T2_l-P1" pos="-0.033925 -0.006996 0.011161" />
+        <site name="trap_acr_T3_l-P1" pos="-0.041577 -0.009215 0.013905" />
+        <site name="trap_inf_T4_l-P3" pos="-0.074559 -0.035000 0.055000" />
+        <site name="trap_inf_T5_l-P3" pos="-0.074559 -0.035000 0.055000" />
+        <site name="trap_inf_T6_l-P3" pos="-0.074559 -0.035000 0.055000" />
+        <site name="trap_inf_T7_l-P3" pos="-0.074559 -0.035000 0.055000" />
+        <site name="trap_inf_T8_l-P4" pos="-0.074559 -0.035000 0.055000" />
+        <site name="trap_inf_T9_l-P4" pos="-0.074559 -0.035000 0.055000" />
+        <site name="trap_inf_T10_l-P4" pos="-0.074559 -0.035000 0.055000" />
+        <site name="trap_inf_T11_l-P4" pos="-0.074559 -0.035000 0.055000" />
+        <site name="trap_inf_T12_l-P4" pos="-0.074559 -0.035000 0.055000" />
+        <site name="LD_T9_l-P2" pos="-0.046694 -0.126704 0.017384" />
+        <site name="LD_T8_l-P2" pos="-0.051980 -0.116491 0.014963" />
+        <site name="LD_T7_l-P2" pos="-0.060975 -0.112113 0.019010" />
+        <site name="rhom_maj_T2_l-P1" pos="-0.075604 -0.068969 0.087944" />
+        <site name="rhom_maj_T3_l-P1" pos="-0.080279 -0.093666 0.086501" />
+        <site name="rhom_maj_T4_l-P2" pos="-0.086420 -0.122448 0.077803" />
+        <site name="rhom_maj_T5_l-P2" pos="-0.083114 -0.158895 0.060356" />
+        <site name="rhom_min_C7_l-P1" pos="-0.065517 -0.029531 0.086706" />
+        <site name="rhom_min_T1_l-P1" pos="-0.073647 -0.047689 0.091231" />
+      </body>
+    </body>
+    <site name="DELT1_l-P4" pos="-0.043369 0.013285 -0.084382" />
+    <site name="platysma_l-P1" pos="-0.006596 0.000806 -0.071470" />
+    <site name="sternohyoid_lat_l-P2" pos="-0.012103 -0.000129 -0.002019" />
+    <site name="cleid_mast_l-P1" pos="-0.003977 0.015082 -0.021743" />
+    <site name="cleid_occ_l-P1" pos="-0.003977 0.015082 -0.021743" />
+    <site name="PECM1_l-P3" pos="-0.013320 0.008106 -0.060175" />
+    <site name="subclavius_l-P1" pos="-0.045818 0.010672 -0.078512" />
+    <site name="trap_cl_l-P1" pos="-0.046008 0.020122 -0.075020" />
+  </body>
+</mujoco>

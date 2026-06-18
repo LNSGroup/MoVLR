@@ -1,0 +1,53 @@
+<mujoco>
+    <actuator>
+        <muscle name="DELT1_r" tendon="DELT1_r_tendon" class="muscle" force="1218.9" lengthrange="0.138247  0.22874" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="DELT2_r" tendon="DELT2_r_tendon" class="muscle" force="1103.5" lengthrange="0.161563  0.26569" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="DELT3_r" tendon="DELT3_r_tendon" class="muscle" force="201.6" lengthrange="0.103005 0.233014" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="SUPSP_r" tendon="SUPSP_r_tendon" class="muscle" force="499.2" lengthrange="0.0733458 0.141037" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="INFSP_r" tendon="INFSP_r_tendon" class="muscle" force="1075.8" lengthrange="0.0664933  0.13788" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="SUBSC_r" tendon="SUBSC_r_tendon" class="muscle" force="1306.9" lengthrange="0.0740175 0.156053" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="TMIN_r" tendon="TMIN_r_tendon" class="muscle" force="269.5" lengthrange="0.105147 0.172841" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="TMAJ_r" tendon="TMAJ_r_tendon" class="muscle" force="144" lengthrange="0.0980544 0.254163" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="PECM1_r" tendon="PECM1_r_tendon" class="muscle" force="444.3" lengthrange="0.0717495 0.209649" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="PECM2_r" tendon="PECM2_r_tendon" class="muscle" force="658.3" lengthrange="0.151241 0.275724" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="PECM3_r" tendon="PECM3_r_tendon" class="muscle" force="498.1" lengthrange="0.194762 0.320285" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <!-- Delete LATs -->
+        <muscle name="CORB_r" tendon="CORB_r_tendon" class="muscle" force="208.2" lengthrange="0.138521 0.221563" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="TRIlong_r" tendon="TRIlong_r_tendon" class="muscle" force="771.8" lengthrange="0.208536 0.339608" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="TRIlat_r" tendon="TRIlat_r_tendon" class="muscle" force="717.5" lengthrange="0.154199 0.266598" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="TRImed_r" tendon="TRImed_r_tendon" class="muscle" force="717.5" lengthrange="0.146999 0.259398" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="ANC_r" tendon="ANC_r_tendon" class="muscle" force="283.2" lengthrange="  0.0315 0.0584999" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="SUP_r" tendon="SUP_r_tendon" class="muscle" force="379.6" lengthrange="  0.0445 0.0774999" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="BIClong_r" tendon="BIClong_r_tendon" class="muscle" force="525.1" lengthrange=" 0.33015  0.44585" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="BICshort_r" tendon="BICshort_r_tendon" class="muscle" force="316.8" lengthrange=" 0.25835  0.39045" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="BRA_r" tendon="BRA_r_tendon" class="muscle" force="1177.37" lengthrange="  0.0964   0.1822" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="BRD_r" tendon="BRD_r_tendon" class="muscle" force="276" lengthrange="  0.2193   0.3919" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="ECRL_r" tendon="ECRL_r_tendon" class="muscle" force="337.3" lengthrange="  0.2845   0.3655" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="ECRB_r" tendon="ECRB_r_tendon" class="muscle" force="252.5" lengthrange=" 0.25119  0.30897" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="ECU_r" tendon="ECU_r_tendon" class="muscle" force="192.9" lengthrange="0.259524 0.321573" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FCR_r" tendon="FCR_r_tendon" class="muscle" force="407.9" lengthrange="0.275357 0.338071" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FCU_r" tendon="FCU_r_tendon" class="muscle" force="479.8" lengthrange="0.289894 0.339681" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="PL_r" tendon="PL_r_tendon" class="muscle" force="101" lengthrange="0.301222 0.364867" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="PT_r" tendon="PT_r_tendon" class="muscle" force="557.2" lengthrange="0.122226 0.170679" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="PQ_r" tendon="PQ_r_tendon" class="muscle" force="284.7" lengthrange="0.0188857 0.0466573" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FDSL_r" tendon="FDSL_r_tendon" class="muscle" force="75.3" lengthrange="0.364252 0.415556" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FDSR_r" tendon="FDSR_r_tendon" class="muscle" force="171.2" lengthrange=" 0.36471 0.438131" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FDSM_r" tendon="FDSM_r_tendon" class="muscle" force="258.8" lengthrange="0.332171 0.406512" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FDSI_r" tendon="FDSI_r_tendon" class="muscle" force="162.5" lengthrange="0.316521 0.399564" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FDPL_r" tendon="FDPL_r_tendon" class="muscle" force="236.8" lengthrange="0.318985 0.393157" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FDPR_r" tendon="FDPR_r_tendon" class="muscle" force="172.9" lengthrange="0.331103 0.410308" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FDPM_r" tendon="FDPM_r_tendon" class="muscle" force="212.4" lengthrange="0.344521 0.427564" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FDPI_r" tendon="FDPI_r_tendon" class="muscle" force="197.3" lengthrange="0.338671 0.413012" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="EDCL_r" tendon="EDCL_r_tendon" class="muscle" force="39.4" lengthrange=" 0.36748 0.432441" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="EDCR_r" tendon="EDCR_r_tendon" class="muscle" force="109.2" lengthrange="0.396257 0.458771" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="EDCM_r" tendon="EDCM_r_tendon" class="muscle" force="94.4" lengthrange=" 0.40115 0.473451" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="EDCI_r" tendon="EDCI_r_tendon" class="muscle" force="48.8" lengthrange="0.399952 0.469856" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="EDM_r" tendon="EDM_r_tendon" class="muscle" force="72.4" lengthrange="0.368704 0.436111" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="EIP_r" tendon="EIP_r_tendon" class="muscle" force="47.3" lengthrange="0.239289 0.297866" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="EPL_r" tendon="EPL_r_tendon" class="muscle" force="88.3" lengthrange="0.257352 0.311056" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="EPB_r" tendon="EPB_r_tendon" class="muscle" force="46" lengthrange="0.148998 0.215995" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="FPL_r" tendon="FPL_r_tendon" class="muscle" force="201" lengthrange="0.224394 0.279183" ctrllimited="true" ctrlrange="       0        1"></muscle>
+        <muscle name="APL_r" tendon="APL_r_tendon" class="muscle" force="116.7" lengthrange="0.164803 0.235409" ctrllimited="true" ctrlrange="       0        1"></muscle>
+    
+    </actuator>
+</mujoco>

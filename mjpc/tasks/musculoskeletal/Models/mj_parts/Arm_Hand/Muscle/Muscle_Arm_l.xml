@@ -1,0 +1,30 @@
+<mujoco>
+    <actuator>
+
+        <muscle name="DELT1_l" lengthrange="0.166 0.195" force="1130.145" tendon="DELT1_l_tendon" class="upper_muscle" />
+        <muscle name="DELT2_l" lengthrange="0.160 0.193" force="1065.899" tendon="DELT2_l_tendon" class="upper_muscle" />
+        <muscle name="DELT3_l" lengthrange="0.141 0.182" force="191.733" tendon="DELT3_l_tendon" class="upper_muscle" />
+        <muscle name="Infraspinatus_I_l" lengthrange="0.123 0.143" force="1037.400" tendon="Infraspinatus_I_l_tendon" class="upper_muscle" />
+        <muscle name="Infraspinatus_S_l" lengthrange="0.102 0.123" force="967.400" tendon="Infraspinatus_S_l_tendon" class="upper_muscle" />
+        <muscle name="Subscapularis_S_l" lengthrange="0.100 0.120" force="538.344" tendon="Subscapularis_S_l_tendon" class="upper_muscle" />
+        <muscle name="Subscapularis_M_l" lengthrange="0.101 0.123" force="606.683" tendon="Subscapularis_M_l_tendon" class="upper_muscle" />
+        <muscle name="Subscapularis_I_l" lengthrange="0.123 0.145" force="850.750" tendon="Subscapularis_I_l_tendon" class="upper_muscle" />
+        <muscle name="Supraspinatus_P_l" lengthrange="0.084 0.102" force="326.200" tendon="Supraspinatus_P_l_tendon" class="upper_muscle" />
+        <muscle name="Supraspinatus_A_l" lengthrange="0.098 0.114" force="543.200" tendon="Supraspinatus_A_l_tendon" class="upper_muscle" />
+        <muscle name="TMIN_l" lengthrange="0.072 0.089" force="246.201" tendon="TMIN_l_tendon" class="upper_muscle" />
+        <muscle name="TMAJ_l" lengthrange="0.112 0.154" force="138.422" tendon="TMAJ_l_tendon" class="upper_muscle" />
+        <muscle name="CORB_l" lengthrange="0.157 0.185" force="185.508" tendon="CORB_l_tendon" class="upper_muscle" />
+        <muscle name="TRIlong_l" lengthrange="0.233 0.274" force="754.934" tendon="TRIlong_l_tendon" class="upper_muscle" />
+        <muscle name="TRIlat_l" lengthrange="0.163 0.197" force="708.666" tendon="TRIlat_l_tendon" class="upper_muscle" />
+        <muscle name="TRImed_l" lengthrange="0.156 0.190" force="708.666" tendon="TRImed_l_tendon" class="upper_muscle" />
+        <muscle name="ANC_l" lengthrange="0.026 0.034" force="283.200" tendon="ANC_l_tendon" class="upper_muscle" />
+        <muscle name="SUP_l" lengthrange="0.053 0.063" force="379.600" tendon="SUP_l_tendon" class="upper_muscle" />
+        <muscle name="BIClong_l" lengthrange="0.369 0.404" force="525.100" tendon="BIClong_l_tendon" class="upper_muscle" />
+        <muscle name="BICshort_l" lengthrange="0.311 0.351" force="316.800" tendon="BICshort_l_tendon" class="upper_muscle" />
+        <muscle name="BRA_l" lengthrange="0.125 0.151" force="1177.370" tendon="BRA_l_tendon" class="upper_muscle" />
+        <muscle name="BRD_l" lengthrange="0.272 0.324" force="276.000" tendon="BRD_l_tendon" class="upper_muscle" />
+        <muscle name="PT_l" lengthrange="0.140 0.155" force="548.735" tendon="PT_l_tendon" class="upper_muscle" />
+        <muscle name="PQ_l" lengthrange="0.026 0.035" force="280.375" tendon="PQ_l_tendon" class="upper_muscle" />
+
+    </actuator>
+</mujoco>

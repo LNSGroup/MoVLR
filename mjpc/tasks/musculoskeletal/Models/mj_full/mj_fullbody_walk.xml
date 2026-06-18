@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="MuJoCo Full Body Model">
+  <compiler inertiafromgeom="auto" angle="radian" boundmass="0.0001" >
+    <lengthrange inttotal="50" useexisting="true"></lengthrange>
+  </compiler>
+  <option>
+      <flag contact="enable" gravity="enable"/>
+  </option>
+  <option actuatorgroupdisable="1" />
+  <default>
+    <joint limited="true" damping="0.1" armature="1e-2" stiffness="0" solimplimit="0.9999 0.9999 0.001 0.5 2" />
+    <geom rgba="1 1 1 0.6" margin="0.001" />
+    <site size="0.001" group="3" />
+    <tendon width="0.003" rgba="0.95 0.3 0.3 1" limited="false" />
+    <default class="mocap_target">
+      <site type="sphere" size=".01" rgba=".6 .3 .3 .8" group="1" />
+    </default>
+    <default class="mocap_site">
+      <site type="sphere" size=".01" rgba=".3 .6 .3 .8" group="1" />
+    </default>
+    <default class="muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" range="0.75 1.05"/>
+    </default>
+    <default class="torso_muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" range="0.75 1.05" lmax="1.9" lmin="0.25" fpmax="0.9474" vmax="10" fvmax="1.4" />
+    </default>
+    <default class="upper_muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" range="0.75 1.05" lmax="1.9" lmin="0.25" fpmax="0.9474" vmax="10" fvmax="1.4" />
+    </default>
+    <default class="lower_muscle">
+      <muscle ctrllimited="true" ctrlrange="0 1" range="0.75 1.05" lmax="1.9" lmin="0.25" fpmax="0.9474" vmax="10" fvmax="1.4" />
+    </default>
+    <default class="wrap">
+      <geom rgba="0.19 0.83 0.78 0.2" group="3" contype="0" conaffinity="0" mass="0"/>
+    </default>
+    <default class="bone">
+      <geom contype="1" conaffinity="0" mass="0" />
+    </default>
+    <default class="touch">
+      <site type="capsule" rgba="0.25 0.23 0.2 0.1" group="3" />
+    </default>
+    <default class="skin">
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" condim="3" margin="0.001" group="1" />
+    </default>
+    <default class="hip">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0" />
+    </default>
+    <default class="knee">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0" />
+    </default>
+    <default class="ankle">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0" />
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" condim="1" margin="0.001" group="1" density="1438" />
+    </default>
+    <default class="toe">
+      <joint limited="true" damping="0.5" armature="1e-2" stiffness="0" />
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" condim="1" margin="0.001" group="1" density="1438" />
+    </default>
+    <default class="shoulder">
+      <joint limited="true" damping="1.0" armature="1e-4" stiffness="0" />
+      <default class="shoulder_inertial">
+        <geom type="box" rgba="0.8 0.7 .5 0.4" contype="0" conaffinity="0" group="4" density="911" />
+      </default>
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" margin="0.001" group="1" density="1206" />
+    </default>
+    <default class="elbow">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0" />
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" margin="0.001" group="1" density="1158" />
+    </default>
+    <default class="hand">
+      <joint limited="true" damping="0.05" armature="1e-4" stiffness="0" />
+      <geom type="capsule" rgba="0.8 0.7 .5 0.2" contype="1" conaffinity="1" margin="0.001" group="1" density="1868" />
+      <default class="wrist_bone">
+        <geom contype="1" conaffinity="0" density="1158" rgba="1 1 1 1"/>
+      </default>
+      <default class="hand_inertial">
+        <geom type="ellipsoid" contype="0" conaffinity="0" density="1868" group="3" rgba="0.8 0.7 .5 0.2"/>
+      </default>
+    </default>
+    <default class="lumbar">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0" />
+    </default>
+    <default class="lumbar_inertial">
+      <geom type="ellipsoid" rgba="0.8 0.7 .5 0.2" contype="0" conaffinity="0" group="3" density="842" />
+    </default>
+    <default class="thoracic">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0" />
+      <default class="thoracic_bone">
+        <geom contype="1" conaffinity="0" density="911" />
+      </default>
+    </default>
+    <default class="thoracic_inertial">
+      <geom type="ellipsoid" rgba="0.8 0.7 .5 0.4" contype="0" conaffinity="0" group="3" density="911" />
+    </default>
+    <default class="cervical">
+      <joint limited="true" damping="0.5" armature="1e-4" stiffness="0" />
+    </default>
+    <default class="cervical_inertial">
+      <geom type="cylinder" rgba="0.8 0.7 .5 0.2" contype="0" conaffinity="0" group="3" density="1138" />
+    </default>
+  </default>
+  <size njmax="1000" nconmax="400" nuser_jnt="1"></size>
+  <visual>
+    <global offwidth="3840" offheight="2160"/>
+    <quality shadowsize="8192" offsamples="24"/>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    <map znear="0.002"/>
+    <rgba actuator="0.97 0.61 0.60 1" actuatorpositive="1 0 0 1" />
+  </visual>
+  
+  <worldbody>
+    <geom name="floor" pos="0 0 0" size="10 1 0.125" type="plane" condim="3" material="gray_plane"></geom>
+    <body name="pelvis" pos="0 0 0.97" euler="1.5708 0 0">
+      <inertial mass="9.07" pos="-0.080000 -0.012900 0" diaginertia="0.079259 0.067154 0.044641" />
+      
+      <joint name="pelvis_tz" type="slide" pos="0 0 0" axis="0 0 1" limited="true" range="-3 3" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_ty" type="slide" pos="0 0 0" axis="0 1 0" limited="true" range="-1 2" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_tx" type="slide" pos="0 0 0" axis="1 0 0" limited="false" range="-5 5" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_tilt" type="hinge" pos="0 0 0" axis="0 0 1" limited="true" range="-1.5708 1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_list" type="hinge" pos="0 0 0" axis="1 0 0" limited="true" range="-1.5708 1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      <joint name="pelvis_rotation" type="hinge" pos="0 0 0" axis="0 1 0" limited="true" range="-1.5708 1.5708" ref="0" armature="0" damping="0" stiffness="0"></joint>
+      
+      <include file="Body/Body_Leg_r.xml"/>
+      <include file="Body/Body_Leg_l.xml"/>
+      <include file="Body/Body_Torso_Symmetry_Simple.xml"/>
+      
+      <camera name="record_camera" pos="2 1 2" euler="-0.5 0.7 0.3" mode="track" />
+      <camera name="record_camera_front" pos="3 0 0" euler="0 1.57 0" mode="track" />
+      <camera name="record_camera_back" pos="-3 0 0" euler="0 -1.57 0" mode="track" />
+      <camera name="record_camera_right" pos="0 0 3" euler="0 0 0" mode="track" />
+    </body>
+    <include file="Body/Body_Mocap.xml" />
+  </worldbody>
+
+  <include file="Tendon/Tendon_Leg_r.xml"/>
+  <include file="Tendon/Tendon_Leg_l.xml"/>
+  <include file="Tendon/Tendon_Foot_r.xml"/>
+  <include file="Tendon/Tendon_Foot_l.xml"/>
+  <include file="Tendon/Tendon_Arm_r.xml"/>
+  <include file="Tendon/Tendon_Arm_l.xml"/>
+  <include file="Tendon/Tendon_Hand_r.xml"/>
+  <include file="Tendon/Tendon_Hand_l.xml"/>
+  <include file="Tendon/Tendon_Back_r.xml"/>
+  <include file="Tendon/Tendon_Back_l.xml"/>
+  <include file="Tendon/Tendon_Thorax_Abdomen_r.xml"/>
+  <include file="Tendon/Tendon_Thorax_Abdomen_l.xml"/>
+  <include file="Tendon/Tendon_Neck_r.xml"/>
+  <include file="Tendon/Tendon_Neck_l.xml"/>
+  <include file="Tendon/Tendon_Head_r.xml"/>
+  <include file="Tendon/Tendon_Head_l.xml"/>
+
+  <include file="Muscle/Muscle_Leg_r.xml"/>
+  <include file="Muscle/Muscle_Foot_r.xml"/>
+  <include file="Muscle/Muscle_Arm_r.xml"/>
+  <include file="Muscle/Muscle_Hand_r.xml"/>
+  <include file="Muscle/Muscle_Back_r.xml"/>
+  <include file="Muscle/Muscle_Thorax_Abdomen_r.xml"/>
+  <include file="Muscle/Muscle_Neck_r.xml"/>
+  <!-- <include file="Muscle/Muscle_Head_r.xml"/> -->
+
+  <include file="Muscle/Muscle_Leg_l.xml"/>
+  <include file="Muscle/Muscle_Foot_l.xml"/>
+  <include file="Muscle/Muscle_Arm_l.xml"/>
+  <include file="Muscle/Muscle_Hand_l.xml"/>
+  <include file="Muscle/Muscle_Back_l.xml"/>
+  <include file="Muscle/Muscle_Thorax_Abdomen_l.xml"/>
+  <include file="Muscle/Muscle_Neck_l.xml"/>
+  <!-- <include file="Muscle/Muscle_Head_l.xml"/> -->
+
+  <include file="Equality/Equality_Lowerbody.xml"/>
+  <include file="Equality/Equality_Upperbody_Simple.xml"/>
+  <include file="Equality/Equality_Torso.xml"/>
+
+  <include file="Asset/Asset_Lowerbody.xml"/>
+  <include file="Asset/Asset_Upperbody.xml"/>
+  <include file="Asset/Asset_Torso.xml"/>
+  <include file="Asset/Asset_Others.xml"/>
+
+  <include file="Sensor/Sensor_Leg_Foot.xml"/>
+
+  <include file="Contact/Contact_Lowerbody.xml"/>
+  <include file="Contact/Contact_Upperbody.xml"/>
+
+  <keyframe>
+    <!-- njnt=200 -->
+    <key qpos='0 0 0 0 0 0 -7.19544e-05 0.00030128 -0.00320618 1.03306e-06 -4.60079e-05 -1.55088e-05 0.05 -2.14874e-06 -2.45457e-06 0.0947332 -0.0222912 -0.0151979 0.0457819 -7.76237e-05 -0.0249704 -0.00935462 -0.00113556 -1.74062e-05 0.00874687 -0.0149836 -1.69734e-07 -0.00543678 0.0140233 -0.0151382 -4.67898e-07 -0.00508442 0.013645 -0.0150633 -4.31435e-07 -0.00512661 0.0127129 -0.0151933 -0.0015774 -4.48237e-07 -0.00508155 0.0512451 -0.0105872 0.00549734 -7.19539e-05 0.000302193 -0.00320624 1.03305e-06 -4.60079e-05 1.55088e-05 0.05 -2.1488e-06 2.45464e-06 0.0947332 -0.0222919 -0.0151982 0.0457817 -7.77072e-05 -0.0249704 -0.00935461 -0.00113554 -1.74062e-05 0.00874686 -0.0149836 -1.69733e-07 -0.00543678 0.0140232 -0.0151382 -4.67898e-07 -0.00508442 0.013645 -0.0150633 -4.31435e-07 -0.0051266 0.0127128 -0.0151933 -0.00157733 -4.48239e-07 -0.00508155 0.0512451 -0.0105872 0.00549734 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.0229936 0.00973612 -0.00974061 0.0229949 -0.00465378 0.0376243 0.0169166 -0.0169143 -0.037625 0.00465522 0.243322 0.095018 -0.243322 0.261005 0.477107 0.103656 0.00800009 -0.0210004 0.0108035 -0.0210008 -0.0229936 0.00973612 -0.00974061 0.0229949 -0.00465378 0.0376243 0.0169166 -0.0169143 -0.037625 0.00465522 0.243322 0.095018 -0.243322 0.261005 0.477107 0.103656 0.00800009 -0.0210004 0.0108035 -0.0210008'/>
+  </keyframe>
+
+</mujoco>

@@ -1,0 +1,55 @@
+<mujoco>
+
+  <site name="target_pelvis" pos="0 0 0" class="mocap_target"/>
+  <site name="target_lumbar1" pos="0 0 0" class="mocap_target"/>
+  <site name="target_thoracic1" pos="0 0 0" class="mocap_target"/>
+  <site name="target_cervical2" pos="0 0 0" class="mocap_target"/>
+  <site name="target_skull" pos="0 0 0" class="mocap_target"/>
+  <site name="target_scapula_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_humerus_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_ulna_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_proximal_row_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_thirdmc_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_3distph_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_scapula_l" pos="0 0 0" class="mocap_target"/>
+  <site name="target_humerus_l" pos="0 0 0" class="mocap_target"/>
+  <site name="target_ulna_l" pos="0 0 0" class="mocap_target"/>
+  <site name="target_proximal_row_l" pos="0 0 0" class="mocap_target"/>
+  <site name="target_thirdmc_l" pos="0 0 0" class="mocap_target"/>
+  <site name="target_3distph_l" pos="0 0 0" class="mocap_target"/>
+  <site name="target_femur_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_tibia_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_calcn_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_digits_1_dist_r" pos="0 0 0" class="mocap_target"/>
+  <site name="target_femur_l" pos="0 0 0" class="mocap_target"/>
+  <site name="target_tibia_l" pos="0 0 0" class="mocap_target"/>
+  <site name="target_calcn_l" pos="0 0 0" class="mocap_target"/>
+  <site name="target_digits_1_dist_l" pos="0 0 0" class="mocap_target"/>
+
+  <site name="site_pelvis" pos="0 0 0" class="mocap_site"/>
+  <site name="site_lumbar1" pos="0 0 0" class="mocap_site"/>
+  <site name="site_thoracic1" pos="0 0 0" class="mocap_site"/>
+  <site name="site_cervical2" pos="0 0 0" class="mocap_site"/>
+  <site name="site_skull" pos="0 0 0" class="mocap_site"/>
+  <site name="site_scapula_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_humerus_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_ulna_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_proximal_row_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_thirdmc_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_3distph_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_scapula_l" pos="0 0 0" class="mocap_site"/>
+  <site name="site_humerus_l" pos="0 0 0" class="mocap_site"/>
+  <site name="site_ulna_l" pos="0 0 0" class="mocap_site"/>
+  <site name="site_proximal_row_l" pos="0 0 0" class="mocap_site"/>
+  <site name="site_thirdmc_l" pos="0 0 0" class="mocap_site"/>
+  <site name="site_3distph_l" pos="0 0 0" class="mocap_site"/>
+  <site name="site_femur_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_tibia_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_calcn_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_digits_1_dist_r" pos="0 0 0" class="mocap_site"/>
+  <site name="site_femur_l" pos="0 0 0" class="mocap_site"/>
+  <site name="site_tibia_l" pos="0 0 0" class="mocap_site"/>
+  <site name="site_calcn_l" pos="0 0 0" class="mocap_site"/>
+  <site name="site_digits_1_dist_l" pos="0 0 0" class="mocap_site"/>
+
+</mujoco>

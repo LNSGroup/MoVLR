@@ -1,0 +1,8 @@
+<mujoco>
+    <actuator>
+        <muscle name="PECM1_r" lengthrange="0.096 0.129" force="408.800" tendon="PECM1_r_tendon" class="torso_muscle" />
+        <muscle name="PECM2_r" lengthrange="0.143 0.189" force="683.200" tendon="PECM2_r_tendon" class="torso_muscle" />
+        <muscle name="PECM3_r" lengthrange="0.180 0.235" force="571.200" tendon="PECM3_r_tendon" class="torso_muscle" />
+        
+    </actuator>
+</mujoco>

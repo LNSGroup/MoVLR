@@ -1,0 +1,13 @@
+<mujoco>
+    <tendon>
+        <spatial name="foot_spring_right" stiffness='10000'>
+            <site site="foot_spring_right_human"></site>
+            <site site="floor_spring_right"></site>
+        </spatial>
+        <spatial name="foot_spring_left" stiffness='10000'>
+            <site site="foot_spring_left_human"></site>
+            <site site="floor_spring_left"></site>
+        </spatial>
+    </tendon>
+
+</mujoco>

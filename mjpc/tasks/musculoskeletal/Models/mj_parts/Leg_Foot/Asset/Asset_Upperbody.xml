@@ -1,0 +1,70 @@
+<mujoco>
+    <asset>
+        <mesh name="clavicle_r_mesh" file="Geometry/clavicle_r.obj" scale="1 1 1"/>
+        <mesh name="scapula_r_mesh" file="Geometry/scapula_r.obj" scale="1 1 1"/>
+        <mesh name="humerus_r_mesh" file="Geometry/humerus_r.obj" scale="1 1 1"/>
+        <mesh name="ulna_r_mesh" file="Geometry/ulna_r.obj" scale="1 1 1"/>
+        <mesh name="radius_r_mesh" file="Geometry/radius_r.obj" scale="1 1 1"/>
+        <mesh name="lunate_r_mesh" file="Geometry/lunate_r.obj" scale="1 1 1"/>
+        <mesh name="scaphoid_r_mesh" file="Geometry/scaphoid_r.obj" scale="1 1 1"/>
+        <mesh name="pisiform_r_mesh" file="Geometry/pisiform_r.obj" scale="1 1 1"/>
+        <mesh name="triquetral_r_mesh" file="Geometry/triquetral_r.obj" scale="1 1 1"/>
+        <mesh name="capitate_r_mesh" file="Geometry/capitate_r.obj" scale="1 1 1"/>
+        <mesh name="trapezium_r_mesh" file="Geometry/trapezium_r.obj" scale="1 1 1"/>
+        <mesh name="1mc_r_mesh" file="Geometry/1mc_r.obj" scale="1 1 1"/>
+        <mesh name="thumb_prox_r_mesh" file="Geometry/thumb_prox_r.obj" scale="1 1 1"/>
+        <mesh name="thumb_dist_r_mesh" file="Geometry/thumb_dist_r.obj" scale="1 1 1"/>
+        <mesh name="trapezoid_r_mesh" file="Geometry/trapezoid_r.obj" scale="1 1 1"/>
+        <mesh name="hamate_r_mesh" file="Geometry/hamate_r.obj" scale="1 1 1"/>
+        <mesh name="2mc_r_mesh" file="Geometry/2mc_r.obj" scale="1 1 1"/>
+        <mesh name="2proxph_r_mesh" file="Geometry/2proxph_r.obj" scale="1 1 1"/>
+        <mesh name="2midph_r_mesh" file="Geometry/2midph_r.obj" scale="1 1 1"/>
+        <mesh name="2distph_r_mesh" file="Geometry/2distph_r.obj" scale="1 1 1"/>
+        <mesh name="3mc_r_mesh" file="Geometry/3mc_r.obj" scale="1 1 1"/>
+        <mesh name="3proxph_r_mesh" file="Geometry/3proxph_r.obj" scale="1 1 1"/>
+        <mesh name="3midph_r_mesh" file="Geometry/3midph_r.obj" scale="1 1 1"/>
+        <mesh name="3distph_r_mesh" file="Geometry/3distph_r.obj" scale="1 1 1"/>
+        <mesh name="4mc_r_mesh" file="Geometry/4mc_r.obj" scale="1 1 1"/>
+        <mesh name="4proxph_r_mesh" file="Geometry/4proxph_r.obj" scale="1 1 1"/>
+        <mesh name="4midph_r_mesh" file="Geometry/4midph_r.obj" scale="1 1 1"/>
+        <mesh name="4distph_r_mesh" file="Geometry/4distph_r.obj" scale="1 1 1"/>
+        <mesh name="5mc_r_mesh" file="Geometry/5mc_r.obj" scale="1 1 1"/>
+        <mesh name="5proxph_r_mesh" file="Geometry/5proxph_r.obj" scale="1 1 1"/>
+        <mesh name="5midph_r_mesh" file="Geometry/5midph_r.obj" scale="1 1 1"/>
+        <mesh name="5distph_r_mesh" file="Geometry/5distph_r.obj" scale="1 1 1"/>
+        
+        <mesh name="clavicle_l_mesh" file="Geometry/clavicle_l.obj" scale="1 1 1"/>
+        <mesh name="scapula_l_mesh" file="Geometry/scapula_l.obj" scale="1 1 1"/>
+        <mesh name="humerus_l_mesh" file="Geometry/humerus_l.obj" scale="1 1 1"/>
+        <mesh name="ulna_l_mesh" file="Geometry/ulna_l.obj" scale="1 1 1"/>
+        <mesh name="radius_l_mesh" file="Geometry/radius_l.obj" scale="1 1 1"/>
+        <mesh name="lunate_l_mesh" file="Geometry/lunate_l.obj" scale="1 1 1"/>
+        <mesh name="scaphoid_l_mesh" file="Geometry/scaphoid_l.obj" scale="1 1 1"/>
+        <mesh name="pisiform_l_mesh" file="Geometry/pisiform_l.obj" scale="1 1 1"/>
+        <mesh name="triquetral_l_mesh" file="Geometry/triquetral_l.obj" scale="1 1 1"/>
+        <mesh name="capitate_l_mesh" file="Geometry/capitate_l.obj" scale="1 1 1"/>
+        <mesh name="trapezium_l_mesh" file="Geometry/trapezium_l.obj" scale="1 1 1"/>
+        <mesh name="1mc_l_mesh" file="Geometry/1mc_l.obj" scale="1 1 1"/>
+        <mesh name="thumb_prox_l_mesh" file="Geometry/thumb_prox_l.obj" scale="1 1 1"/>
+        <mesh name="thumb_dist_l_mesh" file="Geometry/thumb_dist_l.obj" scale="1 1 1"/>
+        <mesh name="trapezoid_l_mesh" file="Geometry/trapezoid_l.obj" scale="1 1 1"/>
+        <mesh name="hamate_l_mesh" file="Geometry/hamate_l.obj" scale="1 1 1"/>
+        <mesh name="2mc_l_mesh" file="Geometry/2mc_l.obj" scale="1 1 1"/>
+        <mesh name="2proxph_l_mesh" file="Geometry/2proxph_l.obj" scale="1 1 1"/>
+        <mesh name="2midph_l_mesh" file="Geometry/2midph_l.obj" scale="1 1 1"/>
+        <mesh name="2distph_l_mesh" file="Geometry/2distph_l.obj" scale="1 1 1"/>
+        <mesh name="3mc_l_mesh" file="Geometry/3mc_l.obj" scale="1 1 1"/>
+        <mesh name="3proxph_l_mesh" file="Geometry/3proxph_l.obj" scale="1 1 1"/>
+        <mesh name="3midph_l_mesh" file="Geometry/3midph_l.obj" scale="1 1 1"/>
+        <mesh name="3distph_l_mesh" file="Geometry/3distph_l.obj" scale="1 1 1"/>
+        <mesh name="4mc_l_mesh" file="Geometry/4mc_l.obj" scale="1 1 1"/>
+        <mesh name="4proxph_l_mesh" file="Geometry/4proxph_l.obj" scale="1 1 1"/>
+        <mesh name="4midph_l_mesh" file="Geometry/4midph_l.obj" scale="1 1 1"/>
+        <mesh name="4distph_l_mesh" file="Geometry/4distph_l.obj" scale="1 1 1"/>
+        <mesh name="5mc_l_mesh" file="Geometry/5mc_l.obj" scale="1 1 1"/>
+        <mesh name="5proxph_l_mesh" file="Geometry/5proxph_l.obj" scale="1 1 1"/>
+        <mesh name="5midph_l_mesh" file="Geometry/5midph_l.obj" scale="1 1 1"/>
+        <mesh name="5distph_l_mesh" file="Geometry/5distph_l.obj" scale="1 1 1"/>
+
+    </asset>
+</mujoco> 

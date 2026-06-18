@@ -1,0 +1,27 @@
+<mujoco>
+    <actuator>
+        <muscle name="Ps_L1_VB_r" tendon="Ps_L1_VB_r_tendon" class="muscle" force="267.413904070982" lengthrange="0.152588 0.342789"></muscle>
+        <muscle name="Ps_L1_TP_r" tendon="Ps_L1_TP_r_tendon" class="muscle" force="77.1916424122423" lengthrange="0.150346 0.337752"></muscle>
+        <muscle name="Ps_L1_L2_IVD_r" tendon="Ps_L1_L2_IVD_r_tendon" class="muscle" force="147.150691236882" lengthrange="0.140545 0.315735"></muscle>
+        <muscle name="Ps_L2_TP_r" tendon="Ps_L2_TP_r_tendon" class="muscle" force="258.580019021333" lengthrange="0.130735 0.293696"></muscle>
+        <muscle name="Ps_L2_L3_IVD_r" tendon="Ps_L2_L3_IVD_r_tendon" class="muscle" force="150.540674902998" lengthrange="0.120669 0.271083"></muscle>
+        <muscle name="Ps_L3_TP_r" tendon="Ps_L3_TP_r_tendon" class="muscle" force="127.769816514309" lengthrange="0.112828 0.253468"></muscle>
+        <muscle name="Ps_L3_L4_IVD_r" tendon="Ps_L3_L4_IVD_r_tendon" class="muscle" force="45.3587780176527" lengthrange="0.101261 0.227484"></muscle>
+        <muscle name="Ps_L4_TP_r" tendon="Ps_L4_TP_r_tendon" class="muscle" force="202.690191624776" lengthrange="0.0965934 0.216997"></muscle>
+        <muscle name="Ps_L4_L5_IVD_r" tendon="Ps_L4_L5_IVD_r_tendon" class="muscle" force="85.1018659459605" lengthrange="0.0825348 0.185414"></muscle>
+        <muscle name="Ps_L5_TP_r" tendon="Ps_L5_TP_r_tendon" class="muscle" force="186.362314033559" lengthrange="0.0815448  0.18319"></muscle>
+        <muscle name="Ps_L5_VB_r" tendon="Ps_L5_VB_r_tendon" class="muscle" force="232.892286899376" lengthrange="0.0711761 0.159897"></muscle>
+        
+        <muscle name="Ps_L1_VB_l" tendon="Ps_L1_VB_l_tendon" class="muscle" force="267.413904070982" lengthrange="0.152588 0.342789"></muscle>
+        <muscle name="Ps_L1_TP_l" tendon="Ps_L1_TP_l_tendon" class="muscle" force="77.1916424122423" lengthrange="0.150345 0.337751"></muscle>
+        <muscle name="Ps_L1_L2_IVD_l" tendon="Ps_L1_L2_IVD_l_tendon" class="muscle" force="147.150691236882" lengthrange="0.140546 0.315736"></muscle>
+        <muscle name="Ps_L2_TP_l" tendon="Ps_L2_TP_l_tendon" class="muscle" force="258.580019021333" lengthrange="0.130735 0.293696"></muscle>
+        <muscle name="Ps_L2_L3_IVD_l" tendon="Ps_L2_L3_IVD_l_tendon" class="muscle" force="150.540674902998" lengthrange="0.120669 0.271082"></muscle>
+        <muscle name="Ps_L3_TP_l" tendon="Ps_L3_TP_l_tendon" class="muscle" force="127.769816514309" lengthrange="0.112828 0.253468"></muscle>
+        <muscle name="Ps_L3_L4_IVD_l" tendon="Ps_L3_L4_IVD_l_tendon" class="muscle" force="45.3587780176527" lengthrange="0.101262 0.227485"></muscle>
+        <muscle name="Ps_L4_TP_l" tendon="Ps_L4_TP_l_tendon" class="muscle" force="202.690191624776" lengthrange="0.0965929 0.216996"></muscle>
+        <muscle name="Ps_L4_L5_IVD_l" tendon="Ps_L4_L5_IVD_l_tendon" class="muscle" force="85.1018659459605" lengthrange="0.0825341 0.185413"></muscle>
+        <muscle name="Ps_L5_TP_l" tendon="Ps_L5_TP_l_tendon" class="muscle" force="186.362314033559" lengthrange="0.0815444  0.18319"></muscle>
+        <muscle name="Ps_L5_VB_l" tendon="Ps_L5_VB_l_tendon" class="muscle" force="232.892286899376" lengthrange="0.0711761 0.159897"></muscle>
+    </actuator>
+</mujoco>

@@ -1,0 +1,33 @@
+<mujoco>
+    <body name="car" pos="0.8 0.29 0.92" euler="0 0.03 1.57">
+        <joint name="axis_x" type="slide" pos="0 0 0" axis="0 -1 0" limited="false" range="-3 3" ref="0" armature="0" damping="0" stiffness="0"  frictionloss="0"></joint>
+        <joint name="axis_z" type="slide" pos="0 0 0" axis="0 0 1" limited="false" range="-3 3" ref="0" armature="0" damping="0" stiffness="0"  frictionloss="0"></joint>
+        <joint name="car_list" type="hinge" pos="-0.25 0.2 -0.5" axis="1 0 0" limited="true" range="-0.01 0.01" ref="0" armature="0" damping="0" stiffness="0"></joint>
+        <geom type="mesh" rgba="0.21 0.21 0.21 1" mesh="base_link"/>
+        <geom pos="-0.0758475 -0.0341093 -0.654521" quat="0.793353 0.608761 0 0" type="mesh" rgba="0.5 0.5 0.5 1" mesh="left_frame"/>
+        <geom pos="-0.0758475 0.278 -0.14" quat="0.5 0.499999 0.500001 0.499999" type="mesh" rgba="0.21 0.21 0.21 1" mesh="left_handler"/>
+        <geom pos="-0.495847 -0.0341093 -0.654521" quat="0 0 0.793353 0.608761" type="mesh" rgba="0.5 0.5 0.5 1" mesh="right_frame"/>
+        <geom pos="-0.495847 0.278 -0.14" quat="0.500001 0.499999 0.5 0.499999" type="mesh" rgba="0.21 0.21 0.21 1" mesh="right_handler"/>
+
+        <body name="lf_wheel" pos="-0.0758475 -0.0457099 -0.827813" quat="-0.493948 0.505978 0.505984 0.493945">
+            <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.315392" diaginertia="0.00240122 0.00121836 0.00121836"/>
+            <joint limited="false" name="lf_wheel_joint" pos="0.02 0 0.005" axis="0 1 0"/>
+            <geom type="mesh" pos="0.02 0 0.005" rgba="0.07 0.07 0.07 1" mesh="lf_wheel"/>
+        </body>
+        <body name="lb_wheel" pos="-0.0149615 0.517825 -0.829902" quat="-0.493948 0.505978 0.505984 0.493945">
+            <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.315392" diaginertia="0.00240122 0.00121836 0.00121836"/>
+            <joint limited="false" name="lb_wheel_joint" pos="0 0 0" axis="0 1 0"/>
+            <geom type="mesh" pos="0.003 0 0.002" rgba="0.07 0.07 0.07 1" mesh="lb_wheel"/>
+        </body>
+        <body name="rf_wheel" pos="-0.495847 -0.0457099 -0.827813" quat="0.493947 -0.505982 0.50598 0.493946">
+            <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.315392" diaginertia="0.00240122 0.00121836 0.00121836"/>
+            <joint limited="false" name="rf_wheel_joint" pos="-0.02 0 0.005" axis="0 -1 0"/>
+            <geom type="mesh" pos="-0.02 0 0.005" rgba="0.07 0.07 0.07 1" mesh="rf_wheel"/>
+        </body>
+        <body name="rb_wheel" pos="-0.571733 0.517825 -0.829902" quat="0.493947 -0.505982 0.50598 0.493946">
+            <inertial pos="0 0 0" quat="0.707107 0 0 0.707107" mass="0.315392" diaginertia="0.00240122 0.00121836 0.00121836"/>
+            <joint limited="false" name="rb_wheel_joint" pos="0 0 0" axis="0 1 0"/>
+            <geom type="mesh" pos="-0.003 0 0.002" rgba="0.07 0.07 0.07 1" mesh="rb_wheel"/>
+        </body>
+    </body>
+</mujoco>

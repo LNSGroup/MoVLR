@@ -1,0 +1,27 @@
+<mujoco>
+    <sensor>
+        <touch name="firstmc_touch_r" site="firstmc_touch_r"/>
+        <touch name="proximal_thumb_touch_r" site="proximal_thumb_touch_r"/>
+        <touch name="distal_thumb_touch_r" site="distal_thumb_touch_r"/>
+
+        <touch name="secondmc_touch_r" site="secondmc_touch_r"/>
+        <touch name="2proxph_touch_r" site="2proxph_touch_r"/>
+        <touch name="2midph_touch_r" site="2midph_touch_r"/>
+        <touch name="2distph_touch_r" site="2distph_touch_r"/>
+
+        <touch name="thirdmc_touch_r" site="thirdmc_touch_r"/>
+        <touch name="3proxph_touch_r" site="3proxph_touch_r"/>
+        <touch name="3midph_touch_r" site="3midph_touch_r"/>
+        <touch name="3distph_touch_r" site="3distph_touch_r"/>
+
+        <touch name="fourthmc_touch_r" site="fourthmc_touch_r"/>
+        <touch name="4proxph_touch_r" site="4proxph_touch_r"/>
+        <touch name="4midph_touch_r" site="4midph_touch_r"/>
+        <touch name="4distph_touch_r" site="4distph_touch_r"/>
+
+        <touch name="fifthmc_touch_r" site="fifthmc_touch_r"/>
+        <touch name="5proxph_touch_r" site="5proxph_touch_r"/>
+        <touch name="5midph_touch_r" site="5midph_touch_r"/>
+        <touch name="5distph_touch_r" site="5distph_touch_r"/>
+    </sensor>
+</mujoco>

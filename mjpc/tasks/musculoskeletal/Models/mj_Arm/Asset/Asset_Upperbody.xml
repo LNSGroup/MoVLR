@@ -1,0 +1,70 @@
+<mujoco>
+    <asset>
+        <mesh name="clavicle" file="../Geometry/clavicle.stl" scale="       1        1        1"></mesh>
+        <mesh name="scapula" file="../Geometry/scapula.stl" scale="       1        1        1"></mesh>
+        <mesh name="humerus" file="../Geometry/humerus.stl" scale="       1        1        1"></mesh>
+        <mesh name="ulna" file="../Geometry/ulna.stl" scale="       1        1        1"></mesh>
+        <mesh name="radius" file="../Geometry/radius.stl" scale="       1        1        1"></mesh>
+        <mesh name="lunate" file="../Geometry/lunate.stl" scale="       1        1        1"></mesh>
+        <mesh name="scaphoid" file="../Geometry/scaphoid.stl" scale="       1        1        1"></mesh>
+        <mesh name="pisiform" file="../Geometry/pisiform.stl" scale="       1        1        1"></mesh>
+        <mesh name="triquetral" file="../Geometry/triquetral.stl" scale="       1        1        1"></mesh>
+        <mesh name="capitate" file="../Geometry/capitate.stl" scale="       1        1        1"></mesh>
+        <mesh name="trapezium" file="../Geometry/trapezium.stl" scale="       1        1        1"></mesh>
+        <mesh name="1mc" file="../Geometry/1mc.stl" scale="       1        1        1"></mesh>
+        <mesh name="thumbprox" file="../Geometry/thumbprox.stl" scale="       1        1        1"></mesh>
+        <mesh name="thumbdist" file="../Geometry/thumbdist.stl" scale="       1        1        1"></mesh>
+        <mesh name="trapezoid" file="../Geometry/trapezoid.stl" scale="       1        1        1"></mesh>
+        <mesh name="hamate" file="../Geometry/hamate.stl" scale="       1        1        1"></mesh>
+        <mesh name="2mc" file="../Geometry/2mc.stl" scale="       1        1        1"></mesh>
+        <mesh name="2proxph" file="../Geometry/2proxph.stl" scale="       1        1        1"></mesh>
+        <mesh name="2midph" file="../Geometry/2midph.stl" scale="       1        1        1"></mesh>
+        <mesh name="2distph" file="../Geometry/2distph.stl" scale="       1        1        1"></mesh>
+        <mesh name="3mc" file="../Geometry/3mc.stl" scale="       1        1        1"></mesh>
+        <mesh name="3proxph" file="../Geometry/3proxph.stl" scale="       1        1        1"></mesh>
+        <mesh name="3midph" file="../Geometry/3midph.stl" scale="       1        1        1"></mesh>
+        <mesh name="3distph" file="../Geometry/3distph.stl" scale="       1        1        1"></mesh>
+        <mesh name="4mc_new" file="../Geometry/4mc_new.stl" scale="       1        1        1"></mesh>
+        <mesh name="4proxph_new" file="../Geometry/4proxph_new.stl" scale="       1        1        1"></mesh>
+        <mesh name="4midph_new" file="../Geometry/4midph_new.stl" scale="       1        1        1"></mesh>
+        <mesh name="4distph_new" file="../Geometry/4distph_new.stl" scale="       1        1        1"></mesh>
+        <mesh name="5mc_new" file="../Geometry/5mc_new.stl" scale="       1        1        1"></mesh>
+        <mesh name="5proxph_new" file="../Geometry/5proxph_new.stl" scale="       1        1        1"></mesh>
+        <mesh name="5midph_new" file="../Geometry/5midph_new.stl" scale="       1        1        1"></mesh>
+        <mesh name="5distph_new" file="../Geometry/5distph_new.stl" scale="       1        1        1"></mesh>
+        
+        <mesh name="clavicle_mirror" file="../Geometry/clavicle_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="scapula_mirror" file="../Geometry/scapula_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="humerus_mirror" file="../Geometry/humerus_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="ulna_mirror" file="../Geometry/ulna_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="radius_mirror" file="../Geometry/radius_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="lunate_mirror" file="../Geometry/lunate_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="scaphoid_mirror" file="../Geometry/scaphoid_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="pisiform_mirror" file="../Geometry/pisiform_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="triquetral_mirror" file="../Geometry/triquetral_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="capitate_mirror" file="../Geometry/capitate_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="trapezium_mirror" file="../Geometry/trapezium_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="1mc_mirror" file="../Geometry/1mc_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="thumbprox_mirror" file="../Geometry/thumbprox_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="thumbdist_mirror" file="../Geometry/thumbdist_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="trapezoid_mirror" file="../Geometry/trapezoid_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="hamate_mirror" file="../Geometry/hamate_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="2mc_mirror" file="../Geometry/2mc_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="2proxph_mirror" file="../Geometry/2proxph_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="2midph_mirror" file="../Geometry/2midph_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="2distph_mirror" file="../Geometry/2distph_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="3mc_mirror" file="../Geometry/3mc_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="3proxph_mirror" file="../Geometry/3proxph_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="3midph_mirror" file="../Geometry/3midph_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="3distph_mirror" file="../Geometry/3distph_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="4mc_new_mirror" file="../Geometry/4mc_new_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="4proxph_new_mirror" file="../Geometry/4proxph_new_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="4midph_new_mirror" file="../Geometry/4midph_new_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="4distph_new_mirror" file="../Geometry/4distph_new_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="5mc_new_mirror" file="../Geometry/5mc_new_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="5proxph_new_mirror" file="../Geometry/5proxph_new_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="5midph_new_mirror" file="../Geometry/5midph_new_mirror.obj" scale="       1        1        1"></mesh>
+        <mesh name="5distph_new_mirror" file="../Geometry/5distph_new_mirror.obj" scale="       1        1        1"></mesh>
+
+    </asset>
+</mujoco> 

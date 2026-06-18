@@ -1,0 +1,20 @@
+<mujoco>
+    <actuator>
+
+        <muscle name="LD_L1_l" lengthrange="0.306 0.401" force="41.400" tendon="LD_L1_l_tendon" class="torso_muscle" />
+        <muscle name="LD_L2_l" lengthrange="0.328 0.429" force="41.400" tendon="LD_L2_l_tendon" class="torso_muscle" />
+        <muscle name="LD_L3_l" lengthrange="0.344 0.451" force="50.600" tendon="LD_L3_l_tendon" class="torso_muscle" />
+        <muscle name="LD_L4_l" lengthrange="0.360 0.472" force="50.600" tendon="LD_L4_l_tendon" class="torso_muscle" />
+        <muscle name="LD_L5_l" lengthrange="0.373 0.490" force="50.600" tendon="LD_L5_l_tendon" class="torso_muscle" />
+        <muscle name="LD_T12_l" lengthrange="0.290 0.381" force="23.000" tendon="LD_T12_l_tendon" class="torso_muscle" />
+        <muscle name="LD_T11_l" lengthrange="0.272 0.358" force="27.600" tendon="LD_T11_l_tendon" class="torso_muscle" />
+        <muscle name="LD_T10_l" lengthrange="0.254 0.337" force="27.600" tendon="LD_T10_l_tendon" class="torso_muscle" />
+        <muscle name="LD_T9_l" lengthrange="0.238 0.315" force="18.400" tendon="LD_T9_l_tendon" class="torso_muscle" />
+        <muscle name="LD_T8_l" lengthrange="0.222 0.292" force="18.400" tendon="LD_T8_l_tendon" class="torso_muscle" />
+        <muscle name="LD_T7_l" lengthrange="0.214 0.281" force="18.400" tendon="LD_T7_l_tendon" class="torso_muscle" />
+        <muscle name="LD_R12_l" lengthrange="0.234 0.307" force="18.400" tendon="LD_R12_l_tendon" class="torso_muscle" />
+        <muscle name="LD_R11_l" lengthrange="0.215 0.287" force="27.600" tendon="LD_R11_l_tendon" class="torso_muscle" />
+        <muscle name="LD_IL_l" lengthrange="0.338 0.467" force="32.200" tendon="LD_IL_l_tendon" class="torso_muscle"  />
+        
+    </actuator>
+</mujoco>

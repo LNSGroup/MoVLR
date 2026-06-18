@@ -1,0 +1,38 @@
+<mujoco>
+    <actuator>
+        <muscle name="digastric_post_r" lengthrange="0.110 0.116" force="106.223" tendon="digastric_post_r_tendon" class="torso_muscle" />
+        <muscle name="digastric_ant_r" lengthrange="0.038 0.042" force="109.620" tendon="digastric_ant_r_tendon" class="torso_muscle" />
+        <muscle name="geniohyoid_r" lengthrange="0.026 0.036" force="91.665" tendon="geniohyoid_r_tendon" class="torso_muscle" />
+        <muscle name="mylohyoid_post_r" lengthrange="0.021 0.030" force="50.085" tendon="mylohyoid_post_r_tendon" class="torso_muscle" />
+        <muscle name="mylohyoid_ant_r" lengthrange="0.018 0.024" force="150.255" tendon="mylohyoid_ant_r_tendon" class="torso_muscle" />
+        <muscle name="stylohyoid_lat_r" lengthrange="0.065 0.071" force="18.356" tendon="stylohyoid_lat_r_tendon" class="torso_muscle" />
+        <muscle name="stylohyoid_med_r" lengthrange="0.064 0.070" force="18.356" tendon="stylohyoid_med_r_tendon" class="torso_muscle" />
+        <muscle name="sternohyoid_med_r" lengthrange="0.097 0.120" force="27.405" tendon="sternohyoid_med_r_tendon" class="torso_muscle"  />
+        <muscle name="sternohyoid_lat_r" lengthrange="0.097 0.120" force="27.405" tendon="sternohyoid_lat_r_tendon" class="torso_muscle"  />
+        <muscle name="sternothyroid_r" lengthrange="0.093 0.112" force="61.425" tendon="sternothyroid_r_tendon" class="torso_muscle" />
+        <muscle name="omohyoid_sup_r" lengthrange="0.055 0.078" force="9.625" tendon="omohyoid_sup_r_tendon" class="torso_muscle" />
+        <muscle name="omohyoid_inf_r" lengthrange="0.106 0.125" force="15.540" tendon="omohyoid_inf_r_tendon" class="torso_muscle" />
+        <muscle name="thyrohyoid_r" lengthrange="0.028 0.040" force="21.140" tendon="thyrohyoid_r_tendon" class="torso_muscle" />
+        <muscle name="stern_mast_r" lengthrange="0.152 0.185" force="179.822" tendon="stern_mast_r_tendon" class="torso_muscle" />
+        <muscle name="cleid_mast_r" lengthrange="0.131 0.164" force="89.911" tendon="cleid_mast_r_tendon" class="torso_muscle" />
+        <muscle name="cleid_occ_r" lengthrange="0.160 0.193" force="89.911" tendon="cleid_occ_r_tendon" class="torso_muscle" />
+        <muscle name="scalenus_ant_r" lengthrange="0.105 0.118" force="136.805" tendon="scalenus_ant_r_tendon" class="torso_muscle" />
+        <muscle name="scalenus_med_r" lengthrange="0.099 0.114" force="99.406" tendon="scalenus_med_r_tendon" class="torso_muscle" />
+        <muscle name="scalenus_post_r" lengthrange="0.079 0.098" force="75.761" tendon="scalenus_post_r_tendon" class="torso_muscle" />
+        <muscle name="long_cap_sklc4_r" lengthrange="0.050 0.061" force="89.622" tendon="long_cap_sklc4_r_tendon" class="torso_muscle" />
+        <muscle name="long_col_c1thx_r" lengthrange="0.154 0.181" force="32.196" tendon="long_col_c1thx_r_tendon" class="torso_muscle" />
+        <muscle name="long_col_c1c5_r" lengthrange="0.062 0.073" force="32.196" tendon="long_col_c1c5_r_tendon" class="torso_muscle" />
+        <muscle name="long_col_c5thx_r" lengthrange="0.088 0.105" force="32.196" tendon="long_col_c5thx_r_tendon" class="torso_muscle" />
+        <muscle name="splen_cap_sklc6_r" lengthrange="0.087 0.116" force="69.314" tendon="splen_cap_sklc6_r_tendon" class="torso_muscle" />
+        <muscle name="splen_cap_sklthx_r" lengthrange="0.128 0.157" force="69.314" tendon="splen_cap_sklthx_r_tendon" class="torso_muscle" />
+        <muscle name="splen_cerv_c3thx_r" lengthrange="0.172 0.200" force="69.314" tendon="splen_cerv_c3thx_r_tendon" class="torso_muscle"  />
+        <muscle name="levator_scap_r" lengthrange="0.147 0.181" force="106.820" tendon="levator_scap_r_tendon" class="torso_muscle" />
+        <muscle name="rectcap_post_maj_r" lengthrange="0.028 0.039" force="45.494" tendon="rectcap_post_maj_r_tendon" class="torso_muscle" />
+        <muscle name="rectcap_post_min_r" lengthrange="0.016 0.022" force="24.993" tendon="rectcap_post_min_r_tendon" class="torso_muscle" />
+        <muscle name="obl_cap_sup_r" lengthrange="0.034 0.042" force="50.331" tendon="obl_cap_sup_r_tendon" class="torso_muscle" />
+        <muscle name="obl_cap_inf_r" lengthrange="0.036 0.048" force="63.406" tendon="obl_cap_inf_r_tendon" class="torso_muscle" />
+        <muscle name="rectcap_ant_r" lengthrange="0.028 0.034" force="2.800" tendon="rectcap_ant_r_tendon" class="torso_muscle" />
+        <muscle name="rectcap_lat_r" lengthrange="0.014 0.020" force="27.405" tendon="rectcap_lat_r_tendon" class="torso_muscle" />
+
+    </actuator>
+</mujoco>

@@ -1,0 +1,141 @@
+<mujoco>
+    <body name="femur_l" pos="-0.056276 -0.07849 -0.07726" quat="1.0 0.0 0.0 0.0">
+        <geom name="l_femur" type="mesh" mesh="l_femur" class="collision"></geom>
+        <inertial pos="       0    -0.17        0" mass="9.3014" fullinertia="  0.1339   0.0351   0.1412        0        0        0"></inertial>
+        <geom name="PECT_at_femshaft_l" pos=" 0.00608573 -0.0845029 -0.0304405" euler=" -1.81295 -0.276344 0" class="wrap" size="0.015 0.025" type="cylinder"/>
+        <geom name="AMisch_at_condyles_l" pos=" -0.0226511 -0.376831 0.00315437" euler=" -1.71115 0.463363 0" class="wrap" size="0.04 0.12" type="cylinder"/>
+        <site name="addmagIsch_l_AMisch_at_condyles_l_sidesite" pos="-0.02265 -0.37683 0.05315"/>
+        <geom name="AMdist_at_femshaft_l" pos=" 0.0316065 -0.260736 -0.0093646" euler=" -1.71188 -0.186636 0" class="wrap" size="0.0218 0.1" type="cylinder"/>
+        <site name="addmagDist_l_AMdist_at_femshaft_l_sidesite" pos="-0.00019 -0.26074 -0.00936"/>
+        <geom name="AMmid_at_femshaft_l" pos=" 0.0230125 -0.160711 -0.0205842" euler=" -1.61139 -0.13656 0" class="wrap" size="0.0214 0.06" type="cylinder"/>
+        <site name="addmagMid_l_AMmid_at_femshaft_l_sidesite" pos="-0.00839 -0.16071 -0.02058"/>
+        <geom name="AMprox_at_femshaft_l" pos=" 0.00518299 -0.0728948 -0.025403" euler=" -1.61126 -0.18656 0" class="wrap" size="0.0211 0.035" type="cylinder"/>
+        <site name="addmagProx_l_AMprox_at_femshaft_l_sidesite" pos="-0.02592 -0.07289 -0.02540"/>
+        <geom name="AL_at_femshaft_l" pos=" 0.0307327 -0.231909 -0.0151137" euler=" -1.77711 -0.136489 0" class="wrap" size="0.0201 0.05" type="cylinder"/>
+        <site name="addlong_l_AL_at_femshaft_l_sidesite" pos="0.00063 -0.23191 -0.01511"/>
+        <geom name="AB_at_femshaft_l" pos=" 0.0146434 -0.112595 -0.023365" euler=" -1.66157 -0.186644 0" class="wrap" size="0.0165 0.035" type="cylinder"/>
+        <site name="addbrev_l_AB_at_femshaft_l_sidesite" pos="-0.01186 -0.11259 -0.02337"/>
+        <geom name="KnExtVL_at_fem_l" pos=" 0.00188828 -0.402732 -0.00209111" euler=" 0.0623366 -0.0507601 0" class="wrap" size="0.025 0.05" type="cylinder"/>
+        <site name="vaslat140_l_KnExtVL_at_fem_l_sidesite" pos="0.03689 -0.40273 -0.00209"/>
+        <geom name="KnExt_at_fem_l" pos=" 0.00358828 -0.402732 -0.00209111" euler=" 0.0623366 -0.0507601 0" class="wrap" size="0.025 0.05" type="cylinder"/>
+        <site name="vasmed_l_KnExt_at_fem_l_sidesite" pos="0.03859 -0.40273 -0.00209"/>
+        <site name="vasint_l_KnExt_at_fem_l_sidesite" pos="0.03859 -0.40273 -0.00209"/>
+        <site name="recfem_l_KnExt_at_fem_l_sidesite" pos="0.03859 -0.40273 -0.00209"/>
+        <geom name="GasMed_at_condyles_l" pos=" 0.005 -0.41 0" euler=" 0 0 0" class="wrap" size="0.025 0.05" type="cylinder"/>
+        <geom name="GasLat_at_condyles_l" pos=" 0.005 -0.41 0" euler=" 0 0 0" class="wrap" size="0.026 0.05" type="cylinder"/>
+        <site name="addbrev_l-P2" pos="-0.002 -0.118 -0.0249"></site>
+        <site name="addlong_l-P2" pos="0.01126 -0.23937 -0.01583"></site>
+        <site name="addmagDist_l-P2" pos="0.01125 -0.2625 -0.0193"></site>
+        <site name="addmagIsch_l-P2" pos="0.00481 -0.38797 0.03273"></site>
+        <site name="addmagMid_l-P2" pos="0.00242 -0.1624 -0.02922"></site>
+        <site name="addmagProx_l-P2" pos="-0.01527 -0.07886 -0.03202"></site>
+        <site name="bfsh140_l-P1" pos="0.005 -0.2111 -0.0234"></site>
+        <!-- <site name="gaslat_l-P1" pos="-0.003 -0.3814 -0.0277"></site> -->
+        <site name="gaslat140_l-P1" pos="0.002 -0.381 -0.02059"></site>
+        <site name="gasmed_l-P1" pos="0.008 -0.3788 0.0208"></site>
+        <site name="glmax1_l-P3" pos="-0.0444 -0.0326 -0.0302"></site>
+        <site name="glmax1_l-P4" pos="-0.0277 -0.0566 -0.047"></site>
+        <site name="glmax2_l-P3" pos="-0.045 -0.0584 -0.0252"></site>
+        <site name="glmax2_l-P4" pos="-0.0156 -0.1016 -0.0419"></site>
+        <site name="glmax3_l-P3" pos="-0.0281 -0.1125 -0.0094"></site>
+        <site name="glmax3_l-P4" pos="-0.006 -0.1419 -0.0411"></site>
+        <site name="glmed1_l-P2" pos="-0.0218 -0.0117 -0.0555"></site>
+        <site name="glmed2_l-P2" pos="-0.0258 -0.0058 -0.0527"></site>
+        <site name="glmed3_l-P2" pos="-0.0309 -0.0047 -0.0518"></site>
+        <site name="glmin1_l-P2" pos="-0.0072 -0.0104 -0.056"></site>
+        <site name="glmin2_l-P2" pos="-0.0096 -0.0104 -0.056"></site>
+        <site name="glmin3_l-P2" pos="-0.0135 -0.0083 -0.055"></site>
+        <site name="iliacus_l-P3" pos="-0.0023 -0.0565 -0.0139"></site>
+        <site name="iliacus_l-P4" pos="-0.0122 -0.0637 -0.0196"></site>
+        <site name="piri_l-P3" pos="-0.0148 -0.0036 -0.0437"></site>
+        <site name="psoas_l-P3" pos="-0.0132 -0.0467 -0.0046"></site>
+        <site name="psoas_l-P4" pos="-0.0235 -0.0524 -0.0088"></site>
+        <site name="sart_l-P2" pos="-0.003 -0.3568 0.0421"></site>
+        <site name="tfl_l-P2" pos="0.0294 -0.0995 -0.0597"></site>
+        <site name="tfl_l-P3" pos="0.0107 -0.405 -0.0324"></site>
+        <site name="vasint_l-P1" pos="0.029 -0.1924 -0.031"></site>
+        <site name="vasint_l-P2" pos="0.0335 -0.2084 -0.0285"></site>
+        <site name="vaslat140_l-P1" pos="0.0048 -0.1854 -0.0349"></site>
+        <site name="vaslat140_l-P2" pos="0.0269 -0.2591 -0.0409"></site>
+        <site name="vasmed_l-P1" pos="0.014 -0.2099 -0.0188"></site>
+        <site name="vasmed_l-P2" pos="0.0356 -0.2769 -0.0009"></site>
+        <joint name="hip_flexion_l" type="hinge" pos="0 0 0" axis="       0        0        1" limited="true" range="-0.523599   2.0944" ref="0"></joint>
+        <joint name="hip_adduction_l" type="hinge" pos="0 0 0" axis="      -1       -0       -0" limited="true" range="-0.872665 0.523599" ref="0"></joint>
+        <joint name="hip_rotation_l" type="hinge" pos="0 0 0" axis="      -0       -1       -0" limited="true" range="-0.698132 0.698132" ref="0"></joint>
+        <body name="tibia_l" pos="-4.6e-07 -0.404425 0.00126526" quat="1.0 -7.240636975890137e-18 9.456205735995121e-17 -2.960068750797159e-20">
+          <geom name="l_tibia" type="mesh" mesh="l_tibia" class="collision"></geom>
+          <geom name="l_fibula" type="mesh" mesh="l_fibula" class="collision"></geom>
+          <inertial pos="       0  -0.1867        0" mass="3.7075" fullinertia="  0.0504   0.0051   0.0511        0        0        0"></inertial>
+          <geom name="BF140_at_gastroc_l" pos=" -0.039 -0.06 0" euler=" 0 0 0" class="wrap" size="0.029 0.075" type="cylinder"/>
+          <site name="bfsh140_l_BF140_at_gastroc_l_sidesite" pos="-0.03900 -0.02100 0.00000"/>
+          <geom name="ST_at_condyles_l" pos=" -0.002 -0.0205 0" euler=" 0 0.2 0" class="wrap" size="0.0425 0.05" type="cylinder"/>
+          <site name="semiten_l_ST_at_condyles_l_sidesite" pos="-0.05450 -0.02050 0.00000"/>
+          <geom name="SM_at_condyles_l" pos=" -0.001 -0.02 0" euler=" 0 0.1 0" class="wrap" size="0.0345 0.05" type="cylinder"/>
+          <site name="semimem_l_SM_at_condyles_l_sidesite" pos="-0.04550 -0.02000 0.00000"/>
+          <geom name="GR_at_condyles_l" pos=" -0.003 -0.02 0" euler=" 0 0.4 0" class="wrap" size="0.036 0.05" type="cylinder"/>
+          <site name="grac_l_GR_at_condyles_l_sidesite" pos="-0.04900 -0.02000 0.00000"/>
+          <geom name="GasMed_at_shank_l" pos=" -0.0074 -0.074 0.0033" euler=" -2.96723 -0.0279725 -1.47812" class="wrap" size="0.059 0.05" type="cylinder"/>
+          <site name="gasmed_l_GasMed_at_shank_l_sidesite" pos="-0.07640 -0.07400 0.00330"/>
+          <geom name="GasLat_at_shank_l" pos=" -0.0074 -0.074 0.0033" euler=" -2.96723 0.279725 -1.47812" class="wrap" size="0.055 0.05" type="cylinder"/>
+          <site name="gaslat_l_GasLat_at_shank_l_sidesite" pos="-0.07240 -0.07400 0.00330"/>
+          <!-- <site name="bflh_l-P2" pos="-0.0337 -0.035 -0.0253"></site>
+          <site name="bflh_l-P3" pos="-0.0287 -0.0455 -0.0303"></site>
+          <site name="bfsh_l-P2" pos="-0.0301 -0.0419 -0.0318"></site> -->          
+          <site name="bflh140_l-P2" pos="-0.03436 -0.03648 -0.03618"></site>
+          <site name="bflh140_l-P3" pos="-0.02704 -0.05008 -0.03476"></site>
+          <site name="bfsh140_l-P2" pos="-0.02866 -0.03284 -0.03204"></site>
+
+          <site name="grac_l-P2" pos="-0.01842 -0.04755 0.02961"></site>
+          <site name="grac_l-P3" pos="0.00178 -0.06962 0.01573"></site>
+          <site name="perbrev_l-P1" pos="-0.0243 -0.2532 -0.0251"></site>
+          <site name="perbrev_l-P2" pos="-0.0339 -0.3893 -0.0249"></site>
+          <site name="perbrev_l-P3" pos="-0.0285 -0.4004 -0.0255"></site>
+          <site name="perlong_l-P1" pos="-0.02 -0.1373 -0.0282"></site>
+          <site name="perlong_l-P2" pos="-0.0317 -0.39 -0.0237"></site>
+          <site name="perlong_l-P3" pos="-0.0272 -0.4014 -0.024"></site>
+          <site name="recfem_l-P5" pos="0.0326 -0.06312 0.00047"></site>
+          <site name="sart_l-P3" pos="-0.0251 -0.0401 0.0365"></site>
+          <site name="sart_l-P4" pos="-0.0159 -0.0599 0.0264"></site>
+          <site name="sart_l-P5" pos="0.0136 -0.081 0.0026"></site>
+          <site name="semimem_l-P2" pos="-0.029 -0.0417 0.0196"></site>
+          <site name="semiten_l-P2" pos="-0.0312 -0.0508 0.0229"></site>
+          <site name="semiten_l-P3" pos="0.0019 -0.0773 0.0117"></site>
+          <site name="soleus_l-P1" pos="-0.0076 -0.0916 -0.0098"></site>
+          <site name="tfl_l-P4" pos="0.0108 -0.041 -0.0346"></site>
+          <site name="tibant_l-P1" pos="0.0154 -0.1312 -0.0162"></site>
+          <site name="tibant_l-P2" pos="0.0251 -0.1906 -0.0128"></site>
+          <site name="tibant_l-P3" pos="0.0233 -0.3659 0.0132"></site>
+          <site name="tibpost_l-P1" pos="-0.0041 -0.1304 -0.0103"></site>
+          <site name="tibpost_l-P2" pos="-0.0164 -0.3655 0.0175"></site>
+          <site name="vasint_l-P5" pos="0.03257 -0.0632 -0.00043"></site>
+          <site name="vaslat140_l-P5" pos="0.03254 -0.06338 -0.00511"></site>
+          <site name="vasmed_l-P5" pos="0.0319 -0.06357 0.00678"></site>
+          <joint name="knee_angle_l_translation3" type="slide" pos="0 0 0" axis="-0.992246 -0.123982 -0.00878916" limited="true" range="-0.00365968 0.00187973" ref="0"></joint>
+          <joint name="knee_angle_l_translation2" type="slide" pos="0 0 0" axis="-0.992246 -0.123982 -0.00878916" limited="true" range="-0.006792 -7.69254e-11" ref="0"></joint>
+          <joint name="knee_angle_l_translation1" type="slide" pos="0 0 0" axis="-0.124293 0.989762 0.0701648" limited="true" range="9.53733e-08 0.00159883" ref="0"></joint>
+          <joint name="knee_angle_l" type="hinge" pos="0 0 0" axis="3.98373e-10 0.0707131 -0.997497" limited="true" range="       0   2.4436" ref="0"></joint>
+          <joint name="knee_angle_l_rotation2" type="hinge" pos="0 0 0" axis="-0.992246 -0.123982 -0.00878916" limited="true" range="-0.00167821 0.0335354" ref="0"></joint>
+          <joint name="knee_angle_l_rotation3" type="hinge" pos="0 0 0" axis="-0.124293 0.989762 0.0701648" limited="true" range="-0.262788 -1.08939e-08" ref="0"></joint>
+
+          <include file="Body_Foot_l.xml"/>
+
+        </body>
+        <!-- <body name="patella_l" pos="-0.00809 -0.40796        0" quat="1.0 0.0 0.0 0.0"> -->
+        <body name="patella_l" pos="-0.003 -0.40796        0" quat="1.0 0.0 0.0 0.0">
+          <geom name="l_patella" type="mesh" mesh="l_patella" class="collision"></geom>
+          <inertial pos="  0.0018   0.0264        0" mass="0.0862" fullinertia="2.87e-06 1.311e-05 1.311e-05        0        0        0"></inertial>
+          <site name="recfem_l-P2" pos="0.01 0.049 -0.0007"></site>
+          <site name="recfem_l-P3" pos="0.0121 0.0437 0.001"></site>
+          <site name="recfem_l-P4" pos="0.005 0.00247 -3e-005"></site>
+          <site name="vasint_l-P3" pos="0.0058 0.048 0.0006"></site>
+          <site name="vasint_l-P4" pos="0.005 0.00247 0.00039"></site>
+          <site name="vaslat140_l-P3" pos="0.0103 0.0423 -0.0141"></site>
+          <site name="vaslat140_l-P4" pos="0.005 0.00247 -0.00733"></site>
+          <site name="vasmed_l-P3" pos="0.0063 0.0445 0.017"></site>
+          <site name="vasmed_l-P4" pos="0.005 0.00247 0.0085"></site>
+          <joint name="knee_angle_l_beta_translation2" type="slide" pos="0 0 0" axis="       0        1        0" limited="true" range="-0.0408267 -0.0108281" ref="0"></joint>
+          <joint name="knee_angle_l_beta_translation1" type="slide" pos="0 0 0" axis="       1        0        0" limited="true" range="-0.0227731 0.0524192" ref="0"></joint>
+          <joint name="knee_angle_l_beta_rotation1" type="hinge" pos="0 0 0" axis="       0        0        1" limited="true" range="-1.79241 0.010506" ref="0"></joint>
+        </body>
+    </body>
+</mujoco>

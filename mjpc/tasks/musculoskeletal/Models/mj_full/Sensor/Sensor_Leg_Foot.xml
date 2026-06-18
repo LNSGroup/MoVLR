@@ -1,0 +1,52 @@
+<mujoco>
+    <sensor>
+        <accelerometer name="accelerometer" site="skull_sensor"/>
+        <gyro name="gyro" site="skull_sensor"/>
+        <velocimeter name="velocimeter" site="skull_sensor"/>
+        
+        <touch name="calcn_touch_r" site="calcn_touch_r"/>
+        <touch name="metatarsal_1_touch_r" site="metatarsal_1_touch_r"/>
+        <touch name="metatarsal_2_touch_r" site="metatarsal_2_touch_r"/>
+        <touch name="metatarsal_3_touch_r" site="metatarsal_3_touch_r"/>
+        <touch name="metatarsal_4_touch_r" site="metatarsal_4_touch_r"/>
+        <touch name="metatarsal_5_touch_r" site="metatarsal_5_touch_r"/>
+
+        <touch name="digits_1_prox_touch_r" site="digits_1_prox_touch_r"/>
+        <touch name="digits_1_dist_touch_r" site="digits_1_dist_touch_r"/>
+        <touch name="digits_2_prox_touch_r" site="digits_2_prox_touch_r"/>
+        <touch name="digits_2_mid_touch_r" site="digits_2_mid_touch_r"/>
+        <touch name="digits_2_dist_touch_r" site="digits_2_dist_touch_r"/>
+        <touch name="digits_3_prox_touch_r" site="digits_3_prox_touch_r"/>
+        <touch name="digits_3_mid_touch_r" site="digits_3_mid_touch_r"/>
+        <touch name="digits_3_dist_touch_r" site="digits_3_dist_touch_r"/>
+        <touch name="digits_4_prox_touch_r" site="digits_4_prox_touch_r"/>
+        <touch name="digits_4_mid_touch_r" site="digits_4_mid_touch_r"/>
+        <touch name="digits_4_dist_touch_r" site="digits_4_dist_touch_r"/>
+        <touch name="digits_5_prox_touch_r" site="digits_5_prox_touch_r"/>
+        <touch name="digits_5_mid_touch_r" site="digits_5_mid_touch_r"/>
+        <touch name="digits_5_dist_touch_r" site="digits_5_dist_touch_r"/>
+
+        <touch name="calcn_touch_l" site="calcn_touch_l"/>
+        <touch name="metatarsal_1_touch_l" site="metatarsal_1_touch_l"/>
+        <touch name="metatarsal_2_touch_l" site="metatarsal_2_touch_l"/>
+        <touch name="metatarsal_3_touch_l" site="metatarsal_3_touch_l"/>
+        <touch name="metatarsal_4_touch_l" site="metatarsal_4_touch_l"/>
+        <touch name="metatarsal_5_touch_l" site="metatarsal_5_touch_l"/>
+
+        <touch name="digits_1_prox_touch_l" site="digits_1_prox_touch_l"/>
+        <touch name="digits_1_dist_touch_l" site="digits_1_dist_touch_l"/>
+        <touch name="digits_2_prox_touch_l" site="digits_2_prox_touch_l"/>
+        <touch name="digits_2_mid_touch_l" site="digits_2_mid_touch_l"/>
+        <touch name="digits_2_dist_touch_l" site="digits_2_dist_touch_l"/>
+        <touch name="digits_3_prox_touch_l" site="digits_3_prox_touch_l"/>
+        <touch name="digits_3_mid_touch_l" site="digits_3_mid_touch_l"/>
+        <touch name="digits_3_dist_touch_l" site="digits_3_dist_touch_l"/>
+        <touch name="digits_4_prox_touch_l" site="digits_4_prox_touch_l"/>
+        <touch name="digits_4_mid_touch_l" site="digits_4_mid_touch_l"/>
+        <touch name="digits_4_dist_touch_l" site="digits_4_dist_touch_l"/>
+        <touch name="digits_5_prox_touch_l" site="digits_5_prox_touch_l"/>
+        <touch name="digits_5_mid_touch_l" site="digits_5_mid_touch_l"/>
+        <touch name="digits_5_dist_touch_l" site="digits_5_dist_touch_l"/>
+
+      </sensor>
+</mujoco>

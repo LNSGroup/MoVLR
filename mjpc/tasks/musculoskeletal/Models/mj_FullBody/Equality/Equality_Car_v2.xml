@@ -1,0 +1,6 @@
+<mujoco>
+    <equality>
+        <weld name="left_hand_on_car" active="true" body1="car" body2="hand_l" relpose="-0.07 0.35 -0.08 -0.5 -0.5 0.5 0.5"></weld>
+        <weld name="right_hand_on_car" active="true" body1="car" body2="hand_r" relpose="-0.52 0.35 -0.08 -0.5 -0.5 0.5 0.5" ></weld>
+    </equality>
+</mujoco>
